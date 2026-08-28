@@ -6,7 +6,15 @@ This document tracks planned features and future ideas for the Anime Dub Calenda
 
 ## 🎯 Definite Planned Features
 
-### 1. 📰 Cross-Reference r/Animedubs RSS & Subreddit Data
+### 1. 🧹 Rolling History Window & State Pruning (Scalability / File Cap)
+- [ ] **Rolling History Window in `.ics` Feeds (90–120 Days)**:
+  - Keep the feed permanently capped at ~200 KB by retaining all future projections + current week + past 90–120 days of aired history (calendar clients keep past months locally).
+- [ ] **Prune Inactive Shows from `state.json` (180 Days)**:
+  - Auto-expire completed shows that have been off the MAL schedule for >180 days to keep `state.json` lightweight permanently.
+
+---
+
+### 2. 📰 Cross-Reference r/Animedubs RSS & Subreddit Data
 
 - [ ] **Ingest r/Animedubs RSS Feed** (`https://www.reddit.com/r/Animedubs/.rss` / Reddit API).
 - [ ] **Weekly Megathreads & Discussion Tracking**:
