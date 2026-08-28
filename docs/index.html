@@ -216,10 +216,14 @@
     <a id="webcal-btn" class="btn btn-secondary" href="#" rel="noopener">
       🔗 Subscribe via Webcal
     </a>
+    <button id="copy-btn" class="btn btn-secondary" onclick="copyFeedUrl()">
+      📋 Copy Feed URL
+    </button>
     <a id="download-btn" class="btn btn-download" href="./anime-dubs.ics" download>
       ⬇ Download .ics
     </a>
   </div>
+  <div id="copy-toast" style="display:none;font-size:0.8rem;color:#4ade80;margin-top:0.75rem;font-weight:600;">✓ Calendar URL copied to clipboard!</div>
 </div>
 
 <div class="container">
@@ -268,10 +272,19 @@
   const base = window.location.origin + window.location.pathname.replace(/\/?$/, '/');
   const icsUrl = base + 'anime-dubs.ics';
   const webcalUrl = icsUrl.replace(/^https?:\/\//, 'webcal://');
-  const gcalUrl = 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(icsUrl);
+  // Google Calendar expects the webcal:// scheme in the cid parameter to subscribe to an external .ics feed
+  const gcalUrl = 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(webcalUrl);
 
   document.getElementById('gcal-btn').href = gcalUrl;
   document.getElementById('webcal-btn').href = webcalUrl;
+
+  function copyFeedUrl() {
+    navigator.clipboard.writeText(icsUrl).then(() => {
+      const toast = document.getElementById('copy-toast');
+      toast.style.display = 'block';
+      setTimeout(() => { toast.style.display = 'none'; }, 3000);
+    });
+  }
 
   // Load schedule.json and render
   fetch('./schedule.json')
