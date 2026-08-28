@@ -58,7 +58,7 @@ function buildVevent(event, dtstamp) {
   // DTEND = day after for all-day events
   const dtend = formatIcsDate(addDays(event.date, 1));
 
-  let summary = `[Dub] ${event.title} - Ep ${event.episodeNumber}`;
+  let summary = `${event.title} - Ep ${event.episodeNumber}`;
   if (event.isResumeEvent) {
     summary += ' (Resumes)';
   } else if (event.isPremierePlaceholder) {
