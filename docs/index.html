@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Dub Calendar</title>
+  <meta name="description" content="Auto-updated weekly anime English dub release calendar. Subscribe to get episode reminders in Google Calendar, Apple Calendar, or Outlook.">
+  <style>
+    :root {
+      --bg: #0f0f14;
+      --surface: #1a1a24;
+      --surface2: #22222f;
+      --border: #2e2e42;
+      --accent: #7c5cfc;
+      --accent2: #e040fb;
+      --text: #e8e8f0;
+      --muted: #7878a0;
+      --green: #4ade80;
+      --yellow: #facc15;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #1a0a3a 0%, #0f0f24 60%);
+      padding: 4rem 2rem 3rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      background: linear-gradient(135deg, #a78bfa, #e040fb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 560px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(124, 92, 252, 0.15);
+      border: 1px solid rgba(124, 92, 252, 0.4);
+      color: #a78bfa;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 99px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Subscribe buttons */
+    .subscribe-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.625rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.4); }
+    .btn-primary {
+      background: linear-gradient(135deg, #7c5cfc, #e040fb);
+      color: #fff;
+    }
+    .btn-secondary {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+    .btn-download {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    /* Main content */
+    .container { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+
+    /* How it works */
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .steps { display: grid; gap: 1rem; margin-bottom: 2.5rem; }
+    .step {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1rem 1.25rem;
+    }
+    .step-num {
+      width: 2rem;
+      height: 2rem;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #7c5cfc, #e040fb);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.85rem;
+      color: #fff;
+    }
+    .step-body h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.25rem; }
+    .step-body p { font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
+    .step-body code {
+      font-family: 'Consolas', monospace;
+      background: var(--surface2);
+      padding: 0.1rem 0.4rem;
+      border-radius: 0.25rem;
+      font-size: 0.8rem;
+      color: #a78bfa;
+      word-break: break-all;
+    }
+
+    /* Schedule table */
+    .schedule-loading { text-align: center; color: var(--muted); padding: 2rem 0; }
+    .day-group { margin-bottom: 1.5rem; }
+    .day-header {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      padding: 0.4rem 0;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .show-list { display: grid; gap: 0.4rem; }
+    .show-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      padding: 0.6rem 0.9rem;
+      font-size: 0.875rem;
+    }
+    .show-title { font-weight: 600; }
+    .show-title a { color: #a78bfa; text-decoration: none; }
+    .show-title a:hover { text-decoration: underline; }
+    .show-eps {
+      color: var(--muted);
+      font-size: 0.78rem;
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+    .tag {
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.1rem 0.5rem;
+      border-radius: 99px;
+    }
+    .tag-suspended { background: rgba(239,68,68,0.15); color: #f87171; }
+    .tag-projected { background: rgba(250,204,21,0.12); color: #facc15; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="badge">📅 Auto-Updated Daily</div>
+  <h1>Anime Dub Calendar</h1>
+  <p>Never miss an episode. Subscribe to get English dub release dates synced directly to your calendar — updated every morning.</p>
+
+  <div class="subscribe-grid">
+    <a id="gcal-btn" class="btn btn-primary" href="#" target="_blank" rel="noopener">
+      📅 Subscribe in Google Calendar
+    </a>
+    <a id="webcal-btn" class="btn btn-secondary" href="#" rel="noopener">
+      🔗 Subscribe via Webcal
+    </a>
+    <a id="download-btn" class="btn btn-download" href="./anime-dubs.ics" download>
+      ⬇ Download .ics
+    </a>
+  </div>
+</div>
+
+<div class="container">
+
+  <div style="margin-bottom:2.5rem">
+    <div class="section-title">How to Subscribe</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Click "Subscribe in Google Calendar"</h3>
+          <p>Opens Google Calendar and asks you to add the calendar. Click <strong>Add</strong>. Google will poll for updates automatically.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Or use Webcal / Apple Calendar</h3>
+          <p>Click "Subscribe via Webcal" — macOS and iOS will open it in Calendar automatically. On Windows, open Outlook or Windows Calendar and paste the ICS URL.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Events auto-update daily</h3>
+          <p>The feed rebuilds every morning from the <a href="https://myanimelist.net/forum/?topicid=1692966" target="_blank" rel="noopener" style="color:#a78bfa">MAL forum thread</a>. Episode projections adjust automatically as shows update.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="schedule-section">
+    <div class="section-title">Currently Airing Dubs</div>
+    <div id="schedule-container" class="schedule-loading">Loading schedule…</div>
+  </div>
+
+</div>
+
+<footer>
+  Data sourced from the <a href="https://myanimelist.net/forum/?topicid=1692966" target="_blank" rel="noopener">MAL Upcoming Dubbed Anime thread</a>.
+  Not affiliated with MyAnimeList. · <a href="https://github.com" target="_blank">View on GitHub</a>
+</footer>
+
+<script>
+  // Set subscription URLs dynamically from the current page location
+  const base = window.location.origin + window.location.pathname.replace(/\/?$/, '/');
+  const icsUrl = base + 'anime-dubs.ics';
+  const webcalUrl = icsUrl.replace(/^https?:\/\//, 'webcal://');
+  const gcalUrl = 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(icsUrl);
+
+  document.getElementById('gcal-btn').href = gcalUrl;
+  document.getElementById('webcal-btn').href = webcalUrl;
+
+  // Load schedule.json and render
+  fetch('./schedule.json')
+    .then(r => r.json())
+    .then(data => {
+      const container = document.getElementById('schedule-container');
+      container.innerHTML = '';
+
+      const dayOrder = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+      const byDay = {};
+      for (const show of data.shows) {
+        if (!byDay[show.day]) byDay[show.day] = [];
+        byDay[show.day].push(show);
+      }
+
+      for (const day of dayOrder) {
+        if (!byDay[day]) continue;
+        const group = document.createElement('div');
+        group.className = 'day-group';
+        group.innerHTML = `<div class="day-header">${day}</div><div class="show-list"></div>`;
+        const list = group.querySelector('.show-list');
+        for (const show of byDay[day]) {
+          const epLabel = show.totalEp
+            ? `Ep ${show.currentEp} / ${show.totalEp}`
+            : `Ep ${show.currentEp} / ??`;
+          const tags = show.suspended ? '<span class="tag tag-suspended">Suspended</span>' : '';
+          list.innerHTML += `
+            <div class="show-item">
+              <span class="show-title">${show.title}</span>
+              <span style="display:flex;align-items:center;gap:0.5rem">
+                ${tags}
+                <span class="show-eps">${epLabel}</span>
+              </span>
+            </div>`;
+        }
+        container.appendChild(group);
+      }
+
+      const meta = document.createElement('p');
+      meta.style.cssText = 'color:var(--muted);font-size:0.78rem;margin-top:1.5rem;text-align:center';
+      meta.textContent = `${data.showCount} shows · ${data.eventCount} events · Updated: ${data.lastUpdated}`;
+      container.appendChild(meta);
+    })
+    .catch(() => {
+      document.getElementById('schedule-container').textContent = 'Schedule data unavailable. Check back after the next build.';
+    });
+</script>
+</body>
+</html>

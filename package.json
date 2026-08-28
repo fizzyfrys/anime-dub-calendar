@@ -1,0 +1,26 @@
+{
+  "name": "anime-dub-cal",
+  "version": "1.0.0",
+  "description": "Automated anime dub calendar feed from MyAnimeList forum",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "node src/index.js",
+    "build:local": "node src/index.js --local \"./Upcoming Dubbed Anime - Forums - MyAnimeList.net.htm\"",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "dependencies": {
+    "ics": "^3.8.1",
+    "node-html-parser": "^6.1.13",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "transform": {},
+    "extensionsToTreatAsEsm": [
+      ".js"
+    ]
+  }
+}
