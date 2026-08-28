@@ -42,8 +42,26 @@ const WEEKDAY_INDEX = {
 export function computeEpisodeEvents(show, prevState, referenceDate, lastUpdatedDate) {
   const { title, malUrl, currentEp, totalEp, suspended, resumeDate, day } = show;
 
-  // Suspended shows: no future projections
+  // Suspended shows (**): dub production is suspended indefinitely — no events
   if (suspended) return [];
+
+  // Hiatus / Resuming shows (++):
+  // The show is currently on hiatus and not airing weekly.
+  // Emit at most a single reminder event on the exact return date.
+  if (resumeDate) {
+    const resumeParsed = new Date(resumeDate + ' 12:00:00');
+    if (!isNaN(resumeParsed) && resumeParsed > referenceDate) {
+      return [{
+        title,
+        malUrl,
+        episodeNumber: currentEp + 1,
+        date: resumeParsed,
+        isProjected: true,
+        isMultiDrop: false,
+        isResumeEvent: true,
+      }];
+    }
+  }
 
   const slug = makeSlug(title);
   const prev = prevState[slug] || null;
@@ -89,20 +107,11 @@ export function computeEpisodeEvents(show, prevState, referenceDate, lastUpdated
     }
   }
 
-  // For resumeDate shows, start schedule from that date instead of weekly progression
-  let scheduleAnchor = referenceDate;
-  if (resumeDate) {
-    const parsed = new Date(resumeDate);
-    if (!isNaN(parsed) && parsed > referenceDate) {
-      scheduleAnchor = parsed;
-    }
-  }
-
   // Future episodes: from currentEp+1 up to projectedTotal
   let weekOffset = 0;
   for (let ep = currentEp + 1; ep <= projectedTotal; ep++) {
     weekOffset++;
-    const epDate = nextWeekday(day, scheduleAnchor, weekOffset);
+    const epDate = nextWeekday(day, referenceDate, weekOffset);
     events.push({
       title,
       malUrl,

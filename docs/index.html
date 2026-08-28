@@ -189,6 +189,7 @@
       border-radius: 99px;
     }
     .tag-suspended { background: rgba(239,68,68,0.15); color: #f87171; }
+    .tag-resumes { background: rgba(168,85,247,0.18); color: #c084fc; border: 1px solid rgba(168,85,247,0.35); }
     .tag-projected { background: rgba(250,204,21,0.12); color: #facc15; }
 
     /* Footer */
@@ -310,7 +311,12 @@
           const epLabel = show.totalEp
             ? `Ep ${show.currentEp} / ${show.totalEp}`
             : `Ep ${show.currentEp} / ??`;
-          const tags = show.suspended ? '<span class="tag tag-suspended">Suspended</span>' : '';
+          let tags = '';
+          if (show.suspended) {
+            tags = '<span class="tag tag-suspended">Suspended</span>';
+          } else if (show.resumeDate) {
+            tags = `<span class="tag tag-resumes">Resumes ${show.resumeDate}</span>`;
+          }
           list.innerHTML += `
             <div class="show-item">
               <span class="show-title">${show.title}</span>

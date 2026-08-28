@@ -59,7 +59,9 @@ function buildVevent(event, dtstamp) {
   const dtend = formatIcsDate(addDays(event.date, 1));
 
   let summary = `[Dub] ${event.title} - Ep ${event.episodeNumber}`;
-  if (event.isPremierePlaceholder) {
+  if (event.isResumeEvent) {
+    summary += ' (Resumes)';
+  } else if (event.isPremierePlaceholder) {
     summary += ' (Premiere)';
     if (!event.dateConfirmed) summary += '*';
   } else if (event.isProjected) {
@@ -69,7 +71,9 @@ function buildVevent(event, dtstamp) {
 
   const descParts = [];
   if (event.malUrl) descParts.push(`MAL: ${event.malUrl}`);
-  if (event.isProjected && !event.isPremierePlaceholder) {
+  if (event.isResumeEvent) {
+    descParts.push('Show returns from broadcast hiatus on this date.');
+  } else if (event.isProjected && !event.isPremierePlaceholder) {
     descParts.push('Note: Episode date projected based on cour heuristics.');
   }
   if (event.isPremierePlaceholder) {
