@@ -17,16 +17,20 @@ const UID_DOMAIN = 'anime-dub-cal';
 /**
  * @param {import('./cour-logic.js').EpisodeEvent[]} events
  * @param {string} lastUpdated  - Human-readable last-updated string for calendar description
+ * @param {Object} [options]
+ * @param {'title-first'|'ep-first'} [options.titleFormat='title-first'] - 'title-first' = Title - Ep ##, 'ep-first' = Ep ## · Title
+ * @param {string} [options.calendarName]
  * @returns {string} ICS file contents
  */
-export function generateIcs(events, lastUpdated) {
+export function generateIcs(events, lastUpdated, options = {}) {
+  const { titleFormat = 'title-first', calendarName = CALENDAR_NAME } = options;
   const now = formatIcsDatetime(new Date());
 
   const lines = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
     'PRODID:-//anime-dub-cal//EN',
-    `X-WR-CALNAME:${CALENDAR_NAME}`,
+    `X-WR-CALNAME:${calendarName}`,
     `X-WR-TIMEZONE:${TIMEZONE}`,
     `X-WR-CALDESC:${CALENDAR_DESC} (Source updated: ${lastUpdated})`,
     'CALSCALE:GREGORIAN',
@@ -36,7 +40,7 @@ export function generateIcs(events, lastUpdated) {
   ];
 
   for (const event of events) {
-    lines.push(...buildVevent(event, now));
+    lines.push(...buildVevent(event, now, titleFormat));
   }
 
   lines.push('END:VCALENDAR');
@@ -49,7 +53,7 @@ export function generateIcs(events, lastUpdated) {
 // VEVENT builder
 // ---------------------------------------------------------------------------
 
-function buildVevent(event, dtstamp) {
+function buildVevent(event, dtstamp, titleFormat = 'title-first') {
   const slug = makeSlug(event.title);
   const uid = `mal-dub-${slug}-ep-${event.episodeNumber}@${UID_DOMAIN}`;
 
@@ -58,7 +62,9 @@ function buildVevent(event, dtstamp) {
   // DTEND = day after for all-day events
   const dtend = formatIcsDate(addDays(event.date, 1));
 
-  let summary = `Ep ${event.episodeNumber} · ${event.title}`;
+  let summary = titleFormat === 'ep-first'
+    ? `Ep ${event.episodeNumber} · ${event.title}`
+    : `${event.title} - Ep ${event.episodeNumber}`;
   if (event.isResumeEvent) {
     summary += ' (Resumes)';
   } else if (event.isPremierePlaceholder) {

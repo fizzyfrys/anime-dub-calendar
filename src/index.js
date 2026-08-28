@@ -18,6 +18,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
 const DOCS_DIR = path.join(ROOT, 'docs');
 const ICS_PATH = path.join(DOCS_DIR, 'anime-dubs.ics');
+const ICS_EP_FIRST_PATH = path.join(DOCS_DIR, 'anime-dubs-ep-first.ics');
 const SCHEDULE_PATH = path.join(DOCS_DIR, 'schedule.json');
 const STATE_PATH = path.join(DOCS_DIR, 'state.json');
 
@@ -74,8 +75,15 @@ async function main() {
 
   console.log(`[anime-dub-cal] Total calendar events generated: ${allEvents.length}`);
 
-  // 4. Generate ICS
-  const icsContent = generateIcs(allEvents, schedule.lastUpdated);
+  // 4. Generate ICS feeds (both standard Title - Ep and Ep · Title formats)
+  const icsDefault = generateIcs(allEvents, schedule.lastUpdated, {
+    titleFormat: 'title-first',
+    calendarName: 'Anime Dubs Schedule',
+  });
+  const icsEpFirst = generateIcs(allEvents, schedule.lastUpdated, {
+    titleFormat: 'ep-first',
+    calendarName: 'Anime Dubs (Ep First)',
+  });
 
   // 5. Save new state (record current episode counts per show)
   const newState = {};
@@ -90,7 +98,8 @@ async function main() {
 
   // 6. Write output files
   await mkdir(DOCS_DIR, { recursive: true });
-  await writeFile(ICS_PATH, icsContent, 'utf8');
+  await writeFile(ICS_PATH, icsDefault, 'utf8');
+  await writeFile(ICS_EP_FIRST_PATH, icsEpFirst, 'utf8');
   await writeFile(STATE_PATH, JSON.stringify(newState, null, 2), 'utf8');
   await writeFile(SCHEDULE_PATH, JSON.stringify({
     generatedAt: new Date().toISOString(),
@@ -107,7 +116,8 @@ async function main() {
     })),
   }, null, 2), 'utf8');
 
-  console.log(`[anime-dub-cal] ✓ Written: ${ICS_PATH}`);
+  console.log(`[anime-dub-cal] ✓ Written: ${ICS_PATH} (Default: Title - Ep ##)`);
+  console.log(`[anime-dub-cal] ✓ Written: ${ICS_EP_FIRST_PATH} (Compact: Ep ## · Title)`);
   console.log(`[anime-dub-cal] ✓ Written: ${SCHEDULE_PATH}`);
   console.log(`[anime-dub-cal] ✓ Written: ${STATE_PATH}`);
 }

@@ -71,6 +71,41 @@
       justify-content: center;
       margin-bottom: 0.5rem;
     }
+    .format-switcher {
+      display: inline-flex;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 99px;
+      padding: 0.25rem;
+      margin-bottom: 1.25rem;
+    }
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--muted);
+      padding: 0.45rem 1.1rem;
+      border-radius: 99px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .tab-btn.active {
+      background: linear-gradient(135deg, #7c5cfc, #e040fb);
+      color: #fff;
+      box-shadow: 0 2px 10px rgba(124, 92, 252, 0.4);
+    }
+    .format-hint {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+    .format-hint code {
+      color: #a78bfa;
+      background: var(--surface2);
+      padding: 0.15rem 0.4rem;
+      border-radius: 0.25rem;
+    }
     .btn {
       display: inline-flex;
       align-items: center;
@@ -242,6 +277,18 @@
   <h1>Anime Dub Calendar</h1>
   <p>Never miss an episode. Subscribe to get English dub release dates synced directly to your calendar — updated every morning.</p>
 
+  <div class="format-switcher">
+    <button class="tab-btn active" id="tab-default" onclick="selectFormat('default')">
+      Standard (Title - Ep 12)
+    </button>
+    <button class="tab-btn" id="tab-ep-first" onclick="selectFormat('ep-first')">
+      Compact (Ep 12 · Title)
+    </button>
+  </div>
+  <div class="format-hint" id="format-hint">
+    Feed format: <code>Show Title - Ep 12</code>
+  </div>
+
   <div class="subscribe-grid">
     <a id="gcal-btn" class="btn btn-primary" href="#" target="_blank" rel="noopener">
       📅 Subscribe in Google Calendar
@@ -301,23 +348,48 @@
 </footer>
 
 <script>
-  // Set subscription URLs dynamically from the current page location
+  // Dynamic subscription URLs supporting both Standard and Compact (Ep-First) formats
   const base = window.location.origin + window.location.pathname.replace(/\/?$/, '/');
-  const icsUrl = base + 'anime-dubs.ics';
-  const webcalUrl = icsUrl.replace(/^https?:\/\//, 'webcal://');
-  // Google Calendar expects the webcal:// scheme in the cid parameter to subscribe to an external .ics feed
-  const gcalUrl = 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(webcalUrl);
+  let currentFormat = 'default';
 
-  document.getElementById('gcal-btn').href = gcalUrl;
-  document.getElementById('webcal-btn').href = webcalUrl;
+  function updateLinks() {
+    const filename = currentFormat === 'ep-first' ? 'anime-dubs-ep-first.ics' : 'anime-dubs.ics';
+    const icsUrl = base + filename;
+    const webcalUrl = icsUrl.replace(/^https?:\/\//, 'webcal://');
+    const gcalUrl = 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(webcalUrl);
+
+    document.getElementById('gcal-btn').href = gcalUrl;
+    document.getElementById('webcal-btn').href = webcalUrl;
+    document.getElementById('download-btn').href = './' + filename;
+    document.getElementById('download-btn').setAttribute('download', filename);
+
+    const hint = document.getElementById('format-hint');
+    if (currentFormat === 'ep-first') {
+      hint.innerHTML = 'Format: <code>Ep 12 · Show Title</code> (great for mobile & small calendar widgets)';
+    } else {
+      hint.innerHTML = 'Format: <code>Show Title - Ep 12</code> (classic default)';
+    }
+  }
+
+  function selectFormat(fmt) {
+    currentFormat = fmt;
+    document.getElementById('tab-default').classList.toggle('active', fmt === 'default');
+    document.getElementById('tab-ep-first').classList.toggle('active', fmt === 'ep-first');
+    updateLinks();
+  }
 
   function copyFeedUrl() {
+    const filename = currentFormat === 'ep-first' ? 'anime-dubs-ep-first.ics' : 'anime-dubs.ics';
+    const icsUrl = base + filename;
     navigator.clipboard.writeText(icsUrl).then(() => {
       const toast = document.getElementById('copy-toast');
       toast.style.display = 'block';
       setTimeout(() => { toast.style.display = 'none'; }, 3000);
     });
   }
+
+  // Initialize links on load
+  updateLinks();
 
   // Load schedule.json and render
   fetch('./schedule.json')

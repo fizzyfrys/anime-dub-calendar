@@ -36,13 +36,21 @@ Syncs episode premiere dates directly to your Google Calendar, Apple Calendar, o
 
 ---
 
-## ⚡ Quick Subscription Links
+## ⚡ Quick Subscription Feeds
 
-| Platform | One-Click Subscription Link | Raw Feed URL |
-|---|---|---|
-| **Google Calendar** | [📅 Click to Add Calendar](https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ffizzyfrys.github.io%2Fanime-dub-calendar%2Fanime-dubs.ics) | `https://fizzyfrys.github.io/anime-dub-calendar/anime-dubs.ics` |
-| **Apple Calendar (iOS / macOS)** | [🍎 Click to Subscribe (Webcal)](webcal://fizzyfrys.github.io/anime-dub-calendar/anime-dubs.ics) | `webcal://fizzyfrys.github.io/anime-dub-calendar/anime-dubs.ics` |
-| **Outlook / Other** | [⬇ Download / Copy ICS URL](https://fizzyfrys.github.io/anime-dub-calendar/anime-dubs.ics) | `https://fizzyfrys.github.io/anime-dub-calendar/anime-dubs.ics` |
+Choose your preferred format:
+
+### 1. 🏷️ Standard Feed (`Title - Ep ##`) — *Default*
+*Ideal for desktop calendar views and clean list overviews.*
+- **Google Calendar**: [📅 Add Standard Feed](https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ffizzyfrys.github.io%2Fanime-dub-calendar%2Fanime-dubs.ics)
+- **Apple Calendar / Webcal**: [🍎 Subscribe via Webcal](webcal://fizzyfrys.github.io/anime-dub-calendar/anime-dubs.ics)
+- **Raw URL**: `https://fizzyfrys.github.io/anime-dub-calendar/anime-dubs.ics`
+
+### 2. 📱 Compact Feed (`Ep ## · Title`) — *Mobile & Widget Friendly*
+*Guarantees episode numbers are always visible upfront without getting truncated by long anime titles.*
+- **Google Calendar**: [📅 Add Compact Feed](https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ffizzyfrys.github.io%2Fanime-dub-calendar%2Fanime-dubs-ep-first.ics)
+- **Apple Calendar / Webcal**: [🍎 Subscribe via Webcal](webcal://fizzyfrys.github.io/anime-dub-calendar/anime-dubs-ep-first.ics)
+- **Raw URL**: `https://fizzyfrys.github.io/anime-dub-calendar/anime-dubs-ep-first.ics`
 
 ---
 

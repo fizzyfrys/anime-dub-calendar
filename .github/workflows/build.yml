@@ -36,7 +36,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/anime-dubs.ics docs/schedule.json docs/state.json
+          git add docs/anime-dubs.ics docs/anime-dubs-ep-first.ics docs/schedule.json docs/state.json
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
