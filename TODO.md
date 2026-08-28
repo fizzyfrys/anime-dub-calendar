@@ -26,8 +26,11 @@ This document tracks planned features and future ideas for the Anime Dub Calenda
 
 ---
 
-### 2. ⏰ Cross-Reference Crunchyroll for Exact Episode Drop Times
+### 2. ⏰ Cross-Reference Crunchyroll for Exact Episode Drop Times & News Releases
 
+- [ ] **Scan Crunchyroll News RSS Feed** (`https://www.crunchyroll.com/news/rss` / news pages):
+  - Ingest the official Crunchyroll News feed to detect surprise / same-day English dub drops and sudden cast/premiere announcements (e.g. *"Crunchyroll Announces English Dub for [Show], Premiering Today"*).
+  - Parse article headlines for keywords (`English Dub`, `Dub Premiere`, `SimulDub`, `Batch Drop`).
 - [ ] **Scrape / Query Crunchyroll Release Calendar**:
   - Query Crunchyroll's release calendar / API endpoints to find exact air times (e.g., `12:30 PM PDT` / `3:30 PM EDT`).
 - [ ] **Timed Calendar Events Option**:
