@@ -192,6 +192,38 @@
     .tag-resumes { background: rgba(168,85,247,0.18); color: #c084fc; border: 1px solid rgba(168,85,247,0.35); }
     .tag-projected { background: rgba(250,204,21,0.12); color: #facc15; }
 
+    /* Status cards at bottom */
+    .status-panel {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.75rem;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+    .status-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      padding: 0.75rem 1rem;
+    }
+    .status-label {
+      font-size: 0.72rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+    .status-val {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .status-highlight {
+      color: #a78bfa;
+    }
+
     /* Footer */
     footer {
       text-align: center;
@@ -329,10 +361,29 @@
         container.appendChild(group);
       }
 
-      const meta = document.createElement('p');
-      meta.style.cssText = 'color:var(--muted);font-size:0.78rem;margin-top:1.5rem;text-align:center';
-      meta.textContent = `${data.showCount} shows · ${data.eventCount} events · Updated: ${data.lastUpdated}`;
-      container.appendChild(meta);
+      // Render status metadata cards
+      const syncDate = data.generatedAt ? new Date(data.generatedAt).toLocaleString(undefined, {
+        month: 'short', day: 'numeric', year: 'numeric',
+        hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
+      }) : 'Recent';
+
+      const panel = document.createElement('div');
+      panel.className = 'status-panel';
+      panel.innerHTML = `
+        <div class="status-card">
+          <div class="status-label">MAL Forum Thread Updated</div>
+          <div class="status-val status-highlight">📌 ${data.lastUpdated || 'Unknown'}</div>
+        </div>
+        <div class="status-card">
+          <div class="status-label">Calendar Feed Built</div>
+          <div class="status-val">⚡ ${syncDate}</div>
+        </div>
+        <div class="status-card">
+          <div class="status-label">Tracked Series & Events</div>
+          <div class="status-val">🎬 ${data.showCount} shows · ${data.eventCount} events</div>
+        </div>
+      `;
+      container.appendChild(panel);
     })
     .catch(() => {
       document.getElementById('schedule-container').textContent = 'Schedule data unavailable. Check back after the next build.';
