@@ -1,0 +1,352 @@
+{
+  "generatedAt": "2026-08-28T09:01:01.913Z",
+  "lastUpdated": "August 27, 2026",
+  "showCount": 43,
+  "eventCount": 247,
+  "shows": [
+    {
+      "title": "LIAR GAME",
+      "day": "Monday",
+      "currentEp": 19,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Skeleton Knight in Another World Season 2",
+      "day": "Monday",
+      "currentEp": 8,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Does It Count If You Lose Your Innocence to an Android?",
+      "day": "Tuesday",
+      "currentEp": 1,
+      "totalEp": 8,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "One Piece",
+      "day": "Tuesday",
+      "currentEp": 1155,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": "October 20, 2026"
+    },
+    {
+      "title": "The Ghost in the Shell",
+      "day": "Tuesday",
+      "currentEp": 8,
+      "totalEp": 10,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Clevatess Season 2",
+      "day": "Wednesday",
+      "currentEp": 8,
+      "totalEp": 13,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "From Old Country Bumpkin to Master Swordsman Season 2",
+      "day": "Wednesday",
+      "currentEp": 8,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Hana-Kimi Season 2",
+      "day": "Wednesday",
+      "currentEp": 8,
+      "totalEp": 13,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Hell Mode: The Hardcore Gamer Dominates in Another World with Garbage Balancing Season 2",
+      "day": "Wednesday",
+      "currentEp": 4,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Re:ZERO -Starting Life in Another World- Season 4",
+      "day": "Wednesday",
+      "currentEp": 12,
+      "totalEp": 19,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "The Forsaken Saintess and Her Foodie Roadtrip in Another World",
+      "day": "Wednesday",
+      "currentEp": 2,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "The World Is Dancing",
+      "day": "Wednesday",
+      "currentEp": 1,
+      "totalEp": 13,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Thunder 3",
+      "day": "Wednesday",
+      "currentEp": 8,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Tomb Raider King",
+      "day": "Wednesday",
+      "currentEp": 6,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Trapped in a Dating Sim: The World of Otome Games is Tough for Mobs Season 2",
+      "day": "Wednesday",
+      "currentEp": 6,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Yowayowa Sensei",
+      "day": "Wednesday",
+      "currentEp": 10,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Bungo Stray Dogs WAN! 2",
+      "day": "Thursday",
+      "currentEp": 7,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Chainsmoker Cat",
+      "day": "Thursday",
+      "currentEp": 7,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "KAIJU GIRL CARAMELISE",
+      "day": "Thursday",
+      "currentEp": 7,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Smoking Behind the Supermarket with You",
+      "day": "Thursday",
+      "currentEp": 8,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "The Angel Next Door Spoils Me Rotten2",
+      "day": "Thursday",
+      "currentEp": 5,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "The Exiled Heavy Knight Knows How to Game the System",
+      "day": "Thursday",
+      "currentEp": 7,
+      "totalEp": 26,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Draw This, Then Die!",
+      "day": "Friday",
+      "currentEp": 7,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "That Time I Got Reincarnated as a Slime Season 4",
+      "day": "Friday",
+      "currentEp": 17,
+      "totalEp": 24,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "The Drops of God",
+      "day": "Friday",
+      "currentEp": 18,
+      "totalEp": 24,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "The Elusive Samurai Season 2",
+      "day": "Friday",
+      "currentEp": 1,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Ascendance of a Bookworm: Adopted Daughter of an Archduke",
+      "day": "Saturday",
+      "currentEp": 17,
+      "totalEp": 24,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Beyblade X",
+      "day": "Saturday",
+      "currentEp": 118,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "BLACK TORCH",
+      "day": "Saturday",
+      "currentEp": 8,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Daemons of the Shadow Realm",
+      "day": "Saturday",
+      "currentEp": 18,
+      "totalEp": 24,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "GROW UP SHOW -Sunflower Circus-",
+      "day": "Saturday",
+      "currentEp": 8,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Hanaori-san Still Wants to Fight in the Next Life",
+      "day": "Saturday",
+      "currentEp": 7,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Jaadugar: A Witch in Mongolia",
+      "day": "Saturday",
+      "currentEp": 7,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Magilumiere Magical Girls Inc. Season 2",
+      "day": "Saturday",
+      "currentEp": 8,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Rilakkuma",
+      "day": "Saturday",
+      "currentEp": 21,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Welcome to Demon School! Iruma-kun Season 4",
+      "day": "Saturday",
+      "currentEp": 19,
+      "totalEp": 24,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Yu-Gi-Oh: Go Rush",
+      "day": "Saturday",
+      "currentEp": 67,
+      "totalEp": 151,
+      "suspended": true,
+      "resumeDate": null
+    },
+    {
+      "title": "Goodbye, Lara",
+      "day": "Sunday",
+      "currentEp": 8,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Mushoku Tensei: Jobless Reincarnation Season 3",
+      "day": "Sunday",
+      "currentEp": 7,
+      "totalEp": 14,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Sparks of Tomorrow",
+      "day": "Sunday",
+      "currentEp": 8,
+      "totalEp": 13,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You Season 3",
+      "day": "Sunday",
+      "currentEp": 6,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Though I Am an Inept Villainess",
+      "day": "Sunday",
+      "currentEp": 5,
+      "totalEp": 11,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "You and I Are Polar Opposites Season 2",
+      "day": "Sunday",
+      "currentEp": 6,
+      "totalEp": 13,
+      "suspended": false,
+      "resumeDate": null
+    }
+  ]
+}
