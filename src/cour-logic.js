@@ -53,10 +53,11 @@ export function computeEpisodeEvents(show, prevState, referenceDate, lastUpdated
   const events = [];
 
   // ------------------------------------------------------------------
-  // 1. Past & Current Episodes (ep = startEp ... currentEp)
+  // 1. Past (Previous Week) & Current Week Episodes
   // ------------------------------------------------------------------
-  // For long-running mega series (>26 eps), include up to the last 26 episodes (~6 months history)
-  const startEp = currentEp <= 26 ? 1 : Math.max(1, currentEp - 26);
+  // Include previous week (currentEp - 1) and current week (currentEp)
+  // Real history accumulates in state.json over time without guessing distant past weeks
+  const startEp = Math.max(1, currentEp - 1);
 
   for (let ep = startEp; ep <= currentEp; ep++) {
     const epDate = new Date(currentEpDate);
