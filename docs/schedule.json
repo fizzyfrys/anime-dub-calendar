@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-29T14:56:25.538Z",
-  "lastUpdated": "August 28, 2026",
-  "showCount": 44,
-  "eventCount": 339,
+  "generatedAt": "2026-08-30T14:41:27.460Z",
+  "lastUpdated": "August 29, 2026",
+  "showCount": 45,
+  "eventCount": 351,
   "shows": [
     {
       "title": "LIAR GAME",
@@ -223,7 +223,7 @@
     {
       "title": "Ascendance of a Bookworm: Adopted Daughter of an Archduke",
       "day": "Saturday",
-      "currentEp": 17,
+      "currentEp": 18,
       "totalEp": 24,
       "suspended": false,
       "resumeDate": null
@@ -231,7 +231,7 @@
     {
       "title": "Beyblade X",
       "day": "Saturday",
-      "currentEp": 118,
+      "currentEp": 120,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -239,15 +239,23 @@
     {
       "title": "BLACK TORCH",
       "day": "Saturday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Bleach: Thousand-Year Blood War - The Calamity",
+      "day": "Saturday",
+      "currentEp": 1,
+      "totalEp": 10,
       "suspended": false,
       "resumeDate": null
     },
     {
       "title": "Daemons of the Shadow Realm",
       "day": "Saturday",
-      "currentEp": 18,
+      "currentEp": 19,
       "totalEp": 24,
       "suspended": false,
       "resumeDate": null
@@ -255,7 +263,7 @@
     {
       "title": "GROW UP SHOW -Sunflower Circus-",
       "day": "Saturday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -263,7 +271,7 @@
     {
       "title": "Hanaori-san Still Wants to Fight in the Next Life",
       "day": "Saturday",
-      "currentEp": 7,
+      "currentEp": 8,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -271,7 +279,7 @@
     {
       "title": "Jaadugar: A Witch in Mongolia",
       "day": "Saturday",
-      "currentEp": 7,
+      "currentEp": 8,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -287,7 +295,7 @@
     {
       "title": "Rilakkuma",
       "day": "Saturday",
-      "currentEp": 21,
+      "currentEp": 22,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -295,7 +303,7 @@
     {
       "title": "Welcome to Demon School! Iruma-kun Season 4",
       "day": "Saturday",
-      "currentEp": 19,
+      "currentEp": 20,
       "totalEp": 24,
       "suspended": false,
       "resumeDate": null
