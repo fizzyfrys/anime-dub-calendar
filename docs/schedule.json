@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-30T14:41:27.460Z",
-  "lastUpdated": "August 29, 2026",
+  "generatedAt": "2026-08-31T17:24:13.205Z",
+  "lastUpdated": "August 31, 2026",
   "showCount": 45,
-  "eventCount": 351,
+  "eventCount": 345,
   "shows": [
     {
       "title": "LIAR GAME",
       "day": "Monday",
-      "currentEp": 19,
+      "currentEp": 20,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -15,16 +15,8 @@
     {
       "title": "Skeleton Knight in Another World Season 2",
       "day": "Monday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 12,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "Does It Count If You Lose Your Innocence to an Android?",
-      "day": "Tuesday",
-      "currentEp": 1,
-      "totalEp": 8,
       "suspended": false,
       "resumeDate": null
     },
@@ -189,6 +181,14 @@
       "resumeDate": null
     },
     {
+      "title": "Jojo's Bizarre Adventure Part 7: STEEL BALL RUN",
+      "day": "Friday",
+      "currentEp": 1,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": "October 20, 2026"
+    },
+    {
       "title": "Link Click Season 3",
       "day": "Friday",
       "currentEp": 1,
@@ -319,7 +319,7 @@
     {
       "title": "Goodbye, Lara",
       "day": "Sunday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -327,7 +327,7 @@
     {
       "title": "Mushoku Tensei: Jobless Reincarnation Season 3",
       "day": "Sunday",
-      "currentEp": 7,
+      "currentEp": 8,
       "totalEp": 14,
       "suspended": false,
       "resumeDate": null
@@ -335,7 +335,7 @@
     {
       "title": "Sparks of Tomorrow",
       "day": "Sunday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
@@ -343,7 +343,7 @@
     {
       "title": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You Season 3",
       "day": "Sunday",
-      "currentEp": 6,
+      "currentEp": 7,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -351,7 +351,7 @@
     {
       "title": "Though I Am an Inept Villainess",
       "day": "Sunday",
-      "currentEp": 5,
+      "currentEp": 6,
       "totalEp": 11,
       "suspended": false,
       "resumeDate": null
@@ -359,7 +359,7 @@
     {
       "title": "You and I Are Polar Opposites Season 2",
       "day": "Sunday",
-      "currentEp": 6,
+      "currentEp": 7,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
