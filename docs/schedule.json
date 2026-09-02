@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-01T14:31:57.315Z",
-  "lastUpdated": "August 31, 2026",
+  "generatedAt": "2026-09-02T14:06:10.179Z",
+  "lastUpdated": "September 1, 2026",
   "showCount": 45,
-  "eventCount": 345,
+  "eventCount": 347,
   "shows": [
     {
       "title": "LIAR GAME",
       "day": "Monday",
       "currentEp": 20,
-      "totalEp": null,
+      "totalEp": 26,
       "suspended": false,
       "resumeDate": null
     },
@@ -31,7 +31,7 @@
     {
       "title": "The Ghost in the Shell",
       "day": "Tuesday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 10,
       "suspended": false,
       "resumeDate": null
@@ -288,7 +288,7 @@
       "title": "Magilumiere Magical Girls Inc. Season 2",
       "day": "Saturday",
       "currentEp": 8,
-      "totalEp": null,
+      "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
