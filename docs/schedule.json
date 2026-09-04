@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-03T14:09:32.270Z",
-  "lastUpdated": "September 2, 2026",
-  "showCount": 45,
-  "eventCount": 347,
+  "generatedAt": "2026-09-04T14:00:52.206Z",
+  "lastUpdated": "September 3, 2026",
+  "showCount": 46,
+  "eventCount": 355,
   "shows": [
     {
       "title": "LIAR GAME",
@@ -127,7 +127,7 @@
     {
       "title": "Bungo Stray Dogs WAN! 2",
       "day": "Thursday",
-      "currentEp": 7,
+      "currentEp": 8,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -135,7 +135,7 @@
     {
       "title": "Chainsmoker Cat",
       "day": "Thursday",
-      "currentEp": 7,
+      "currentEp": 8,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -143,15 +143,23 @@
     {
       "title": "KAIJU GIRL CARAMELISE",
       "day": "Thursday",
-      "currentEp": 7,
+      "currentEp": 8,
       "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Marika's Love Meter Malfunction",
+      "day": "Thursday",
+      "currentEp": 1,
+      "totalEp": 8,
       "suspended": false,
       "resumeDate": null
     },
     {
       "title": "Smoking Behind the Supermarket with You",
       "day": "Thursday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -159,7 +167,7 @@
     {
       "title": "The Angel Next Door Spoils Me Rotten2",
       "day": "Thursday",
-      "currentEp": 5,
+      "currentEp": 6,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -167,7 +175,7 @@
     {
       "title": "The Exiled Heavy Knight Knows How to Game the System",
       "day": "Thursday",
-      "currentEp": 7,
+      "currentEp": 8,
       "totalEp": 26,
       "suspended": false,
       "resumeDate": null
