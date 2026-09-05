@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-04T14:00:52.206Z",
-  "lastUpdated": "September 3, 2026",
+  "generatedAt": "2026-09-05T13:15:23.724Z",
+  "lastUpdated": "September 5, 2026",
   "showCount": 46,
   "eventCount": 355,
   "shows": [
@@ -183,7 +183,7 @@
     {
       "title": "Draw This, Then Die!",
       "day": "Friday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -199,7 +199,7 @@
     {
       "title": "Link Click Season 3",
       "day": "Friday",
-      "currentEp": 1,
+      "currentEp": 2,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -207,7 +207,7 @@
     {
       "title": "That Time I Got Reincarnated as a Slime Season 4",
       "day": "Friday",
-      "currentEp": 18,
+      "currentEp": 19,
       "totalEp": 24,
       "suspended": false,
       "resumeDate": null
@@ -215,7 +215,7 @@
     {
       "title": "The Drops of God",
       "day": "Friday",
-      "currentEp": 19,
+      "currentEp": 20,
       "totalEp": 24,
       "suspended": false,
       "resumeDate": null
@@ -223,7 +223,7 @@
     {
       "title": "The Elusive Samurai Season 2",
       "day": "Friday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
