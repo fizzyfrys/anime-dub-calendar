@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-08T14:09:36.247Z",
-  "lastUpdated": "September 7, 2026",
-  "showCount": 46,
-  "eventCount": 355,
+  "generatedAt": "2026-09-09T14:10:33.782Z",
+  "lastUpdated": "September 8, 2026",
+  "showCount": 45,
+  "eventCount": 351,
   "shows": [
     {
       "title": "LIAR GAME",
@@ -27,14 +27,6 @@
       "totalEp": null,
       "suspended": false,
       "resumeDate": "October 20, 2026"
-    },
-    {
-      "title": "The Ghost in the Shell",
-      "day": "Tuesday",
-      "currentEp": 9,
-      "totalEp": 10,
-      "suspended": false,
-      "resumeDate": null
     },
     {
       "title": "Clevatess Season 2",
