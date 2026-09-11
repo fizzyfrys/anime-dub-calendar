@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-10T14:04:32.601Z",
-  "lastUpdated": "September 9, 2026",
+  "generatedAt": "2026-09-11T14:04:20.713Z",
+  "lastUpdated": "September 10, 2026",
   "showCount": 45,
   "eventCount": 359,
   "shows": [
@@ -135,7 +135,7 @@
     {
       "title": "KAIJU GIRL CARAMELISE",
       "day": "Thursday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -143,7 +143,7 @@
     {
       "title": "Marika's Love Meter Malfunction",
       "day": "Thursday",
-      "currentEp": 1,
+      "currentEp": 2,
       "totalEp": 8,
       "suspended": false,
       "resumeDate": null
@@ -151,7 +151,7 @@
     {
       "title": "Smoking Behind the Supermarket with You",
       "day": "Thursday",
-      "currentEp": 9,
+      "currentEp": 10,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -167,7 +167,7 @@
     {
       "title": "The Exiled Heavy Knight Knows How to Game the System",
       "day": "Thursday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 26,
       "suspended": false,
       "resumeDate": null
