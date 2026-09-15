@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-14T16:10:24.806Z",
-  "lastUpdated": "September 13, 2026",
+  "generatedAt": "2026-09-15T14:38:39.024Z",
+  "lastUpdated": "September 15, 2026",
   "showCount": 45,
   "eventCount": 361,
   "shows": [
     {
       "title": "LIAR GAME",
       "day": "Monday",
-      "currentEp": 21,
+      "currentEp": 22,
       "totalEp": 26,
       "suspended": false,
       "resumeDate": null
@@ -15,7 +15,7 @@
     {
       "title": "Skeleton Knight in Another World Season 2",
       "day": "Monday",
-      "currentEp": 10,
+      "currentEp": 11,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
