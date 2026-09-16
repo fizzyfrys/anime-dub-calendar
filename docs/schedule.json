@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-15T14:38:39.024Z",
+  "generatedAt": "2026-09-16T14:36:28.146Z",
   "lastUpdated": "September 15, 2026",
   "showCount": 45,
-  "eventCount": 361,
+  "eventCount": 362,
   "shows": [
     {
       "title": "LIAR GAME",
@@ -96,7 +96,7 @@
       "title": "Thunder 3",
       "day": "Wednesday",
       "currentEp": 10,
-      "totalEp": null,
+      "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
@@ -128,7 +128,7 @@
       "title": "Chainsmoker Cat",
       "day": "Thursday",
       "currentEp": 8,
-      "totalEp": null,
+      "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
@@ -240,7 +240,7 @@
       "title": "BLACK TORCH",
       "day": "Saturday",
       "currentEp": 11,
-      "totalEp": null,
+      "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
@@ -264,7 +264,7 @@
       "title": "GROW UP SHOW -Sunflower Circus-",
       "day": "Saturday",
       "currentEp": 11,
-      "totalEp": null,
+      "totalEp": 13,
       "suspended": false,
       "resumeDate": null
     },
