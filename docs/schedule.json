@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-20T13:57:21.411Z",
-  "lastUpdated": "September 19, 2026",
-  "showCount": 45,
-  "eventCount": 369,
+  "generatedAt": "2026-09-21T16:12:47.441Z",
+  "lastUpdated": "September 20, 2026",
+  "showCount": 44,
+  "eventCount": 363,
   "shows": [
     {
       "title": "LIAR GAME",
@@ -317,17 +317,9 @@
       "resumeDate": null
     },
     {
-      "title": "Goodbye, Lara",
-      "day": "Sunday",
-      "currentEp": 11,
-      "totalEp": 12,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
       "title": "Mushoku Tensei: Jobless Reincarnation Season 3",
       "day": "Sunday",
-      "currentEp": 10,
+      "currentEp": 11,
       "totalEp": 14,
       "suspended": false,
       "resumeDate": null
@@ -335,7 +327,7 @@
     {
       "title": "Sparks of Tomorrow",
       "day": "Sunday",
-      "currentEp": 11,
+      "currentEp": 12,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
@@ -343,7 +335,7 @@
     {
       "title": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You Season 3",
       "day": "Sunday",
-      "currentEp": 9,
+      "currentEp": 10,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -351,7 +343,7 @@
     {
       "title": "Though I Am an Inept Villainess",
       "day": "Sunday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 11,
       "suspended": false,
       "resumeDate": null
@@ -359,7 +351,7 @@
     {
       "title": "You and I Are Polar Opposites Season 2",
       "day": "Sunday",
-      "currentEp": 9,
+      "currentEp": 10,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
