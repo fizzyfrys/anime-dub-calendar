@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-23T14:42:49.285Z",
-  "lastUpdated": "September 21, 2026",
-  "showCount": 43,
-  "eventCount": 357,
+  "generatedAt": "2026-09-24T14:38:29.633Z",
+  "lastUpdated": "September 23, 2026",
+  "showCount": 42,
+  "eventCount": 351,
   "shows": [
     {
       "title": "LIAR GAME",
@@ -23,23 +23,15 @@
     {
       "title": "Clevatess Season 2",
       "day": "Wednesday",
-      "currentEp": 11,
+      "currentEp": 12,
       "totalEp": 13,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "From Old Country Bumpkin to Master Swordsman Season 2",
-      "day": "Wednesday",
-      "currentEp": 11,
-      "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
     {
       "title": "Hana-Kimi Season 2",
       "day": "Wednesday",
-      "currentEp": 11,
+      "currentEp": 12,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
@@ -47,7 +39,7 @@
     {
       "title": "Hell Mode: The Hardcore Gamer Dominates in Another World with Garbage Balancing Season 2",
       "day": "Wednesday",
-      "currentEp": 7,
+      "currentEp": 8,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -63,7 +55,7 @@
     {
       "title": "Re:ZERO -Starting Life in Another World- Season 4",
       "day": "Wednesday",
-      "currentEp": 15,
+      "currentEp": 16,
       "totalEp": 19,
       "suspended": false,
       "resumeDate": null
@@ -71,7 +63,7 @@
     {
       "title": "Saga of Tanya the Evil Season 2",
       "day": "Wednesday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -79,7 +71,7 @@
     {
       "title": "The Forsaken Saintess and Her Foodie Roadtrip in Another World",
       "day": "Wednesday",
-      "currentEp": 5,
+      "currentEp": 6,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -87,7 +79,7 @@
     {
       "title": "The World Is Dancing",
       "day": "Wednesday",
-      "currentEp": 4,
+      "currentEp": 5,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
@@ -103,7 +95,7 @@
     {
       "title": "Tomb Raider King",
       "day": "Wednesday",
-      "currentEp": 9,
+      "currentEp": 10,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -111,7 +103,7 @@
     {
       "title": "Trapped in a Dating Sim: The World of Otome Games is Tough for Mobs Season 2",
       "day": "Wednesday",
-      "currentEp": 9,
+      "currentEp": 10,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
