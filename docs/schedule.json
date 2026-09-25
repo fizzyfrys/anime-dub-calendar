@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-24T14:38:29.633Z",
-  "lastUpdated": "September 23, 2026",
-  "showCount": 42,
-  "eventCount": 351,
+  "generatedAt": "2026-09-25T15:00:04.992Z",
+  "lastUpdated": "September 24, 2026",
+  "showCount": 41,
+  "eventCount": 345,
   "shows": [
     {
       "title": "LIAR GAME",
@@ -111,7 +111,7 @@
     {
       "title": "Bungo Stray Dogs WAN! 2",
       "day": "Thursday",
-      "currentEp": 9,
+      "currentEp": 11,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -127,7 +127,7 @@
     {
       "title": "KAIJU GIRL CARAMELISE",
       "day": "Thursday",
-      "currentEp": 10,
+      "currentEp": 11,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -135,23 +135,15 @@
     {
       "title": "Marika's Love Meter Malfunction",
       "day": "Thursday",
-      "currentEp": 3,
+      "currentEp": 4,
       "totalEp": 8,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "Smoking Behind the Supermarket with You",
-      "day": "Thursday",
-      "currentEp": 11,
-      "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
     {
       "title": "The Angel Next Door Spoils Me Rotten2",
       "day": "Thursday",
-      "currentEp": 7,
+      "currentEp": 9,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
