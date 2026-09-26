@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-25T15:00:04.992Z",
-  "lastUpdated": "September 24, 2026",
-  "showCount": 41,
-  "eventCount": 345,
+  "generatedAt": "2026-09-26T14:07:42.370Z",
+  "lastUpdated": "September 25, 2026",
+  "showCount": 40,
+  "eventCount": 348,
   "shows": [
     {
       "title": "LIAR GAME",
@@ -157,25 +157,17 @@
       "resumeDate": null
     },
     {
-      "title": "Draw This, Then Die!",
+      "title": "Jojo's Bizarre Adventure Part 7: STEEL BALL RUN",
       "day": "Friday",
-      "currentEp": 11,
-      "totalEp": 12,
+      "currentEp": 2,
+      "totalEp": null,
       "suspended": false,
       "resumeDate": null
     },
     {
-      "title": "Jojo's Bizarre Adventure Part 7: STEEL BALL RUN",
-      "day": "Friday",
-      "currentEp": 1,
-      "totalEp": null,
-      "suspended": false,
-      "resumeDate": "October 20, 2026"
-    },
-    {
       "title": "Link Click Season 3",
       "day": "Friday",
-      "currentEp": 4,
+      "currentEp": 5,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -183,7 +175,7 @@
     {
       "title": "That Time I Got Reincarnated as a Slime Season 4",
       "day": "Friday",
-      "currentEp": 21,
+      "currentEp": 22,
       "totalEp": 24,
       "suspended": false,
       "resumeDate": null
@@ -191,7 +183,7 @@
     {
       "title": "The Drops of God",
       "day": "Friday",
-      "currentEp": 22,
+      "currentEp": 23,
       "totalEp": 24,
       "suspended": false,
       "resumeDate": null
@@ -199,7 +191,7 @@
     {
       "title": "The Elusive Samurai Season 2",
       "day": "Friday",
-      "currentEp": 5,
+      "currentEp": 6,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
