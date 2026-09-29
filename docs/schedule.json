@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-28T17:57:49.079Z",
-  "lastUpdated": "September 27, 2026",
+  "generatedAt": "2026-09-29T16:20:32.522Z",
+  "lastUpdated": "September 29, 2026",
   "showCount": 35,
   "eventCount": 319,
   "shows": [
     {
       "title": "LIAR GAME",
       "day": "Monday",
-      "currentEp": 22,
+      "currentEp": 24,
       "totalEp": 26,
       "suspended": false,
       "resumeDate": null
