@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-01T16:53:34.175Z",
-  "lastUpdated": "September 30, 2026",
+  "generatedAt": "2026-10-02T16:06:40.569Z",
+  "lastUpdated": "October 1, 2026",
   "showCount": 32,
-  "eventCount": 299,
+  "eventCount": 309,
   "shows": [
     {
       "title": "LIAR GAME",
@@ -85,33 +85,25 @@
       "resumeDate": null
     },
     {
-      "title": "Bungo Stray Dogs WAN! 2",
-      "day": "Thursday",
-      "currentEp": 11,
-      "totalEp": 12,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
       "title": "Chainsmoker Cat",
       "day": "Thursday",
-      "currentEp": 9,
+      "currentEp": 10,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
     {
-      "title": "KAIJU GIRL CARAMELISE",
+      "title": "FX Fighter Kurumi-chan",
       "day": "Thursday",
-      "currentEp": 11,
-      "totalEp": 12,
+      "currentEp": 1,
+      "totalEp": null,
       "suspended": false,
       "resumeDate": null
     },
     {
       "title": "Marika's Love Meter Malfunction",
       "day": "Thursday",
-      "currentEp": 4,
+      "currentEp": 5,
       "totalEp": 8,
       "suspended": false,
       "resumeDate": null
@@ -119,7 +111,7 @@
     {
       "title": "The Angel Next Door Spoils Me Rotten2",
       "day": "Thursday",
-      "currentEp": 9,
+      "currentEp": 10,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -127,8 +119,16 @@
     {
       "title": "The Exiled Heavy Knight Knows How to Game the System",
       "day": "Thursday",
-      "currentEp": 10,
+      "currentEp": 12,
       "totalEp": 26,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "The Ramparts of Ice Season 2",
+      "day": "Thursday",
+      "currentEp": 1,
+      "totalEp": null,
       "suspended": false,
       "resumeDate": null
     },
