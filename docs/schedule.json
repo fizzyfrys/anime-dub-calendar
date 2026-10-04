@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-03T14:34:25.966Z",
-  "lastUpdated": "October 1, 2026",
-  "showCount": 32,
-  "eventCount": 309,
+  "generatedAt": "2026-10-04T15:09:27.431Z",
+  "lastUpdated": "October 3, 2026",
+  "showCount": 35,
+  "eventCount": 359,
   "shows": [
     {
       "title": "LIAR GAME",
@@ -135,7 +135,7 @@
     {
       "title": "Jojo's Bizarre Adventure Part 7: STEEL BALL RUN",
       "day": "Friday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -143,21 +143,13 @@
     {
       "title": "Link Click Season 3",
       "day": "Friday",
-      "currentEp": 5,
+      "currentEp": 6,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
     {
       "title": "That Time I Got Reincarnated as a Slime Season 4",
-      "day": "Friday",
-      "currentEp": 22,
-      "totalEp": 24,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "The Drops of God",
       "day": "Friday",
       "currentEp": 23,
       "totalEp": 24,
@@ -167,15 +159,31 @@
     {
       "title": "The Elusive Samurai Season 2",
       "day": "Friday",
-      "currentEp": 6,
+      "currentEp": 7,
       "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Tokyo Revengers: War of the Three Titan Arc",
+      "day": "Friday",
+      "currentEp": 1,
+      "totalEp": 13,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "#I'm Looking For a Zombie",
+      "day": "Saturday",
+      "currentEp": 1,
+      "totalEp": null,
       "suspended": false,
       "resumeDate": null
     },
     {
       "title": "Ascendance of a Bookworm: Adopted Daughter of an Archduke",
       "day": "Saturday",
-      "currentEp": 21,
+      "currentEp": 22,
       "totalEp": 24,
       "suspended": false,
       "resumeDate": null
@@ -183,7 +191,7 @@
     {
       "title": "Beyblade X",
       "day": "Saturday",
-      "currentEp": 120,
+      "currentEp": 126,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -191,23 +199,39 @@
     {
       "title": "Bleach: Thousand-Year Blood War - The Calamity",
       "day": "Saturday",
-      "currentEp": 5,
+      "currentEp": 6,
       "totalEp": 10,
       "suspended": false,
       "resumeDate": null
     },
     {
-      "title": "Daemons of the Shadow Realm",
+      "title": "Magical Explorer",
       "day": "Saturday",
-      "currentEp": 23,
-      "totalEp": 24,
+      "currentEp": 2,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Ranma 1/2 Season 3",
+      "day": "Saturday",
+      "currentEp": 1,
+      "totalEp": null,
       "suspended": false,
       "resumeDate": null
     },
     {
       "title": "Rilakkuma",
       "day": "Saturday",
-      "currentEp": 25,
+      "currentEp": 26,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "The Seven Knights of the Marronnier Kingdom",
+      "day": "Saturday",
+      "currentEp": 1,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
