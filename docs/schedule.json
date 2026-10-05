@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-04T15:09:27.431Z",
-  "lastUpdated": "October 3, 2026",
-  "showCount": 35,
-  "eventCount": 359,
+  "generatedAt": "2026-10-05T19:04:07.582Z",
+  "lastUpdated": "October 4, 2026",
+  "showCount": 36,
+  "eventCount": 379,
   "shows": [
     {
       "title": "LIAR GAME",
       "day": "Monday",
-      "currentEp": 24,
+      "currentEp": 25,
       "totalEp": 26,
       "suspended": false,
       "resumeDate": null
@@ -245,15 +245,7 @@
       "resumeDate": null
     },
     {
-      "title": "Mushoku Tensei: Jobless Reincarnation Season 3",
-      "day": "Sunday",
-      "currentEp": 12,
-      "totalEp": 14,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "Overgeared",
+      "title": "Blue Box Season 2",
       "day": "Sunday",
       "currentEp": 1,
       "totalEp": null,
@@ -261,18 +253,34 @@
       "resumeDate": null
     },
     {
-      "title": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You Season 3",
+      "title": "Mushoku Tensei: Jobless Reincarnation Season 3",
       "day": "Sunday",
-      "currentEp": 11,
-      "totalEp": 12,
+      "currentEp": 13,
+      "totalEp": 14,
       "suspended": false,
       "resumeDate": null
     },
     {
-      "title": "Though I Am an Inept Villainess",
+      "title": "Overgeared",
       "day": "Sunday",
-      "currentEp": 10,
-      "totalEp": 11,
+      "currentEp": 2,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
+      "day": "Sunday",
+      "currentEp": 1,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "TANK CHAIR",
+      "day": "Sunday",
+      "currentEp": 1,
+      "totalEp": null,
       "suspended": false,
       "resumeDate": null
     },
