@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-06T16:30:36.766Z",
-  "lastUpdated": "October 5, 2026",
-  "showCount": 36,
-  "eventCount": 379,
+  "generatedAt": "2026-10-07T17:16:37.789Z",
+  "lastUpdated": "October 6, 2026",
+  "showCount": 37,
+  "eventCount": 391,
   "shows": [
     {
       "title": "LIAR GAME",
@@ -19,6 +19,14 @@
       "totalEp": null,
       "suspended": false,
       "resumeDate": "October 20, 2026"
+    },
+    {
+      "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
+      "day": "Tuesday",
+      "currentEp": 1,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
     },
     {
       "title": "Hell Mode: The Hardcore Gamer Dominates in Another World with Garbage Balancing Season 2",
