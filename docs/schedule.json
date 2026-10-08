@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-07T17:16:37.789Z",
-  "lastUpdated": "October 6, 2026",
+  "generatedAt": "2026-10-08T17:12:20.496Z",
+  "lastUpdated": "October 7, 2026",
   "showCount": 37,
-  "eventCount": 391,
+  "eventCount": 395,
   "shows": [
     {
       "title": "LIAR GAME",
@@ -29,9 +29,17 @@
       "resumeDate": null
     },
     {
+      "title": "A Returner's Magic Should Be Special Season 2",
+      "day": "Wednesday",
+      "currentEp": 1,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
       "title": "Hell Mode: The Hardcore Gamer Dominates in Another World with Garbage Balancing Season 2",
       "day": "Wednesday",
-      "currentEp": 9,
+      "currentEp": 10,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -39,7 +47,7 @@
     {
       "title": "KAMUI: He's Behind You!",
       "day": "Wednesday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -47,7 +55,7 @@
     {
       "title": "Re:ZERO -Starting Life in Another World- Season 4",
       "day": "Wednesday",
-      "currentEp": 17,
+      "currentEp": 18,
       "totalEp": 19,
       "suspended": false,
       "resumeDate": null
@@ -55,7 +63,7 @@
     {
       "title": "Saga of Tanya the Evil Season 2",
       "day": "Wednesday",
-      "currentEp": 4,
+      "currentEp": 5,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -63,7 +71,7 @@
     {
       "title": "The Forsaken Saintess and Her Foodie Roadtrip in Another World",
       "day": "Wednesday",
-      "currentEp": 7,
+      "currentEp": 8,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -71,21 +79,13 @@
     {
       "title": "The World Is Dancing",
       "day": "Wednesday",
-      "currentEp": 6,
+      "currentEp": 7,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
     },
     {
       "title": "Tomb Raider King",
-      "day": "Wednesday",
-      "currentEp": 11,
-      "totalEp": 12,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "Trapped in a Dating Sim: The World of Otome Games is Tough for Mobs Season 2",
       "day": "Wednesday",
       "currentEp": 11,
       "totalEp": 12,
