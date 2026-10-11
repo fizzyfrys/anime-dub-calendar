@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-10T15:43:37.215Z",
-  "lastUpdated": "October 9, 2026",
+  "generatedAt": "2026-10-11T16:09:08.292Z",
+  "lastUpdated": "October 10, 2026",
   "showCount": 36,
-  "eventCount": 386,
+  "eventCount": 389,
   "shows": [
     {
       "title": "LIAR GAME",
@@ -175,7 +175,7 @@
     {
       "title": "#I'm Looking For a Zombie",
       "day": "Saturday",
-      "currentEp": 1,
+      "currentEp": 2,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -183,7 +183,7 @@
     {
       "title": "Ascendance of a Bookworm: Adopted Daughter of an Archduke",
       "day": "Saturday",
-      "currentEp": 22,
+      "currentEp": 23,
       "totalEp": 24,
       "suspended": false,
       "resumeDate": null
@@ -191,7 +191,7 @@
     {
       "title": "Beyblade X",
       "day": "Saturday",
-      "currentEp": 126,
+      "currentEp": 132,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -199,7 +199,7 @@
     {
       "title": "Bleach: Thousand-Year Blood War - The Calamity",
       "day": "Saturday",
-      "currentEp": 6,
+      "currentEp": 7,
       "totalEp": 10,
       "suspended": false,
       "resumeDate": null
@@ -207,7 +207,7 @@
     {
       "title": "Magical Explorer",
       "day": "Saturday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -215,7 +215,7 @@
     {
       "title": "Ranma 1/2 Season 3",
       "day": "Saturday",
-      "currentEp": 1,
+      "currentEp": 2,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -223,7 +223,7 @@
     {
       "title": "Rilakkuma",
       "day": "Saturday",
-      "currentEp": 26,
+      "currentEp": 27,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -231,7 +231,7 @@
     {
       "title": "The Seven Knights of the Marronnier Kingdom",
       "day": "Saturday",
-      "currentEp": 1,
+      "currentEp": 2,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
