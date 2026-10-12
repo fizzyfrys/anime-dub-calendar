@@ -1,17 +1,9 @@
 {
-  "generatedAt": "2026-10-11T16:09:08.292Z",
-  "lastUpdated": "October 10, 2026",
-  "showCount": 36,
-  "eventCount": 389,
+  "generatedAt": "2026-10-12T19:37:56.169Z",
+  "lastUpdated": "October 12, 2026",
+  "showCount": 35,
+  "eventCount": 383,
   "shows": [
-    {
-      "title": "LIAR GAME",
-      "day": "Monday",
-      "currentEp": 25,
-      "totalEp": 26,
-      "suspended": false,
-      "resumeDate": null
-    },
     {
       "title": "One Piece",
       "day": "Tuesday",
@@ -245,7 +237,7 @@
       "resumeDate": null
     },
     {
-      "title": "Blue Box Season 2",
+      "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
       "day": "Sunday",
       "currentEp": 1,
       "totalEp": null,
@@ -253,10 +245,10 @@
       "resumeDate": null
     },
     {
-      "title": "Mushoku Tensei: Jobless Reincarnation Season 3",
+      "title": "Blue Box Season 2",
       "day": "Sunday",
-      "currentEp": 13,
-      "totalEp": 14,
+      "currentEp": 2,
+      "totalEp": null,
       "suspended": false,
       "resumeDate": null
     },
@@ -271,7 +263,7 @@
     {
       "title": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
       "day": "Sunday",
-      "currentEp": 1,
+      "currentEp": 2,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -279,7 +271,7 @@
     {
       "title": "TANK CHAIR",
       "day": "Sunday",
-      "currentEp": 1,
+      "currentEp": 2,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -287,7 +279,7 @@
     {
       "title": "You and I Are Polar Opposites Season 2",
       "day": "Sunday",
-      "currentEp": 11,
+      "currentEp": 12,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
