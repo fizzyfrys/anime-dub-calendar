@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-14T14:53:38.724Z",
-  "lastUpdated": "October 12, 2026",
+  "generatedAt": "2026-10-15T14:40:49.919Z",
+  "lastUpdated": "October 14, 2026",
   "showCount": 35,
-  "eventCount": 383,
+  "eventCount": 387,
   "shows": [
     {
       "title": "One Piece",
@@ -15,7 +15,7 @@
     {
       "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
       "day": "Tuesday",
-      "currentEp": 1,
+      "currentEp": 2,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -23,7 +23,7 @@
     {
       "title": "A Returner's Magic Should Be Special Season 2",
       "day": "Wednesday",
-      "currentEp": 1,
+      "currentEp": 2,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -31,7 +31,7 @@
     {
       "title": "Hell Mode: The Hardcore Gamer Dominates in Another World with Garbage Balancing Season 2",
       "day": "Wednesday",
-      "currentEp": 10,
+      "currentEp": 11,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -39,7 +39,7 @@
     {
       "title": "KAMUI: He's Behind You!",
       "day": "Wednesday",
-      "currentEp": 3,
+      "currentEp": 4,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -55,7 +55,7 @@
     {
       "title": "Saga of Tanya the Evil Season 2",
       "day": "Wednesday",
-      "currentEp": 5,
+      "currentEp": 6,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -63,24 +63,24 @@
     {
       "title": "The Forsaken Saintess and Her Foodie Roadtrip in Another World",
       "day": "Wednesday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
+      "day": "Wednesday",
+      "currentEp": 1,
+      "totalEp": null,
       "suspended": false,
       "resumeDate": null
     },
     {
       "title": "The World Is Dancing",
       "day": "Wednesday",
-      "currentEp": 7,
+      "currentEp": 8,
       "totalEp": 13,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "Tomb Raider King",
-      "day": "Wednesday",
-      "currentEp": 11,
-      "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
