@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-15T14:40:49.919Z",
-  "lastUpdated": "October 14, 2026",
-  "showCount": 35,
-  "eventCount": 387,
+  "generatedAt": "2026-10-16T14:33:18.034Z",
+  "lastUpdated": "October 15, 2026",
+  "showCount": 33,
+  "eventCount": 371,
   "shows": [
     {
       "title": "One Piece",
@@ -85,17 +85,9 @@
       "resumeDate": null
     },
     {
-      "title": "Chainsmoker Cat",
-      "day": "Thursday",
-      "currentEp": 11,
-      "totalEp": 12,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
       "title": "FX Fighter Kurumi-chan",
       "day": "Thursday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -103,23 +95,15 @@
     {
       "title": "Marika's Love Meter Malfunction",
       "day": "Thursday",
-      "currentEp": 5,
+      "currentEp": 6,
       "totalEp": 8,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "The Angel Next Door Spoils Me Rotten2",
-      "day": "Thursday",
-      "currentEp": 11,
-      "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
     {
       "title": "The Exiled Heavy Knight Knows How to Game the System",
       "day": "Thursday",
-      "currentEp": 13,
+      "currentEp": 14,
       "totalEp": 26,
       "suspended": false,
       "resumeDate": null
@@ -127,7 +111,7 @@
     {
       "title": "The Ramparts of Ice Season 2",
       "day": "Thursday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
