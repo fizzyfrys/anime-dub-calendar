@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-16T14:33:18.034Z",
-  "lastUpdated": "October 15, 2026",
-  "showCount": 33,
-  "eventCount": 371,
+  "generatedAt": "2026-10-17T13:27:58.767Z",
+  "lastUpdated": "October 16, 2026",
+  "showCount": 34,
+  "eventCount": 395,
   "shows": [
     {
       "title": "One Piece",
@@ -32,7 +32,7 @@
       "title": "Hell Mode: The Hardcore Gamer Dominates in Another World with Garbage Balancing Season 2",
       "day": "Wednesday",
       "currentEp": 11,
-      "totalEp": 12,
+      "totalEp": 13,
       "suspended": false,
       "resumeDate": null
     },
@@ -72,7 +72,7 @@
       "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
       "day": "Wednesday",
       "currentEp": 1,
-      "totalEp": null,
+      "totalEp": 13,
       "suspended": false,
       "resumeDate": null
     },
@@ -88,7 +88,7 @@
       "title": "FX Fighter Kurumi-chan",
       "day": "Thursday",
       "currentEp": 3,
-      "totalEp": null,
+      "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
@@ -119,7 +119,7 @@
     {
       "title": "Jojo's Bizarre Adventure Part 7: STEEL BALL RUN",
       "day": "Friday",
-      "currentEp": 4,
+      "currentEp": 5,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -127,7 +127,15 @@
     {
       "title": "Link Click Season 3",
       "day": "Friday",
-      "currentEp": 7,
+      "currentEp": 8,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "The Apothecary Diaries Season 3",
+      "day": "Friday",
+      "currentEp": 1,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -135,7 +143,7 @@
     {
       "title": "The Elusive Samurai Season 2",
       "day": "Friday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -143,7 +151,7 @@
     {
       "title": "Tokyo Revengers: War of the Three Titan Arc",
       "day": "Friday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
@@ -152,7 +160,7 @@
       "title": "#I'm Looking For a Zombie",
       "day": "Saturday",
       "currentEp": 2,
-      "totalEp": null,
+      "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
@@ -184,7 +192,7 @@
       "title": "Magical Explorer",
       "day": "Saturday",
       "currentEp": 3,
-      "totalEp": null,
+      "totalEp": 13,
       "suspended": false,
       "resumeDate": null
     },
@@ -208,7 +216,7 @@
       "title": "The Seven Knights of the Marronnier Kingdom",
       "day": "Saturday",
       "currentEp": 2,
-      "totalEp": null,
+      "totalEp": 20,
       "suspended": false,
       "resumeDate": null
     },
@@ -232,7 +240,7 @@
       "title": "Blue Box Season 2",
       "day": "Sunday",
       "currentEp": 2,
-      "totalEp": null,
+      "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
@@ -240,7 +248,7 @@
       "title": "Overgeared",
       "day": "Sunday",
       "currentEp": 2,
-      "totalEp": null,
+      "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
@@ -248,7 +256,7 @@
       "title": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
       "day": "Sunday",
       "currentEp": 2,
-      "totalEp": null,
+      "totalEp": 13,
       "suspended": false,
       "resumeDate": null
     },
