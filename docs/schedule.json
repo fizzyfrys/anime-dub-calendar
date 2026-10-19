@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-18T13:46:15.730Z",
-  "lastUpdated": "October 16, 2026",
+  "generatedAt": "2026-10-19T16:48:14.762Z",
+  "lastUpdated": "October 18, 2026",
   "showCount": 34,
-  "eventCount": 395,
+  "eventCount": 402,
   "shows": [
     {
       "title": "One Piece",
@@ -159,16 +159,8 @@
     {
       "title": "#I'm Looking For a Zombie",
       "day": "Saturday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": 12,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "Ascendance of a Bookworm: Adopted Daughter of an Archduke",
-      "day": "Saturday",
-      "currentEp": 23,
-      "totalEp": 24,
       "suspended": false,
       "resumeDate": null
     },
@@ -181,9 +173,17 @@
       "resumeDate": null
     },
     {
+      "title": "Black Clover Season 2",
+      "day": "Saturday",
+      "currentEp": 1,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
       "title": "Bleach: Thousand-Year Blood War - The Calamity",
       "day": "Saturday",
-      "currentEp": 7,
+      "currentEp": 8,
       "totalEp": 10,
       "suspended": false,
       "resumeDate": null
@@ -191,7 +191,7 @@
     {
       "title": "Magical Explorer",
       "day": "Saturday",
-      "currentEp": 3,
+      "currentEp": 4,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
@@ -199,7 +199,7 @@
     {
       "title": "Ranma 1/2 Season 3",
       "day": "Saturday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -207,7 +207,7 @@
     {
       "title": "Rilakkuma",
       "day": "Saturday",
-      "currentEp": 27,
+      "currentEp": 28,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -215,7 +215,7 @@
     {
       "title": "The Seven Knights of the Marronnier Kingdom",
       "day": "Saturday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": 20,
       "suspended": false,
       "resumeDate": null
@@ -229,7 +229,7 @@
       "resumeDate": null
     },
     {
-      "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
+      "title": "Ao Ashi Season 2",
       "day": "Sunday",
       "currentEp": 1,
       "totalEp": null,
@@ -237,31 +237,7 @@
       "resumeDate": null
     },
     {
-      "title": "Blue Box Season 2",
-      "day": "Sunday",
-      "currentEp": 2,
-      "totalEp": 12,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "Overgeared",
-      "day": "Sunday",
-      "currentEp": 2,
-      "totalEp": 12,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
-      "day": "Sunday",
-      "currentEp": 2,
-      "totalEp": 13,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "TANK CHAIR",
+      "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
       "day": "Sunday",
       "currentEp": 2,
       "totalEp": null,
@@ -269,10 +245,34 @@
       "resumeDate": null
     },
     {
-      "title": "You and I Are Polar Opposites Season 2",
+      "title": "Blue Box Season 2",
       "day": "Sunday",
-      "currentEp": 12,
+      "currentEp": 3,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Overgeared",
+      "day": "Sunday",
+      "currentEp": 4,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
+      "day": "Sunday",
+      "currentEp": 3,
       "totalEp": 13,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "TANK CHAIR",
+      "day": "Sunday",
+      "currentEp": 3,
+      "totalEp": null,
       "suspended": false,
       "resumeDate": null
     }
