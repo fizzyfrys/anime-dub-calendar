@@ -1,9 +1,17 @@
 {
-  "generatedAt": "2026-10-19T16:48:14.762Z",
+  "generatedAt": "2026-10-20T14:41:10.942Z",
   "lastUpdated": "October 18, 2026",
-  "showCount": 34,
-  "eventCount": 402,
+  "showCount": 35,
+  "eventCount": 413,
   "shows": [
+    {
+      "title": "PSYREN",
+      "day": "Monday",
+      "currentEp": 1,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
     {
       "title": "One Piece",
       "day": "Tuesday",
