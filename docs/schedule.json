@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-20T14:41:10.942Z",
-  "lastUpdated": "October 18, 2026",
-  "showCount": 35,
-  "eventCount": 413,
+  "generatedAt": "2026-10-22T14:52:35.713Z",
+  "lastUpdated": "October 21, 2026",
+  "showCount": 39,
+  "eventCount": 470,
   "shows": [
     {
       "title": "PSYREN",
@@ -15,15 +15,15 @@
     {
       "title": "One Piece",
       "day": "Tuesday",
-      "currentEp": 1155,
+      "currentEp": 1156,
       "totalEp": null,
       "suspended": false,
-      "resumeDate": "October 20, 2026"
+      "resumeDate": null
     },
     {
       "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
       "day": "Tuesday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -31,7 +31,7 @@
     {
       "title": "A Returner's Magic Should Be Special Season 2",
       "day": "Wednesday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -39,7 +39,7 @@
     {
       "title": "Hell Mode: The Hardcore Gamer Dominates in Another World with Garbage Balancing Season 2",
       "day": "Wednesday",
-      "currentEp": 11,
+      "currentEp": 12,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
@@ -53,31 +53,39 @@
       "resumeDate": null
     },
     {
-      "title": "Re:ZERO -Starting Life in Another World- Season 4",
+      "title": "Magic Knight Rayearth",
       "day": "Wednesday",
-      "currentEp": 18,
-      "totalEp": 19,
+      "currentEp": 1,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Reincarnated as a Sword Season 2",
+      "day": "Wednesday",
+      "currentEp": 1,
+      "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
     {
       "title": "Saga of Tanya the Evil Season 2",
       "day": "Wednesday",
-      "currentEp": 6,
+      "currentEp": 7,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
     {
-      "title": "The Forsaken Saintess and Her Foodie Roadtrip in Another World",
+      "title": "Sasaki and Peeps Season 2",
       "day": "Wednesday",
-      "currentEp": 9,
+      "currentEp": 1,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
     {
-      "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
+      "title": "The Detective Is Already Dead Season 2",
       "day": "Wednesday",
       "currentEp": 1,
       "totalEp": 13,
@@ -85,10 +93,34 @@
       "resumeDate": null
     },
     {
+      "title": "The Forsaken Saintess and Her Foodie Roadtrip in Another World",
+      "day": "Wednesday",
+      "currentEp": 10,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
+      "day": "Wednesday",
+      "currentEp": 2,
+      "totalEp": 13,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
       "title": "The World Is Dancing",
       "day": "Wednesday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 13,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "The World's Strongest Witch",
+      "day": "Wednesday",
+      "currentEp": 1,
+      "totalEp": null,
       "suspended": false,
       "resumeDate": null
     },
