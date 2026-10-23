@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-22T14:52:35.713Z",
-  "lastUpdated": "October 21, 2026",
-  "showCount": 39,
-  "eventCount": 470,
+  "generatedAt": "2026-10-23T14:40:36.615Z",
+  "lastUpdated": "October 22, 2026",
+  "showCount": 40,
+  "eventCount": 482,
   "shows": [
     {
       "title": "PSYREN",
@@ -127,7 +127,7 @@
     {
       "title": "FX Fighter Kurumi-chan",
       "day": "Thursday",
-      "currentEp": 3,
+      "currentEp": 4,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -143,15 +143,23 @@
     {
       "title": "The Exiled Heavy Knight Knows How to Game the System",
       "day": "Thursday",
-      "currentEp": 14,
+      "currentEp": 15,
       "totalEp": 26,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "The Iceblade Sorcerer Shall Rule the World II",
+      "day": "Thursday",
+      "currentEp": 1,
+      "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
     {
       "title": "The Ramparts of Ice Season 2",
       "day": "Thursday",
-      "currentEp": 3,
+      "currentEp": 4,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
