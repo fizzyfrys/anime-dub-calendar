@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-23T14:40:36.615Z",
-  "lastUpdated": "October 22, 2026",
-  "showCount": 40,
-  "eventCount": 482,
+  "generatedAt": "2026-10-24T13:50:22.619Z",
+  "lastUpdated": "October 23, 2026",
+  "showCount": 42,
+  "eventCount": 506,
   "shows": [
     {
       "title": "PSYREN",
@@ -165,23 +165,7 @@
       "resumeDate": null
     },
     {
-      "title": "Jojo's Bizarre Adventure Part 7: STEEL BALL RUN",
-      "day": "Friday",
-      "currentEp": 5,
-      "totalEp": null,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "Link Click Season 3",
-      "day": "Friday",
-      "currentEp": 8,
-      "totalEp": 12,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "The Apothecary Diaries Season 3",
+      "title": "Firefly Wedding",
       "day": "Friday",
       "currentEp": 1,
       "totalEp": 12,
@@ -189,7 +173,15 @@
       "resumeDate": null
     },
     {
-      "title": "The Elusive Samurai Season 2",
+      "title": "Jojo's Bizarre Adventure Part 7: STEEL BALL RUN",
+      "day": "Friday",
+      "currentEp": 6,
+      "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Link Click Season 3",
       "day": "Friday",
       "currentEp": 9,
       "totalEp": 12,
@@ -197,10 +189,34 @@
       "resumeDate": null
     },
     {
+      "title": "The Apothecary Diaries Season 3",
+      "day": "Friday",
+      "currentEp": 2,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "The Elusive Samurai Season 2",
+      "day": "Friday",
+      "currentEp": 10,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
       "title": "Tokyo Revengers: War of the Three Titan Arc",
       "day": "Friday",
-      "currentEp": 3,
+      "currentEp": 4,
       "totalEp": 13,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Tougen Anki: Nikko Kegon Falls Arc",
+      "day": "Friday",
+      "currentEp": 2,
+      "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
