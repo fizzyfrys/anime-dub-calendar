@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-25T14:06:51.531Z",
-  "lastUpdated": "October 24, 2026",
-  "showCount": 43,
-  "eventCount": 519,
+  "generatedAt": "2026-10-26T16:30:56.715Z",
+  "lastUpdated": "October 25, 2026",
+  "showCount": 44,
+  "eventCount": 531,
   "shows": [
     {
       "title": "PSYREN",
@@ -303,7 +303,7 @@
     {
       "title": "Ao Ashi Season 2",
       "day": "Sunday",
-      "currentEp": 1,
+      "currentEp": 2,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -311,7 +311,7 @@
     {
       "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
       "day": "Sunday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -319,15 +319,23 @@
     {
       "title": "Blue Box Season 2",
       "day": "Sunday",
-      "currentEp": 3,
+      "currentEp": 4,
       "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "Full Clearing Another World under a Goddess with Zero Believers",
+      "day": "Sunday",
+      "currentEp": 1,
+      "totalEp": null,
       "suspended": false,
       "resumeDate": null
     },
     {
       "title": "Overgeared",
       "day": "Sunday",
-      "currentEp": 4,
+      "currentEp": 5,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -335,7 +343,7 @@
     {
       "title": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
       "day": "Sunday",
-      "currentEp": 3,
+      "currentEp": 4,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
@@ -343,7 +351,7 @@
     {
       "title": "TANK CHAIR",
       "day": "Sunday",
-      "currentEp": 3,
+      "currentEp": 4,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
