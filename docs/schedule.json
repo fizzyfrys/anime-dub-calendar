@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T16:32:39.607Z",
-  "lastUpdated": "October 29, 2026",
+  "generatedAt": "2026-10-31T15:36:44.669Z",
+  "lastUpdated": "October 30, 2026",
   "showCount": 42,
   "eventCount": 513,
   "shows": [
@@ -151,7 +151,7 @@
     {
       "title": "Firefly Wedding",
       "day": "Friday",
-      "currentEp": 1,
+      "currentEp": 2,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -159,7 +159,7 @@
     {
       "title": "Jojo's Bizarre Adventure Part 7: STEEL BALL RUN",
       "day": "Friday",
-      "currentEp": 6,
+      "currentEp": 7,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -167,7 +167,7 @@
     {
       "title": "Link Click Season 3",
       "day": "Friday",
-      "currentEp": 9,
+      "currentEp": 10,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -175,7 +175,7 @@
     {
       "title": "The Apothecary Diaries Season 3",
       "day": "Friday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -183,7 +183,7 @@
     {
       "title": "The Elusive Samurai Season 2",
       "day": "Friday",
-      "currentEp": 10,
+      "currentEp": 11,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -191,7 +191,7 @@
     {
       "title": "Tokyo Revengers: War of the Three Titan Arc",
       "day": "Friday",
-      "currentEp": 4,
+      "currentEp": 5,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
@@ -199,7 +199,7 @@
     {
       "title": "Tougen Anki: Nikko Kegon Falls Arc",
       "day": "Friday",
-      "currentEp": 2,
+      "currentEp": 4,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
