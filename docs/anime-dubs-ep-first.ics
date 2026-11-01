@@ -4,7 +4,7 @@ PRODID:-//anime-dub-cal//EN
 X-WR-CALNAME:Anime Dubs (Ep First)
 X-WR-TIMEZONE:America/Los_Angeles
 X-WR-CALDESC:Auto-updated weekly anime dub release calendar from MyAnimeLis
- t (Source updated: October 30, 2026)
+ t (Source updated: October 31, 2026)
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VTIMEZONE
@@ -27,7 +27,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:mal-dub-rilakkuma-ep-20@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260822
 DTEND;VALUE=DATE:20260823
 SUMMARY:Ep 20 · Rilakkuma
@@ -36,7 +36,7 @@ URL:https://myanimelist.net/anime/60153/Rilakkuma
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-beyblade-x-ep-117@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260822
 DTEND;VALUE=DATE:20260823
 SUMMARY:Ep 117 · Beyblade X
@@ -46,7 +46,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-forsaken-saintess-and-her-foodie-roadtrip-in-another-world-
  ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260826
 DTEND;VALUE=DATE:20260827
 SUMMARY:Ep 1 · The Forsaken Saintess and Her Foodie Roadtrip in Another Wo
@@ -59,7 +59,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-6@anime
  -dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260827
 DTEND;VALUE=DATE:20260828
 SUMMARY:Ep 6 · The Exiled Heavy Knight Knows How to Game the System
@@ -70,7 +70,7 @@ URL:https://myanimelist.net/anime/59741/Tsuihou_sareta_Tensei_Juukishi_wa_G
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-elusive-samurai-season-2-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260828
 DTEND;VALUE=DATE:20260829
 SUMMARY:Ep 1 · The Elusive Samurai Season 2
@@ -80,7 +80,7 @@ URL:https://myanimelist.net/anime/60059/Nige_Jouzu_no_Wakagimi_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-rilakkuma-ep-21@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260829
 DTEND;VALUE=DATE:20260830
 SUMMARY:Ep 21 · Rilakkuma
@@ -89,7 +89,7 @@ URL:https://myanimelist.net/anime/60153/Rilakkuma
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-beyblade-x-ep-118@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260829
 DTEND;VALUE=DATE:20260830
 SUMMARY:Ep 118 · Beyblade X
@@ -98,7 +98,7 @@ URL:https://myanimelist.net/anime/56566/Beyblade_X
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-is-dancing-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260902
 DTEND;VALUE=DATE:20260903
 SUMMARY:Ep 1 · The World Is Dancing
@@ -108,7 +108,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-forsaken-saintess-and-her-foodie-roadtrip-in-another-world-
  ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260902
 DTEND;VALUE=DATE:20260903
 SUMMARY:Ep 2 · The Forsaken Saintess and Her Foodie Roadtrip in Another Wo
@@ -121,7 +121,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-7@anime
  -dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260903
 DTEND;VALUE=DATE:20260904
 SUMMARY:Ep 7 · The Exiled Heavy Knight Knows How to Game the System
@@ -132,7 +132,7 @@ URL:https://myanimelist.net/anime/59741/Tsuihou_sareta_Tensei_Juukishi_wa_G
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-link-click-season-3-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260904
 DTEND;VALUE=DATE:20260905
 SUMMARY:Ep 1 · Link Click Season 3
@@ -141,7 +141,7 @@ URL:https://myanimelist.net/anime/61607/Shiguang_Dailiren_III
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-elusive-samurai-season-2-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260904
 DTEND;VALUE=DATE:20260905
 SUMMARY:Ep 2 · The Elusive Samurai Season 2
@@ -151,7 +151,7 @@ URL:https://myanimelist.net/anime/60059/Nige_Jouzu_no_Wakagimi_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-bleach-thousand-year-blood-war-the-calamity-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260906
 SUMMARY:Ep 1 · Bleach: Thousand-Year Blood War - The Calamity
@@ -162,7 +162,7 @@ URL:https://myanimelist.net/anime/60636/Bleach__Sennen_Kessen-hen_-_Kashin-
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-rilakkuma-ep-22@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260906
 SUMMARY:Ep 22 · Rilakkuma
@@ -171,7 +171,7 @@ URL:https://myanimelist.net/anime/60153/Rilakkuma
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-is-dancing-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260909
 DTEND;VALUE=DATE:20260910
 SUMMARY:Ep 2 · The World Is Dancing
@@ -181,7 +181,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-forsaken-saintess-and-her-foodie-roadtrip-in-another-world-
  ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260909
 DTEND;VALUE=DATE:20260910
 SUMMARY:Ep 3 · The Forsaken Saintess and Her Foodie Roadtrip in Another Wo
@@ -194,7 +194,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-8@anime
  -dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260910
 DTEND;VALUE=DATE:20260911
 SUMMARY:Ep 8 · The Exiled Heavy Knight Knows How to Game the System
@@ -205,7 +205,7 @@ URL:https://myanimelist.net/anime/59741/Tsuihou_sareta_Tensei_Juukishi_wa_G
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-link-click-season-3-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260911
 DTEND;VALUE=DATE:20260912
 SUMMARY:Ep 2 · Link Click Season 3
@@ -214,7 +214,7 @@ URL:https://myanimelist.net/anime/61607/Shiguang_Dailiren_III
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-elusive-samurai-season-2-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260911
 DTEND;VALUE=DATE:20260912
 SUMMARY:Ep 3 · The Elusive Samurai Season 2
@@ -224,7 +224,7 @@ URL:https://myanimelist.net/anime/60059/Nige_Jouzu_no_Wakagimi_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-bleach-thousand-year-blood-war-the-calamity-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260912
 DTEND;VALUE=DATE:20260913
 SUMMARY:Ep 2 · Bleach: Thousand-Year Blood War - The Calamity
@@ -235,7 +235,7 @@ URL:https://myanimelist.net/anime/60636/Bleach__Sennen_Kessen-hen_-_Kashin-
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-rilakkuma-ep-23@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260912
 DTEND;VALUE=DATE:20260913
 SUMMARY:Ep 23 · Rilakkuma
@@ -244,7 +244,7 @@ URL:https://myanimelist.net/anime/60153/Rilakkuma
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-saga-of-tanya-the-evil-season-2-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260916
 DTEND;VALUE=DATE:20260917
 SUMMARY:Ep 1 · Saga of Tanya the Evil Season 2
@@ -253,7 +253,7 @@ URL:https://myanimelist.net/anime/49233/Youjo_Senki_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-is-dancing-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260916
 DTEND;VALUE=DATE:20260917
 SUMMARY:Ep 3 · The World Is Dancing
@@ -263,7 +263,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-forsaken-saintess-and-her-foodie-roadtrip-in-another-world-
  ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260916
 DTEND;VALUE=DATE:20260917
 SUMMARY:Ep 4 · The Forsaken Saintess and Her Foodie Roadtrip in Another Wo
@@ -275,7 +275,7 @@ URL:https://myanimelist.net/anime/63752/Suterare_Seijo_no_Isekai_Gohan_Tabi
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-link-click-season-3-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:Ep 3 · Link Click Season 3
@@ -284,7 +284,7 @@ URL:https://myanimelist.net/anime/61607/Shiguang_Dailiren_III
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-elusive-samurai-season-2-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:Ep 4 · The Elusive Samurai Season 2
@@ -294,7 +294,7 @@ URL:https://myanimelist.net/anime/60059/Nige_Jouzu_no_Wakagimi_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-bleach-thousand-year-blood-war-the-calamity-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260919
 DTEND;VALUE=DATE:20260920
 SUMMARY:Ep 3 · Bleach: Thousand-Year Blood War - The Calamity
@@ -305,7 +305,7 @@ URL:https://myanimelist.net/anime/60636/Bleach__Sennen_Kessen-hen_-_Kashin-
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-saga-of-tanya-the-evil-season-2-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20260924
 SUMMARY:Ep 2 · Saga of Tanya the Evil Season 2
@@ -314,7 +314,7 @@ URL:https://myanimelist.net/anime/49233/Youjo_Senki_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-is-dancing-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20260924
 SUMMARY:Ep 4 · The World Is Dancing
@@ -324,7 +324,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-forsaken-saintess-and-her-foodie-roadtrip-in-another-world-
  ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20260924
 SUMMARY:Ep 5 · The Forsaken Saintess and Her Foodie Roadtrip in Another Wo
@@ -337,7 +337,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-9@anime
  -dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260925
 SUMMARY:Ep 9 · The Exiled Heavy Knight Knows How to Game the System
@@ -349,7 +349,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-jojo-s-bizarre-adventure-part-7-steel-ball-run-ep-1@anime-dub-c
  al
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:Ep 1 · Jojo's Bizarre Adventure Part 7: STEEL BALL RUN
@@ -360,7 +360,7 @@ URL:https://myanimelist.net/anime/61469/Steel_Ball_Run__JoJo_no_Kimyou_na_B
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-link-click-season-3-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:Ep 4 · Link Click Season 3
@@ -369,7 +369,7 @@ URL:https://myanimelist.net/anime/61607/Shiguang_Dailiren_III
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-elusive-samurai-season-2-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:Ep 5 · The Elusive Samurai Season 2
@@ -379,7 +379,7 @@ URL:https://myanimelist.net/anime/60059/Nige_Jouzu_no_Wakagimi_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-bleach-thousand-year-blood-war-the-calamity-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260926
 DTEND;VALUE=DATE:20260927
 SUMMARY:Ep 4 · Bleach: Thousand-Year Blood War - The Calamity
@@ -390,7 +390,7 @@ URL:https://myanimelist.net/anime/60636/Bleach__Sennen_Kessen-hen_-_Kashin-
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-rilakkuma-ep-24@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260926
 DTEND;VALUE=DATE:20260927
 SUMMARY:Ep 24 · Rilakkuma
@@ -399,7 +399,7 @@ URL:https://myanimelist.net/anime/60153/Rilakkuma
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-beyblade-x-ep-119@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260926
 DTEND;VALUE=DATE:20260927
 SUMMARY:Ep 119 · Beyblade X
@@ -408,7 +408,7 @@ URL:https://myanimelist.net/anime/56566/Beyblade_X
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-kamui-he-s-behind-you-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261001
 SUMMARY:Ep 1 · KAMUI: He's Behind You!
@@ -418,7 +418,7 @@ URL:https://myanimelist.net/anime/63468/Ushiro_no_Shoumen_Kamui-san
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-saga-of-tanya-the-evil-season-2-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261001
 SUMMARY:Ep 3 · Saga of Tanya the Evil Season 2
@@ -427,7 +427,7 @@ URL:https://myanimelist.net/anime/49233/Youjo_Senki_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-is-dancing-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261001
 SUMMARY:Ep 5 · The World Is Dancing
@@ -437,7 +437,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-forsaken-saintess-and-her-foodie-roadtrip-in-another-world-
  ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261001
 SUMMARY:Ep 6 · The Forsaken Saintess and Her Foodie Roadtrip in Another Wo
@@ -450,7 +450,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-10@anim
  e-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261002
 SUMMARY:Ep 10 · The Exiled Heavy Knight Knows How to Game the System
@@ -462,7 +462,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-11@anim
  e-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261002
 SUMMARY:Ep 11 · The Exiled Heavy Knight Knows How to Game the System
@@ -474,7 +474,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-jojo-s-bizarre-adventure-part-7-steel-ball-run-ep-2@anime-dub-c
  al
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Ep 2 · Jojo's Bizarre Adventure Part 7: STEEL BALL RUN
@@ -485,7 +485,7 @@ URL:https://myanimelist.net/anime/61469/Steel_Ball_Run__JoJo_no_Kimyou_na_B
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-link-click-season-3-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Ep 5 · Link Click Season 3
@@ -494,7 +494,7 @@ URL:https://myanimelist.net/anime/61607/Shiguang_Dailiren_III
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-elusive-samurai-season-2-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Ep 6 · The Elusive Samurai Season 2
@@ -504,7 +504,7 @@ URL:https://myanimelist.net/anime/60059/Nige_Jouzu_no_Wakagimi_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-magical-explorer-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261004
 SUMMARY:Ep 1 · Magical Explorer
@@ -514,7 +514,7 @@ URL:https://myanimelist.net/anime/56733/Magical%E2%98%85Explorer
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-bleach-thousand-year-blood-war-the-calamity-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261004
 SUMMARY:Ep 5 · Bleach: Thousand-Year Blood War - The Calamity
@@ -525,7 +525,7 @@ URL:https://myanimelist.net/anime/60636/Bleach__Sennen_Kessen-hen_-_Kashin-
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-rilakkuma-ep-25@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261004
 SUMMARY:Ep 25 · Rilakkuma
@@ -534,7 +534,7 @@ URL:https://myanimelist.net/anime/60153/Rilakkuma
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-beyblade-x-ep-120@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261004
 SUMMARY:Ep 120 · Beyblade X
@@ -543,7 +543,7 @@ URL:https://myanimelist.net/anime/56566/Beyblade_X
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-beyblade-x-ep-125@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261004
 SUMMARY:Ep 125 · Beyblade X
@@ -553,7 +553,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-laid-off-cheat-granting-mage-enjoys-a-second-lease-on-life-
  ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
 SUMMARY:Ep 1 · The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on L
@@ -569,7 +569,7 @@ URL:https://myanimelist.net/anime/63431/Tsuihou_sareta_Cheat_Fuyo_Majutsush
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-one-piece-ep-1154@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
 SUMMARY:Ep 1154 · One Piece
@@ -579,7 +579,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-a-returner-s-magic-should-be-special-season-2-ep-1@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:Ep 1 · A Returner's Magic Should Be Special Season 2
@@ -590,7 +590,7 @@ URL:https://myanimelist.net/anime/57612/Kikansha_no_Mahou_wa_Tokubetsu_desu
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-kamui-he-s-behind-you-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:Ep 2 · KAMUI: He's Behind You!
@@ -600,7 +600,7 @@ URL:https://myanimelist.net/anime/63468/Ushiro_no_Shoumen_Kamui-san
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-saga-of-tanya-the-evil-season-2-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:Ep 4 · Saga of Tanya the Evil Season 2
@@ -609,7 +609,7 @@ URL:https://myanimelist.net/anime/49233/Youjo_Senki_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-saga-of-tanya-the-evil-season-2-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:Ep 5 · Saga of Tanya the Evil Season 2
@@ -618,7 +618,7 @@ URL:https://myanimelist.net/anime/49233/Youjo_Senki_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-is-dancing-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:Ep 6 · The World Is Dancing
@@ -628,7 +628,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-forsaken-saintess-and-her-foodie-roadtrip-in-another-world-
  ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:Ep 7 · The Forsaken Saintess and Her Foodie Roadtrip in Another Wo
@@ -640,7 +640,7 @@ URL:https://myanimelist.net/anime/63752/Suterare_Seijo_no_Isekai_Gohan_Tabi
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-is-dancing-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:Ep 7 · The World Is Dancing
@@ -650,7 +650,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-forsaken-saintess-and-her-foodie-roadtrip-in-another-world-
  ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:Ep 8 · The Forsaken Saintess and Her Foodie Roadtrip in Another Wo
@@ -662,7 +662,7 @@ URL:https://myanimelist.net/anime/63752/Suterare_Seijo_no_Isekai_Gohan_Tabi
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-fx-fighter-kurumi-chan-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261009
 SUMMARY:Ep 1 · FX Fighter Kurumi-chan
@@ -671,7 +671,7 @@ URL:https://myanimelist.net/anime/63337/FX_Senshi_Kurumi-chan
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-ramparts-of-ice-season-2-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261009
 SUMMARY:Ep 1 · The Ramparts of Ice Season 2
@@ -682,7 +682,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-12@anim
  e-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261009
 SUMMARY:Ep 12 · The Exiled Heavy Knight Knows How to Game the System
@@ -693,7 +693,7 @@ URL:https://myanimelist.net/anime/59741/Tsuihou_sareta_Tensei_Juukishi_wa_G
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tokyo-revengers-war-of-the-three-titan-arc-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:Ep 1 · Tokyo Revengers: War of the Three Titan Arc
@@ -704,7 +704,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-jojo-s-bizarre-adventure-part-7-steel-ball-run-ep-3@anime-dub-c
  al
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:Ep 3 · Jojo's Bizarre Adventure Part 7: STEEL BALL RUN
@@ -715,7 +715,7 @@ URL:https://myanimelist.net/anime/61469/Steel_Ball_Run__JoJo_no_Kimyou_na_B
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-link-click-season-3-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:Ep 6 · Link Click Season 3
@@ -724,7 +724,7 @@ URL:https://myanimelist.net/anime/61607/Shiguang_Dailiren_III
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-elusive-samurai-season-2-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:Ep 7 · The Elusive Samurai Season 2
@@ -734,7 +734,7 @@ URL:https://myanimelist.net/anime/60059/Nige_Jouzu_no_Wakagimi_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-i-m-looking-for-a-zombie-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 SUMMARY:Ep 1 · #I'm Looking For a Zombie
@@ -743,7 +743,7 @@ URL:https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-ranma-1-2-season-3-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 SUMMARY:Ep 1 · Ranma 1/2 Season 3
@@ -753,7 +753,7 @@ URL:https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 SUMMARY:Ep 1 · The Seven Knights of the Marronnier Kingdom
@@ -764,7 +764,7 @@ URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-magical-explorer-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 SUMMARY:Ep 2 · Magical Explorer
@@ -774,7 +774,7 @@ URL:https://myanimelist.net/anime/56733/Magical%E2%98%85Explorer
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-bleach-thousand-year-blood-war-the-calamity-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 SUMMARY:Ep 6 · Bleach: Thousand-Year Blood War - The Calamity
@@ -785,7 +785,7 @@ URL:https://myanimelist.net/anime/60636/Bleach__Sennen_Kessen-hen_-_Kashin-
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-rilakkuma-ep-26@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 SUMMARY:Ep 26 · Rilakkuma
@@ -794,7 +794,7 @@ URL:https://myanimelist.net/anime/60153/Rilakkuma
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-beyblade-x-ep-126@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 SUMMARY:Ep 126 · Beyblade X
@@ -803,7 +803,7 @@ URL:https://myanimelist.net/anime/56566/Beyblade_X
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-blue-box-season-2-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261011
 DTEND;VALUE=DATE:20261012
 SUMMARY:Ep 1 · Blue Box Season 2
@@ -812,7 +812,7 @@ URL:https://myanimelist.net/anime/61323/Ao_no_Hako_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-overgeared-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261011
 DTEND;VALUE=DATE:20261012
 SUMMARY:Ep 1 · Overgeared
@@ -823,7 +823,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-st
  arship-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261011
 DTEND;VALUE=DATE:20261012
 SUMMARY:Ep 1 · Reborn as a Space Mercenary: I Woke Up Piloting the Stronge
@@ -836,7 +836,7 @@ URL:https://myanimelist.net/anime/60948/Mezametara_Saikyou_Soubi_to_Uchuuse
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tank-chair-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261011
 DTEND;VALUE=DATE:20261012
 SUMMARY:Ep 1 · TANK CHAIR
@@ -845,7 +845,7 @@ URL:https://myanimelist.net/anime/63751/Tank_Chair
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-fx-fighter-kurumi-chan-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:Ep 2 · FX Fighter Kurumi-chan
@@ -854,7 +854,7 @@ URL:https://myanimelist.net/anime/63337/FX_Senshi_Kurumi-chan
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-ramparts-of-ice-season-2-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:Ep 2 · The Ramparts of Ice Season 2
@@ -865,7 +865,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-13@anim
  e-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:Ep 13 · The Exiled Heavy Knight Knows How to Game the System
@@ -876,7 +876,7 @@ URL:https://myanimelist.net/anime/59741/Tsuihou_sareta_Tensei_Juukishi_wa_G
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tokyo-revengers-war-of-the-three-titan-arc-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Ep 2 · Tokyo Revengers: War of the Three Titan Arc
@@ -887,7 +887,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-jojo-s-bizarre-adventure-part-7-steel-ball-run-ep-4@anime-dub-c
  al
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Ep 4 · Jojo's Bizarre Adventure Part 7: STEEL BALL RUN
@@ -898,7 +898,7 @@ URL:https://myanimelist.net/anime/61469/Steel_Ball_Run__JoJo_no_Kimyou_na_B
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-link-click-season-3-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Ep 7 · Link Click Season 3
@@ -907,7 +907,7 @@ URL:https://myanimelist.net/anime/61607/Shiguang_Dailiren_III
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-elusive-samurai-season-2-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Ep 8 · The Elusive Samurai Season 2
@@ -917,7 +917,7 @@ URL:https://myanimelist.net/anime/60059/Nige_Jouzu_no_Wakagimi_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-i-m-looking-for-a-zombie-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 SUMMARY:Ep 2 · #I'm Looking For a Zombie
@@ -926,7 +926,7 @@ URL:https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-ranma-1-2-season-3-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 SUMMARY:Ep 2 · Ranma 1/2 Season 3
@@ -936,7 +936,7 @@ URL:https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 SUMMARY:Ep 2 · The Seven Knights of the Marronnier Kingdom
@@ -947,7 +947,7 @@ URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-rilakkuma-ep-27@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 SUMMARY:Ep 27 · Rilakkuma
@@ -957,7 +957,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-as-a-reincarnated-aristocrat-i-ll-use-my-appraisal-skill-to-ris
  e-in-the-world-season-3-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 SUMMARY:Ep 1 · As a Reincarnated Aristocrat\, I'll Use My Appraisal Skill 
@@ -969,7 +969,7 @@ URL:https://myanimelist.net/anime/60601/Tensei_Kizoku_Kantei_Skill_de_Naria
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-blue-box-season-2-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 SUMMARY:Ep 2 · Blue Box Season 2
@@ -978,7 +978,7 @@ URL:https://myanimelist.net/anime/61323/Ao_no_Hako_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-overgeared-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 SUMMARY:Ep 2 · Overgeared
@@ -989,7 +989,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-st
  arship-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 SUMMARY:Ep 2 · Reborn as a Space Mercenary: I Woke Up Piloting the Stronge
@@ -1002,7 +1002,7 @@ URL:https://myanimelist.net/anime/60948/Mezametara_Saikyou_Soubi_to_Uchuuse
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tank-chair-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 SUMMARY:Ep 2 · TANK CHAIR
@@ -1011,7 +1011,7 @@ URL:https://myanimelist.net/anime/63751/Tank_Chair
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-overgeared-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 SUMMARY:Ep 3 · Overgeared
@@ -1021,7 +1021,7 @@ URL:https://myanimelist.net/anime/64340/Tempal__Item_no_Chikara
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-psyren-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:Ep 1 · PSYREN
@@ -1031,7 +1031,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-laid-off-cheat-granting-mage-enjoys-a-second-lease-on-life-
  ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Ep 2 · The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on L
@@ -1048,7 +1048,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-laid-off-cheat-granting-mage-enjoys-a-second-lease-on-life-
  ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Ep 3 · The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on L
@@ -1064,7 +1064,7 @@ URL:https://myanimelist.net/anime/63431/Tsuihou_sareta_Cheat_Fuyo_Majutsush
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-one-piece-ep-1155@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Ep 1155 · One Piece
@@ -1073,7 +1073,7 @@ URL:https://myanimelist.net/anime/21/One_Piece
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-one-piece-ep-1156@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Ep 1156 · One Piece
@@ -1082,7 +1082,7 @@ URL:https://myanimelist.net/anime/21/One_Piece
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-magic-knight-rayearth-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Ep 1 · Magic Knight Rayearth
@@ -1092,7 +1092,7 @@ URL:https://myanimelist.net/anime/59204/Magic_Knight_Rayearth_2026
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reincarnated-as-a-sword-season-2-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Ep 1 · Reincarnated as a Sword Season 2
@@ -1102,7 +1102,7 @@ URL:https://myanimelist.net/anime/53913/Tensei_shitara_Ken_deshita_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-sasaki-and-peeps-season-2-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Ep 1 · Sasaki and Peeps Season 2
@@ -1112,7 +1112,7 @@ URL:https://myanimelist.net/anime/58518/Sasaki_to_Pii-chan_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-detective-is-already-dead-season-2-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Ep 1 · The Detective Is Already Dead Season 2
@@ -1123,7 +1123,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-prince-of-tennis-ii-u-17-world-cup-final-member-selection-m
  atch-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Ep 1 · The Prince of Tennis II U-17 WORLD CUP: Final Member Select
@@ -1135,7 +1135,7 @@ URL:https://myanimelist.net/anime/62534/Shin_Tennis_no_Oujisama__U-17_World
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-s-strongest-witch-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Ep 1 · The World's Strongest Witch
@@ -1146,7 +1146,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-a-returner-s-magic-should-be-special-season-2-ep-2@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Ep 2 · A Returner's Magic Should Be Special Season 2
@@ -1158,7 +1158,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-prince-of-tennis-ii-u-17-world-cup-final-member-selection-m
  atch-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Ep 2 · The Prince of Tennis II U-17 WORLD CUP: Final Member Select
@@ -1171,7 +1171,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-a-returner-s-magic-should-be-special-season-2-ep-3@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Ep 3 · A Returner's Magic Should Be Special Season 2
@@ -1182,7 +1182,7 @@ URL:https://myanimelist.net/anime/57612/Kikansha_no_Mahou_wa_Tokubetsu_desu
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-kamui-he-s-behind-you-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Ep 3 · KAMUI: He's Behind You!
@@ -1192,7 +1192,7 @@ URL:https://myanimelist.net/anime/63468/Ushiro_no_Shoumen_Kamui-san
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-kamui-he-s-behind-you-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Ep 4 · KAMUI: He's Behind You!
@@ -1202,7 +1202,7 @@ URL:https://myanimelist.net/anime/63468/Ushiro_no_Shoumen_Kamui-san
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-saga-of-tanya-the-evil-season-2-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Ep 6 · Saga of Tanya the Evil Season 2
@@ -1211,7 +1211,7 @@ URL:https://myanimelist.net/anime/49233/Youjo_Senki_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-saga-of-tanya-the-evil-season-2-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Ep 7 · Saga of Tanya the Evil Season 2
@@ -1220,7 +1220,7 @@ URL:https://myanimelist.net/anime/49233/Youjo_Senki_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-is-dancing-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Ep 8 · The World Is Dancing
@@ -1230,7 +1230,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-forsaken-saintess-and-her-foodie-roadtrip-in-another-world-
  ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Ep 9 · The Forsaken Saintess and Her Foodie Roadtrip in Another Wo
@@ -1242,7 +1242,7 @@ URL:https://myanimelist.net/anime/63752/Suterare_Seijo_no_Isekai_Gohan_Tabi
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-is-dancing-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Ep 9 · The World Is Dancing
@@ -1252,7 +1252,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-forsaken-saintess-and-her-foodie-roadtrip-in-another-world-
  ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:Ep 10 · The Forsaken Saintess and Her Foodie Roadtrip in Another W
@@ -1265,7 +1265,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-iceblade-sorcerer-shall-rule-the-world-ii-ep-1@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Ep 1 · The Iceblade Sorcerer Shall Rule the World II
@@ -1276,7 +1276,7 @@ URL:https://myanimelist.net/anime/64254/Hyouken_no_Majutsushi_ga_Sekai_wo_S
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-fx-fighter-kurumi-chan-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Ep 3 · FX Fighter Kurumi-chan
@@ -1285,7 +1285,7 @@ URL:https://myanimelist.net/anime/63337/FX_Senshi_Kurumi-chan
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-ramparts-of-ice-season-2-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Ep 3 · The Ramparts of Ice Season 2
@@ -1295,7 +1295,7 @@ URL:https://myanimelist.net/anime/64534/Koori_no_Jouheki_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-fx-fighter-kurumi-chan-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Ep 4 · FX Fighter Kurumi-chan
@@ -1304,7 +1304,7 @@ URL:https://myanimelist.net/anime/63337/FX_Senshi_Kurumi-chan
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-ramparts-of-ice-season-2-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Ep 4 · The Ramparts of Ice Season 2
@@ -1315,7 +1315,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-14@anim
  e-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Ep 14 · The Exiled Heavy Knight Knows How to Game the System
@@ -1327,7 +1327,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-15@anim
  e-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Ep 15 · The Exiled Heavy Knight Knows How to Game the System
@@ -1338,7 +1338,7 @@ URL:https://myanimelist.net/anime/59741/Tsuihou_sareta_Tensei_Juukishi_wa_G
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-firefly-wedding-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Ep 1 · Firefly Wedding
@@ -1347,7 +1347,7 @@ URL:https://myanimelist.net/anime/63293/Hotaru_no_Yomeiri
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-apothecary-diaries-season-3-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Ep 1 · The Apothecary Diaries Season 3
@@ -1357,7 +1357,7 @@ URL:https://myanimelist.net/anime/61987/Kusuriya_no_Hitorigoto_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tougen-anki-nikko-kegon-falls-arc-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Ep 1 · Tougen Anki: Nikko Kegon Falls Arc
@@ -1368,7 +1368,7 @@ URL:https://myanimelist.net/anime/63181/Tougen_Anki__Nikko_Kegon_no_Taki-he
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-apothecary-diaries-season-3-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Ep 2 · The Apothecary Diaries Season 3
@@ -1378,7 +1378,7 @@ URL:https://myanimelist.net/anime/61987/Kusuriya_no_Hitorigoto_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tokyo-revengers-war-of-the-three-titan-arc-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Ep 3 · Tokyo Revengers: War of the Three Titan Arc
@@ -1387,8 +1387,19 @@ DESCRIPTION:MAL: https://myanimelist.net/anime/59088/Tokyo_Revengers__Sante
 URL:https://myanimelist.net/anime/59088/Tokyo_Revengers__Santen_Sensou-hen
 END:VEVENT
 BEGIN:VEVENT
+UID:mal-dub-tougen-anki-nikko-kegon-falls-arc-ep-3@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Ep 3 · Tougen Anki: Nikko Kegon Falls Arc
+DESCRIPTION:MAL: https://myanimelist.net/anime/63181/Tougen_Anki__Nikko_Keg
+ on_no_Taki-hen
+URL:https://myanimelist.net/anime/63181/Tougen_Anki__Nikko_Kegon_no_Taki-he
+ n
+END:VEVENT
+BEGIN:VEVENT
 UID:mal-dub-tokyo-revengers-war-of-the-three-titan-arc-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Ep 4 · Tokyo Revengers: War of the Three Titan Arc
@@ -1399,7 +1410,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-jojo-s-bizarre-adventure-part-7-steel-ball-run-ep-5@anime-dub-c
  al
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Ep 5 · Jojo's Bizarre Adventure Part 7: STEEL BALL RUN
@@ -1411,7 +1422,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-jojo-s-bizarre-adventure-part-7-steel-ball-run-ep-6@anime-dub-c
  al
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Ep 6 · Jojo's Bizarre Adventure Part 7: STEEL BALL RUN
@@ -1422,7 +1433,7 @@ URL:https://myanimelist.net/anime/61469/Steel_Ball_Run__JoJo_no_Kimyou_na_B
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-link-click-season-3-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Ep 8 · Link Click Season 3
@@ -1431,7 +1442,7 @@ URL:https://myanimelist.net/anime/61607/Shiguang_Dailiren_III
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-link-click-season-3-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Ep 9 · Link Click Season 3
@@ -1440,7 +1451,7 @@ URL:https://myanimelist.net/anime/61607/Shiguang_Dailiren_III
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-elusive-samurai-season-2-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Ep 9 · The Elusive Samurai Season 2
@@ -1450,7 +1461,7 @@ URL:https://myanimelist.net/anime/60059/Nige_Jouzu_no_Wakagimi_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-elusive-samurai-season-2-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Ep 10 · The Elusive Samurai Season 2
@@ -1460,7 +1471,7 @@ URL:https://myanimelist.net/anime/60059/Nige_Jouzu_no_Wakagimi_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-black-clover-season-2-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 SUMMARY:Ep 1 · Black Clover Season 2
@@ -1469,8 +1480,27 @@ DESCRIPTION:MAL: https://myanimelist.net/anime/61967/Black_Clover_2nd_Seaso
 URL:https://myanimelist.net/anime/61967/Black_Clover_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
+UID:mal-dub-horror-collector-ep-1@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Ep 1 · HORROR COLLECTOR
+DESCRIPTION:MAL: https://myanimelist.net/anime/63053/Kyoufu_Collector
+URL:https://myanimelist.net/anime/63053/Kyoufu_Collector
+END:VEVENT
+BEGIN:VEVENT
+UID:mal-dub-black-clover-season-2-ep-2@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Ep 2 · Black Clover Season 2
+DESCRIPTION:MAL: https://myanimelist.net/anime/61967/Black_Clover_2nd_Seaso
+ n
+URL:https://myanimelist.net/anime/61967/Black_Clover_2nd_Season
+END:VEVENT
+BEGIN:VEVENT
 UID:mal-dub-i-m-looking-for-a-zombie-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 SUMMARY:Ep 3 · #I'm Looking For a Zombie
@@ -1479,7 +1509,7 @@ URL:https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-magical-explorer-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 SUMMARY:Ep 3 · Magical Explorer
@@ -1489,7 +1519,7 @@ URL:https://myanimelist.net/anime/56733/Magical%E2%98%85Explorer
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-ranma-1-2-season-3-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 SUMMARY:Ep 3 · Ranma 1/2 Season 3
@@ -1499,7 +1529,7 @@ URL:https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 SUMMARY:Ep 3 · The Seven Knights of the Marronnier Kingdom
@@ -1509,8 +1539,48 @@ URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
  ishi
 END:VEVENT
 BEGIN:VEVENT
+UID:mal-dub-i-m-looking-for-a-zombie-ep-4@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Ep 4 · #I'm Looking For a Zombie
+DESCRIPTION:MAL: https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
+URL:https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
+END:VEVENT
+BEGIN:VEVENT
+UID:mal-dub-magical-explorer-ep-4@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Ep 4 · Magical Explorer
+DESCRIPTION:MAL: https://myanimelist.net/anime/56733/Magical%E2%98%85Explor
+ er
+URL:https://myanimelist.net/anime/56733/Magical%E2%98%85Explorer
+END:VEVENT
+BEGIN:VEVENT
+UID:mal-dub-ranma-1-2-season-3-ep-4@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Ep 4 · Ranma 1/2 Season 3
+DESCRIPTION:MAL: https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_
+ Season
+URL:https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_Season
+END:VEVENT
+BEGIN:VEVENT
+UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-4@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Ep 4 · The Seven Knights of the Marronnier Kingdom
+DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
+ hichinin_no_Kishi
+URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
+ ishi
+END:VEVENT
+BEGIN:VEVENT
 UID:mal-dub-bleach-thousand-year-blood-war-the-calamity-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 SUMMARY:Ep 7 · Bleach: Thousand-Year Blood War - The Calamity
@@ -1521,7 +1591,7 @@ URL:https://myanimelist.net/anime/60636/Bleach__Sennen_Kessen-hen_-_Kashin-
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-rilakkuma-ep-28@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 SUMMARY:Ep 28 · Rilakkuma
@@ -1529,8 +1599,17 @@ DESCRIPTION:MAL: https://myanimelist.net/anime/60153/Rilakkuma
 URL:https://myanimelist.net/anime/60153/Rilakkuma
 END:VEVENT
 BEGIN:VEVENT
+UID:mal-dub-rilakkuma-ep-29@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Ep 29 · Rilakkuma
+DESCRIPTION:MAL: https://myanimelist.net/anime/60153/Rilakkuma
+URL:https://myanimelist.net/anime/60153/Rilakkuma
+END:VEVENT
+BEGIN:VEVENT
 UID:mal-dub-yu-gi-oh-go-rush-ep-66@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 SUMMARY:Ep 66 · Yu-Gi-Oh: Go Rush
@@ -1540,7 +1619,7 @@ URL:https://myanimelist.net/anime/50607/Yu%E2%98%86Gi%E2%98%86Oh_Go_Rush
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-beyblade-x-ep-131@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 SUMMARY:Ep 131 · Beyblade X
@@ -1549,7 +1628,7 @@ URL:https://myanimelist.net/anime/56566/Beyblade_X
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-ao-ashi-season-2-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:Ep 1 · Ao Ashi Season 2
@@ -1559,7 +1638,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-as-a-reincarnated-aristocrat-i-ll-use-my-appraisal-skill-to-ris
  e-in-the-world-season-3-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:Ep 2 · As a Reincarnated Aristocrat\, I'll Use My Appraisal Skill 
@@ -1571,7 +1650,7 @@ URL:https://myanimelist.net/anime/60601/Tensei_Kizoku_Kantei_Skill_de_Naria
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-blue-box-season-2-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:Ep 3 · Blue Box Season 2
@@ -1581,7 +1660,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-st
  arship-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:Ep 3 · Reborn as a Space Mercenary: I Woke Up Piloting the Stronge
@@ -1594,7 +1673,7 @@ URL:https://myanimelist.net/anime/60948/Mezametara_Saikyou_Soubi_to_Uchuuse
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tank-chair-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:Ep 3 · TANK CHAIR
@@ -1603,7 +1682,7 @@ URL:https://myanimelist.net/anime/63751/Tank_Chair
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-overgeared-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:Ep 4 · Overgeared
@@ -1613,7 +1692,7 @@ URL:https://myanimelist.net/anime/64340/Tempal__Item_no_Chikara
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-psyren-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:Ep 2 · PSYREN
@@ -1623,7 +1702,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-laid-off-cheat-granting-mage-enjoys-a-second-lease-on-life-
  ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Ep 4 · The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on L
@@ -1639,7 +1718,7 @@ URL:https://myanimelist.net/anime/63431/Tsuihou_sareta_Cheat_Fuyo_Majutsush
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-one-piece-ep-1157@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Ep 1157 · One Piece
@@ -1648,7 +1727,7 @@ URL:https://myanimelist.net/anime/21/One_Piece
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-magic-knight-rayearth-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Ep 2 · Magic Knight Rayearth
@@ -1658,7 +1737,7 @@ URL:https://myanimelist.net/anime/59204/Magic_Knight_Rayearth_2026
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reincarnated-as-a-sword-season-2-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Ep 2 · Reincarnated as a Sword Season 2
@@ -1668,7 +1747,7 @@ URL:https://myanimelist.net/anime/53913/Tensei_shitara_Ken_deshita_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-sasaki-and-peeps-season-2-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Ep 2 · Sasaki and Peeps Season 2
@@ -1678,7 +1757,7 @@ URL:https://myanimelist.net/anime/58518/Sasaki_to_Pii-chan_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-detective-is-already-dead-season-2-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Ep 2 · The Detective Is Already Dead Season 2
@@ -1688,7 +1767,7 @@ URL:https://myanimelist.net/anime/52480/Tantei_wa_Mou_Shindeiru_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-s-strongest-witch-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Ep 2 · The World's Strongest Witch
@@ -1699,7 +1778,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-prince-of-tennis-ii-u-17-world-cup-final-member-selection-m
  atch-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Ep 3 · The Prince of Tennis II U-17 WORLD CUP: Final Member Select
@@ -1712,7 +1791,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-a-returner-s-magic-should-be-special-season-2-ep-4@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Ep 4 · A Returner's Magic Should Be Special Season 2
@@ -1723,7 +1802,7 @@ URL:https://myanimelist.net/anime/57612/Kikansha_no_Mahou_wa_Tokubetsu_desu
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-kamui-he-s-behind-you-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Ep 5 · KAMUI: He's Behind You!
@@ -1733,7 +1812,7 @@ URL:https://myanimelist.net/anime/63468/Ushiro_no_Shoumen_Kamui-san
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-saga-of-tanya-the-evil-season-2-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Ep 8 · Saga of Tanya the Evil Season 2
@@ -1742,7 +1821,7 @@ URL:https://myanimelist.net/anime/49233/Youjo_Senki_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-is-dancing-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Ep 10 · The World Is Dancing
@@ -1752,7 +1831,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-forsaken-saintess-and-her-foodie-roadtrip-in-another-world-
  ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Ep 11 · The Forsaken Saintess and Her Foodie Roadtrip in Another W
@@ -1765,7 +1844,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-iceblade-sorcerer-shall-rule-the-world-ii-ep-2@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Ep 2 · The Iceblade Sorcerer Shall Rule the World II
@@ -1776,7 +1855,7 @@ URL:https://myanimelist.net/anime/64254/Hyouken_no_Majutsushi_ga_Sekai_wo_S
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-fx-fighter-kurumi-chan-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Ep 5 · FX Fighter Kurumi-chan
@@ -1785,7 +1864,7 @@ URL:https://myanimelist.net/anime/63337/FX_Senshi_Kurumi-chan
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-ramparts-of-ice-season-2-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Ep 5 · The Ramparts of Ice Season 2
@@ -1796,7 +1875,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-16@anim
  e-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Ep 16 · The Exiled Heavy Knight Knows How to Game the System
@@ -1807,7 +1886,7 @@ URL:https://myanimelist.net/anime/59741/Tsuihou_sareta_Tensei_Juukishi_wa_G
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-firefly-wedding-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Ep 2 · Firefly Wedding
@@ -1816,7 +1895,7 @@ URL:https://myanimelist.net/anime/63293/Hotaru_no_Yomeiri
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tougen-anki-nikko-kegon-falls-arc-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Ep 2 · Tougen Anki: Nikko Kegon Falls Arc
@@ -1827,7 +1906,7 @@ URL:https://myanimelist.net/anime/63181/Tougen_Anki__Nikko_Kegon_no_Taki-he
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-apothecary-diaries-season-3-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Ep 3 · The Apothecary Diaries Season 3
@@ -1836,19 +1915,8 @@ DESCRIPTION:MAL: https://myanimelist.net/anime/61987/Kusuriya_no_Hitorigoto
 URL:https://myanimelist.net/anime/61987/Kusuriya_no_Hitorigoto_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-tougen-anki-nikko-kegon-falls-arc-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261031
-SUMMARY:Ep 3 · Tougen Anki: Nikko Kegon Falls Arc 📦 Multi-drop
-DESCRIPTION:MAL: https://myanimelist.net/anime/63181/Tougen_Anki__Nikko_Keg
- on_no_Taki-hen\\nMultiple episodes dropped on this date.
-URL:https://myanimelist.net/anime/63181/Tougen_Anki__Nikko_Kegon_no_Taki-he
- n
-END:VEVENT
-BEGIN:VEVENT
 UID:mal-dub-tougen-anki-nikko-kegon-falls-arc-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Ep 4 · Tougen Anki: Nikko Kegon Falls Arc
@@ -1859,7 +1927,7 @@ URL:https://myanimelist.net/anime/63181/Tougen_Anki__Nikko_Kegon_no_Taki-he
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tokyo-revengers-war-of-the-three-titan-arc-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Ep 5 · Tokyo Revengers: War of the Three Titan Arc
@@ -1870,7 +1938,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-jojo-s-bizarre-adventure-part-7-steel-ball-run-ep-7@anime-dub-c
  al
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Ep 7 · Jojo's Bizarre Adventure Part 7: STEEL BALL RUN
@@ -1881,7 +1949,7 @@ URL:https://myanimelist.net/anime/61469/Steel_Ball_Run__JoJo_no_Kimyou_na_B
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-link-click-season-3-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Ep 10 · Link Click Season 3
@@ -1890,7 +1958,7 @@ URL:https://myanimelist.net/anime/61607/Shiguang_Dailiren_III
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-elusive-samurai-season-2-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Ep 11 · The Elusive Samurai Season 2
@@ -1899,59 +1967,69 @@ DESCRIPTION:MAL: https://myanimelist.net/anime/60059/Nige_Jouzu_no_Wakagimi
 URL:https://myanimelist.net/anime/60059/Nige_Jouzu_no_Wakagimi_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-horror-collector-ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-even-the-student-council-has-its-holes-ep-1@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
-SUMMARY:Ep 1 · HORROR COLLECTOR
+SUMMARY:Ep 1 · Even the Student Council Has Its Holes!
+DESCRIPTION:MAL: https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_
+ Aru
+URL:https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_Aru
+END:VEVENT
+BEGIN:VEVENT
+UID:mal-dub-horror-collector-ep-2@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Ep 2 · HORROR COLLECTOR
 DESCRIPTION:MAL: https://myanimelist.net/anime/63053/Kyoufu_Collector
 URL:https://myanimelist.net/anime/63053/Kyoufu_Collector
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-black-clover-season-2-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-black-clover-season-2-ep-3@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
-SUMMARY:Ep 2 · Black Clover Season 2
+SUMMARY:Ep 3 · Black Clover Season 2
 DESCRIPTION:MAL: https://myanimelist.net/anime/61967/Black_Clover_2nd_Seaso
  n
 URL:https://myanimelist.net/anime/61967/Black_Clover_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-i-m-looking-for-a-zombie-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-i-m-looking-for-a-zombie-ep-5@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
-SUMMARY:Ep 4 · #I'm Looking For a Zombie
+SUMMARY:Ep 5 · #I'm Looking For a Zombie
 DESCRIPTION:MAL: https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 URL:https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-magical-explorer-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-magical-explorer-ep-5@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
-SUMMARY:Ep 4 · Magical Explorer
+SUMMARY:Ep 5 · Magical Explorer
 DESCRIPTION:MAL: https://myanimelist.net/anime/56733/Magical%E2%98%85Explor
  er
 URL:https://myanimelist.net/anime/56733/Magical%E2%98%85Explorer
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-ranma-1-2-season-3-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-ranma-1-2-season-3-ep-5@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
-SUMMARY:Ep 4 · Ranma 1/2 Season 3
+SUMMARY:Ep 5 · Ranma 1/2 Season 3
 DESCRIPTION:MAL: https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_
  Season
 URL:https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-5@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
-SUMMARY:Ep 4 · The Seven Knights of the Marronnier Kingdom
+SUMMARY:Ep 5 · The Seven Knights of the Marronnier Kingdom
 DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
  hichinin_no_Kishi
 URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
@@ -1959,7 +2037,7 @@ URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-bleach-thousand-year-blood-war-the-calamity-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
 SUMMARY:Ep 8 · Bleach: Thousand-Year Blood War - The Calamity
@@ -1969,17 +2047,17 @@ URL:https://myanimelist.net/anime/60636/Bleach__Sennen_Kessen-hen_-_Kashin-
  tan
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-rilakkuma-ep-29@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-rilakkuma-ep-30@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
-SUMMARY:Ep 29 · Rilakkuma
+SUMMARY:Ep 30 · Rilakkuma
 DESCRIPTION:MAL: https://myanimelist.net/anime/60153/Rilakkuma
 URL:https://myanimelist.net/anime/60153/Rilakkuma
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-yu-gi-oh-go-rush-ep-67@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
 SUMMARY:Ep 67 · Yu-Gi-Oh: Go Rush
@@ -1989,7 +2067,7 @@ URL:https://myanimelist.net/anime/50607/Yu%E2%98%86Gi%E2%98%86Oh_Go_Rush
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-beyblade-x-ep-132@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
 SUMMARY:Ep 132 · Beyblade X
@@ -1999,7 +2077,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-full-clearing-another-world-under-a-goddess-with-zero-believers
  -ep-1@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:Ep 1 · Full Clearing Another World under a Goddess with Zero Belie
@@ -2011,7 +2089,7 @@ URL:https://myanimelist.net/anime/63292/Shinja_Zero_no_Megami-sama_to_Hajim
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-ao-ashi-season-2-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:Ep 2 · Ao Ashi Season 2
@@ -2021,7 +2099,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-as-a-reincarnated-aristocrat-i-ll-use-my-appraisal-skill-to-ris
  e-in-the-world-season-3-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:Ep 3 · As a Reincarnated Aristocrat\, I'll Use My Appraisal Skill 
@@ -2033,7 +2111,7 @@ URL:https://myanimelist.net/anime/60601/Tensei_Kizoku_Kantei_Skill_de_Naria
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-blue-box-season-2-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:Ep 4 · Blue Box Season 2
@@ -2043,7 +2121,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-st
  arship-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:Ep 4 · Reborn as a Space Mercenary: I Woke Up Piloting the Stronge
@@ -2056,7 +2134,7 @@ URL:https://myanimelist.net/anime/60948/Mezametara_Saikyou_Soubi_to_Uchuuse
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tank-chair-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:Ep 4 · TANK CHAIR
@@ -2065,7 +2143,7 @@ URL:https://myanimelist.net/anime/63751/Tank_Chair
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-overgeared-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:Ep 5 · Overgeared
@@ -2075,7 +2153,7 @@ URL:https://myanimelist.net/anime/64340/Tempal__Item_no_Chikara
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-psyren-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 SUMMARY:Ep 3 · PSYREN (Projected)
@@ -2086,7 +2164,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-laid-off-cheat-granting-mage-enjoys-a-second-lease-on-life-
  ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Ep 5 · The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on L
@@ -2103,7 +2181,7 @@ URL:https://myanimelist.net/anime/63431/Tsuihou_sareta_Cheat_Fuyo_Majutsush
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-one-piece-ep-1158@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Ep 1158 · One Piece (Projected)
@@ -2113,7 +2191,7 @@ URL:https://myanimelist.net/anime/21/One_Piece
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-magic-knight-rayearth-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Ep 3 · Magic Knight Rayearth (Projected)
@@ -2123,7 +2201,7 @@ URL:https://myanimelist.net/anime/59204/Magic_Knight_Rayearth_2026
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reincarnated-as-a-sword-season-2-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Ep 3 · Reincarnated as a Sword Season 2
@@ -2133,7 +2211,7 @@ URL:https://myanimelist.net/anime/53913/Tensei_shitara_Ken_deshita_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-sasaki-and-peeps-season-2-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Ep 3 · Sasaki and Peeps Season 2
@@ -2143,7 +2221,7 @@ URL:https://myanimelist.net/anime/58518/Sasaki_to_Pii-chan_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-detective-is-already-dead-season-2-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Ep 3 · The Detective Is Already Dead Season 2
@@ -2153,7 +2231,7 @@ URL:https://myanimelist.net/anime/52480/Tantei_wa_Mou_Shindeiru_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-s-strongest-witch-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Ep 3 · The World's Strongest Witch (Projected)
@@ -2164,7 +2242,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-prince-of-tennis-ii-u-17-world-cup-final-member-selection-m
  atch-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Ep 4 · The Prince of Tennis II U-17 WORLD CUP: Final Member Select
@@ -2177,7 +2255,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-a-returner-s-magic-should-be-special-season-2-ep-5@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Ep 5 · A Returner's Magic Should Be Special Season 2 (Projected)
@@ -2189,7 +2267,7 @@ URL:https://myanimelist.net/anime/57612/Kikansha_no_Mahou_wa_Tokubetsu_desu
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-kamui-he-s-behind-you-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Ep 6 · KAMUI: He's Behind You!
@@ -2199,7 +2277,7 @@ URL:https://myanimelist.net/anime/63468/Ushiro_no_Shoumen_Kamui-san
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-saga-of-tanya-the-evil-season-2-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Ep 9 · Saga of Tanya the Evil Season 2
@@ -2208,7 +2286,7 @@ URL:https://myanimelist.net/anime/49233/Youjo_Senki_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-is-dancing-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Ep 11 · The World Is Dancing
@@ -2218,7 +2296,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-forsaken-saintess-and-her-foodie-roadtrip-in-another-world-
  ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Ep 12 · The Forsaken Saintess and Her Foodie Roadtrip in Another W
@@ -2231,7 +2309,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-iceblade-sorcerer-shall-rule-the-world-ii-ep-3@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Ep 3 · The Iceblade Sorcerer Shall Rule the World II
@@ -2242,7 +2320,7 @@ URL:https://myanimelist.net/anime/64254/Hyouken_no_Majutsushi_ga_Sekai_wo_S
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-fx-fighter-kurumi-chan-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Ep 6 · FX Fighter Kurumi-chan
@@ -2251,7 +2329,7 @@ URL:https://myanimelist.net/anime/63337/FX_Senshi_Kurumi-chan
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-ramparts-of-ice-season-2-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Ep 6 · The Ramparts of Ice Season 2 (Projected)
@@ -2262,7 +2340,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-17@anim
  e-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Ep 17 · The Exiled Heavy Knight Knows How to Game the System
@@ -2273,7 +2351,7 @@ URL:https://myanimelist.net/anime/59741/Tsuihou_sareta_Tensei_Juukishi_wa_G
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-firefly-wedding-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Ep 3 · Firefly Wedding
@@ -2282,7 +2360,7 @@ URL:https://myanimelist.net/anime/63293/Hotaru_no_Yomeiri
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-apothecary-diaries-season-3-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Ep 4 · The Apothecary Diaries Season 3
@@ -2292,7 +2370,7 @@ URL:https://myanimelist.net/anime/61987/Kusuriya_no_Hitorigoto_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tougen-anki-nikko-kegon-falls-arc-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Ep 5 · Tougen Anki: Nikko Kegon Falls Arc
@@ -2303,7 +2381,7 @@ URL:https://myanimelist.net/anime/63181/Tougen_Anki__Nikko_Kegon_no_Taki-he
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tokyo-revengers-war-of-the-three-titan-arc-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Ep 6 · Tokyo Revengers: War of the Three Titan Arc
@@ -2314,7 +2392,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-jojo-s-bizarre-adventure-part-7-steel-ball-run-ep-8@anime-dub-c
  al
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Ep 8 · Jojo's Bizarre Adventure Part 7: STEEL BALL RUN (Projected)
@@ -2326,7 +2404,7 @@ URL:https://myanimelist.net/anime/61469/Steel_Ball_Run__JoJo_no_Kimyou_na_B
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-link-click-season-3-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Ep 11 · Link Click Season 3
@@ -2335,7 +2413,7 @@ URL:https://myanimelist.net/anime/61607/Shiguang_Dailiren_III
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-elusive-samurai-season-2-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Ep 12 · The Elusive Samurai Season 2
@@ -2344,59 +2422,69 @@ DESCRIPTION:MAL: https://myanimelist.net/anime/60059/Nige_Jouzu_no_Wakagimi
 URL:https://myanimelist.net/anime/60059/Nige_Jouzu_no_Wakagimi_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-horror-collector-ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-even-the-student-council-has-its-holes-ep-2@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
-SUMMARY:Ep 2 · HORROR COLLECTOR
+SUMMARY:Ep 2 · Even the Student Council Has Its Holes!
+DESCRIPTION:MAL: https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_
+ Aru
+URL:https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_Aru
+END:VEVENT
+BEGIN:VEVENT
+UID:mal-dub-horror-collector-ep-3@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Ep 3 · HORROR COLLECTOR
 DESCRIPTION:MAL: https://myanimelist.net/anime/63053/Kyoufu_Collector
 URL:https://myanimelist.net/anime/63053/Kyoufu_Collector
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-black-clover-season-2-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-black-clover-season-2-ep-4@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
-SUMMARY:Ep 3 · Black Clover Season 2 (Projected)
+SUMMARY:Ep 4 · Black Clover Season 2 (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/61967/Black_Clover_2nd_Seaso
  n\\nNote: Episode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/61967/Black_Clover_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-i-m-looking-for-a-zombie-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-i-m-looking-for-a-zombie-ep-6@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
-SUMMARY:Ep 5 · #I'm Looking For a Zombie
+SUMMARY:Ep 6 · #I'm Looking For a Zombie
 DESCRIPTION:MAL: https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 URL:https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-magical-explorer-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-magical-explorer-ep-6@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
-SUMMARY:Ep 5 · Magical Explorer
+SUMMARY:Ep 6 · Magical Explorer
 DESCRIPTION:MAL: https://myanimelist.net/anime/56733/Magical%E2%98%85Explor
  er
 URL:https://myanimelist.net/anime/56733/Magical%E2%98%85Explorer
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-ranma-1-2-season-3-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-ranma-1-2-season-3-ep-6@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
-SUMMARY:Ep 5 · Ranma 1/2 Season 3 (Projected)
+SUMMARY:Ep 6 · Ranma 1/2 Season 3 (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_
  Season\\nNote: Episode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-6@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
-SUMMARY:Ep 5 · The Seven Knights of the Marronnier Kingdom
+SUMMARY:Ep 6 · The Seven Knights of the Marronnier Kingdom
 DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
  hichinin_no_Kishi
 URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
@@ -2404,7 +2492,7 @@ URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-bleach-thousand-year-blood-war-the-calamity-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 SUMMARY:Ep 9 · Bleach: Thousand-Year Blood War - The Calamity
@@ -2414,18 +2502,18 @@ URL:https://myanimelist.net/anime/60636/Bleach__Sennen_Kessen-hen_-_Kashin-
  tan
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-rilakkuma-ep-30@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-rilakkuma-ep-31@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
-SUMMARY:Ep 30 · Rilakkuma (Projected)
+SUMMARY:Ep 31 · Rilakkuma (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/60153/Rilakkuma\\nNote: Epis
  ode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/60153/Rilakkuma
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-beyblade-x-ep-133@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 SUMMARY:Ep 133 · Beyblade X (Projected)
@@ -2436,7 +2524,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-full-clearing-another-world-under-a-goddess-with-zero-believers
  -ep-2@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
 SUMMARY:Ep 2 · Full Clearing Another World under a Goddess with Zero Belie
@@ -2449,7 +2537,7 @@ URL:https://myanimelist.net/anime/63292/Shinja_Zero_no_Megami-sama_to_Hajim
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-ao-ashi-season-2-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
 SUMMARY:Ep 3 · Ao Ashi Season 2 (Projected)
@@ -2460,7 +2548,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-as-a-reincarnated-aristocrat-i-ll-use-my-appraisal-skill-to-ris
  e-in-the-world-season-3-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
 SUMMARY:Ep 4 · As a Reincarnated Aristocrat\, I'll Use My Appraisal Skill 
@@ -2473,7 +2561,7 @@ URL:https://myanimelist.net/anime/60601/Tensei_Kizoku_Kantei_Skill_de_Naria
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-blue-box-season-2-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
 SUMMARY:Ep 5 · Blue Box Season 2
@@ -2483,7 +2571,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-st
  arship-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
 SUMMARY:Ep 5 · Reborn as a Space Mercenary: I Woke Up Piloting the Stronge
@@ -2496,7 +2584,7 @@ URL:https://myanimelist.net/anime/60948/Mezametara_Saikyou_Soubi_to_Uchuuse
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tank-chair-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
 SUMMARY:Ep 5 · TANK CHAIR (Projected)
@@ -2506,7 +2594,7 @@ URL:https://myanimelist.net/anime/63751/Tank_Chair
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-overgeared-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
 SUMMARY:Ep 6 · Overgeared
@@ -2516,7 +2604,7 @@ URL:https://myanimelist.net/anime/64340/Tempal__Item_no_Chikara
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-psyren-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 SUMMARY:Ep 4 · PSYREN (Projected)
@@ -2527,7 +2615,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-laid-off-cheat-granting-mage-enjoys-a-second-lease-on-life-
  ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Ep 6 · The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on L
@@ -2544,7 +2632,7 @@ URL:https://myanimelist.net/anime/63431/Tsuihou_sareta_Cheat_Fuyo_Majutsush
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-one-piece-ep-1159@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Ep 1159 · One Piece (Projected)
@@ -2554,7 +2642,7 @@ URL:https://myanimelist.net/anime/21/One_Piece
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-magic-knight-rayearth-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:Ep 4 · Magic Knight Rayearth (Projected)
@@ -2564,7 +2652,7 @@ URL:https://myanimelist.net/anime/59204/Magic_Knight_Rayearth_2026
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reincarnated-as-a-sword-season-2-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:Ep 4 · Reincarnated as a Sword Season 2
@@ -2574,7 +2662,7 @@ URL:https://myanimelist.net/anime/53913/Tensei_shitara_Ken_deshita_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-sasaki-and-peeps-season-2-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:Ep 4 · Sasaki and Peeps Season 2
@@ -2584,7 +2672,7 @@ URL:https://myanimelist.net/anime/58518/Sasaki_to_Pii-chan_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-detective-is-already-dead-season-2-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:Ep 4 · The Detective Is Already Dead Season 2
@@ -2594,7 +2682,7 @@ URL:https://myanimelist.net/anime/52480/Tantei_wa_Mou_Shindeiru_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-s-strongest-witch-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:Ep 4 · The World's Strongest Witch (Projected)
@@ -2605,7 +2693,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-prince-of-tennis-ii-u-17-world-cup-final-member-selection-m
  atch-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:Ep 5 · The Prince of Tennis II U-17 WORLD CUP: Final Member Select
@@ -2618,7 +2706,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-a-returner-s-magic-should-be-special-season-2-ep-6@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:Ep 6 · A Returner's Magic Should Be Special Season 2 (Projected)
@@ -2630,7 +2718,7 @@ URL:https://myanimelist.net/anime/57612/Kikansha_no_Mahou_wa_Tokubetsu_desu
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-kamui-he-s-behind-you-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:Ep 7 · KAMUI: He's Behind You!
@@ -2640,7 +2728,7 @@ URL:https://myanimelist.net/anime/63468/Ushiro_no_Shoumen_Kamui-san
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-saga-of-tanya-the-evil-season-2-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:Ep 10 · Saga of Tanya the Evil Season 2
@@ -2649,7 +2737,7 @@ URL:https://myanimelist.net/anime/49233/Youjo_Senki_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-is-dancing-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261112
 SUMMARY:Ep 12 · The World Is Dancing
@@ -2659,7 +2747,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-iceblade-sorcerer-shall-rule-the-world-ii-ep-4@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:Ep 4 · The Iceblade Sorcerer Shall Rule the World II
@@ -2670,7 +2758,7 @@ URL:https://myanimelist.net/anime/64254/Hyouken_no_Majutsushi_ga_Sekai_wo_S
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-fx-fighter-kurumi-chan-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:Ep 7 · FX Fighter Kurumi-chan
@@ -2679,7 +2767,7 @@ URL:https://myanimelist.net/anime/63337/FX_Senshi_Kurumi-chan
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-ramparts-of-ice-season-2-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:Ep 7 · The Ramparts of Ice Season 2 (Projected)
@@ -2690,7 +2778,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-18@anim
  e-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:Ep 18 · The Exiled Heavy Knight Knows How to Game the System
@@ -2701,7 +2789,7 @@ URL:https://myanimelist.net/anime/59741/Tsuihou_sareta_Tensei_Juukishi_wa_G
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-firefly-wedding-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Ep 4 · Firefly Wedding
@@ -2710,7 +2798,7 @@ URL:https://myanimelist.net/anime/63293/Hotaru_no_Yomeiri
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-apothecary-diaries-season-3-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Ep 5 · The Apothecary Diaries Season 3
@@ -2720,7 +2808,7 @@ URL:https://myanimelist.net/anime/61987/Kusuriya_no_Hitorigoto_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tougen-anki-nikko-kegon-falls-arc-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Ep 6 · Tougen Anki: Nikko Kegon Falls Arc
@@ -2731,7 +2819,7 @@ URL:https://myanimelist.net/anime/63181/Tougen_Anki__Nikko_Kegon_no_Taki-he
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tokyo-revengers-war-of-the-three-titan-arc-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Ep 7 · Tokyo Revengers: War of the Three Titan Arc
@@ -2742,7 +2830,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-jojo-s-bizarre-adventure-part-7-steel-ball-run-ep-9@anime-dub-c
  al
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Ep 9 · Jojo's Bizarre Adventure Part 7: STEEL BALL RUN (Projected)
@@ -2754,7 +2842,7 @@ URL:https://myanimelist.net/anime/61469/Steel_Ball_Run__JoJo_no_Kimyou_na_B
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-link-click-season-3-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:Ep 12 · Link Click Season 3
@@ -2762,59 +2850,69 @@ DESCRIPTION:MAL: https://myanimelist.net/anime/61607/Shiguang_Dailiren_III
 URL:https://myanimelist.net/anime/61607/Shiguang_Dailiren_III
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-horror-collector-ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-even-the-student-council-has-its-holes-ep-3@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
-SUMMARY:Ep 3 · HORROR COLLECTOR
+SUMMARY:Ep 3 · Even the Student Council Has Its Holes!
+DESCRIPTION:MAL: https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_
+ Aru
+URL:https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_Aru
+END:VEVENT
+BEGIN:VEVENT
+UID:mal-dub-horror-collector-ep-4@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Ep 4 · HORROR COLLECTOR
 DESCRIPTION:MAL: https://myanimelist.net/anime/63053/Kyoufu_Collector
 URL:https://myanimelist.net/anime/63053/Kyoufu_Collector
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-black-clover-season-2-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-black-clover-season-2-ep-5@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
-SUMMARY:Ep 4 · Black Clover Season 2 (Projected)
+SUMMARY:Ep 5 · Black Clover Season 2 (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/61967/Black_Clover_2nd_Seaso
  n\\nNote: Episode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/61967/Black_Clover_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-i-m-looking-for-a-zombie-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-i-m-looking-for-a-zombie-ep-7@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
-SUMMARY:Ep 6 · #I'm Looking For a Zombie
+SUMMARY:Ep 7 · #I'm Looking For a Zombie
 DESCRIPTION:MAL: https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 URL:https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-magical-explorer-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-magical-explorer-ep-7@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
-SUMMARY:Ep 6 · Magical Explorer
+SUMMARY:Ep 7 · Magical Explorer
 DESCRIPTION:MAL: https://myanimelist.net/anime/56733/Magical%E2%98%85Explor
  er
 URL:https://myanimelist.net/anime/56733/Magical%E2%98%85Explorer
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-ranma-1-2-season-3-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-ranma-1-2-season-3-ep-7@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
-SUMMARY:Ep 6 · Ranma 1/2 Season 3 (Projected)
+SUMMARY:Ep 7 · Ranma 1/2 Season 3 (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_
  Season\\nNote: Episode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-7@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
-SUMMARY:Ep 6 · The Seven Knights of the Marronnier Kingdom
+SUMMARY:Ep 7 · The Seven Knights of the Marronnier Kingdom
 DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
  hichinin_no_Kishi
 URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
@@ -2822,7 +2920,7 @@ URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-bleach-thousand-year-blood-war-the-calamity-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Ep 10 · Bleach: Thousand-Year Blood War - The Calamity
@@ -2832,18 +2930,18 @@ URL:https://myanimelist.net/anime/60636/Bleach__Sennen_Kessen-hen_-_Kashin-
  tan
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-rilakkuma-ep-31@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-rilakkuma-ep-32@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
-SUMMARY:Ep 31 · Rilakkuma (Projected)
+SUMMARY:Ep 32 · Rilakkuma (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/60153/Rilakkuma\\nNote: Epis
  ode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/60153/Rilakkuma
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-beyblade-x-ep-134@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Ep 134 · Beyblade X (Projected)
@@ -2854,7 +2952,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-full-clearing-another-world-under-a-goddess-with-zero-believers
  -ep-3@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Ep 3 · Full Clearing Another World under a Goddess with Zero Belie
@@ -2867,7 +2965,7 @@ URL:https://myanimelist.net/anime/63292/Shinja_Zero_no_Megami-sama_to_Hajim
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-ao-ashi-season-2-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Ep 4 · Ao Ashi Season 2 (Projected)
@@ -2878,7 +2976,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-as-a-reincarnated-aristocrat-i-ll-use-my-appraisal-skill-to-ris
  e-in-the-world-season-3-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Ep 5 · As a Reincarnated Aristocrat\, I'll Use My Appraisal Skill 
@@ -2891,7 +2989,7 @@ URL:https://myanimelist.net/anime/60601/Tensei_Kizoku_Kantei_Skill_de_Naria
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-blue-box-season-2-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Ep 6 · Blue Box Season 2
@@ -2901,7 +2999,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-st
  arship-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Ep 6 · Reborn as a Space Mercenary: I Woke Up Piloting the Stronge
@@ -2914,7 +3012,7 @@ URL:https://myanimelist.net/anime/60948/Mezametara_Saikyou_Soubi_to_Uchuuse
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tank-chair-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Ep 6 · TANK CHAIR (Projected)
@@ -2924,7 +3022,7 @@ URL:https://myanimelist.net/anime/63751/Tank_Chair
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-overgeared-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Ep 7 · Overgeared
@@ -2934,7 +3032,7 @@ URL:https://myanimelist.net/anime/64340/Tempal__Item_no_Chikara
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-psyren-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:Ep 5 · PSYREN (Projected)
@@ -2945,7 +3043,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-laid-off-cheat-granting-mage-enjoys-a-second-lease-on-life-
  ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:Ep 7 · The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on L
@@ -2962,7 +3060,7 @@ URL:https://myanimelist.net/anime/63431/Tsuihou_sareta_Cheat_Fuyo_Majutsush
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-one-piece-ep-1160@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:Ep 1160 · One Piece (Projected)
@@ -2972,7 +3070,7 @@ URL:https://myanimelist.net/anime/21/One_Piece
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-magic-knight-rayearth-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Ep 5 · Magic Knight Rayearth (Projected)
@@ -2982,7 +3080,7 @@ URL:https://myanimelist.net/anime/59204/Magic_Knight_Rayearth_2026
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reincarnated-as-a-sword-season-2-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Ep 5 · Reincarnated as a Sword Season 2
@@ -2992,7 +3090,7 @@ URL:https://myanimelist.net/anime/53913/Tensei_shitara_Ken_deshita_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-sasaki-and-peeps-season-2-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Ep 5 · Sasaki and Peeps Season 2
@@ -3002,7 +3100,7 @@ URL:https://myanimelist.net/anime/58518/Sasaki_to_Pii-chan_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-detective-is-already-dead-season-2-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Ep 5 · The Detective Is Already Dead Season 2
@@ -3012,7 +3110,7 @@ URL:https://myanimelist.net/anime/52480/Tantei_wa_Mou_Shindeiru_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-s-strongest-witch-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Ep 5 · The World's Strongest Witch (Projected)
@@ -3023,7 +3121,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-prince-of-tennis-ii-u-17-world-cup-final-member-selection-m
  atch-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Ep 6 · The Prince of Tennis II U-17 WORLD CUP: Final Member Select
@@ -3036,7 +3134,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-a-returner-s-magic-should-be-special-season-2-ep-7@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Ep 7 · A Returner's Magic Should Be Special Season 2 (Projected)
@@ -3048,7 +3146,7 @@ URL:https://myanimelist.net/anime/57612/Kikansha_no_Mahou_wa_Tokubetsu_desu
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-kamui-he-s-behind-you-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Ep 8 · KAMUI: He's Behind You!
@@ -3058,7 +3156,7 @@ URL:https://myanimelist.net/anime/63468/Ushiro_no_Shoumen_Kamui-san
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-saga-of-tanya-the-evil-season-2-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Ep 11 · Saga of Tanya the Evil Season 2
@@ -3067,7 +3165,7 @@ URL:https://myanimelist.net/anime/49233/Youjo_Senki_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-is-dancing-ep-13@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:Ep 13 · The World Is Dancing
@@ -3077,7 +3175,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-iceblade-sorcerer-shall-rule-the-world-ii-ep-5@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Ep 5 · The Iceblade Sorcerer Shall Rule the World II
@@ -3088,7 +3186,7 @@ URL:https://myanimelist.net/anime/64254/Hyouken_no_Majutsushi_ga_Sekai_wo_S
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-fx-fighter-kurumi-chan-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Ep 8 · FX Fighter Kurumi-chan
@@ -3097,7 +3195,7 @@ URL:https://myanimelist.net/anime/63337/FX_Senshi_Kurumi-chan
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-ramparts-of-ice-season-2-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Ep 8 · The Ramparts of Ice Season 2 (Projected)
@@ -3108,7 +3206,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-19@anim
  e-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Ep 19 · The Exiled Heavy Knight Knows How to Game the System
@@ -3119,7 +3217,7 @@ URL:https://myanimelist.net/anime/59741/Tsuihou_sareta_Tensei_Juukishi_wa_G
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-firefly-wedding-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Ep 5 · Firefly Wedding
@@ -3128,7 +3226,7 @@ URL:https://myanimelist.net/anime/63293/Hotaru_no_Yomeiri
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-apothecary-diaries-season-3-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Ep 6 · The Apothecary Diaries Season 3
@@ -3138,7 +3236,7 @@ URL:https://myanimelist.net/anime/61987/Kusuriya_no_Hitorigoto_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tougen-anki-nikko-kegon-falls-arc-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Ep 7 · Tougen Anki: Nikko Kegon Falls Arc
@@ -3149,7 +3247,7 @@ URL:https://myanimelist.net/anime/63181/Tougen_Anki__Nikko_Kegon_no_Taki-he
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tokyo-revengers-war-of-the-three-titan-arc-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Ep 8 · Tokyo Revengers: War of the Three Titan Arc
@@ -3160,7 +3258,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-jojo-s-bizarre-adventure-part-7-steel-ball-run-ep-10@anime-dub-
  cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:Ep 10 · Jojo's Bizarre Adventure Part 7: STEEL BALL RUN (Projected
@@ -3172,77 +3270,87 @@ URL:https://myanimelist.net/anime/61469/Steel_Ball_Run__JoJo_no_Kimyou_na_B
  ouken
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-horror-collector-ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-even-the-student-council-has-its-holes-ep-4@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
-SUMMARY:Ep 4 · HORROR COLLECTOR
+SUMMARY:Ep 4 · Even the Student Council Has Its Holes!
+DESCRIPTION:MAL: https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_
+ Aru
+URL:https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_Aru
+END:VEVENT
+BEGIN:VEVENT
+UID:mal-dub-horror-collector-ep-5@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Ep 5 · HORROR COLLECTOR
 DESCRIPTION:MAL: https://myanimelist.net/anime/63053/Kyoufu_Collector
 URL:https://myanimelist.net/anime/63053/Kyoufu_Collector
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-black-clover-season-2-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-black-clover-season-2-ep-6@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
-SUMMARY:Ep 5 · Black Clover Season 2 (Projected)
+SUMMARY:Ep 6 · Black Clover Season 2 (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/61967/Black_Clover_2nd_Seaso
  n\\nNote: Episode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/61967/Black_Clover_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-i-m-looking-for-a-zombie-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-i-m-looking-for-a-zombie-ep-8@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
-SUMMARY:Ep 7 · #I'm Looking For a Zombie
+SUMMARY:Ep 8 · #I'm Looking For a Zombie
 DESCRIPTION:MAL: https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 URL:https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-magical-explorer-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-magical-explorer-ep-8@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
-SUMMARY:Ep 7 · Magical Explorer
+SUMMARY:Ep 8 · Magical Explorer
 DESCRIPTION:MAL: https://myanimelist.net/anime/56733/Magical%E2%98%85Explor
  er
 URL:https://myanimelist.net/anime/56733/Magical%E2%98%85Explorer
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-ranma-1-2-season-3-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-ranma-1-2-season-3-ep-8@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
-SUMMARY:Ep 7 · Ranma 1/2 Season 3 (Projected)
+SUMMARY:Ep 8 · Ranma 1/2 Season 3 (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_
  Season\\nNote: Episode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-8@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
-SUMMARY:Ep 7 · The Seven Knights of the Marronnier Kingdom
+SUMMARY:Ep 8 · The Seven Knights of the Marronnier Kingdom
 DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
  hichinin_no_Kishi
 URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
  ishi
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-rilakkuma-ep-32@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-rilakkuma-ep-33@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
-SUMMARY:Ep 32 · Rilakkuma (Projected)
+SUMMARY:Ep 33 · Rilakkuma (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/60153/Rilakkuma\\nNote: Epis
  ode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/60153/Rilakkuma
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-beyblade-x-ep-135@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Ep 135 · Beyblade X (Projected)
@@ -3253,7 +3361,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-full-clearing-another-world-under-a-goddess-with-zero-believers
  -ep-4@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Ep 4 · Full Clearing Another World under a Goddess with Zero Belie
@@ -3266,7 +3374,7 @@ URL:https://myanimelist.net/anime/63292/Shinja_Zero_no_Megami-sama_to_Hajim
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-ao-ashi-season-2-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Ep 5 · Ao Ashi Season 2 (Projected)
@@ -3277,7 +3385,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-as-a-reincarnated-aristocrat-i-ll-use-my-appraisal-skill-to-ris
  e-in-the-world-season-3-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Ep 6 · As a Reincarnated Aristocrat\, I'll Use My Appraisal Skill 
@@ -3290,7 +3398,7 @@ URL:https://myanimelist.net/anime/60601/Tensei_Kizoku_Kantei_Skill_de_Naria
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-blue-box-season-2-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Ep 7 · Blue Box Season 2
@@ -3300,7 +3408,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-st
  arship-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Ep 7 · Reborn as a Space Mercenary: I Woke Up Piloting the Stronge
@@ -3313,7 +3421,7 @@ URL:https://myanimelist.net/anime/60948/Mezametara_Saikyou_Soubi_to_Uchuuse
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tank-chair-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Ep 7 · TANK CHAIR (Projected)
@@ -3323,7 +3431,7 @@ URL:https://myanimelist.net/anime/63751/Tank_Chair
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-overgeared-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:Ep 8 · Overgeared
@@ -3333,7 +3441,7 @@ URL:https://myanimelist.net/anime/64340/Tempal__Item_no_Chikara
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-psyren-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:Ep 6 · PSYREN (Projected)
@@ -3344,7 +3452,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-laid-off-cheat-granting-mage-enjoys-a-second-lease-on-life-
  ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:Ep 8 · The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on L
@@ -3361,7 +3469,7 @@ URL:https://myanimelist.net/anime/63431/Tsuihou_sareta_Cheat_Fuyo_Majutsush
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-one-piece-ep-1161@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:Ep 1161 · One Piece (Projected)
@@ -3371,7 +3479,7 @@ URL:https://myanimelist.net/anime/21/One_Piece
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-magic-knight-rayearth-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Ep 6 · Magic Knight Rayearth (Projected)
@@ -3381,7 +3489,7 @@ URL:https://myanimelist.net/anime/59204/Magic_Knight_Rayearth_2026
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reincarnated-as-a-sword-season-2-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Ep 6 · Reincarnated as a Sword Season 2
@@ -3391,7 +3499,7 @@ URL:https://myanimelist.net/anime/53913/Tensei_shitara_Ken_deshita_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-sasaki-and-peeps-season-2-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Ep 6 · Sasaki and Peeps Season 2
@@ -3401,7 +3509,7 @@ URL:https://myanimelist.net/anime/58518/Sasaki_to_Pii-chan_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-detective-is-already-dead-season-2-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Ep 6 · The Detective Is Already Dead Season 2
@@ -3411,7 +3519,7 @@ URL:https://myanimelist.net/anime/52480/Tantei_wa_Mou_Shindeiru_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-s-strongest-witch-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Ep 6 · The World's Strongest Witch (Projected)
@@ -3422,7 +3530,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-prince-of-tennis-ii-u-17-world-cup-final-member-selection-m
  atch-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Ep 7 · The Prince of Tennis II U-17 WORLD CUP: Final Member Select
@@ -3435,7 +3543,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-a-returner-s-magic-should-be-special-season-2-ep-8@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Ep 8 · A Returner's Magic Should Be Special Season 2 (Projected)
@@ -3447,7 +3555,7 @@ URL:https://myanimelist.net/anime/57612/Kikansha_no_Mahou_wa_Tokubetsu_desu
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-kamui-he-s-behind-you-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Ep 9 · KAMUI: He's Behind You!
@@ -3457,7 +3565,7 @@ URL:https://myanimelist.net/anime/63468/Ushiro_no_Shoumen_Kamui-san
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-saga-of-tanya-the-evil-season-2-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Ep 12 · Saga of Tanya the Evil Season 2
@@ -3467,7 +3575,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-iceblade-sorcerer-shall-rule-the-world-ii-ep-6@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:Ep 6 · The Iceblade Sorcerer Shall Rule the World II
@@ -3478,7 +3586,7 @@ URL:https://myanimelist.net/anime/64254/Hyouken_no_Majutsushi_ga_Sekai_wo_S
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-fx-fighter-kurumi-chan-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:Ep 9 · FX Fighter Kurumi-chan
@@ -3487,7 +3595,7 @@ URL:https://myanimelist.net/anime/63337/FX_Senshi_Kurumi-chan
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-ramparts-of-ice-season-2-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:Ep 9 · The Ramparts of Ice Season 2 (Projected)
@@ -3498,7 +3606,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-20@anim
  e-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:Ep 20 · The Exiled Heavy Knight Knows How to Game the System
@@ -3509,7 +3617,7 @@ URL:https://myanimelist.net/anime/59741/Tsuihou_sareta_Tensei_Juukishi_wa_G
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-firefly-wedding-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Ep 6 · Firefly Wedding
@@ -3518,7 +3626,7 @@ URL:https://myanimelist.net/anime/63293/Hotaru_no_Yomeiri
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-apothecary-diaries-season-3-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Ep 7 · The Apothecary Diaries Season 3
@@ -3528,7 +3636,7 @@ URL:https://myanimelist.net/anime/61987/Kusuriya_no_Hitorigoto_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tougen-anki-nikko-kegon-falls-arc-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Ep 8 · Tougen Anki: Nikko Kegon Falls Arc
@@ -3539,7 +3647,7 @@ URL:https://myanimelist.net/anime/63181/Tougen_Anki__Nikko_Kegon_no_Taki-he
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tokyo-revengers-war-of-the-three-titan-arc-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Ep 9 · Tokyo Revengers: War of the Three Titan Arc
@@ -3550,7 +3658,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-jojo-s-bizarre-adventure-part-7-steel-ball-run-ep-11@anime-dub-
  cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Ep 11 · Jojo's Bizarre Adventure Part 7: STEEL BALL RUN (Projected
@@ -3562,77 +3670,87 @@ URL:https://myanimelist.net/anime/61469/Steel_Ball_Run__JoJo_no_Kimyou_na_B
  ouken
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-horror-collector-ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-even-the-student-council-has-its-holes-ep-5@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
-SUMMARY:Ep 5 · HORROR COLLECTOR
+SUMMARY:Ep 5 · Even the Student Council Has Its Holes!
+DESCRIPTION:MAL: https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_
+ Aru
+URL:https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_Aru
+END:VEVENT
+BEGIN:VEVENT
+UID:mal-dub-horror-collector-ep-6@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Ep 6 · HORROR COLLECTOR
 DESCRIPTION:MAL: https://myanimelist.net/anime/63053/Kyoufu_Collector
 URL:https://myanimelist.net/anime/63053/Kyoufu_Collector
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-black-clover-season-2-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-black-clover-season-2-ep-7@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
-SUMMARY:Ep 6 · Black Clover Season 2 (Projected)
+SUMMARY:Ep 7 · Black Clover Season 2 (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/61967/Black_Clover_2nd_Seaso
  n\\nNote: Episode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/61967/Black_Clover_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-i-m-looking-for-a-zombie-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-i-m-looking-for-a-zombie-ep-9@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
-SUMMARY:Ep 8 · #I'm Looking For a Zombie
+SUMMARY:Ep 9 · #I'm Looking For a Zombie
 DESCRIPTION:MAL: https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 URL:https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-magical-explorer-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-magical-explorer-ep-9@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
-SUMMARY:Ep 8 · Magical Explorer
+SUMMARY:Ep 9 · Magical Explorer
 DESCRIPTION:MAL: https://myanimelist.net/anime/56733/Magical%E2%98%85Explor
  er
 URL:https://myanimelist.net/anime/56733/Magical%E2%98%85Explorer
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-ranma-1-2-season-3-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-ranma-1-2-season-3-ep-9@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
-SUMMARY:Ep 8 · Ranma 1/2 Season 3 (Projected)
+SUMMARY:Ep 9 · Ranma 1/2 Season 3 (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_
  Season\\nNote: Episode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-9@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
-SUMMARY:Ep 8 · The Seven Knights of the Marronnier Kingdom
+SUMMARY:Ep 9 · The Seven Knights of the Marronnier Kingdom
 DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
  hichinin_no_Kishi
 URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
  ishi
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-rilakkuma-ep-33@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-rilakkuma-ep-34@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
-SUMMARY:Ep 33 · Rilakkuma (Projected)
+SUMMARY:Ep 34 · Rilakkuma (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/60153/Rilakkuma\\nNote: Epis
  ode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/60153/Rilakkuma
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-beyblade-x-ep-136@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Ep 136 · Beyblade X (Projected)
@@ -3643,7 +3761,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-full-clearing-another-world-under-a-goddess-with-zero-believers
  -ep-5@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Ep 5 · Full Clearing Another World under a Goddess with Zero Belie
@@ -3656,7 +3774,7 @@ URL:https://myanimelist.net/anime/63292/Shinja_Zero_no_Megami-sama_to_Hajim
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-ao-ashi-season-2-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Ep 6 · Ao Ashi Season 2 (Projected)
@@ -3667,7 +3785,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-as-a-reincarnated-aristocrat-i-ll-use-my-appraisal-skill-to-ris
  e-in-the-world-season-3-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Ep 7 · As a Reincarnated Aristocrat\, I'll Use My Appraisal Skill 
@@ -3680,7 +3798,7 @@ URL:https://myanimelist.net/anime/60601/Tensei_Kizoku_Kantei_Skill_de_Naria
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-blue-box-season-2-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Ep 8 · Blue Box Season 2
@@ -3690,7 +3808,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-st
  arship-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Ep 8 · Reborn as a Space Mercenary: I Woke Up Piloting the Stronge
@@ -3703,7 +3821,7 @@ URL:https://myanimelist.net/anime/60948/Mezametara_Saikyou_Soubi_to_Uchuuse
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tank-chair-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Ep 8 · TANK CHAIR (Projected)
@@ -3713,7 +3831,7 @@ URL:https://myanimelist.net/anime/63751/Tank_Chair
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-overgeared-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 SUMMARY:Ep 9 · Overgeared
@@ -3723,7 +3841,7 @@ URL:https://myanimelist.net/anime/64340/Tempal__Item_no_Chikara
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-psyren-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
 SUMMARY:Ep 7 · PSYREN (Projected)
@@ -3734,7 +3852,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-laid-off-cheat-granting-mage-enjoys-a-second-lease-on-life-
  ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:Ep 9 · The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on L
@@ -3751,7 +3869,7 @@ URL:https://myanimelist.net/anime/63431/Tsuihou_sareta_Cheat_Fuyo_Majutsush
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-magic-knight-rayearth-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Ep 7 · Magic Knight Rayearth (Projected)
@@ -3761,7 +3879,7 @@ URL:https://myanimelist.net/anime/59204/Magic_Knight_Rayearth_2026
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reincarnated-as-a-sword-season-2-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Ep 7 · Reincarnated as a Sword Season 2
@@ -3771,7 +3889,7 @@ URL:https://myanimelist.net/anime/53913/Tensei_shitara_Ken_deshita_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-sasaki-and-peeps-season-2-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Ep 7 · Sasaki and Peeps Season 2
@@ -3781,7 +3899,7 @@ URL:https://myanimelist.net/anime/58518/Sasaki_to_Pii-chan_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-detective-is-already-dead-season-2-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Ep 7 · The Detective Is Already Dead Season 2
@@ -3791,7 +3909,7 @@ URL:https://myanimelist.net/anime/52480/Tantei_wa_Mou_Shindeiru_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-s-strongest-witch-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Ep 7 · The World's Strongest Witch (Projected)
@@ -3802,7 +3920,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-prince-of-tennis-ii-u-17-world-cup-final-member-selection-m
  atch-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Ep 8 · The Prince of Tennis II U-17 WORLD CUP: Final Member Select
@@ -3815,7 +3933,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-a-returner-s-magic-should-be-special-season-2-ep-9@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Ep 9 · A Returner's Magic Should Be Special Season 2 (Projected)
@@ -3827,7 +3945,7 @@ URL:https://myanimelist.net/anime/57612/Kikansha_no_Mahou_wa_Tokubetsu_desu
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-kamui-he-s-behind-you-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Ep 10 · KAMUI: He's Behind You!
@@ -3838,7 +3956,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-iceblade-sorcerer-shall-rule-the-world-ii-ep-7@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
 SUMMARY:Ep 7 · The Iceblade Sorcerer Shall Rule the World II
@@ -3849,7 +3967,7 @@ URL:https://myanimelist.net/anime/64254/Hyouken_no_Majutsushi_ga_Sekai_wo_S
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-fx-fighter-kurumi-chan-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
 SUMMARY:Ep 10 · FX Fighter Kurumi-chan
@@ -3858,7 +3976,7 @@ URL:https://myanimelist.net/anime/63337/FX_Senshi_Kurumi-chan
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-ramparts-of-ice-season-2-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
 SUMMARY:Ep 10 · The Ramparts of Ice Season 2 (Projected)
@@ -3869,7 +3987,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-21@anim
  e-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
 SUMMARY:Ep 21 · The Exiled Heavy Knight Knows How to Game the System
@@ -3880,7 +3998,7 @@ URL:https://myanimelist.net/anime/59741/Tsuihou_sareta_Tensei_Juukishi_wa_G
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-firefly-wedding-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Ep 7 · Firefly Wedding
@@ -3889,7 +4007,7 @@ URL:https://myanimelist.net/anime/63293/Hotaru_no_Yomeiri
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-apothecary-diaries-season-3-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Ep 8 · The Apothecary Diaries Season 3
@@ -3899,7 +4017,7 @@ URL:https://myanimelist.net/anime/61987/Kusuriya_no_Hitorigoto_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tougen-anki-nikko-kegon-falls-arc-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Ep 9 · Tougen Anki: Nikko Kegon Falls Arc
@@ -3910,7 +4028,7 @@ URL:https://myanimelist.net/anime/63181/Tougen_Anki__Nikko_Kegon_no_Taki-he
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tokyo-revengers-war-of-the-three-titan-arc-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Ep 10 · Tokyo Revengers: War of the Three Titan Arc
@@ -3921,7 +4039,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-jojo-s-bizarre-adventure-part-7-steel-ball-run-ep-12@anime-dub-
  cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Ep 12 · Jojo's Bizarre Adventure Part 7: STEEL BALL RUN (Projected
@@ -3933,59 +4051,69 @@ URL:https://myanimelist.net/anime/61469/Steel_Ball_Run__JoJo_no_Kimyou_na_B
  ouken
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-horror-collector-ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-even-the-student-council-has-its-holes-ep-6@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
-SUMMARY:Ep 6 · HORROR COLLECTOR
+SUMMARY:Ep 6 · Even the Student Council Has Its Holes!
+DESCRIPTION:MAL: https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_
+ Aru
+URL:https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_Aru
+END:VEVENT
+BEGIN:VEVENT
+UID:mal-dub-horror-collector-ep-7@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Ep 7 · HORROR COLLECTOR
 DESCRIPTION:MAL: https://myanimelist.net/anime/63053/Kyoufu_Collector
 URL:https://myanimelist.net/anime/63053/Kyoufu_Collector
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-black-clover-season-2-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-black-clover-season-2-ep-8@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
-SUMMARY:Ep 7 · Black Clover Season 2 (Projected)
+SUMMARY:Ep 8 · Black Clover Season 2 (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/61967/Black_Clover_2nd_Seaso
  n\\nNote: Episode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/61967/Black_Clover_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-i-m-looking-for-a-zombie-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-i-m-looking-for-a-zombie-ep-10@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
-SUMMARY:Ep 9 · #I'm Looking For a Zombie
+SUMMARY:Ep 10 · #I'm Looking For a Zombie
 DESCRIPTION:MAL: https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 URL:https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-magical-explorer-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-magical-explorer-ep-10@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
-SUMMARY:Ep 9 · Magical Explorer
+SUMMARY:Ep 10 · Magical Explorer
 DESCRIPTION:MAL: https://myanimelist.net/anime/56733/Magical%E2%98%85Explor
  er
 URL:https://myanimelist.net/anime/56733/Magical%E2%98%85Explorer
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-ranma-1-2-season-3-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-ranma-1-2-season-3-ep-10@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
-SUMMARY:Ep 9 · Ranma 1/2 Season 3 (Projected)
+SUMMARY:Ep 10 · Ranma 1/2 Season 3 (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_
  Season\\nNote: Episode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-10@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
-SUMMARY:Ep 9 · The Seven Knights of the Marronnier Kingdom
+SUMMARY:Ep 10 · The Seven Knights of the Marronnier Kingdom
 DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
  hichinin_no_Kishi
 URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
@@ -3994,7 +4122,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-full-clearing-another-world-under-a-goddess-with-zero-believers
  -ep-6@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Ep 6 · Full Clearing Another World under a Goddess with Zero Belie
@@ -4007,7 +4135,7 @@ URL:https://myanimelist.net/anime/63292/Shinja_Zero_no_Megami-sama_to_Hajim
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-ao-ashi-season-2-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Ep 7 · Ao Ashi Season 2 (Projected)
@@ -4018,7 +4146,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-as-a-reincarnated-aristocrat-i-ll-use-my-appraisal-skill-to-ris
  e-in-the-world-season-3-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Ep 8 · As a Reincarnated Aristocrat\, I'll Use My Appraisal Skill 
@@ -4031,7 +4159,7 @@ URL:https://myanimelist.net/anime/60601/Tensei_Kizoku_Kantei_Skill_de_Naria
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-blue-box-season-2-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Ep 9 · Blue Box Season 2
@@ -4041,7 +4169,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-st
  arship-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Ep 9 · Reborn as a Space Mercenary: I Woke Up Piloting the Stronge
@@ -4054,7 +4182,7 @@ URL:https://myanimelist.net/anime/60948/Mezametara_Saikyou_Soubi_to_Uchuuse
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tank-chair-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Ep 9 · TANK CHAIR (Projected)
@@ -4064,7 +4192,7 @@ URL:https://myanimelist.net/anime/63751/Tank_Chair
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-overgeared-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:Ep 10 · Overgeared
@@ -4074,7 +4202,7 @@ URL:https://myanimelist.net/anime/64340/Tempal__Item_no_Chikara
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-psyren-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
 SUMMARY:Ep 8 · PSYREN (Projected)
@@ -4085,7 +4213,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-laid-off-cheat-granting-mage-enjoys-a-second-lease-on-life-
  ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261209
 SUMMARY:Ep 10 · The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on 
@@ -4102,7 +4230,7 @@ URL:https://myanimelist.net/anime/63431/Tsuihou_sareta_Cheat_Fuyo_Majutsush
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-magic-knight-rayearth-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:Ep 8 · Magic Knight Rayearth (Projected)
@@ -4112,7 +4240,7 @@ URL:https://myanimelist.net/anime/59204/Magic_Knight_Rayearth_2026
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reincarnated-as-a-sword-season-2-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:Ep 8 · Reincarnated as a Sword Season 2
@@ -4122,7 +4250,7 @@ URL:https://myanimelist.net/anime/53913/Tensei_shitara_Ken_deshita_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-sasaki-and-peeps-season-2-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:Ep 8 · Sasaki and Peeps Season 2
@@ -4132,7 +4260,7 @@ URL:https://myanimelist.net/anime/58518/Sasaki_to_Pii-chan_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-detective-is-already-dead-season-2-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:Ep 8 · The Detective Is Already Dead Season 2
@@ -4142,7 +4270,7 @@ URL:https://myanimelist.net/anime/52480/Tantei_wa_Mou_Shindeiru_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-s-strongest-witch-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:Ep 8 · The World's Strongest Witch (Projected)
@@ -4153,7 +4281,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-prince-of-tennis-ii-u-17-world-cup-final-member-selection-m
  atch-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:Ep 9 · The Prince of Tennis II U-17 WORLD CUP: Final Member Select
@@ -4166,7 +4294,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-a-returner-s-magic-should-be-special-season-2-ep-10@anime-dub-c
  al
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:Ep 10 · A Returner's Magic Should Be Special Season 2 (Projected)
@@ -4178,7 +4306,7 @@ URL:https://myanimelist.net/anime/57612/Kikansha_no_Mahou_wa_Tokubetsu_desu
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-kamui-he-s-behind-you-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261209
 DTEND;VALUE=DATE:20261210
 SUMMARY:Ep 11 · KAMUI: He's Behind You!
@@ -4189,7 +4317,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-iceblade-sorcerer-shall-rule-the-world-ii-ep-8@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:Ep 8 · The Iceblade Sorcerer Shall Rule the World II
@@ -4200,7 +4328,7 @@ URL:https://myanimelist.net/anime/64254/Hyouken_no_Majutsushi_ga_Sekai_wo_S
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-fx-fighter-kurumi-chan-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:Ep 11 · FX Fighter Kurumi-chan
@@ -4209,7 +4337,7 @@ URL:https://myanimelist.net/anime/63337/FX_Senshi_Kurumi-chan
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-ramparts-of-ice-season-2-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:Ep 11 · The Ramparts of Ice Season 2 (Projected)
@@ -4220,7 +4348,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-22@anim
  e-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:Ep 22 · The Exiled Heavy Knight Knows How to Game the System
@@ -4231,7 +4359,7 @@ URL:https://myanimelist.net/anime/59741/Tsuihou_sareta_Tensei_Juukishi_wa_G
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-firefly-wedding-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:Ep 8 · Firefly Wedding
@@ -4240,7 +4368,7 @@ URL:https://myanimelist.net/anime/63293/Hotaru_no_Yomeiri
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-apothecary-diaries-season-3-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:Ep 9 · The Apothecary Diaries Season 3
@@ -4250,7 +4378,7 @@ URL:https://myanimelist.net/anime/61987/Kusuriya_no_Hitorigoto_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tougen-anki-nikko-kegon-falls-arc-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:Ep 10 · Tougen Anki: Nikko Kegon Falls Arc
@@ -4261,7 +4389,7 @@ URL:https://myanimelist.net/anime/63181/Tougen_Anki__Nikko_Kegon_no_Taki-he
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tokyo-revengers-war-of-the-three-titan-arc-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:Ep 11 · Tokyo Revengers: War of the Three Titan Arc
@@ -4270,59 +4398,69 @@ DESCRIPTION:MAL: https://myanimelist.net/anime/59088/Tokyo_Revengers__Sante
 URL:https://myanimelist.net/anime/59088/Tokyo_Revengers__Santen_Sensou-hen
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-horror-collector-ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-even-the-student-council-has-its-holes-ep-7@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
-SUMMARY:Ep 7 · HORROR COLLECTOR
+SUMMARY:Ep 7 · Even the Student Council Has Its Holes!
+DESCRIPTION:MAL: https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_
+ Aru
+URL:https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_Aru
+END:VEVENT
+BEGIN:VEVENT
+UID:mal-dub-horror-collector-ep-8@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Ep 8 · HORROR COLLECTOR
 DESCRIPTION:MAL: https://myanimelist.net/anime/63053/Kyoufu_Collector
 URL:https://myanimelist.net/anime/63053/Kyoufu_Collector
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-black-clover-season-2-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-black-clover-season-2-ep-9@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
-SUMMARY:Ep 8 · Black Clover Season 2 (Projected)
+SUMMARY:Ep 9 · Black Clover Season 2 (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/61967/Black_Clover_2nd_Seaso
  n\\nNote: Episode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/61967/Black_Clover_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-i-m-looking-for-a-zombie-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-i-m-looking-for-a-zombie-ep-11@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
-SUMMARY:Ep 10 · #I'm Looking For a Zombie
+SUMMARY:Ep 11 · #I'm Looking For a Zombie
 DESCRIPTION:MAL: https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 URL:https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-magical-explorer-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-magical-explorer-ep-11@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
-SUMMARY:Ep 10 · Magical Explorer
+SUMMARY:Ep 11 · Magical Explorer
 DESCRIPTION:MAL: https://myanimelist.net/anime/56733/Magical%E2%98%85Explor
  er
 URL:https://myanimelist.net/anime/56733/Magical%E2%98%85Explorer
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-ranma-1-2-season-3-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-ranma-1-2-season-3-ep-11@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
-SUMMARY:Ep 10 · Ranma 1/2 Season 3 (Projected)
+SUMMARY:Ep 11 · Ranma 1/2 Season 3 (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_
  Season\\nNote: Episode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-11@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
-SUMMARY:Ep 10 · The Seven Knights of the Marronnier Kingdom
+SUMMARY:Ep 11 · The Seven Knights of the Marronnier Kingdom
 DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
  hichinin_no_Kishi
 URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
@@ -4331,7 +4469,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-full-clearing-another-world-under-a-goddess-with-zero-believers
  -ep-7@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Ep 7 · Full Clearing Another World under a Goddess with Zero Belie
@@ -4344,7 +4482,7 @@ URL:https://myanimelist.net/anime/63292/Shinja_Zero_no_Megami-sama_to_Hajim
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-ao-ashi-season-2-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Ep 8 · Ao Ashi Season 2 (Projected)
@@ -4355,7 +4493,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-as-a-reincarnated-aristocrat-i-ll-use-my-appraisal-skill-to-ris
  e-in-the-world-season-3-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Ep 9 · As a Reincarnated Aristocrat\, I'll Use My Appraisal Skill 
@@ -4368,7 +4506,7 @@ URL:https://myanimelist.net/anime/60601/Tensei_Kizoku_Kantei_Skill_de_Naria
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-blue-box-season-2-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Ep 10 · Blue Box Season 2
@@ -4378,7 +4516,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-st
  arship-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Ep 10 · Reborn as a Space Mercenary: I Woke Up Piloting the Strong
@@ -4391,7 +4529,7 @@ URL:https://myanimelist.net/anime/60948/Mezametara_Saikyou_Soubi_to_Uchuuse
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tank-chair-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Ep 10 · TANK CHAIR (Projected)
@@ -4401,7 +4539,7 @@ URL:https://myanimelist.net/anime/63751/Tank_Chair
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-overgeared-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261213
 DTEND;VALUE=DATE:20261214
 SUMMARY:Ep 11 · Overgeared
@@ -4411,7 +4549,7 @@ URL:https://myanimelist.net/anime/64340/Tempal__Item_no_Chikara
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-psyren-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261214
 DTEND;VALUE=DATE:20261215
 SUMMARY:Ep 9 · PSYREN (Projected)
@@ -4422,7 +4560,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-laid-off-cheat-granting-mage-enjoys-a-second-lease-on-life-
  ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
 SUMMARY:Ep 11 · The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on 
@@ -4439,7 +4577,7 @@ URL:https://myanimelist.net/anime/63431/Tsuihou_sareta_Cheat_Fuyo_Majutsush
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-magic-knight-rayearth-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Ep 9 · Magic Knight Rayearth (Projected)
@@ -4449,7 +4587,7 @@ URL:https://myanimelist.net/anime/59204/Magic_Knight_Rayearth_2026
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reincarnated-as-a-sword-season-2-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Ep 9 · Reincarnated as a Sword Season 2
@@ -4459,7 +4597,7 @@ URL:https://myanimelist.net/anime/53913/Tensei_shitara_Ken_deshita_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-sasaki-and-peeps-season-2-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Ep 9 · Sasaki and Peeps Season 2
@@ -4469,7 +4607,7 @@ URL:https://myanimelist.net/anime/58518/Sasaki_to_Pii-chan_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-detective-is-already-dead-season-2-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Ep 9 · The Detective Is Already Dead Season 2
@@ -4479,7 +4617,7 @@ URL:https://myanimelist.net/anime/52480/Tantei_wa_Mou_Shindeiru_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-s-strongest-witch-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Ep 9 · The World's Strongest Witch (Projected)
@@ -4490,7 +4628,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-prince-of-tennis-ii-u-17-world-cup-final-member-selection-m
  atch-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Ep 10 · The Prince of Tennis II U-17 WORLD CUP: Final Member Selec
@@ -4503,7 +4641,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-a-returner-s-magic-should-be-special-season-2-ep-11@anime-dub-c
  al
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Ep 11 · A Returner's Magic Should Be Special Season 2 (Projected)
@@ -4515,7 +4653,7 @@ URL:https://myanimelist.net/anime/57612/Kikansha_no_Mahou_wa_Tokubetsu_desu
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-kamui-he-s-behind-you-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Ep 12 · KAMUI: He's Behind You!
@@ -4526,7 +4664,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-iceblade-sorcerer-shall-rule-the-world-ii-ep-9@anime-dub-ca
  l
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261217
 DTEND;VALUE=DATE:20261218
 SUMMARY:Ep 9 · The Iceblade Sorcerer Shall Rule the World II
@@ -4537,7 +4675,7 @@ URL:https://myanimelist.net/anime/64254/Hyouken_no_Majutsushi_ga_Sekai_wo_S
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-fx-fighter-kurumi-chan-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261217
 DTEND;VALUE=DATE:20261218
 SUMMARY:Ep 12 · FX Fighter Kurumi-chan
@@ -4546,7 +4684,7 @@ URL:https://myanimelist.net/anime/63337/FX_Senshi_Kurumi-chan
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-ramparts-of-ice-season-2-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261217
 DTEND;VALUE=DATE:20261218
 SUMMARY:Ep 12 · The Ramparts of Ice Season 2 (Projected)
@@ -4557,7 +4695,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-23@anim
  e-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261217
 DTEND;VALUE=DATE:20261218
 SUMMARY:Ep 23 · The Exiled Heavy Knight Knows How to Game the System
@@ -4568,7 +4706,7 @@ URL:https://myanimelist.net/anime/59741/Tsuihou_sareta_Tensei_Juukishi_wa_G
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-firefly-wedding-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Ep 9 · Firefly Wedding
@@ -4577,7 +4715,7 @@ URL:https://myanimelist.net/anime/63293/Hotaru_no_Yomeiri
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-apothecary-diaries-season-3-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Ep 10 · The Apothecary Diaries Season 3
@@ -4587,7 +4725,7 @@ URL:https://myanimelist.net/anime/61987/Kusuriya_no_Hitorigoto_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tougen-anki-nikko-kegon-falls-arc-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Ep 11 · Tougen Anki: Nikko Kegon Falls Arc
@@ -4598,7 +4736,7 @@ URL:https://myanimelist.net/anime/63181/Tougen_Anki__Nikko_Kegon_no_Taki-he
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tokyo-revengers-war-of-the-three-titan-arc-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Ep 12 · Tokyo Revengers: War of the Three Titan Arc
@@ -4607,59 +4745,69 @@ DESCRIPTION:MAL: https://myanimelist.net/anime/59088/Tokyo_Revengers__Sante
 URL:https://myanimelist.net/anime/59088/Tokyo_Revengers__Santen_Sensou-hen
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-horror-collector-ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-even-the-student-council-has-its-holes-ep-8@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
-SUMMARY:Ep 8 · HORROR COLLECTOR
+SUMMARY:Ep 8 · Even the Student Council Has Its Holes!
+DESCRIPTION:MAL: https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_
+ Aru
+URL:https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_Aru
+END:VEVENT
+BEGIN:VEVENT
+UID:mal-dub-horror-collector-ep-9@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Ep 9 · HORROR COLLECTOR
 DESCRIPTION:MAL: https://myanimelist.net/anime/63053/Kyoufu_Collector
 URL:https://myanimelist.net/anime/63053/Kyoufu_Collector
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-black-clover-season-2-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-black-clover-season-2-ep-10@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
-SUMMARY:Ep 9 · Black Clover Season 2 (Projected)
+SUMMARY:Ep 10 · Black Clover Season 2 (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/61967/Black_Clover_2nd_Seaso
  n\\nNote: Episode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/61967/Black_Clover_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-i-m-looking-for-a-zombie-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-i-m-looking-for-a-zombie-ep-12@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
-SUMMARY:Ep 11 · #I'm Looking For a Zombie
+SUMMARY:Ep 12 · #I'm Looking For a Zombie
 DESCRIPTION:MAL: https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 URL:https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-magical-explorer-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-magical-explorer-ep-12@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
-SUMMARY:Ep 11 · Magical Explorer
+SUMMARY:Ep 12 · Magical Explorer
 DESCRIPTION:MAL: https://myanimelist.net/anime/56733/Magical%E2%98%85Explor
  er
 URL:https://myanimelist.net/anime/56733/Magical%E2%98%85Explorer
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-ranma-1-2-season-3-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-ranma-1-2-season-3-ep-12@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
-SUMMARY:Ep 11 · Ranma 1/2 Season 3 (Projected)
+SUMMARY:Ep 12 · Ranma 1/2 Season 3 (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_
  Season\\nNote: Episode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-12@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
-SUMMARY:Ep 11 · The Seven Knights of the Marronnier Kingdom
+SUMMARY:Ep 12 · The Seven Knights of the Marronnier Kingdom
 DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
  hichinin_no_Kishi
 URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
@@ -4668,7 +4816,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-full-clearing-another-world-under-a-goddess-with-zero-believers
  -ep-8@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Ep 8 · Full Clearing Another World under a Goddess with Zero Belie
@@ -4681,7 +4829,7 @@ URL:https://myanimelist.net/anime/63292/Shinja_Zero_no_Megami-sama_to_Hajim
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-ao-ashi-season-2-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Ep 9 · Ao Ashi Season 2 (Projected)
@@ -4692,7 +4840,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-as-a-reincarnated-aristocrat-i-ll-use-my-appraisal-skill-to-ris
  e-in-the-world-season-3-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Ep 10 · As a Reincarnated Aristocrat\, I'll Use My Appraisal Skill
@@ -4705,7 +4853,7 @@ URL:https://myanimelist.net/anime/60601/Tensei_Kizoku_Kantei_Skill_de_Naria
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-blue-box-season-2-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Ep 11 · Blue Box Season 2
@@ -4715,7 +4863,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-st
  arship-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Ep 11 · Reborn as a Space Mercenary: I Woke Up Piloting the Strong
@@ -4728,7 +4876,7 @@ URL:https://myanimelist.net/anime/60948/Mezametara_Saikyou_Soubi_to_Uchuuse
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tank-chair-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Ep 11 · TANK CHAIR (Projected)
@@ -4738,7 +4886,7 @@ URL:https://myanimelist.net/anime/63751/Tank_Chair
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-overgeared-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261220
 DTEND;VALUE=DATE:20261221
 SUMMARY:Ep 12 · Overgeared
@@ -4748,7 +4896,7 @@ URL:https://myanimelist.net/anime/64340/Tempal__Item_no_Chikara
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-psyren-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261221
 DTEND;VALUE=DATE:20261222
 SUMMARY:Ep 10 · PSYREN (Projected)
@@ -4759,7 +4907,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-laid-off-cheat-granting-mage-enjoys-a-second-lease-on-life-
  ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261222
 DTEND;VALUE=DATE:20261223
 SUMMARY:Ep 12 · The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on 
@@ -4776,7 +4924,7 @@ URL:https://myanimelist.net/anime/63431/Tsuihou_sareta_Cheat_Fuyo_Majutsush
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-magic-knight-rayearth-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Ep 10 · Magic Knight Rayearth (Projected)
@@ -4786,7 +4934,7 @@ URL:https://myanimelist.net/anime/59204/Magic_Knight_Rayearth_2026
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reincarnated-as-a-sword-season-2-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Ep 10 · Reincarnated as a Sword Season 2
@@ -4796,7 +4944,7 @@ URL:https://myanimelist.net/anime/53913/Tensei_shitara_Ken_deshita_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-sasaki-and-peeps-season-2-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Ep 10 · Sasaki and Peeps Season 2
@@ -4806,7 +4954,7 @@ URL:https://myanimelist.net/anime/58518/Sasaki_to_Pii-chan_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-detective-is-already-dead-season-2-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Ep 10 · The Detective Is Already Dead Season 2
@@ -4816,7 +4964,7 @@ URL:https://myanimelist.net/anime/52480/Tantei_wa_Mou_Shindeiru_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-s-strongest-witch-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Ep 10 · The World's Strongest Witch (Projected)
@@ -4827,7 +4975,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-prince-of-tennis-ii-u-17-world-cup-final-member-selection-m
  atch-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Ep 11 · The Prince of Tennis II U-17 WORLD CUP: Final Member Selec
@@ -4840,7 +4988,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-a-returner-s-magic-should-be-special-season-2-ep-12@anime-dub-c
  al
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Ep 12 · A Returner's Magic Should Be Special Season 2 (Projected)
@@ -4853,7 +5001,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-iceblade-sorcerer-shall-rule-the-world-ii-ep-10@anime-dub-c
  al
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261224
 DTEND;VALUE=DATE:20261225
 SUMMARY:Ep 10 · The Iceblade Sorcerer Shall Rule the World II
@@ -4865,7 +5013,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-24@anim
  e-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261224
 DTEND;VALUE=DATE:20261225
 SUMMARY:Ep 24 · The Exiled Heavy Knight Knows How to Game the System
@@ -4876,7 +5024,7 @@ URL:https://myanimelist.net/anime/59741/Tsuihou_sareta_Tensei_Juukishi_wa_G
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-firefly-wedding-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261225
 DTEND;VALUE=DATE:20261226
 SUMMARY:Ep 10 · Firefly Wedding
@@ -4885,7 +5033,7 @@ URL:https://myanimelist.net/anime/63293/Hotaru_no_Yomeiri
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-apothecary-diaries-season-3-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261225
 DTEND;VALUE=DATE:20261226
 SUMMARY:Ep 11 · The Apothecary Diaries Season 3
@@ -4895,7 +5043,7 @@ URL:https://myanimelist.net/anime/61987/Kusuriya_no_Hitorigoto_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tougen-anki-nikko-kegon-falls-arc-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261225
 DTEND;VALUE=DATE:20261226
 SUMMARY:Ep 12 · Tougen Anki: Nikko Kegon Falls Arc
@@ -4906,7 +5054,7 @@ URL:https://myanimelist.net/anime/63181/Tougen_Anki__Nikko_Kegon_no_Taki-he
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tokyo-revengers-war-of-the-three-titan-arc-ep-13@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261225
 DTEND;VALUE=DATE:20261226
 SUMMARY:Ep 13 · Tokyo Revengers: War of the Three Titan Arc
@@ -4915,59 +5063,50 @@ DESCRIPTION:MAL: https://myanimelist.net/anime/59088/Tokyo_Revengers__Sante
 URL:https://myanimelist.net/anime/59088/Tokyo_Revengers__Santen_Sensou-hen
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-horror-collector-ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-even-the-student-council-has-its-holes-ep-9@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261226
 DTEND;VALUE=DATE:20261227
-SUMMARY:Ep 9 · HORROR COLLECTOR
+SUMMARY:Ep 9 · Even the Student Council Has Its Holes!
+DESCRIPTION:MAL: https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_
+ Aru
+URL:https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_Aru
+END:VEVENT
+BEGIN:VEVENT
+UID:mal-dub-horror-collector-ep-10@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20261227
+SUMMARY:Ep 10 · HORROR COLLECTOR
 DESCRIPTION:MAL: https://myanimelist.net/anime/63053/Kyoufu_Collector
 URL:https://myanimelist.net/anime/63053/Kyoufu_Collector
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-black-clover-season-2-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-black-clover-season-2-ep-11@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261226
 DTEND;VALUE=DATE:20261227
-SUMMARY:Ep 10 · Black Clover Season 2 (Projected)
+SUMMARY:Ep 11 · Black Clover Season 2 (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/61967/Black_Clover_2nd_Seaso
  n\\nNote: Episode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/61967/Black_Clover_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-i-m-looking-for-a-zombie-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-magical-explorer-ep-13@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261226
 DTEND;VALUE=DATE:20261227
-SUMMARY:Ep 12 · #I'm Looking For a Zombie
-DESCRIPTION:MAL: https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
-URL:https://myanimelist.net/anime/62524/Zombie_Sagashitemasu
-END:VEVENT
-BEGIN:VEVENT
-UID:mal-dub-magical-explorer-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
-DTSTART;VALUE=DATE:20261226
-DTEND;VALUE=DATE:20261227
-SUMMARY:Ep 12 · Magical Explorer
+SUMMARY:Ep 13 · Magical Explorer
 DESCRIPTION:MAL: https://myanimelist.net/anime/56733/Magical%E2%98%85Explor
  er
 URL:https://myanimelist.net/anime/56733/Magical%E2%98%85Explorer
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-ranma-1-2-season-3-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-13@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261226
 DTEND;VALUE=DATE:20261227
-SUMMARY:Ep 12 · Ranma 1/2 Season 3 (Projected)
-DESCRIPTION:MAL: https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_
- Season\\nNote: Episode date projected based on cour heuristics.
-URL:https://myanimelist.net/anime/63801/Ranma_%C2%BD_2024_3rd_Season
-END:VEVENT
-BEGIN:VEVENT
-UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
-DTSTART;VALUE=DATE:20261226
-DTEND;VALUE=DATE:20261227
-SUMMARY:Ep 12 · The Seven Knights of the Marronnier Kingdom
+SUMMARY:Ep 13 · The Seven Knights of the Marronnier Kingdom
 DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
  hichinin_no_Kishi
 URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
@@ -4976,7 +5115,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-full-clearing-another-world-under-a-goddess-with-zero-believers
  -ep-9@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261228
 SUMMARY:Ep 9 · Full Clearing Another World under a Goddess with Zero Belie
@@ -4989,7 +5128,7 @@ URL:https://myanimelist.net/anime/63292/Shinja_Zero_no_Megami-sama_to_Hajim
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-ao-ashi-season-2-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261228
 SUMMARY:Ep 10 · Ao Ashi Season 2 (Projected)
@@ -5000,7 +5139,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-as-a-reincarnated-aristocrat-i-ll-use-my-appraisal-skill-to-ris
  e-in-the-world-season-3-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261228
 SUMMARY:Ep 11 · As a Reincarnated Aristocrat\, I'll Use My Appraisal Skill
@@ -5013,7 +5152,7 @@ URL:https://myanimelist.net/anime/60601/Tensei_Kizoku_Kantei_Skill_de_Naria
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-blue-box-season-2-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261228
 SUMMARY:Ep 12 · Blue Box Season 2
@@ -5023,7 +5162,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-st
  arship-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261228
 SUMMARY:Ep 12 · Reborn as a Space Mercenary: I Woke Up Piloting the Strong
@@ -5036,7 +5175,7 @@ URL:https://myanimelist.net/anime/60948/Mezametara_Saikyou_Soubi_to_Uchuuse
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-tank-chair-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261228
 SUMMARY:Ep 12 · TANK CHAIR (Projected)
@@ -5046,7 +5185,7 @@ URL:https://myanimelist.net/anime/63751/Tank_Chair
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-psyren-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261228
 DTEND;VALUE=DATE:20261229
 SUMMARY:Ep 11 · PSYREN (Projected)
@@ -5056,7 +5195,7 @@ URL:https://myanimelist.net/anime/63098/Psyren
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-magic-knight-rayearth-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261230
 DTEND;VALUE=DATE:20261231
 SUMMARY:Ep 11 · Magic Knight Rayearth (Projected)
@@ -5066,7 +5205,7 @@ URL:https://myanimelist.net/anime/59204/Magic_Knight_Rayearth_2026
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reincarnated-as-a-sword-season-2-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261230
 DTEND;VALUE=DATE:20261231
 SUMMARY:Ep 11 · Reincarnated as a Sword Season 2
@@ -5076,7 +5215,7 @@ URL:https://myanimelist.net/anime/53913/Tensei_shitara_Ken_deshita_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-sasaki-and-peeps-season-2-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261230
 DTEND;VALUE=DATE:20261231
 SUMMARY:Ep 11 · Sasaki and Peeps Season 2
@@ -5086,7 +5225,7 @@ URL:https://myanimelist.net/anime/58518/Sasaki_to_Pii-chan_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-detective-is-already-dead-season-2-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261230
 DTEND;VALUE=DATE:20261231
 SUMMARY:Ep 11 · The Detective Is Already Dead Season 2
@@ -5096,7 +5235,7 @@ URL:https://myanimelist.net/anime/52480/Tantei_wa_Mou_Shindeiru_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-s-strongest-witch-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261230
 DTEND;VALUE=DATE:20261231
 SUMMARY:Ep 11 · The World's Strongest Witch (Projected)
@@ -5107,7 +5246,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-prince-of-tennis-ii-u-17-world-cup-final-member-selection-m
  atch-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261230
 DTEND;VALUE=DATE:20261231
 SUMMARY:Ep 12 · The Prince of Tennis II U-17 WORLD CUP: Final Member Selec
@@ -5120,7 +5259,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-iceblade-sorcerer-shall-rule-the-world-ii-ep-11@anime-dub-c
  al
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:Ep 11 · The Iceblade Sorcerer Shall Rule the World II
@@ -5132,7 +5271,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-25@anim
  e-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:Ep 25 · The Exiled Heavy Knight Knows How to Game the System
@@ -5143,7 +5282,7 @@ URL:https://myanimelist.net/anime/59741/Tsuihou_sareta_Tensei_Juukishi_wa_G
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-firefly-wedding-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:Ep 11 · Firefly Wedding
@@ -5152,7 +5291,7 @@ URL:https://myanimelist.net/anime/63293/Hotaru_no_Yomeiri
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-apothecary-diaries-season-3-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270102
 SUMMARY:Ep 12 · The Apothecary Diaries Season 3
@@ -5161,40 +5300,40 @@ DESCRIPTION:MAL: https://myanimelist.net/anime/61987/Kusuriya_no_Hitorigoto
 URL:https://myanimelist.net/anime/61987/Kusuriya_no_Hitorigoto_3rd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-horror-collector-ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-even-the-student-council-has-its-holes-ep-10@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270102
 DTEND;VALUE=DATE:20270103
-SUMMARY:Ep 10 · HORROR COLLECTOR
+SUMMARY:Ep 10 · Even the Student Council Has Its Holes!
+DESCRIPTION:MAL: https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_
+ Aru
+URL:https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_Aru
+END:VEVENT
+BEGIN:VEVENT
+UID:mal-dub-horror-collector-ep-11@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20270102
+DTEND;VALUE=DATE:20270103
+SUMMARY:Ep 11 · HORROR COLLECTOR
 DESCRIPTION:MAL: https://myanimelist.net/anime/63053/Kyoufu_Collector
 URL:https://myanimelist.net/anime/63053/Kyoufu_Collector
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-black-clover-season-2-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-black-clover-season-2-ep-12@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270102
 DTEND;VALUE=DATE:20270103
-SUMMARY:Ep 11 · Black Clover Season 2 (Projected)
+SUMMARY:Ep 12 · Black Clover Season 2 (Projected)
 DESCRIPTION:MAL: https://myanimelist.net/anime/61967/Black_Clover_2nd_Seaso
  n\\nNote: Episode date projected based on cour heuristics.
 URL:https://myanimelist.net/anime/61967/Black_Clover_2nd_Season
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-magical-explorer-ep-13@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-14@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270102
 DTEND;VALUE=DATE:20270103
-SUMMARY:Ep 13 · Magical Explorer
-DESCRIPTION:MAL: https://myanimelist.net/anime/56733/Magical%E2%98%85Explor
- er
-URL:https://myanimelist.net/anime/56733/Magical%E2%98%85Explorer
-END:VEVENT
-BEGIN:VEVENT
-UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-13@anime-dub-cal
-DTSTAMP:20261031T153644Z
-DTSTART;VALUE=DATE:20270102
-DTEND;VALUE=DATE:20270103
-SUMMARY:Ep 13 · The Seven Knights of the Marronnier Kingdom
+SUMMARY:Ep 14 · The Seven Knights of the Marronnier Kingdom
 DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
  hichinin_no_Kishi
 URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
@@ -5203,7 +5342,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-full-clearing-another-world-under-a-goddess-with-zero-believers
  -ep-10@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270103
 DTEND;VALUE=DATE:20270104
 SUMMARY:Ep 10 · Full Clearing Another World under a Goddess with Zero Beli
@@ -5216,7 +5355,7 @@ URL:https://myanimelist.net/anime/63292/Shinja_Zero_no_Megami-sama_to_Hajim
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-ao-ashi-season-2-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270103
 DTEND;VALUE=DATE:20270104
 SUMMARY:Ep 11 · Ao Ashi Season 2 (Projected)
@@ -5227,7 +5366,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-as-a-reincarnated-aristocrat-i-ll-use-my-appraisal-skill-to-ris
  e-in-the-world-season-3-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270103
 DTEND;VALUE=DATE:20270104
 SUMMARY:Ep 12 · As a Reincarnated Aristocrat\, I'll Use My Appraisal Skill
@@ -5241,7 +5380,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-st
  arship-ep-13@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270103
 DTEND;VALUE=DATE:20270104
 SUMMARY:Ep 13 · Reborn as a Space Mercenary: I Woke Up Piloting the Strong
@@ -5254,7 +5393,7 @@ URL:https://myanimelist.net/anime/60948/Mezametara_Saikyou_Soubi_to_Uchuuse
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-psyren-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270104
 DTEND;VALUE=DATE:20270105
 SUMMARY:Ep 12 · PSYREN (Projected)
@@ -5264,7 +5403,7 @@ URL:https://myanimelist.net/anime/63098/Psyren
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-magic-knight-rayearth-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270106
 DTEND;VALUE=DATE:20270107
 SUMMARY:Ep 12 · Magic Knight Rayearth (Projected)
@@ -5274,7 +5413,7 @@ URL:https://myanimelist.net/anime/59204/Magic_Knight_Rayearth_2026
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-reincarnated-as-a-sword-season-2-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270106
 DTEND;VALUE=DATE:20270107
 SUMMARY:Ep 12 · Reincarnated as a Sword Season 2
@@ -5284,7 +5423,7 @@ URL:https://myanimelist.net/anime/53913/Tensei_shitara_Ken_deshita_II
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-sasaki-and-peeps-season-2-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270106
 DTEND;VALUE=DATE:20270107
 SUMMARY:Ep 12 · Sasaki and Peeps Season 2
@@ -5294,7 +5433,7 @@ URL:https://myanimelist.net/anime/58518/Sasaki_to_Pii-chan_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-detective-is-already-dead-season-2-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270106
 DTEND;VALUE=DATE:20270107
 SUMMARY:Ep 12 · The Detective Is Already Dead Season 2
@@ -5304,7 +5443,7 @@ URL:https://myanimelist.net/anime/52480/Tantei_wa_Mou_Shindeiru_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-world-s-strongest-witch-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270106
 DTEND;VALUE=DATE:20270107
 SUMMARY:Ep 12 · The World's Strongest Witch (Projected)
@@ -5315,7 +5454,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-prince-of-tennis-ii-u-17-world-cup-final-member-selection-m
  atch-ep-13@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270106
 DTEND;VALUE=DATE:20270107
 SUMMARY:Ep 13 · The Prince of Tennis II U-17 WORLD CUP: Final Member Selec
@@ -5328,7 +5467,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-iceblade-sorcerer-shall-rule-the-world-ii-ep-12@anime-dub-c
  al
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270107
 DTEND;VALUE=DATE:20270108
 SUMMARY:Ep 12 · The Iceblade Sorcerer Shall Rule the World II
@@ -5340,7 +5479,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-exiled-heavy-knight-knows-how-to-game-the-system-ep-26@anim
  e-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270107
 DTEND;VALUE=DATE:20270108
 SUMMARY:Ep 26 · The Exiled Heavy Knight Knows How to Game the System
@@ -5351,7 +5490,7 @@ URL:https://myanimelist.net/anime/59741/Tsuihou_sareta_Tensei_Juukishi_wa_G
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-firefly-wedding-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270109
 SUMMARY:Ep 12 · Firefly Wedding
@@ -5359,30 +5498,30 @@ DESCRIPTION:MAL: https://myanimelist.net/anime/63293/Hotaru_no_Yomeiri
 URL:https://myanimelist.net/anime/63293/Hotaru_no_Yomeiri
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-horror-collector-ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-even-the-student-council-has-its-holes-ep-11@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270110
-SUMMARY:Ep 11 · HORROR COLLECTOR
+SUMMARY:Ep 11 · Even the Student Council Has Its Holes!
+DESCRIPTION:MAL: https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_
+ Aru
+URL:https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_Aru
+END:VEVENT
+BEGIN:VEVENT
+UID:mal-dub-horror-collector-ep-12@anime-dub-cal
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
+SUMMARY:Ep 12 · HORROR COLLECTOR
 DESCRIPTION:MAL: https://myanimelist.net/anime/63053/Kyoufu_Collector
 URL:https://myanimelist.net/anime/63053/Kyoufu_Collector
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-black-clover-season-2-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-15@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270110
-SUMMARY:Ep 12 · Black Clover Season 2 (Projected)
-DESCRIPTION:MAL: https://myanimelist.net/anime/61967/Black_Clover_2nd_Seaso
- n\\nNote: Episode date projected based on cour heuristics.
-URL:https://myanimelist.net/anime/61967/Black_Clover_2nd_Season
-END:VEVENT
-BEGIN:VEVENT
-UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-14@anime-dub-cal
-DTSTAMP:20261031T153644Z
-DTSTART;VALUE=DATE:20270109
-DTEND;VALUE=DATE:20270110
-SUMMARY:Ep 14 · The Seven Knights of the Marronnier Kingdom
+SUMMARY:Ep 15 · The Seven Knights of the Marronnier Kingdom
 DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
  hichinin_no_Kishi
 URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
@@ -5391,7 +5530,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-full-clearing-another-world-under-a-goddess-with-zero-believers
  -ep-11@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270110
 DTEND;VALUE=DATE:20270111
 SUMMARY:Ep 11 · Full Clearing Another World under a Goddess with Zero Beli
@@ -5404,7 +5543,7 @@ URL:https://myanimelist.net/anime/63292/Shinja_Zero_no_Megami-sama_to_Hajim
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-ao-ashi-season-2-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270110
 DTEND;VALUE=DATE:20270111
 SUMMARY:Ep 12 · Ao Ashi Season 2 (Projected)
@@ -5414,7 +5553,7 @@ URL:https://myanimelist.net/anime/61603/Ao_Ashi_Season_2
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-detective-is-already-dead-season-2-ep-13@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270113
 DTEND;VALUE=DATE:20270114
 SUMMARY:Ep 13 · The Detective Is Already Dead Season 2
@@ -5423,20 +5562,21 @@ DESCRIPTION:MAL: https://myanimelist.net/anime/52480/Tantei_wa_Mou_Shindeir
 URL:https://myanimelist.net/anime/52480/Tantei_wa_Mou_Shindeiru_Season_2
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-horror-collector-ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-even-the-student-council-has-its-holes-ep-12@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270116
 DTEND;VALUE=DATE:20270117
-SUMMARY:Ep 12 · HORROR COLLECTOR
-DESCRIPTION:MAL: https://myanimelist.net/anime/63053/Kyoufu_Collector
-URL:https://myanimelist.net/anime/63053/Kyoufu_Collector
+SUMMARY:Ep 12 · Even the Student Council Has Its Holes!
+DESCRIPTION:MAL: https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_
+ Aru
+URL:https://myanimelist.net/anime/61578/Seitokai_ni_mo_Ana_wa_Aru
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-15@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-16@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270116
 DTEND;VALUE=DATE:20270117
-SUMMARY:Ep 15 · The Seven Knights of the Marronnier Kingdom
+SUMMARY:Ep 16 · The Seven Knights of the Marronnier Kingdom
 DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
  hichinin_no_Kishi
 URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
@@ -5445,7 +5585,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-full-clearing-another-world-under-a-goddess-with-zero-believers
  -ep-12@anime-dub-cal
-DTSTAMP:20261031T153644Z
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270118
 SUMMARY:Ep 12 · Full Clearing Another World under a Goddess with Zero Beli
@@ -5457,21 +5597,10 @@ URL:https://myanimelist.net/anime/63292/Shinja_Zero_no_Megami-sama_to_Hajim
  eru_Isekai_Kouryaku
 END:VEVENT
 BEGIN:VEVENT
-UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-16@anime-dub-cal
-DTSTAMP:20261031T153644Z
+UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-17@anime-dub-cal
+DTSTAMP:20261101T163519Z
 DTSTART;VALUE=DATE:20270123
 DTEND;VALUE=DATE:20270124
-SUMMARY:Ep 16 · The Seven Knights of the Marronnier Kingdom
-DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
- hichinin_no_Kishi
-URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
- ishi
-END:VEVENT
-BEGIN:VEVENT
-UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-17@anime-dub-cal
-DTSTAMP:20261031T153644Z
-DTSTART;VALUE=DATE:20270130
-DTEND;VALUE=DATE:20270131
 SUMMARY:Ep 17 · The Seven Knights of the Marronnier Kingdom
 DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
  hichinin_no_Kishi
@@ -5480,9 +5609,9 @@ URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-18@anime-dub-cal
-DTSTAMP:20261031T153644Z
-DTSTART;VALUE=DATE:20270206
-DTEND;VALUE=DATE:20270207
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
 SUMMARY:Ep 18 · The Seven Knights of the Marronnier Kingdom
 DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
  hichinin_no_Kishi
@@ -5491,9 +5620,9 @@ URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-19@anime-dub-cal
-DTSTAMP:20261031T153644Z
-DTSTART;VALUE=DATE:20270213
-DTEND;VALUE=DATE:20270214
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
 SUMMARY:Ep 19 · The Seven Knights of the Marronnier Kingdom
 DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
  hichinin_no_Kishi
@@ -5502,9 +5631,9 @@ URL:https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_Shichinin_no_K
 END:VEVENT
 BEGIN:VEVENT
 UID:mal-dub-the-seven-knights-of-the-marronnier-kingdom-ep-20@anime-dub-cal
-DTSTAMP:20261031T153644Z
-DTSTART;VALUE=DATE:20270220
-DTEND;VALUE=DATE:20270221
+DTSTAMP:20261101T163519Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
 SUMMARY:Ep 20 · The Seven Knights of the Marronnier Kingdom
 DESCRIPTION:MAL: https://myanimelist.net/anime/64326/Marronnier_Oukoku_no_S
  hichinin_no_Kishi

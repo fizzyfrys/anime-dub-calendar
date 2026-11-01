@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-31T15:36:44.669Z",
-  "lastUpdated": "October 30, 2026",
-  "showCount": 42,
-  "eventCount": 513,
+  "generatedAt": "2026-11-01T16:35:19.020Z",
+  "lastUpdated": "October 31, 2026",
+  "showCount": 43,
+  "eventCount": 526,
   "shows": [
     {
       "title": "PSYREN",
@@ -207,7 +207,7 @@
     {
       "title": "#I'm Looking For a Zombie",
       "day": "Saturday",
-      "currentEp": 4,
+      "currentEp": 5,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -223,7 +223,7 @@
     {
       "title": "Black Clover Season 2",
       "day": "Saturday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -237,7 +237,7 @@
       "resumeDate": null
     },
     {
-      "title": "HORROR COLLECTOR",
+      "title": "Even the Student Council Has Its Holes!",
       "day": "Saturday",
       "currentEp": 1,
       "totalEp": 12,
@@ -245,9 +245,17 @@
       "resumeDate": null
     },
     {
+      "title": "HORROR COLLECTOR",
+      "day": "Saturday",
+      "currentEp": 2,
+      "totalEp": 12,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
       "title": "Magical Explorer",
       "day": "Saturday",
-      "currentEp": 4,
+      "currentEp": 5,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
@@ -255,7 +263,7 @@
     {
       "title": "Ranma 1/2 Season 3",
       "day": "Saturday",
-      "currentEp": 4,
+      "currentEp": 5,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -263,7 +271,7 @@
     {
       "title": "Rilakkuma",
       "day": "Saturday",
-      "currentEp": 29,
+      "currentEp": 30,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -271,7 +279,7 @@
     {
       "title": "The Seven Knights of the Marronnier Kingdom",
       "day": "Saturday",
-      "currentEp": 4,
+      "currentEp": 5,
       "totalEp": 20,
       "suspended": false,
       "resumeDate": null
