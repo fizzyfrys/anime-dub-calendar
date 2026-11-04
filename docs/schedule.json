@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-03T17:33:30.478Z",
-  "lastUpdated": "November 2, 2026",
+  "generatedAt": "2026-11-04T17:46:00.871Z",
+  "lastUpdated": "November 3, 2026",
   "showCount": 43,
-  "eventCount": 526,
+  "eventCount": 527,
   "shows": [
     {
       "title": "PSYREN",
@@ -15,7 +15,7 @@
     {
       "title": "One Piece",
       "day": "Tuesday",
-      "currentEp": 1157,
+      "currentEp": 1158,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -23,7 +23,7 @@
     {
       "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
       "day": "Tuesday",
-      "currentEp": 4,
+      "currentEp": 5,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
