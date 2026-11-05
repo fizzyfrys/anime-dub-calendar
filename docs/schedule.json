@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-04T17:46:00.871Z",
-  "lastUpdated": "November 3, 2026",
-  "showCount": 43,
-  "eventCount": 527,
+  "generatedAt": "2026-11-05T17:51:45.473Z",
+  "lastUpdated": "November 4, 2026",
+  "showCount": 42,
+  "eventCount": 515,
   "shows": [
     {
       "title": "PSYREN",
@@ -31,7 +31,7 @@
     {
       "title": "A Returner's Magic Should Be Special Season 2",
       "day": "Wednesday",
-      "currentEp": 4,
+      "currentEp": 5,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -39,7 +39,7 @@
     {
       "title": "KAMUI: He's Behind You!",
       "day": "Wednesday",
-      "currentEp": 5,
+      "currentEp": 7,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -47,7 +47,7 @@
     {
       "title": "Magic Knight Rayearth",
       "day": "Wednesday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -55,7 +55,7 @@
     {
       "title": "Reincarnated as a Sword Season 2",
       "day": "Wednesday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -63,7 +63,7 @@
     {
       "title": "Saga of Tanya the Evil Season 2",
       "day": "Wednesday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -71,7 +71,7 @@
     {
       "title": "Sasaki and Peeps Season 2",
       "day": "Wednesday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -79,23 +79,15 @@
     {
       "title": "The Detective Is Already Dead Season 2",
       "day": "Wednesday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": 13,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "The Forsaken Saintess and Her Foodie Roadtrip in Another World",
-      "day": "Wednesday",
-      "currentEp": 11,
-      "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     },
     {
       "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
       "day": "Wednesday",
-      "currentEp": 3,
+      "currentEp": 4,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
@@ -103,7 +95,7 @@
     {
       "title": "The World Is Dancing",
       "day": "Wednesday",
-      "currentEp": 10,
+      "currentEp": 11,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
@@ -111,7 +103,7 @@
     {
       "title": "The World's Strongest Witch",
       "day": "Wednesday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
