@@ -1,213 +1,223 @@
 {
   "shows": {
     "psyren": {
-      "lastEp": 3,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 4,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "PSYREN"
     },
     "one-piece": {
-      "lastEp": 1158,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 1159,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "One Piece"
     },
     "the-laid-off-cheat-granting-mage-enjoys-a-second-lease-on-life": {
-      "lastEp": 5,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 6,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life"
     },
     "a-returner-s-magic-should-be-special-season-2": {
-      "lastEp": 5,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 6,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "A Returner's Magic Should Be Special Season 2"
     },
+    "ingoku-danchi-deviant-s-apartment-complex": {
+      "lastEp": 1,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
+      "title": "Ingoku Danchi: Deviant's Apartment Complex"
+    },
     "kamui-he-s-behind-you": {
-      "lastEp": 7,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 8,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "KAMUI: He's Behind You!"
     },
     "magic-knight-rayearth": {
-      "lastEp": 3,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 4,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Magic Knight Rayearth"
     },
     "reincarnated-as-a-sword-season-2": {
-      "lastEp": 3,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 4,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Reincarnated as a Sword Season 2"
     },
     "saga-of-tanya-the-evil-season-2": {
-      "lastEp": 9,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 10,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Saga of Tanya the Evil Season 2"
     },
     "sasaki-and-peeps-season-2": {
-      "lastEp": 3,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 4,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Sasaki and Peeps Season 2"
     },
     "the-detective-is-already-dead-season-2": {
-      "lastEp": 3,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 4,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "The Detective Is Already Dead Season 2"
     },
     "the-prince-of-tennis-ii-u-17-world-cup-final-member-selection-match": {
-      "lastEp": 4,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 5,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match"
     },
     "the-world-is-dancing": {
-      "lastEp": 11,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 12,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "The World Is Dancing"
     },
     "the-world-s-strongest-witch": {
-      "lastEp": 3,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 4,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "The World's Strongest Witch"
     },
+    "dragon-ball-super-beerus": {
+      "lastEp": 1,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
+      "title": "Dragon Ball Super: Beerus"
+    },
     "fx-fighter-kurumi-chan": {
-      "lastEp": 5,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 7,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "FX Fighter Kurumi-chan"
     },
     "the-exiled-heavy-knight-knows-how-to-game-the-system": {
-      "lastEp": 16,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 18,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "The Exiled Heavy Knight Knows How to Game the System"
     },
     "the-iceblade-sorcerer-shall-rule-the-world-ii": {
-      "lastEp": 2,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 4,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "The Iceblade Sorcerer Shall Rule the World II"
     },
     "the-ramparts-of-ice-season-2": {
-      "lastEp": 5,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 7,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "The Ramparts of Ice Season 2"
     },
+    "welsh-shedar": {
+      "lastEp": 3,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
+      "title": "Welsh & Shedar"
+    },
+    "devils-crest": {
+      "lastEp": 3,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
+      "title": "Devils' Crest"
+    },
     "firefly-wedding": {
-      "lastEp": 2,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 4,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Firefly Wedding"
     },
     "jojo-s-bizarre-adventure-part-7-steel-ball-run": {
-      "lastEp": 7,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 9,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Jojo's Bizarre Adventure Part 7: STEEL BALL RUN"
     },
-    "link-click-season-3": {
-      "lastEp": 10,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
-      "title": "Link Click Season 3"
-    },
     "the-apothecary-diaries-season-3": {
-      "lastEp": 3,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 5,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "The Apothecary Diaries Season 3"
     },
-    "the-elusive-samurai-season-2": {
-      "lastEp": 11,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
-      "title": "The Elusive Samurai Season 2"
-    },
     "tokyo-revengers-war-of-the-three-titan-arc": {
-      "lastEp": 5,
-      "lastSeen": "2026-11-05T17:51:45.465Z",
+      "lastEp": 7,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Tokyo Revengers: War of the Three Titan Arc"
     },
     "tougen-anki-nikko-kegon-falls-arc": {
       "lastEp": 4,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Tougen Anki: Nikko Kegon Falls Arc"
     },
     "i-m-looking-for-a-zombie": {
-      "lastEp": 5,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastEp": 6,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "#I'm Looking For a Zombie"
     },
     "beyblade-x": {
-      "lastEp": 132,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastEp": 134,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Beyblade X"
     },
     "black-clover-season-2": {
-      "lastEp": 3,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastEp": 5,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Black Clover Season 2"
     },
     "bleach-thousand-year-blood-war-the-calamity": {
       "lastEp": 8,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Bleach: Thousand-Year Blood War - The Calamity"
     },
     "even-the-student-council-has-its-holes": {
-      "lastEp": 1,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastEp": 3,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Even the Student Council Has Its Holes!"
     },
     "horror-collector": {
-      "lastEp": 2,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastEp": 6,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "HORROR COLLECTOR"
     },
     "magical-explorer": {
-      "lastEp": 5,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastEp": 8,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Magical Explorer"
     },
     "ranma-1-2-season-3": {
-      "lastEp": 5,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastEp": 7,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Ranma 1/2 Season 3"
     },
     "rilakkuma": {
-      "lastEp": 30,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastEp": 32,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Rilakkuma"
     },
     "the-seven-knights-of-the-marronnier-kingdom": {
-      "lastEp": 5,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastEp": 7,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "The Seven Knights of the Marronnier Kingdom"
     },
     "yu-gi-oh-go-rush": {
       "lastEp": 67,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Yu-Gi-Oh: Go Rush"
     },
     "ao-ashi-season-2": {
-      "lastEp": 3,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastEp": 5,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Ao Ashi Season 2"
     },
     "as-a-reincarnated-aristocrat-i-ll-use-my-appraisal-skill-to-rise-in-the-world-season-3": {
-      "lastEp": 4,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastEp": 6,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3"
     },
     "blue-box-season-2": {
-      "lastEp": 4,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastEp": 6,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Blue Box Season 2"
     },
     "full-clearing-another-world-under-a-goddess-with-zero-believers": {
-      "lastEp": 2,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastEp": 4,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Full Clearing Another World under a Goddess with Zero Believers"
     },
     "overgeared": {
-      "lastEp": 6,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastEp": 8,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Overgeared"
     },
     "reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-starship": {
-      "lastEp": 5,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastEp": 7,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!"
     },
     "tank-chair": {
-      "lastEp": 5,
-      "lastSeen": "2026-11-05T17:51:45.466Z",
+      "lastEp": 7,
+      "lastSeen": "2026-11-16T20:00:00.185Z",
       "title": "TANK CHAIR"
     }
   },
@@ -237,7 +247,8 @@
       "1155": "2026-10-20",
       "1156": "2026-10-27",
       "1157": "2026-10-27",
-      "1158": "2026-11-03"
+      "1158": "2026-11-03",
+      "1159": "2026-11-10"
     },
     "the-ghost-in-the-shell": {
       "7": "2026-08-25",
@@ -313,7 +324,8 @@
       "8": "2026-10-21",
       "9": "2026-10-28",
       "10": "2026-10-28",
-      "11": "2026-11-04"
+      "11": "2026-11-04",
+      "12": "2026-11-11"
     },
     "thunder-3": {
       "7": "2026-08-26",
@@ -397,7 +409,9 @@
       "13": "2026-10-15",
       "14": "2026-10-22",
       "15": "2026-10-29",
-      "16": "2026-11-05"
+      "16": "2026-11-05",
+      "17": "2026-11-05",
+      "18": "2026-11-12"
     },
     "draw-this-then-die": {
       "6": "2026-08-21",
@@ -457,7 +471,9 @@
       "125": "2026-10-03",
       "126": "2026-10-10",
       "131": "2026-10-31",
-      "132": "2026-11-07"
+      "132": "2026-11-07",
+      "133": "2026-11-07",
+      "134": "2026-11-14"
     },
     "black-torch": {
       "7": "2026-08-22",
@@ -517,7 +533,9 @@
       "27": "2026-10-17",
       "28": "2026-10-24",
       "29": "2026-10-31",
-      "30": "2026-11-07"
+      "30": "2026-11-07",
+      "31": "2026-11-07",
+      "32": "2026-11-14"
     },
     "welcome-to-demon-school-iruma-kun-season-4": {
       "18": "2026-08-22",
@@ -528,8 +546,8 @@
       "23": "2026-09-26"
     },
     "yu-gi-oh-go-rush": {
-      "66": "2026-10-31",
-      "67": "2026-11-07"
+      "66": "2026-11-07",
+      "67": "2026-11-14"
     },
     "goodbye-lara": {
       "7": "2026-08-23",
@@ -603,8 +621,8 @@
       "4": "2026-09-26",
       "5": "2026-10-03",
       "6": "2026-10-10",
-      "7": "2026-10-31",
-      "8": "2026-11-07"
+      "7": "2026-11-07",
+      "8": "2026-11-14"
     },
     "jojo-s-bizarre-adventure-part-7-steel-ball-run": {
       "1": "2026-09-25",
@@ -613,7 +631,9 @@
       "4": "2026-10-16",
       "5": "2026-10-23",
       "6": "2026-10-30",
-      "7": "2026-11-06"
+      "7": "2026-11-06",
+      "8": "2026-11-06",
+      "9": "2026-11-13"
     },
     "marika-s-love-meter-malfunction": {
       "1": "2026-09-10",
@@ -632,7 +652,8 @@
       "6": "2026-10-21",
       "7": "2026-10-28",
       "8": "2026-10-28",
-      "9": "2026-11-04"
+      "9": "2026-11-04",
+      "10": "2026-11-11"
     },
     "kamui-he-s-behind-you": {
       "1": "2026-09-30",
@@ -641,7 +662,8 @@
       "4": "2026-10-28",
       "5": "2026-11-04",
       "6": "2026-10-28",
-      "7": "2026-11-04"
+      "7": "2026-11-04",
+      "8": "2026-11-11"
     },
     "overgeared": {
       "1": "2026-10-11",
@@ -649,172 +671,234 @@
       "3": "2026-10-18",
       "4": "2026-10-25",
       "5": "2026-11-01",
-      "6": "2026-11-08"
+      "6": "2026-11-08",
+      "7": "2026-11-08",
+      "8": "2026-11-15"
     },
     "fx-fighter-kurumi-chan": {
       "1": "2026-10-08",
       "2": "2026-10-15",
       "3": "2026-10-22",
       "4": "2026-10-29",
-      "5": "2026-11-05"
+      "5": "2026-11-05",
+      "6": "2026-11-05",
+      "7": "2026-11-12"
     },
     "the-ramparts-of-ice-season-2": {
       "1": "2026-10-08",
       "2": "2026-10-15",
       "3": "2026-10-22",
       "4": "2026-10-29",
-      "5": "2026-11-05"
+      "5": "2026-11-05",
+      "6": "2026-11-05",
+      "7": "2026-11-12"
     },
     "tokyo-revengers-war-of-the-three-titan-arc": {
       "1": "2026-10-09",
       "2": "2026-10-16",
       "3": "2026-10-23",
       "4": "2026-10-30",
-      "5": "2026-11-06"
+      "5": "2026-11-06",
+      "6": "2026-11-06",
+      "7": "2026-11-13"
     },
     "i-m-looking-for-a-zombie": {
       "1": "2026-10-10",
       "2": "2026-10-17",
       "3": "2026-10-24",
       "4": "2026-10-31",
-      "5": "2026-11-07"
+      "5": "2026-11-07",
+      "6": "2026-11-14"
     },
     "magical-explorer": {
       "1": "2026-10-03",
       "2": "2026-10-10",
       "3": "2026-10-24",
       "4": "2026-10-31",
-      "5": "2026-11-07"
+      "5": "2026-11-07",
+      "7": "2026-11-07",
+      "8": "2026-11-14"
     },
     "ranma-1-2-season-3": {
       "1": "2026-10-10",
       "2": "2026-10-17",
       "3": "2026-10-24",
       "4": "2026-10-31",
-      "5": "2026-11-07"
+      "5": "2026-11-07",
+      "6": "2026-11-07",
+      "7": "2026-11-14"
     },
     "the-seven-knights-of-the-marronnier-kingdom": {
       "1": "2026-10-10",
       "2": "2026-10-17",
       "3": "2026-10-24",
       "4": "2026-10-31",
-      "5": "2026-11-07"
+      "5": "2026-11-07",
+      "6": "2026-11-07",
+      "7": "2026-11-14"
     },
     "blue-box-season-2": {
       "1": "2026-10-11",
       "2": "2026-10-18",
       "3": "2026-11-01",
-      "4": "2026-11-08"
+      "4": "2026-11-08",
+      "5": "2026-11-08",
+      "6": "2026-11-15"
     },
     "reborn-as-a-space-mercenary-i-woke-up-piloting-the-strongest-starship": {
       "1": "2026-10-11",
       "2": "2026-10-18",
       "3": "2026-10-25",
       "4": "2026-11-01",
-      "5": "2026-11-08"
+      "5": "2026-11-08",
+      "6": "2026-11-08",
+      "7": "2026-11-15"
     },
     "tank-chair": {
       "1": "2026-10-11",
       "2": "2026-10-18",
       "3": "2026-10-25",
       "4": "2026-11-01",
-      "5": "2026-11-08"
+      "5": "2026-11-08",
+      "6": "2026-11-08",
+      "7": "2026-11-15"
     },
     "the-laid-off-cheat-granting-mage-enjoys-a-second-lease-on-life": {
       "1": "2026-10-06",
       "2": "2026-10-20",
       "3": "2026-10-27",
       "4": "2026-10-27",
-      "5": "2026-11-03"
+      "5": "2026-11-03",
+      "6": "2026-11-10"
     },
     "a-returner-s-magic-should-be-special-season-2": {
       "1": "2026-10-07",
       "2": "2026-10-21",
       "3": "2026-10-28",
       "4": "2026-10-28",
-      "5": "2026-11-04"
+      "5": "2026-11-04",
+      "6": "2026-11-11"
     },
     "as-a-reincarnated-aristocrat-i-ll-use-my-appraisal-skill-to-rise-in-the-world-season-3": {
       "1": "2026-10-18",
       "2": "2026-10-25",
       "3": "2026-11-01",
-      "4": "2026-11-08"
+      "4": "2026-11-08",
+      "5": "2026-11-08",
+      "6": "2026-11-15"
     },
     "the-prince-of-tennis-ii-u-17-world-cup-final-member-selection-match": {
       "1": "2026-10-21",
       "2": "2026-10-28",
       "3": "2026-10-28",
-      "4": "2026-11-04"
+      "4": "2026-11-04",
+      "5": "2026-11-11"
     },
     "the-apothecary-diaries-season-3": {
       "1": "2026-10-23",
       "2": "2026-10-30",
-      "3": "2026-11-06"
+      "3": "2026-11-06",
+      "4": "2026-11-06",
+      "5": "2026-11-13"
     },
     "black-clover-season-2": {
       "1": "2026-10-24",
       "2": "2026-10-31",
-      "3": "2026-11-07"
+      "3": "2026-11-07",
+      "4": "2026-11-07",
+      "5": "2026-11-14"
     },
     "ao-ashi-season-2": {
       "1": "2026-10-25",
       "2": "2026-11-01",
-      "3": "2026-11-08"
+      "3": "2026-11-08",
+      "4": "2026-11-08",
+      "5": "2026-11-15"
     },
     "psyren": {
       "1": "2026-10-19",
       "2": "2026-10-26",
-      "3": "2026-11-02"
+      "3": "2026-11-02",
+      "4": "2026-11-09"
     },
     "magic-knight-rayearth": {
       "1": "2026-10-28",
       "2": "2026-10-28",
-      "3": "2026-11-04"
+      "3": "2026-11-04",
+      "4": "2026-11-11"
     },
     "reincarnated-as-a-sword-season-2": {
       "1": "2026-10-28",
       "2": "2026-10-28",
-      "3": "2026-11-04"
+      "3": "2026-11-04",
+      "4": "2026-11-11"
     },
     "sasaki-and-peeps-season-2": {
       "1": "2026-10-28",
       "2": "2026-10-28",
-      "3": "2026-11-04"
+      "3": "2026-11-04",
+      "4": "2026-11-11"
     },
     "the-detective-is-already-dead-season-2": {
       "1": "2026-10-28",
       "2": "2026-10-28",
-      "3": "2026-11-04"
+      "3": "2026-11-04",
+      "4": "2026-11-11"
     },
     "the-world-s-strongest-witch": {
       "1": "2026-10-28",
       "2": "2026-10-28",
-      "3": "2026-11-04"
+      "3": "2026-11-04",
+      "4": "2026-11-11"
     },
     "the-iceblade-sorcerer-shall-rule-the-world-ii": {
       "1": "2026-10-29",
-      "2": "2026-11-05"
+      "2": "2026-11-05",
+      "3": "2026-11-05",
+      "4": "2026-11-12"
     },
     "firefly-wedding": {
       "1": "2026-10-30",
-      "2": "2026-11-06"
+      "2": "2026-11-06",
+      "3": "2026-11-06",
+      "4": "2026-11-13"
     },
     "tougen-anki-nikko-kegon-falls-arc": {
       "1": "2026-10-23",
       "2": "2026-10-30",
-      "3": "2026-10-30",
-      "4": "2026-11-06"
+      "3": "2026-11-06",
+      "4": "2026-11-13"
     },
     "horror-collector": {
       "1": "2026-10-31",
-      "2": "2026-11-07"
+      "2": "2026-11-07",
+      "5": "2026-11-07",
+      "6": "2026-11-14"
     },
     "full-clearing-another-world-under-a-goddess-with-zero-believers": {
       "1": "2026-11-01",
-      "2": "2026-11-08"
+      "2": "2026-11-08",
+      "3": "2026-11-08",
+      "4": "2026-11-15"
     },
     "even-the-student-council-has-its-holes": {
-      "1": "2026-11-07"
+      "1": "2026-11-07",
+      "2": "2026-11-07",
+      "3": "2026-11-14"
+    },
+    "ingoku-danchi-deviant-s-apartment-complex": {
+      "1": "2026-11-11"
+    },
+    "dragon-ball-super-beerus": {
+      "1": "2026-11-12"
+    },
+    "welsh-shedar": {
+      "2": "2026-11-05",
+      "3": "2026-11-12"
+    },
+    "devils-crest": {
+      "2": "2026-11-06",
+      "3": "2026-11-13"
     }
   }
 }
