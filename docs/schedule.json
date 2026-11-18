@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-17T18:57:01.246Z",
-  "lastUpdated": "November 16, 2026",
-  "showCount": 44,
-  "eventCount": 540,
+  "generatedAt": "2026-11-18T18:39:28.476Z",
+  "lastUpdated": "November 17, 2026",
+  "showCount": 45,
+  "eventCount": 565,
   "shows": [
     {
       "title": "PSYREN",
@@ -15,15 +15,23 @@
     {
       "title": "One Piece",
       "day": "Tuesday",
-      "currentEp": 1159,
+      "currentEp": 1160,
       "totalEp": null,
+      "suspended": false,
+      "resumeDate": null
+    },
+    {
+      "title": "The Classroom of a Black Cat and a Witch",
+      "day": "Tuesday",
+      "currentEp": 1,
+      "totalEp": 24,
       "suspended": false,
       "resumeDate": null
     },
     {
       "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
       "day": "Tuesday",
-      "currentEp": 6,
+      "currentEp": 7,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
