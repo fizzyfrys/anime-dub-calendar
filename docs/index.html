@@ -347,9 +347,10 @@
   Not affiliated with MyAnimeList. · <a href="https://github.com" target="_blank">View on GitHub</a>
 </footer>
 
+<script src="./feed-url.js"></script>
 <script>
   // Dynamic subscription URLs supporting both Standard and Compact (Ep-First) formats
-  const base = window.location.origin + window.location.pathname.replace(/\/?$/, '/');
+  const base = feedBaseUrl(window.location.origin, window.location.pathname);
   let currentFormat = 'default';
 
   function updateLinks() {
