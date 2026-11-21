@@ -7,7 +7,7 @@ on:
   workflow_dispatch:   # Allow manual trigger from GitHub Actions UI
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   build:
@@ -29,17 +29,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build calendar feed
-        run: node src/index.js
-
-      - name: Commit and push if changed
+      - name: Verify live sources without publishing
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/anime-dubs.ics docs/anime-dubs-ep-first.ics docs/schedule.json docs/state.json
-          if git diff --staged --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "chore: update anime dub calendar [$(date -u '+%Y-%m-%d')]"
-            git push
-          fi
+          node src/index.js --output-dir "$RUNNER_TEMP/calendar-preview"
+          jq '{baseline: .dubCalendar.lastHealthyRowCount, cachedReleases: (.dubCalendar.releases | length)}' "$RUNNER_TEMP/calendar-preview/state.json"
+          jq -e '.releases | length | select(. > 0)' "$RUNNER_TEMP/calendar-preview/schedule.json"
