@@ -57,10 +57,13 @@ export function parseDubCalendar(html) {
       startsAt: startsAt && Number.isFinite(+startsAt) ? startsAt.toISOString() : null,
     });
   }
-  if (!rows.some(row => row.startsAt && row.platforms.length && row.episodeNumber > 0)) {
-    throw new Error('No recognizable releases in the English Dubbed calendar');
-  }
   return rows;
+}
+
+export function countDubReleases(rows) {
+  return new Set(rows.filter(row => row.startsAt && row.platforms.length &&
+    Number.isSafeInteger(row.episodeNumber) && row.episodeNumber > 0)
+    .map(row => episodeKey(row.title, row.episodeNumber))).size;
 }
 
 export function updateDubCalendar(rows, previous, referenceDate) {

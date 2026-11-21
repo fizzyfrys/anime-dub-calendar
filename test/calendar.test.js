@@ -2,7 +2,7 @@ import { execFileSync } from 'node:child_process';
 import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
-import { applyReleaseTimes, parseDubCalendar, titleKey, updateDubCalendar } from '../src/dub-calendar.js';
+import { applyReleaseTimes, countDubReleases, parseDubCalendar, titleKey, updateDubCalendar } from '../src/dub-calendar.js';
 import { computeEpisodeEvents } from '../src/cour-logic.js';
 import { generateIcs } from '../src/generate-ics.js';
 import { parseForumHtml } from '../src/parse.js';
@@ -35,7 +35,8 @@ describe('English Dubbed releases', () => {
       platforms: ['crunchyroll', 'youtube'],
     });
     expect(rows[1].startsAt).toBeNull();
-    expect(() => parseDubCalendar('<main>Unexpected markup</main>')).toThrow('No recognizable releases');
+    expect(countDubReleases(rows)).toBe(1);
+    expect(countDubReleases(parseDubCalendar('<main>Unexpected markup</main>'))).toBe(0);
   });
 
   test('keeps exclusions and eligible times through an outage, but uses fresh corrections', () => {
@@ -149,6 +150,7 @@ test('both feed variants and the website data agree on filtering and local-input
     });
     const malPath = path.join(dir, 'mal.html');
     const dubPath = path.join(dir, 'dub.html');
+    const summaryPath = path.join(dir, 'run-summary.md');
     writeFileSync(malPath, malPage({
       updated: offset.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' }),
       shows: malShow('Sample Season 2', 2) + malShow('Hide Me', 2) +
@@ -164,7 +166,8 @@ test('both feed variants and the website data agree on filtering and local-input
     ));
     const run = (tz, extra) => execFileSync(process.execPath,
       ['src/index.js', '--local', malPath, '--output-dir', dir, ...extra],
-      { env: { ...process.env, TZ: tz } });
+      { env: { ...process.env, TZ: tz, GITHUB_ACTIONS: 'true', GITHUB_STEP_SUMMARY: summaryPath },
+        stdio: ['ignore', 'pipe', 'pipe'], encoding: 'utf8' });
     const read = name => readFileSync(path.join(dir, name), 'utf8');
     run('America/Los_Angeles', ['--dub-calendar', dubPath]);
     const before = read('anime-dubs.ics').replace(/^DTSTAMP:.+\r\n/gm, '');
@@ -181,6 +184,14 @@ test('both feed variants and the website data agree on filtering and local-input
     const schedule = JSON.parse(read('schedule.json'));
     expect(schedule.shows.map(s => s.title)).toEqual(['Sample Season 2', 'On Hold']);
     expect(schedule.releases.map(r => r.title)).toEqual(['Sample Season 2', 'Source Only']);
+
+    writeFileSync(dubPath, '<main>The upstream markup changed</main>');
+    expect(run('UTC', ['--dub-calendar', dubPath])).toMatch(/::warning .*parsed 0 usable releases \(last healthy run: 5\)/);
+    writeFileSync(dubPath, dubPage(dubRow('Hide Me', 2, 'Netflix', `${today}T10:30:00Z`)));
+    expect(run('UTC', ['--dub-calendar', dubPath])).toMatch(/::warning .*parsed 1 usable releases \(last healthy run: 5\)/);
+    expect(read('run-summary.md')).toContain('Publishing MAL and cached release times');
+    expect(JSON.parse(read('state.json')).dubCalendar.lastHealthyRowCount).toBe(5);
+    expect(read('anime-dubs.ics').replace(/^DTSTAMP:.+\r\n/gm, '')).toBe(before);
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }

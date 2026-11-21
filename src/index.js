@@ -8,9 +8,9 @@
 
 import { fetchAndParse, parseCivilDate } from './parse.js';
 import { computeEpisodeEvents, computeUpcomingEvents, makeSlug } from './cour-logic.js';
-import { applyReleaseTimes, broadcastDate, fetchDubCalendar, parseDubCalendar, titleKey, updateDubCalendar } from './dub-calendar.js';
+import { applyReleaseTimes, broadcastDate, countDubReleases, fetchDubCalendar, parseDubCalendar, titleKey, updateDubCalendar } from './dub-calendar.js';
 import { generateIcs } from './generate-ics.js';
-import { readFile, writeFile, mkdir } from 'fs/promises';
+import { appendFile, readFile, writeFile, mkdir } from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -34,6 +34,18 @@ const STATE_PATH = path.join(DOCS_DIR, 'state.json');
 const localPath = argValue('--local');
 const dubCalendarPath = argValue('--dub-calendar');
 
+async function warnDubCalendar(reason) {
+  const message = `English Dubbed calendar: ${reason}. Publishing MAL and cached release times; check the secondary source.`;
+  console.warn(`[anime-dub-cal] ${message}`);
+  if (process.env.GITHUB_ACTIONS === 'true') {
+    const annotation = message.replace(/%/g, '%25').replace(/\r/g, '%0D').replace(/\n/g, '%0A');
+    console.log(`::warning title=English Dubbed calendar degraded::${annotation}`);
+  }
+  if (process.env.GITHUB_STEP_SUMMARY) {
+    await appendFile(process.env.GITHUB_STEP_SUMMARY, `### Secondary calendar warning\n\n${message}\n`);
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
@@ -41,13 +53,11 @@ async function main() {
   console.log(`[anime-dub-cal] ${localPath ? `Parsing local file: ${localPath}` : 'Fetching live from MAL...'}`);
 
   // 1. Fetch both sources; the supplemental calendar should not take down MAL.
-  const [schedule, dubRows] = await Promise.all([
+  const dubInput = dubCalendarPath ? readFile(dubCalendarPath, 'utf8').then(parseDubCalendar)
+    : localPath ? null : fetchDubCalendar();
+  const [schedule, dubFetch] = await Promise.all([
     fetchAndParse(localPath),
-    (dubCalendarPath ? readFile(dubCalendarPath, 'utf8').then(parseDubCalendar)
-      : localPath ? Promise.resolve([]) : fetchDubCalendar().catch(error => {
-        console.warn(`[anime-dub-cal] English Dubbed calendar unavailable; using cached releases: ${error.message}`);
-        return [];
-      })),
+    dubInput?.then(rows => ({ rows }), error => ({ error })),
   ]);
   console.log(`[anime-dub-cal] Last Updated: ${schedule.lastUpdated}`);
   console.log(`[anime-dub-cal] Currently streaming: ${schedule.currentlyStreaming.length} shows`);
@@ -68,7 +78,22 @@ async function main() {
 
   // 3. Compute episode events
   const referenceDate = new Date();
+  let lastHealthyRowCount = prevState.dubCalendar.lastHealthyRowCount;
+  let dubRows = [];
+  if (dubFetch) {
+    const count = countDubReleases(dubFetch.rows ?? []);
+    if (dubFetch.error) {
+      await warnDubCalendar(`fetch failed (${dubFetch.error.message})`);
+    } else if (count === 0 || count < lastHealthyRowCount / 2) {
+      const baseline = lastHealthyRowCount ? ` (last healthy run: ${lastHealthyRowCount})` : '';
+      await warnDubCalendar(`parsed ${count} usable releases${baseline}`);
+    } else {
+      dubRows = dubFetch.rows;
+      lastHealthyRowCount = count;
+    }
+  }
   const dubCalendar = updateDubCalendar(dubRows, prevState.dubCalendar, referenceDate);
+  if (lastHealthyRowCount) dubCalendar.lastHealthyRowCount = lastHealthyRowCount;
   const excluded = new Set(dubCalendar.excluded);
   for (const show of [...schedule.currentlyStreaming, ...schedule.upcomingSimulDubbed]) {
     if (show.platformExcluded) excluded.add(titleKey(show.title));
