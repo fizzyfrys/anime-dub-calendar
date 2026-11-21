@@ -17,6 +17,7 @@ export async function fetchAndParse(localPath = null) {
     html = await readFile(localPath, 'utf8');
   } else {
     const res = await fetch(MAL_URL, {
+      signal: AbortSignal.timeout(30_000),
       headers: {
         'User-Agent': 'Mozilla/5.0 (compatible; anime-dub-cal/1.0; +https://github.com)',
         'Accept': 'text/html,application/xhtml+xml',
@@ -77,7 +78,7 @@ export function parseForumHtml(html) {
   const bodyText = firstPost.text;
   const lastUpdatedMatch = bodyText.match(/Last Updated:\s*([A-Za-z]+ \d+,\s*\d{4})/);
   const lastUpdatedRaw = lastUpdatedMatch ? lastUpdatedMatch[1].trim() : 'Unknown';
-  const lastUpdatedDate = lastUpdatedRaw !== 'Unknown' ? new Date(lastUpdatedRaw) : new Date(0);
+  const lastUpdatedDate = lastUpdatedRaw !== 'Unknown' ? parseCivilDate(lastUpdatedRaw) : new Date(0);
 
   // ------------------------------------------------------------------
   // 2. Parse "Currently Streaming SimulDubbed Anime" section
@@ -87,16 +88,13 @@ export function parseForumHtml(html) {
   let streamingUl = null;
   for (const b of allBold) {
     if (b.text.includes('Currently Streaming SimulDubbed Anime')) {
-      // The <ul> we want is the next sibling ul after this <b>
-      let node = b.parentNode;
-      // Walk forward in siblings to find the <ul>
-      streamingUl = findNextSiblingUl(node);
+      streamingUl = findSectionList(b, firstPost);
       break;
     }
   }
 
   const currentlyStreaming = [];
-  const globalAnnotations = { suspended: new Set(), resumeDates: {} };
+  const globalAnnotations = { resumeDate: null };
 
   if (streamingUl) {
     // Top-level <li> elements are the weekday names
@@ -133,8 +131,7 @@ export function parseForumHtml(html) {
     const txt = b.text;
     if (!txt.includes('Upcoming SimulDubbed Anime')) continue;
 
-    let node = b.parentNode;
-    const ul = findNextSiblingUl(node);
+    const ul = findSectionList(b, firstPost);
     if (!ul) continue;
 
     const items = ul.querySelectorAll(':scope > li');
@@ -142,6 +139,10 @@ export function parseForumHtml(html) {
       const entry = parseUpcomingItem(item);
       if (entry) upcomingSimulDubbed.push(entry);
     }
+  }
+
+  if (!currentlyStreaming.some(show => show.currentEp > 0)) {
+    throw new Error('Could not locate active episode counts in the MAL schedule.');
   }
 
   return {
@@ -156,37 +157,29 @@ export function parseForumHtml(html) {
 // Helpers
 // ---------------------------------------------------------------------------
 
-/**
- * Walk forward in siblings (from node's parent) to find the next <ul>.
- */
-function findNextSiblingUl(node) {
-  if (!node || !node.parentNode) return null;
-  const siblings = node.parentNode.childNodes;
-  let found = false;
-  for (const sib of siblings) {
-    if (sib === node) { found = true; continue; }
-    if (!found) continue;
-    if (sib.tagName === 'UL') return sib;
+function findSectionList(heading, post) {
+  for (let node = heading; node && node !== post; node = node.parentNode) {
+    const siblings = node.parentNode.childNodes;
+    for (const sibling of siblings.slice(siblings.indexOf(node) + 1)) {
+      if (sibling.tagName === 'UL') return sibling;
+      if (sibling.text.trim()) return null; // Don't borrow a list from the next section.
+    }
   }
-  // Fallback: try querySelector from parent
-  return node.parentNode.querySelector('ul');
+  return null;
 }
 
-/**
- * Parse global annotation lines like:
- *   ** = Dub production suspended until further notice.
- *   ++ = Resumes October 20, 2026
- * These appear as plain text inside the outer <li> or after the <ul>.
- */
+export function parseCivilDate(text) {
+  return new Date(`${text} 12:00:00 GMT`);
+}
+
+function isExcludedPlatform(note) {
+  return /\bOcean\s*Veil\b|\bYouTube\s*[- ]\s*only\b|\bonly on YouTube\b|\(\s*YouTube\s*\)/i.test(note);
+}
+
 function parseGlobalAnnotations(text, annotations) {
-  // Suspended marker
-  if (/\*\*\s*=/.test(text)) {
-    // Shows marked ** will be detected per-show item text
-  }
-  // Resume date
-  const resumeMatch = text.match(/\+\+\s*=\s*Resumes\s+([A-Za-z]+ \d+,?\s*\d{4})/);
+  const resumeMatch = text.match(/\+\+\s*=\s*(?:Resumes|Dub production suspended until)\s+([A-Za-z]+ \d+,?\s*\d{4})/i);
   if (resumeMatch) {
-    annotations.globalResumeDate = resumeMatch[1].trim();
+    annotations.resumeDate = resumeMatch[1].trim();
   }
 }
 
@@ -216,16 +209,17 @@ function parseShowItem(showItem, day, globalAnnotations) {
     // else totalEp stays null (unknown)
   }
 
-  // Suspended: trailing ** after the entry
-  const suspended = rawText.includes('**') || rawText.includes('* *');
-
   // Resume date: trailing ++ after the entry (uses global resume date)
   const hasResume = rawText.includes('++');
-  const resumeDate = hasResume ? (globalAnnotations.globalResumeDate || null) : null;
+  const resumeDate = hasResume ? globalAnnotations.resumeDate : null;
+  const suspended = rawText.includes('**') || rawText.includes('* *') || (hasResume && !resumeDate);
 
   if (!title) return null;
 
-  return { title, malUrl, currentEp, totalEp, suspended, resumeDate, day };
+  return {
+    title, malUrl, currentEp, totalEp, suspended, resumeDate, day,
+    platformExcluded: isExcludedPlatform(rawText.slice(rawText.indexOf(title) + title.length)),
+  };
 }
 
 /**
@@ -237,7 +231,7 @@ function parseShowItem(showItem, day, globalAnnotations) {
  */
 function parseUpcomingItem(item) {
   const anchor = item.querySelector('a');
-  const rawText = item.text.trim();
+  const rawText = item.text.replace(/\s*\*\s*-\s*Not confirmed\.?\s*$/i, '').trim();
 
   // Strip trailing footnote markers and whitespace
   const cleanText = rawText.replace(/\*$/, '').trim();
@@ -250,7 +244,7 @@ function parseUpcomingItem(item) {
   const dateMatch = cleanText.match(/-\s*([A-Za-z]+ \d+,?\s*\d{4})\s*$/);
   let premiereDate = null;
   if (dateMatch) {
-    const parsed = new Date(dateMatch[1].trim());
+    const parsed = parseCivilDate(dateMatch[1].trim());
     if (!isNaN(parsed)) {
       // Format as YYYY-MM-DD
       premiereDate = parsed.toISOString().split('T')[0];
@@ -260,5 +254,8 @@ function parseUpcomingItem(item) {
   // Skip entries with no date and no useful title
   if (!title) return null;
 
-  return { title, premiereDate, malUrl, dateConfirmed };
+  return {
+    title, premiereDate, malUrl, dateConfirmed,
+    platformExcluded: isExcludedPlatform(rawText.slice(rawText.indexOf(title) + title.length)),
+  };
 }

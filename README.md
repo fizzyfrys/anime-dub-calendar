@@ -56,7 +56,8 @@ Choose your preferred format:
 
 ## ✨ Features
 
-- 🔄 **Fully Automated**: Runs every morning via GitHub Actions, scraping the community-maintained MyAnimeList thread.
+- 🔄 **Fully Automated**: Runs every morning via GitHub Actions using the MyAnimeList forum and English Dubbed calendar.
+- ⏰ **Local Release Times**: Published times appear in your calendar's time zone. Dates without a published time stay all-day.
 - 🧠 **Cour-Aware Prediction Engine**: Automatically projects upcoming episode release dates for standard 12-episode (1 cour) and 24-episode (2 cour) broadcasts.
 - 📦 **Multi-Episode Drop Detection**: Detects unannounced mid-season double/multi-episode drops and schedules them on the exact drop date.
 - 🎯 **Deterministic Event UIDs**: Uses RFC 5545 compliant deterministic event IDs (`mal-dub-<slug>-ep-<n>@anime-dub-cal`) so calendar clients update existing events without duplicates.
@@ -135,16 +136,22 @@ cd anime-dub-calendar
 # 2. Install dependencies
 npm install
 
-# 3. Test with a local HTML snapshot
-npm run build:local
+# 3. Run tests
+npm test -- --runInBand
 
-# 4. Run live scraper against MyAnimeList
+# 4. Build from both live sources
 npm run build
+
+# Or use saved HTML snapshots and leave published files untouched
+node src/index.js --local mal.html --dub-calendar english-dubbed.html --output-dir /tmp/anime-dub-build
 ```
 
 ---
 
 ## 📚 Data Source & Disclaimer
 
-- Data is sourced from the community-maintained [MyAnimeList "Upcoming Dubbed Anime" forum topic #1692966](https://myanimelist.net/forum/?topicid=1692966).
-- This project is an independent open-source utility and is not affiliated with or endorsed by MyAnimeList.
+- [MyAnimeList "Upcoming Dubbed Anime"](https://myanimelist.net/forum/?topicid=1692966) provides the baseline schedule, episode counts, and hiatuses. Later episode dates are estimates, even for shows with a known episode count.
+- The [English Dubbed Anime Calendar](https://english-dubbed.com/anime-industry/english-dub-anime-calendar/) supplies published release times and additional episodes. Entries are matched by normalized title (with aliases for verified alternate names) and episode number. A conflicting confirmed MAL premiere date or hiatus takes precedence.
+- Shows known to be on OceanVeil or only on YouTube are excluded from both feeds and the website. Shows without platform information still use MAL. If English Dubbed is unreachable, the build uses cached times and exclusions alongside the MAL schedule.
+- The daily workflow adds a warning annotation and job summary if English Dubbed cannot be fetched, yields zero usable releases, or yields less than half as many as its last healthy run. It keeps publishing MAL and cached data without resetting that baseline.
+- This project is independent and is not affiliated with either source.
