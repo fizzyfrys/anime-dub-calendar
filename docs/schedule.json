@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-20T18:20:25.360Z",
+  "generatedAt": "2026-11-21T00:29:04.087Z",
   "lastUpdated": "November 19, 2026",
   "showCount": 45,
-  "eventCount": 577,
+  "eventCount": 578,
   "shows": [
     {
       "title": "PSYREN",
@@ -250,7 +250,7 @@
       "currentEp": 8,
       "totalEp": 10,
       "suspended": false,
-      "resumeDate": null
+      "resumeDate": "November 23, 2026"
     },
     {
       "title": "Even the Student Council Has Its Holes!",
@@ -364,5 +364,6 @@
       "suspended": false,
       "resumeDate": null
     }
-  ]
+  ],
+  "releases": []
 }
