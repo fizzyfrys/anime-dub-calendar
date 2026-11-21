@@ -146,6 +146,8 @@ npm run build
 node src/index.js --local mal.html --dub-calendar english-dubbed.html --output-dir /tmp/anime-dub-build
 ```
 
+If the live English Dubbed fetch is blocked, you can preview a build with a saved copy of its public calendar and live MAL data. Copy `docs/state.json` into the preview directory first to keep episode history, then run `node src/index.js --dub-calendar english-dubbed.html --output-dir <preview-directory>`. To seed the next daily build, copy only the preview state's `dubCalendar` section back into `docs/state.json`. The snapshot is a one-time update; it does not restore automated access.
+
 ---
 
 ## 📚 Data Source & Disclaimer
