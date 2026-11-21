@@ -116,17 +116,19 @@ export function computeEpisodeEvents(show, prevState, referenceDate, lastUpdated
   // ------------------------------------------------------------------
   let anchorEp = currentEp;
   let anchorDate = currentEpDate;
-  for (const [ep, date] of verifiedDates) {
-    if (ep > anchorEp && (totalEp === null || ep <= totalEp)) {
+  const timedEpisodes = [...verifiedDates.keys()].filter(ep => ep > currentEp).sort((a, b) => a - b);
+  const projectedTotal = computeProjectedTotal(timedEpisodes.at(-1) ?? currentEp, totalEp);
+  for (let ep = currentEp + 1; ep <= projectedTotal; ep++) {
+    if (verifiedDates.has(ep)) {
       anchorEp = ep;
-      anchorDate = date;
+      anchorDate = verifiedDates.get(ep);
+      continue; // Added by applyReleaseTimes.
     }
-  }
-  // Find MAL's normal weekday closest to a week after the timed release.
-  const daysToNextRelease = 4 + (WEEKDAY_INDEX[day] - anchorDate.getUTCDay() + 10) % 7;
-  const projectedTotal = computeProjectedTotal(anchorEp, totalEp);
-  for (let ep = anchorEp + 1; ep <= projectedTotal; ep++) {
-    const epDate = addDays(anchorDate, daysToNextRelease + (ep - anchorEp - 1) * 7);
+    // Keep MAL's weekly estimate unless it falls after a later-numbered timed episode.
+    const daysToNextRelease = 4 + (WEEKDAY_INDEX[day] - anchorDate.getUTCDay() + 10) % 7;
+    const estimate = addDays(anchorDate, daysToNextRelease + (ep - anchorEp - 1) * 7);
+    const nextTimedDate = verifiedDates.get(timedEpisodes.find(n => n > ep));
+    const epDate = nextTimedDate && nextTimedDate < estimate ? nextTimedDate : estimate;
 
     events.push({
       title,

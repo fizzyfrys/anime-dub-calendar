@@ -110,6 +110,17 @@ describe('MAL dates and history', () => {
       [3, 4, 5, 6].map(ep => [ep, day('2026-11-01'), true]),
     );
   });
+
+  test('keeps all-day estimates for episodes without published times before and between timed releases', () => {
+    const show = parseForumHtml(malPage()).currentlyStreaming[0];
+    const events = computeEpisodeEvents(show, {}, day('2026-11-01'), day('2026-11-01'), {},
+      new Map([[4, day('2026-11-06')], [6, day('2026-11-22')]]));
+    expect(events.filter(e => e.isProjected).slice(0, 3).map(e => [e.episodeNumber, e.date])).toEqual([
+      [3, day('2026-11-06')],
+      [5, day('2026-11-15')],
+      [7, day('2026-11-29')],
+    ]);
+  });
 });
 
 test('the timed event keeps the existing UID and custom title format', () => {
