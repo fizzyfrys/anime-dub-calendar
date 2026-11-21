@@ -384,14 +384,21 @@
     updateLinks();
   }
 
-  function copyFeedUrl() {
+  async function copyFeedUrl() {
     const filename = currentFormat === 'ep-first' ? 'anime-dubs-ep-first.ics' : 'anime-dubs.ics';
     const icsUrl = base + filename;
-    navigator.clipboard.writeText(icsUrl).then(() => {
-      const toast = document.getElementById('copy-toast');
-      toast.style.display = 'block';
-      setTimeout(() => { toast.style.display = 'none'; }, 3000);
-    });
+    if (navigator.clipboard) {
+      try {
+        await navigator.clipboard.writeText(icsUrl);
+        const toast = document.getElementById('copy-toast');
+        toast.style.display = 'block';
+        setTimeout(() => { toast.style.display = 'none'; }, 3000);
+        return;
+      } catch {
+        // Clipboard access was denied; let the user copy the URL manually.
+      }
+    }
+    window.prompt('Copy this calendar feed URL:', icsUrl);
   }
 
   // Initialize links on load
