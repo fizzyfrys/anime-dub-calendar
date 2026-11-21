@@ -11,6 +11,7 @@ permissions:
 
 jobs:
   build:
+    if: vars.CALENDAR_PUBLISHER != 'unraid'
     runs-on: ubuntu-latest
 
     steps:

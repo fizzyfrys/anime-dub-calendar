@@ -31,12 +31,15 @@ cat >"$fixtures/dub.html" <<EOF
 EOF
 chmod a+rx "$fixtures"
 chmod a+r "$fixtures/"*.html
+touch "$fixtures/empty-token"
+chmod a+r "$fixtures/empty-token"
 
 docker volume create "$volume" >/dev/null
 start() {
   docker run -d --rm --name "$name" -p 127.0.0.1::8080 \
     -v "$volume:/data" -v "$fixtures:/fixtures:ro" \
     -e "MAL_HTML_PATH=/fixtures/$1" -e "DUB_CALENDAR_HTML_PATH=/fixtures/$2" \
+    -e "GITHUB_PUBLISH_REPOSITORY=${3:-}" -e "GITHUB_PUBLISH_TOKEN_FILE=${4:-}" \
     "$image" >/dev/null
   for _ in $(seq 1 30); do
     if docker logs "$name" 2>&1 | grep -F 'T10:00:00.000Z' >/dev/null; then
@@ -75,4 +78,9 @@ docker stop "$name" >/dev/null
 
 start operator-has-no-malsnapshot.html dub.html
 docker logs "$name" 2>&1 | grep -F 'Refresh failed:' >/dev/null
+assert_feeds
+docker stop "$name" >/dev/null
+
+start mal.html dub.html example/calendar /fixtures/empty-token
+docker logs "$name" 2>&1 | grep -F 'GitHub publish failed; local feeds updated:' >/dev/null
 assert_feeds

@@ -3,6 +3,7 @@ import { copyFile, mkdir, readFile, rename, rm } from 'node:fs/promises';
 import { createServer } from 'node:http';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { publishCalendar } from './publish.js';
 
 const docs = fileURLToPath(new URL('../docs/', import.meta.url));
 const builder = fileURLToPath(new URL('./index.js', import.meta.url));
@@ -53,6 +54,17 @@ async function refresh() {
 async function refreshDaily() {
   try {
     await refresh();
+    const { GITHUB_PUBLISH_REPOSITORY: repository, GITHUB_PUBLISH_TOKEN_FILE: tokenFile } = process.env;
+    if (repository || tokenFile) {
+      try {
+        const sha = await publishCalendar(data, outputs, { repository, tokenFile });
+        console.log(sha
+          ? `[calendar-server] Published feeds to ${repository}@${sha}`
+          : '[calendar-server] Feeds already published');
+      } catch (error) {
+        console.error('[calendar-server] GitHub publish failed; local feeds updated:', error.message);
+      }
+    }
   } catch (error) {
     console.error('[calendar-server] Refresh failed:', error.message);
   }
