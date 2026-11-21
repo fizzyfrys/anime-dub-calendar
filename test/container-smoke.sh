@@ -33,6 +33,32 @@ chmod a+rx "$fixtures"
 chmod a+r "$fixtures/"*.html
 touch "$fixtures/empty-token"
 chmod a+r "$fixtures/empty-token"
+printf 'fixture-token\n' >"$fixtures/mock-token"
+cat >"$fixtures/mock-github.mjs" <<'EOF'
+const responses = {
+  'GET git/ref/heads/main': { object: { sha: 'history-commit' } },
+  'GET git/commits/history-commit': { tree: { sha: 'base-tree' } },
+  'GET contents/docs/state.json?ref=history-commit': {
+    shows: {}, history: { 'container-test': { 1: '2025-01-06' } },
+  },
+  'POST git/trees': { sha: 'updated-tree' },
+  'POST git/commits': { sha: 'new-commit' },
+  'PATCH git/refs/heads/main': { object: { sha: 'new-commit' } },
+};
+globalThis.fetch = async (url, { method, body }) => {
+  const path = url.replace('https://api.github.com/repos/example/calendar/', '');
+  const result = responses[`${method} ${path}`];
+  if (!result) throw new Error(`Unexpected fixture request: ${method} ${url}`);
+  if (path === 'git/trees') {
+    const state = JSON.parse(JSON.parse(body).tree.find(file => file.path === 'docs/state.json').content);
+    if (state.history['container-test']?.[1] !== '2025-01-06') {
+      throw new Error('Published history does not contain the previously recorded episode');
+    }
+  }
+  return Response.json(result);
+};
+EOF
+chmod a+r "$fixtures/mock-token" "$fixtures/mock-github.mjs"
 
 docker volume create "$volume" >/dev/null
 start() {
@@ -40,6 +66,7 @@ start() {
     -v "$volume:/data" -v "$fixtures:/fixtures:ro" \
     -e "MAL_HTML_PATH=/fixtures/$1" -e "DUB_CALENDAR_HTML_PATH=/fixtures/$2" \
     -e "GITHUB_PUBLISH_REPOSITORY=${3:-}" -e "GITHUB_PUBLISH_TOKEN_FILE=${4:-}" \
+    -e "NODE_OPTIONS=${5:-}" \
     "$image" >/dev/null
   for _ in $(seq 1 30); do
     if docker logs "$name" 2>&1 | grep -F 'T10:00:00.000Z' >/dev/null; then
@@ -82,5 +109,13 @@ assert_feeds
 docker stop "$name" >/dev/null
 
 start mal.html dub.html example/calendar /fixtures/empty-token
-docker logs "$name" 2>&1 | grep -F 'GitHub publish failed; local feeds updated:' >/dev/null
+docker logs "$name" 2>&1 | grep -F 'Could not read published history; skipping GitHub publish:' >/dev/null
 assert_feeds
+docker stop "$name" >/dev/null
+docker volume rm "$volume" >/dev/null
+docker volume create "$volume" >/dev/null
+
+start mal.html dub.html example/calendar /fixtures/mock-token --import=/fixtures/mock-github.mjs
+docker logs "$name" 2>&1 | grep -F 'Published feeds to example/calendar@new-commit' >/dev/null
+assert_feeds
+curl -fsS "$base/anime-dubs.ics" | grep -F 'DTSTART;VALUE=DATE:20250106' >/dev/null

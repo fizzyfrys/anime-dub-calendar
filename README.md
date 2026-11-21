@@ -165,7 +165,7 @@ Unraid can serve the calendar locally and publish the same generated files to `m
 2. In [Actions variables](https://github.com/fizzyfrys/anime-dub-calendar/settings/variables/actions), set `CALENDAR_PUBLISHER` to `unraid` so the GitHub-hosted build no longer overwrites the generated feeds. Let any running daily build finish before enabling Unraid publishing.
 3. Set `GITHUB_PUBLISH_REPOSITORY=fizzyfrys/anime-dub-calendar` and `GITHUB_PUBLISH_TOKEN_FILE=/run/secrets/github-publish-token` in the container. Restart it and check the logs for `Published feeds to`. The [Pages deployment](https://github.com/fizzyfrys/anime-dub-calendar/actions/workflows/pages/pages-build-deployment) is separate and can take a few minutes.
 
-If Unraid is offline or cannot push to GitHub, Pages keeps the last published feeds. A GitHub publish failure does not affect the local feeds. To hand publishing back to GitHub Actions, remove the two publishing environment variables from the container first, then remove `CALENDAR_PUBLISHER` from the repository and run [Build Anime Dub Calendar](https://github.com/fizzyfrys/anime-dub-calendar/actions/workflows/build.yml).
+With sync enabled, a refresh starts from the history already on GitHub. If Unraid cannot read that history, it refreshes locally from its cache and skips publishing; if it cannot push, Pages likewise keeps the last published feeds. To hand publishing back to GitHub Actions, remove the two publishing environment variables from the container first, then remove `CALENDAR_PUBLISHER` from the repository and run [Build Anime Dub Calendar](https://github.com/fizzyfrys/anime-dub-calendar/actions/workflows/build.yml).
 
 ---
 

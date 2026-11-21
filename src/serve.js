@@ -1,9 +1,9 @@
 import { spawn } from 'node:child_process';
-import { copyFile, mkdir, readFile, rename, rm } from 'node:fs/promises';
+import { copyFile, mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises';
 import { createServer } from 'node:http';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { publishCalendar } from './publish.js';
+import { prepareCalendarPublish } from './publish.js';
 
 const docs = fileURLToPath(new URL('../docs/', import.meta.url));
 const builder = fileURLToPath(new URL('./index.js', import.meta.url));
@@ -30,10 +30,12 @@ async function withBundledFallback(file, operation) {
   }
 }
 
-async function refresh() {
+async function refresh(publishedState) {
   await mkdir(staging, { recursive: true });
   try {
-    await withBundledFallback(state, from => copyFile(from, join(staging, state)));
+    const stagedState = join(staging, state);
+    if (publishedState) await writeFile(stagedState, publishedState);
+    else await withBundledFallback(state, from => copyFile(from, stagedState));
     const args = [builder, '--output-dir', staging];
     if (process.env.MAL_HTML_PATH) args.push('--local', process.env.MAL_HTML_PATH);
     if (process.env.DUB_CALENDAR_HTML_PATH) args.push('--dub-calendar', process.env.DUB_CALENDAR_HTML_PATH);
@@ -53,11 +55,19 @@ async function refresh() {
 
 async function refreshDaily() {
   try {
-    await refresh();
     const { GITHUB_PUBLISH_REPOSITORY: repository, GITHUB_PUBLISH_TOKEN_FILE: tokenFile } = process.env;
+    let sync;
     if (repository || tokenFile) {
       try {
-        const sha = await publishCalendar(data, outputs, { repository, tokenFile });
+        sync = await prepareCalendarPublish({ repository, tokenFile });
+      } catch (error) {
+        console.error('[calendar-server] Could not read published history; skipping GitHub publish:', error.message);
+      }
+    }
+    await refresh(sync?.state);
+    if (sync) {
+      try {
+        const sha = await sync.publish(data, outputs);
         console.log(sha
           ? `[calendar-server] Published feeds to ${repository}@${sha}`
           : '[calendar-server] Feeds already published');
