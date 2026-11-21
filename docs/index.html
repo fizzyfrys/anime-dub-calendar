@@ -329,11 +329,16 @@
         <div class="step-num">3</div>
         <div class="step-body">
           <h3>Events auto-update daily</h3>
-          <p>The feed rebuilds every morning from the <a href="https://myanimelist.net/forum/?topicid=1692966" target="_blank" rel="noopener" style="color:#a78bfa">MAL forum thread</a>. Episode projections adjust automatically as shows update.</p>
+          <p>The feed rebuilds every morning from the <a href="https://myanimelist.net/forum/?topicid=1692966" target="_blank" rel="noopener" style="color:#a78bfa">MAL forum thread</a>, with release times from the <a href="https://english-dubbed.com/anime-industry/english-dub-anime-calendar/" target="_blank" rel="noopener" style="color:#a78bfa">English Dubbed Anime Calendar</a>. Dates without a published time stay all-day.</p>
         </div>
       </div>
     </div>
   </div>
+
+  <section id="release-section" hidden>
+    <div class="section-title">Release Times (Your Local Time)</div>
+    <div id="release-container" class="show-list day-group"></div>
+  </section>
 
   <div id="schedule-section">
     <div class="section-title">Currently Airing Dubs</div>
@@ -344,7 +349,7 @@
 
 <footer>
   Data sourced from the <a href="https://myanimelist.net/forum/?topicid=1692966" target="_blank" rel="noopener">MAL Upcoming Dubbed Anime thread</a>.
-  Not affiliated with MyAnimeList. · <a href="https://github.com" target="_blank">View on GitHub</a>
+  Independent of both sources. · <a href="https://github.com/fizzyfrys/anime-dub-calendar" target="_blank" rel="noopener">View on GitHub</a>
 </footer>
 
 <script src="./feed-url.js"></script>
@@ -392,12 +397,38 @@
   // Initialize links on load
   updateLinks();
 
+  function element(tag, className, text) {
+    const node = document.createElement(tag);
+    node.className = className;
+    if (text != null) node.textContent = text;
+    return node;
+  }
+
   // Load schedule.json and render
   fetch('./schedule.json')
-    .then(r => r.json())
+    .then(r => {
+      if (!r.ok) throw new Error('Schedule request failed');
+      return r.json();
+    })
     .then(data => {
       const container = document.getElementById('schedule-container');
-      container.innerHTML = '';
+      container.replaceChildren();
+
+      const releaseList = document.getElementById('release-container');
+      const localReleaseFormat = new Intl.DateTimeFormat(undefined, {
+        weekday: 'short', month: 'short', day: 'numeric',
+        hour: 'numeric', minute: '2-digit', timeZoneName: 'short',
+      });
+      for (const { title, episodeNumber, startsAt } of data.releases ?? []) {
+        const date = new Date(startsAt);
+        if (!Number.isFinite(+date)) continue;
+        const row = element('div', 'show-item');
+        const time = element('time', 'show-eps', localReleaseFormat.format(date));
+        time.dateTime = startsAt;
+        row.append(element('span', 'show-title', `${title} · Ep ${episodeNumber}`), time);
+        releaseList.appendChild(row);
+      }
+      document.getElementById('release-section').hidden = !releaseList.childElementCount;
 
       const dayOrder = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
       const byDay = {};
@@ -416,20 +447,17 @@
           const epLabel = show.totalEp
             ? `Ep ${show.currentEp} / ${show.totalEp}`
             : `Ep ${show.currentEp} / ??`;
-          let tags = '';
+          const row = element('div', 'show-item');
+          const detail = element('span', '');
+          detail.style.cssText = 'display:flex;align-items:center;gap:0.5rem';
           if (show.suspended) {
-            tags = '<span class="tag tag-suspended">Suspended</span>';
+            detail.appendChild(element('span', 'tag tag-suspended', 'Suspended'));
           } else if (show.resumeDate) {
-            tags = `<span class="tag tag-resumes">Resumes ${show.resumeDate}</span>`;
+            detail.appendChild(element('span', 'tag tag-resumes', `Resumes ${show.resumeDate}`));
           }
-          list.innerHTML += `
-            <div class="show-item">
-              <span class="show-title">${show.title}</span>
-              <span style="display:flex;align-items:center;gap:0.5rem">
-                ${tags}
-                <span class="show-eps">${epLabel}</span>
-              </span>
-            </div>`;
+          detail.appendChild(element('span', 'show-eps', epLabel));
+          row.append(element('span', 'show-title', show.title), detail);
+          list.appendChild(row);
         }
         container.appendChild(group);
       }
@@ -445,17 +473,21 @@
       panel.innerHTML = `
         <div class="status-card">
           <div class="status-label">MAL Forum Thread Updated</div>
-          <div class="status-val status-highlight">📌 ${data.lastUpdated || 'Unknown'}</div>
+          <div class="status-val status-highlight"></div>
         </div>
         <div class="status-card">
           <div class="status-label">Calendar Feed Built</div>
-          <div class="status-val">⚡ ${syncDate}</div>
+          <div class="status-val"></div>
         </div>
         <div class="status-card">
           <div class="status-label">Tracked Series & Events</div>
-          <div class="status-val">🎬 ${data.showCount} shows · ${data.eventCount} events</div>
+          <div class="status-val"></div>
         </div>
       `;
+      const [lastUpdated, built, counts] = panel.querySelectorAll('.status-val');
+      lastUpdated.textContent = `📌 ${data.lastUpdated || 'Unknown'}`;
+      built.textContent = `⚡ ${syncDate}`;
+      counts.textContent = `🎬 ${data.showCount} shows · ${data.eventCount} events`;
       container.appendChild(panel);
     })
     .catch(() => {

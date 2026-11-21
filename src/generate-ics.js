@@ -2,16 +2,16 @@
  * generate-ics.js
  *
  * Produces a valid RFC 5545 .ics calendar string from a list of episode events.
- * - All-day events in America/Los_Angeles timezone
+ * - UTC timestamps for published releases, time zone-independent dates otherwise
  * - Deterministic UIDs: mal-dub-<slug>-ep-<n>@anime-dub-cal
  * - DTSTAMP set to current build time (required by RFC 5545)
  */
 
 import { makeSlug } from './cour-logic.js';
+import { DUB_CALENDAR_URL } from './dub-calendar.js';
 
-const TIMEZONE = 'America/Los_Angeles';
 const CALENDAR_NAME = 'Anime Dubs Schedule';
-const CALENDAR_DESC = 'Auto-updated weekly anime dub release calendar from MyAnimeList';
+const CALENDAR_DESC = 'Anime dub schedules from MyAnimeList and English Dubbed';
 const UID_DOMAIN = 'anime-dub-cal';
 
 /**
@@ -30,13 +30,10 @@ export function generateIcs(events, lastUpdated, options = {}) {
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
     'PRODID:-//anime-dub-cal//EN',
-    `X-WR-CALNAME:${calendarName}`,
-    `X-WR-TIMEZONE:${TIMEZONE}`,
-    `X-WR-CALDESC:${CALENDAR_DESC} (Source updated: ${lastUpdated})`,
+    `X-WR-CALNAME:${escapeIcs(calendarName)}`,
+    `X-WR-CALDESC:${escapeIcs(`${CALENDAR_DESC} (MAL updated: ${lastUpdated})`)}`,
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
-    // Embed minimal VTIMEZONE for America/Los_Angeles so clients don't need network lookup
-    ...VTIMEZONE_LA,
   ];
 
   for (const event of events) {
@@ -57,11 +54,6 @@ function buildVevent(event, dtstamp, titleFormat = 'title-first') {
   const slug = makeSlug(event.title);
   const uid = `mal-dub-${slug}-ep-${event.episodeNumber}@${UID_DOMAIN}`;
 
-  // DTSTART for all-day: YYYYMMDD
-  const dtstart = formatIcsDate(event.date);
-  // DTEND = day after for all-day events
-  const dtend = formatIcsDate(addDays(event.date, 1));
-
   let summary = titleFormat === 'ep-first'
     ? `Ep ${event.episodeNumber} · ${event.title}`
     : `${event.title} - Ep ${event.episodeNumber}`;
@@ -77,12 +69,13 @@ function buildVevent(event, dtstamp, titleFormat = 'title-first') {
 
   const descParts = [];
   if (event.malUrl) descParts.push(`MAL: ${event.malUrl}`);
+  if (event.releaseAt) descParts.push(`Release time: ${DUB_CALENDAR_URL}`);
   if (event.isResumeEvent) {
     descParts.push('Show returns from broadcast hiatus on this date.');
   } else if (event.isProjected && !event.isPremierePlaceholder) {
     descParts.push('Note: Episode date projected based on cour heuristics.');
   }
-  if (event.isPremierePlaceholder) {
+  if (event.isPremierePlaceholder && !event.releaseAt) {
     descParts.push('Premiere placeholder — full schedule will appear when the show begins airing.');
     if (!event.dateConfirmed) descParts.push('* Date not yet officially confirmed.');
   }
@@ -90,17 +83,21 @@ function buildVevent(event, dtstamp, titleFormat = 'title-first') {
     descParts.push('Multiple episodes dropped on this date.');
   }
 
-  const description = descParts.join('\\n');
+  const description = descParts.join('\n');
+  const eventUrl = event.malUrl || (event.releaseAt ? DUB_CALENDAR_URL : null);
 
   return [
     'BEGIN:VEVENT',
     `UID:${uid}`,
     `DTSTAMP:${dtstamp}`,
-    `DTSTART;VALUE=DATE:${dtstart}`,
-    `DTEND;VALUE=DATE:${dtend}`,
+    ...(event.releaseAt ? [`DTSTART:${formatIcsDatetime(event.releaseAt)}`] : [
+      `DTSTART;VALUE=DATE:${formatIcsDate(event.date)}`,
+      `DTEND;VALUE=DATE:${formatIcsDate(addDays(event.date, 1))}`,
+    ]),
+    'TRANSP:TRANSPARENT',
     `SUMMARY:${escapeIcs(summary)}`,
     ...(description ? [`DESCRIPTION:${escapeIcs(description)}`] : []),
-    `URL:${event.malUrl || ''}`,
+    ...(eventUrl ? [`URL:${eventUrl}`] : []),
     'END:VEVENT',
   ];
 }
@@ -111,10 +108,7 @@ function buildVevent(event, dtstamp, titleFormat = 'title-first') {
 
 function formatIcsDate(date) {
   // YYYYMMDD for all-day events (no timezone conversion needed for DATE values)
-  const y = date.getFullYear();
-  const m = String(date.getMonth() + 1).padStart(2, '0');
-  const d = String(date.getDate()).padStart(2, '0');
-  return `${y}${m}${d}`;
+  return date.toISOString().slice(0, 10).replace(/-/g, '');
 }
 
 function formatIcsDatetime(date) {
@@ -124,7 +118,7 @@ function formatIcsDatetime(date) {
 
 function addDays(date, n) {
   const d = new Date(date);
-  d.setDate(d.getDate() + n);
+  d.setUTCDate(d.getUTCDate() + n);
   return d;
 }
 
@@ -137,7 +131,7 @@ function escapeIcs(str) {
     .replace(/\\/g, '\\\\')
     .replace(/;/g, '\\;')
     .replace(/,/g, '\\,')
-    .replace(/\n/g, '\\n');
+    .replace(/\r\n|\r|\n/g, '\\n');
 }
 
 /**
@@ -160,27 +154,3 @@ function foldLine(line) {
   if (current) chunks.push(current);
   return chunks.join('\r\n');
 }
-
-// ---------------------------------------------------------------------------
-// Minimal VTIMEZONE for America/Los_Angeles (covers PST/PDT)
-// ---------------------------------------------------------------------------
-const VTIMEZONE_LA = [
-  'BEGIN:VTIMEZONE',
-  'TZID:America/Los_Angeles',
-  'X-LIC-LOCATION:America/Los_Angeles',
-  'BEGIN:DAYLIGHT',
-  'TZOFFSETFROM:-0800',
-  'TZOFFSETTO:-0700',
-  'TZNAME:PDT',
-  'DTSTART:19700308T020000',
-  'RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU',
-  'END:DAYLIGHT',
-  'BEGIN:STANDARD',
-  'TZOFFSETFROM:-0700',
-  'TZOFFSETTO:-0800',
-  'TZNAME:PST',
-  'DTSTART:19701101T020000',
-  'RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU',
-  'END:STANDARD',
-  'END:VTIMEZONE',
-];

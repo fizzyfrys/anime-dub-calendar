@@ -2,32 +2,37 @@
  * index.js — Pipeline orchestrator
  *
  * Usage:
- *   node src/index.js                          # fetch live from MAL
- *   node src/index.js --local <path-to-html>   # parse local HTML file
+ *   node src/index.js                          # fetch both live sources
+ *   node src/index.js --local <mal.html> --dub-calendar <dub.html> --output-dir <dir>
  */
 
-import { fetchAndParse } from './parse.js';
-import { computeEpisodeEvents, computeUpcomingEvents, getBroadcastWeekDate, makeSlug } from './cour-logic.js';
+import { fetchAndParse, parseCivilDate } from './parse.js';
+import { computeEpisodeEvents, computeUpcomingEvents, makeSlug } from './cour-logic.js';
+import { applyReleaseTimes, broadcastDate, fetchDubCalendar, parseDubCalendar, titleKey, updateDubCalendar } from './dub-calendar.js';
 import { generateIcs } from './generate-ics.js';
 import { readFile, writeFile, mkdir } from 'fs/promises';
-import { existsSync } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
-const DOCS_DIR = path.join(ROOT, 'docs');
+const args = process.argv.slice(2);
+function argValue(flag) {
+  const index = args.indexOf(flag);
+  if (index === -1) return null;
+  const value = args[index + 1];
+  if (!value || value.startsWith('--')) throw new Error(`${flag} requires a path`);
+  return value;
+}
+
+const DOCS_DIR = argValue('--output-dir') ?? path.join(ROOT, 'docs');
 const ICS_PATH = path.join(DOCS_DIR, 'anime-dubs.ics');
 const ICS_EP_FIRST_PATH = path.join(DOCS_DIR, 'anime-dubs-ep-first.ics');
 const SCHEDULE_PATH = path.join(DOCS_DIR, 'schedule.json');
 const STATE_PATH = path.join(DOCS_DIR, 'state.json');
 
-// ---------------------------------------------------------------------------
-// CLI arg parsing
-// ---------------------------------------------------------------------------
-const args = process.argv.slice(2);
-const localIndex = args.indexOf('--local');
-const localPath = localIndex !== -1 ? args[localIndex + 1] : null;
+const localPath = argValue('--local');
+const dubCalendarPath = argValue('--dub-calendar');
 
 // ---------------------------------------------------------------------------
 // Main
@@ -35,67 +40,98 @@ const localPath = localIndex !== -1 ? args[localIndex + 1] : null;
 async function main() {
   console.log(`[anime-dub-cal] ${localPath ? `Parsing local file: ${localPath}` : 'Fetching live from MAL...'}`);
 
-  // 1. Parse the forum HTML
-  const schedule = await fetchAndParse(localPath);
+  // 1. Fetch both sources; the supplemental calendar should not take down MAL.
+  const [schedule, dubRows] = await Promise.all([
+    fetchAndParse(localPath),
+    (dubCalendarPath ? readFile(dubCalendarPath, 'utf8').then(parseDubCalendar)
+      : localPath ? Promise.resolve([]) : fetchDubCalendar().catch(error => {
+        console.warn(`[anime-dub-cal] English Dubbed calendar unavailable; using cached releases: ${error.message}`);
+        return [];
+      })),
+  ]);
   console.log(`[anime-dub-cal] Last Updated: ${schedule.lastUpdated}`);
   console.log(`[anime-dub-cal] Currently streaming: ${schedule.currentlyStreaming.length} shows`);
   console.log(`[anime-dub-cal] Upcoming premiere entries: ${schedule.upcomingSimulDubbed.length}`);
 
   // 2. Load previous state & persistent history
-  let prevState = { shows: {}, history: {} };
-  if (existsSync(STATE_PATH)) {
-    try {
-      const parsed = JSON.parse(await readFile(STATE_PATH, 'utf8'));
-      if (parsed.history || parsed.shows) {
-        prevState = { shows: parsed.shows || {}, history: parsed.history || {} };
-      } else {
-        // Migration from legacy flat format
-        prevState = { shows: parsed, history: {} };
-      }
-    } catch {
-      console.warn('[anime-dub-cal] Could not parse state.json, starting fresh.');
-    }
+  let prevState = { shows: {}, history: {}, dubCalendar: {} };
+  try {
+    const parsed = JSON.parse(await readFile(STATE_PATH, 'utf8'));
+    prevState = {
+      shows: parsed.shows ?? (parsed.history ? {} : parsed),
+      history: parsed.history ?? {},
+      dubCalendar: parsed.dubCalendar ?? {},
+    };
+  } catch (error) {
+    if (error.code !== 'ENOENT') throw error;
   }
 
   // 3. Compute episode events
   const referenceDate = new Date();
-  const allEvents = [];
+  const dubCalendar = updateDubCalendar(dubRows, prevState.dubCalendar, referenceDate);
+  const excluded = new Set(dubCalendar.excluded);
+  for (const show of [...schedule.currentlyStreaming, ...schedule.upcomingSimulDubbed]) {
+    if (show.platformExcluded) excluded.add(titleKey(show.title));
+  }
+  const include = show => !excluded.has(titleKey(show.title));
+  const streaming = schedule.currentlyStreaming.filter(include);
+  const upcoming = schedule.upcomingSimulDubbed.filter(include);
+  const malShows = [...upcoming, ...streaming];
+  const malByTitle = new Map(malShows.map(show => [titleKey(show.title), show]));
+  const releases = dubCalendar.releases.filter(release => {
+    if (!include(release)) return false;
+    const show = malByTitle.get(titleKey(release.title));
+    if (!show) return true;
+    const day = broadcastDate(release.startsAt);
+    if (release.episodeNumber > show.currentEp) {
+      if (show.suspended || (show.resumeDate && day < parseCivilDate(show.resumeDate))) return false;
+    }
+    return !show.premiereDate || !show.dateConfirmed || release.episodeNumber !== 1 ||
+      day.toISOString().slice(0, 10) === show.premiereDate;
+  });
+  const verifiedDates = new Map();
+  for (const release of releases) {
+    const key = titleKey(release.title);
+    if (!verifiedDates.has(key)) verifiedDates.set(key, new Map());
+    verifiedDates.get(key).set(release.episodeNumber, broadcastDate(release.startsAt));
+  }
+  const malEvents = [];
 
   // 3a. Currently streaming shows
-  for (const show of schedule.currentlyStreaming) {
+  for (const show of streaming) {
     const slug = makeSlug(show.title);
-    const events = computeEpisodeEvents(show, prevState.shows, referenceDate, schedule.lastUpdatedDate);
+    const showHistory = prevState.history[slug] || {};
+    const events = computeEpisodeEvents(show, prevState.shows, referenceDate,
+      schedule.lastUpdatedDate, showHistory, verifiedDates.get(titleKey(show.title)));
 
     // Merge any previously recorded historical episodes from past runs
-    const showHistory = prevState.history[slug] || {};
+    const existingEpisodes = new Set(events.map(e => e.episodeNumber));
     for (const [epStr, dateStr] of Object.entries(showHistory)) {
-      const epNum = parseInt(epStr, 10);
-      if (!events.some(e => e.episodeNumber === epNum)) {
+      const epNum = Number(epStr);
+      if (!existingEpisodes.has(epNum) && epNum <= show.currentEp) {
         events.push({
           title: show.title,
           malUrl: show.malUrl,
           episodeNumber: epNum,
-          date: new Date(dateStr + 'T12:00:00'),
+          date: new Date(dateStr + 'T12:00:00Z'),
           isProjected: false,
           isMultiDrop: false,
         });
       }
     }
 
-    allEvents.push(...events);
+    malEvents.push(...events);
   }
 
   // 3b. Upcoming premieres — only if not already in the currently streaming list
-  const streamingTitles = new Set(schedule.currentlyStreaming.map(s => makeSlug(s.title)));
-  for (const upcoming of schedule.upcomingSimulDubbed) {
-    if (!upcoming.premiereDate) continue;
-    if (streamingTitles.has(makeSlug(upcoming.title))) continue; // already in streaming
-    const events = computeUpcomingEvents(upcoming);
-    allEvents.push(...events);
+  const streamingTitles = new Set(streaming.map(s => titleKey(s.title)));
+  for (const show of upcoming) {
+    if (streamingTitles.has(titleKey(show.title))) continue;
+    malEvents.push(...computeUpcomingEvents(show));
   }
 
-  // Sort events by date, then by episode number
-  allEvents.sort((a, b) => a.date - b.date || a.episodeNumber - b.episodeNumber);
+  const allEvents = applyReleaseTimes(malEvents, malShows, releases);
+  allEvents.sort((a, b) => (a.releaseAt ?? a.date) - (b.releaseAt ?? b.date) || a.episodeNumber - b.episodeNumber);
 
   console.log(`[anime-dub-cal] Total calendar events generated: ${allEvents.length}`);
 
@@ -113,50 +149,51 @@ async function main() {
   const newShows = {};
   const newHistory = { ...prevState.history };
 
-  for (const show of schedule.currentlyStreaming) {
+  for (const show of streaming) {
     const slug = makeSlug(show.title);
     newShows[slug] = {
       lastEp: show.currentEp,
-      lastSeen: new Date().toISOString(),
+      lastSeen: referenceDate.toISOString(),
       title: show.title,
     };
 
-    if (!newHistory[slug]) newHistory[slug] = {};
-    if (show.currentEp > 0) {
-      const currentEpDate = getBroadcastWeekDate(show.day, schedule.lastUpdatedDate, referenceDate);
-      newHistory[slug][show.currentEp] = currentEpDate.toISOString().split('T')[0];
-
-      // Keep previous week in history
-      if (show.currentEp > 1) {
-        const prevWeekDate = new Date(currentEpDate);
-        prevWeekDate.setDate(currentEpDate.getDate() - 7);
-        newHistory[slug][show.currentEp - 1] = prevWeekDate.toISOString().split('T')[0];
-      }
-    }
+  }
+  for (const event of allEvents) {
+    const slug = makeSlug(event.title);
+    if (!newShows[slug] || event.episodeNumber > newShows[slug].lastEp || event.isProjected) continue;
+    const dates = (newHistory[slug] ??= {});
+    const date = event.date.toISOString().slice(0, 10);
+    if (event.releaseAt) dates[event.episodeNumber] = date;
+    else dates[event.episodeNumber] ??= date;
   }
 
   const newState = {
     shows: newShows,
     history: newHistory,
+    dubCalendar,
   };
 
   // 6. Write output files
+  const recentReleases = allEvents.filter(e => e.releaseAt && Math.abs(e.releaseAt - referenceDate) <= 7 * 86_400_000);
   await mkdir(DOCS_DIR, { recursive: true });
   await writeFile(ICS_PATH, icsDefault, 'utf8');
   await writeFile(ICS_EP_FIRST_PATH, icsEpFirst, 'utf8');
   await writeFile(STATE_PATH, JSON.stringify(newState, null, 2), 'utf8');
   await writeFile(SCHEDULE_PATH, JSON.stringify({
-    generatedAt: new Date().toISOString(),
+    generatedAt: referenceDate.toISOString(),
     lastUpdated: schedule.lastUpdated,
-    showCount: schedule.currentlyStreaming.length,
+    showCount: new Set([...streaming, ...recentReleases].map(e => titleKey(e.title))).size,
     eventCount: allEvents.length,
-    shows: schedule.currentlyStreaming.map(s => ({
+    shows: streaming.map(s => ({
       title: s.title,
       day: s.day,
       currentEp: s.currentEp,
       totalEp: s.totalEp,
       suspended: s.suspended,
       resumeDate: s.resumeDate,
+    })),
+    releases: recentReleases.map(e => ({
+      title: e.title, episodeNumber: e.episodeNumber, startsAt: e.releaseAt.toISOString(),
     })),
   }, null, 2), 'utf8');
 

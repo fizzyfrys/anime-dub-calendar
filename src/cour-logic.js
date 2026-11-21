@@ -6,10 +6,11 @@
  *
  * Design:
  *   - currentEp is anchored to this week's broadcast weekday (e.g. today for Friday shows).
- *   - Past episodes (ep 1 to currentEp) are preserved on historical broadcast dates so calendar
- *     events are NEVER deleted after they air and the calendar grows continuously.
+ *   - Keep recorded episode dates while a show is tracked by MAL.
  *   - Future episodes are projected forward using anime cour heuristics (1-cour 12, 2-cour 24).
  */
+
+import { parseCivilDate } from './parse.js';
 
 const WEEKDAY_INDEX = {
   Monday: 1,
@@ -27,6 +28,7 @@ const WEEKDAY_INDEX = {
  * @property {string} malUrl
  * @property {number} episodeNumber
  * @property {Date}   date           - The air date (all-day)
+ * @property {Date}   [releaseAt]    - Published release instant, when available
  * @property {boolean} isProjected   - true = cour estimate, false = confirmed/aired
  * @property {boolean} isMultiDrop   - true = multiple eps dropped same day
  * @property {boolean} [isResumeEvent]
@@ -41,15 +43,20 @@ const WEEKDAY_INDEX = {
  * @param {Object} prevState        - { [showSlug]: { lastEp: number, lastSeen: ISO string } }
  * @param {Date}   referenceDate    - "today" for computing dates
  * @param {Date}   lastUpdatedDate  - The forum's "Last Updated" date
+ * @param {Object} showHistory      - Episode numbers mapped to saved ISO dates
+ * @param {Map<number, Date>} verifiedDates - Dates for releases listed by English Dubbed
  * @returns {EpisodeEvent[]}
  */
-export function computeEpisodeEvents(show, prevState, referenceDate, lastUpdatedDate) {
+export function computeEpisodeEvents(show, prevState, referenceDate, lastUpdatedDate,
+  showHistory = {}, verifiedDates = new Map()) {
   const { title, malUrl, currentEp, totalEp, suspended, resumeDate, day } = show;
 
   if (!currentEp || currentEp < 1) return [];
 
-  // Calculate the exact date for currentEp in the current broadcast week
-  const currentEpDate = getBroadcastWeekDate(day, lastUpdatedDate, referenceDate);
+  // Prefer the published or saved date to an estimate from the forum week.
+  const estimatedDate = getBroadcastWeekDate(day, lastUpdatedDate, referenceDate);
+  const savedDate = ep => showHistory[ep] ? new Date(showHistory[ep] + 'T12:00:00Z') : null;
+  const currentEpDate = verifiedDates.get(currentEp) ?? savedDate(currentEp) ?? estimatedDate;
   const events = [];
 
   // ------------------------------------------------------------------
@@ -57,11 +64,17 @@ export function computeEpisodeEvents(show, prevState, referenceDate, lastUpdated
   // ------------------------------------------------------------------
   // Include previous week (currentEp - 1) and current week (currentEp)
   // Real history accumulates in state.json over time without guessing distant past weeks
-  const startEp = Math.max(1, currentEp - 1);
+  const prev = prevState[makeSlug(title)];
+  const daysSinceUpdate = (referenceDate - lastUpdatedDate) / 86_400_000;
+  const prevEpDate = savedDate(prev?.lastEp);
+  const daysSincePreviousEpisode = prevEpDate ? (currentEpDate - prevEpDate) / 86_400_000 : null;
+  const isMultiDrop = Boolean(prev && currentEp > prev.lastEp + 1 && daysSinceUpdate <= 7 &&
+    daysSinceUpdate >= -1 && (daysSincePreviousEpisode === null ||
+      (daysSincePreviousEpisode >= 0 && daysSincePreviousEpisode <= 7)));
+  const startEp = isMultiDrop ? prev.lastEp + 1 : Math.max(1, currentEp - 1);
 
   for (let ep = startEp; ep <= currentEp; ep++) {
-    const epDate = new Date(currentEpDate);
-    epDate.setDate(currentEpDate.getDate() - (currentEp - ep) * 7);
+    const epDate = verifiedDates.get(ep) ?? savedDate(ep) ?? addDays(currentEpDate, isMultiDrop ? 0 : (ep - currentEp) * 7);
 
     events.push({
       title,
@@ -69,7 +82,7 @@ export function computeEpisodeEvents(show, prevState, referenceDate, lastUpdated
       episodeNumber: ep,
       date: epDate,
       isProjected: false,
-      isMultiDrop: false,
+      isMultiDrop,
     });
   }
 
@@ -83,8 +96,8 @@ export function computeEpisodeEvents(show, prevState, referenceDate, lastUpdated
 
   if (resumeDate) {
     // Show is on hiatus until a specific date — emit past history + 1 single resume event
-    const resumeParsed = new Date(resumeDate + ' 12:00:00');
-    if (!isNaN(resumeParsed) && resumeParsed > referenceDate) {
+    const resumeParsed = parseCivilDate(resumeDate);
+    if (!isNaN(resumeParsed) && resumeParsed.toISOString().slice(0, 10) >= referenceDate.toISOString().slice(0, 10)) {
       events.push({
         title,
         malUrl,
@@ -99,40 +112,28 @@ export function computeEpisodeEvents(show, prevState, referenceDate, lastUpdated
   }
 
   // ------------------------------------------------------------------
-  // 3. Multi-Episode Drop Detection
+  // 3. Future Episode Projections
   // ------------------------------------------------------------------
-  const slug = makeSlug(title);
-  const prev = prevState[slug] || null;
-  const daysSinceUpdate = (referenceDate - lastUpdatedDate) / (1000 * 60 * 60 * 24);
-  const postIsFresh = daysSinceUpdate <= 7;
-
-  if (prev && currentEp > prev.lastEp + 1 && postIsFresh) {
-    // The counter jumped by >1 in a fresh post — multiple eps dropped on the same currentEpDate
-    for (let ep = prev.lastEp + 1; ep < currentEp; ep++) {
-      const existing = events.find(e => e.episodeNumber === ep);
-      if (existing) {
-        existing.date = new Date(currentEpDate);
-        existing.isMultiDrop = true;
-      }
+  let anchorEp = currentEp;
+  let anchorDate = currentEpDate;
+  for (const [ep, date] of verifiedDates) {
+    if (ep > anchorEp && (totalEp === null || ep <= totalEp)) {
+      anchorEp = ep;
+      anchorDate = date;
     }
   }
-
-  // ------------------------------------------------------------------
-  // 4. Future Episode Projections (ep = currentEp + 1 ... projectedTotal)
-  // ------------------------------------------------------------------
-  const projectedTotal = computeProjectedTotal(currentEp, totalEp);
-  const isProjected = totalEp === null;
-
-  for (let ep = currentEp + 1; ep <= projectedTotal; ep++) {
-    const epDate = new Date(currentEpDate);
-    epDate.setDate(currentEpDate.getDate() + (ep - currentEp) * 7);
+  // Find MAL's normal weekday closest to a week after the timed release.
+  const daysToNextRelease = 4 + (WEEKDAY_INDEX[day] - anchorDate.getUTCDay() + 10) % 7;
+  const projectedTotal = computeProjectedTotal(anchorEp, totalEp);
+  for (let ep = anchorEp + 1; ep <= projectedTotal; ep++) {
+    const epDate = addDays(anchorDate, daysToNextRelease + (ep - anchorEp - 1) * 7);
 
     events.push({
       title,
       malUrl,
       episodeNumber: ep,
       date: epDate,
-      isProjected,
+      isProjected: true,
       isMultiDrop: false,
     });
   }
@@ -155,16 +156,21 @@ export function getBroadcastWeekDate(dayName, lastUpdatedDate, referenceDate) {
     : referenceDate;
 
   // Find Monday of the broadcast week
-  const baseDay = baseDate.getDay(); // 0 = Sun, 1 = Mon, ... 6 = Sat
+  const baseDay = baseDate.getUTCDay(); // 0 = Sun, 1 = Mon, ... 6 = Sat
   const mondayOffset = baseDay === 0 ? -6 : 1 - baseDay;
   const monday = new Date(baseDate);
-  monday.setDate(baseDate.getDate() + mondayOffset);
+  monday.setUTCDate(baseDate.getUTCDate() + mondayOffset);
 
   // Target day offset from Monday: Mon = 0, Tue = 1, ... Sun = 6
   const targetOffset = targetDay === 0 ? 6 : targetDay - 1;
-  const result = new Date(monday);
-  result.setDate(monday.getDate() + targetOffset);
-  result.setHours(12, 0, 0, 0); // Noon UTC to avoid DST hour shift issues
+  const result = addDays(monday, targetOffset);
+  result.setUTCHours(12, 0, 0, 0);
+  return result;
+}
+
+function addDays(date, days) {
+  const result = new Date(date);
+  result.setUTCDate(result.getUTCDate() + days);
   return result;
 }
 
@@ -203,7 +209,7 @@ export function computeProjectedTotal(currentEp, totalEp) {
 export function computeUpcomingEvents(upcoming) {
   if (!upcoming.premiereDate) return [];
 
-  const date = new Date(upcoming.premiereDate + 'T12:00:00');
+  const date = new Date(upcoming.premiereDate + 'T12:00:00Z');
   return [{
     title: upcoming.title,
     malUrl: upcoming.malUrl || '',
