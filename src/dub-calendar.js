@@ -1,6 +1,7 @@
 import { parse } from 'node-html-parser';
 
 export const DUB_CALENDAR_URL = 'https://english-dubbed.com/anime-industry/english-dub-anime-calendar/';
+const DUB_CALENDAR_API_URL = 'https://english-dubbed.com/wp-json/wp/v2/posts/54471?_fields=content';
 const DAY_MS = 86_400_000;
 const broadcastDateFormat = new Intl.DateTimeFormat('en-US', {
   timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit',
@@ -36,9 +37,11 @@ function episodeKey(title, episodeNumber) {
 }
 
 export async function fetchDubCalendar() {
-  const response = await fetch(DUB_CALENDAR_URL, { signal: AbortSignal.timeout(15_000) });
+  const response = await fetch(DUB_CALENDAR_API_URL, { signal: AbortSignal.timeout(15_000) });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
-  return parseDubCalendar(await response.text());
+  const { content } = (await response.json()) ?? {};
+  if (typeof content?.rendered !== 'string') throw new Error('Public API response is missing rendered content');
+  return parseDubCalendar(content.rendered);
 }
 
 export function parseDubCalendar(html) {

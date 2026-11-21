@@ -1,8 +1,9 @@
+import { jest } from '@jest/globals';
 import { execFileSync } from 'node:child_process';
 import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
-import { applyReleaseTimes, countDubReleases, parseDubCalendar, titleKey, updateDubCalendar } from '../src/dub-calendar.js';
+import { applyReleaseTimes, countDubReleases, fetchDubCalendar, parseDubCalendar, titleKey, updateDubCalendar } from '../src/dub-calendar.js';
 import { computeEpisodeEvents } from '../src/cour-logic.js';
 import { generateIcs } from '../src/generate-ics.js';
 import { parseForumHtml } from '../src/parse.js';
@@ -25,6 +26,32 @@ const malPage = ({ shows = malShow('Sample Season 2', 2), updated = 'November 1,
   </div>`;
 
 describe('English Dubbed releases', () => {
+  test('reads releases from the public WordPress post response', async () => {
+    const html = dubPage(dubRow('Sample', 2, 'Netflix'));
+    const fetch = jest.spyOn(globalThis, 'fetch').mockResolvedValue(Response.json({ content: { rendered: html } }));
+    try {
+      expect(await fetchDubCalendar()).toEqual(parseDubCalendar(html));
+      expect(fetch).toHaveBeenCalledWith(
+        'https://english-dubbed.com/wp-json/wp/v2/posts/54471?_fields=content',
+        { signal: expect.any(AbortSignal) },
+      );
+    } finally {
+      fetch.mockRestore();
+    }
+  });
+
+  test('reports HTTP failures and unexpected API response shapes', async () => {
+    const fetch = jest.spyOn(globalThis, 'fetch')
+      .mockResolvedValueOnce(new Response(null, { status: 403 }))
+      .mockResolvedValueOnce(Response.json({ content: {} }));
+    try {
+      await expect(fetchDubCalendar()).rejects.toThrow('HTTP 403');
+      await expect(fetchDubCalendar()).rejects.toThrow('missing rendered content');
+    } finally {
+      fetch.mockRestore();
+    }
+  });
+
   test('reads the published instant, not the displayed clock, and requires an explicit offset', () => {
     const rows = parseDubCalendar(dubPage(
       dubRow('Sample', 2, '<a href="#">Crunchyroll</a>, YouTube', '2026-11-01T18:30:00-08:00'),
