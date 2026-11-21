@@ -126,6 +126,39 @@ Anime broadcast schedules frequently list unknown totals (`??`). This pipeline u
 
 ---
 
+## 🐳 Self-Host on Unraid
+
+The container serves the site and both feeds on port `8080`. It refreshes on startup and daily at **10:00 UTC**, using MAL and English Dubbed. It keeps the previous files if the main build fails and uses cached release times and exclusions if English Dubbed is unavailable. It does not push to GitHub or change the GitHub Pages feeds.
+
+In Unraid, choose **Docker → Add Container** and use these settings:
+
+| Setting | Value |
+|---|---|
+| Name | `anime-dub-calendar` |
+| Repository | `ghcr.io/fizzyfrys/anime-dub-calendar:latest` |
+| Network Type | Bridge |
+| Port | Container `8080` → any free host port, such as `8080` |
+| Path | Host `/mnt/user/appdata/anime-dub-calendar` → container `/data` (read/write) |
+| Extra Parameters | `--user 99:100` |
+
+Enable **Autostart** for the container and ensure the mapped host directory is writable by Unraid's `nobody:users` (`99:100`), or use the UID and GID that own your directory in `--user`. Open `http://<unraid-ip>:8080/` to find both feeds. Google Calendar cannot fetch a private LAN address; use the public feed for Google Calendar unless your self-hosted URL is reachable from Google.
+
+The [container workflow](https://github.com/fizzyfrys/anime-dub-calendar/actions/workflows/container.yml) publishes the image after the Docker changes merge. If the package is private, authenticate to GHCR with a `read:packages` token, or [make the package public](https://docs.github.com/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility) for anonymous pulls.
+
+If you have a local image archive, use the Unraid terminal instead of pulling from a registry:
+
+```sh
+docker load -i anime-dub-calendar-amd64.tar.gz
+docker run -d --name anime-dub-calendar --restart unless-stopped \
+  --user 99:100 -p 8080:8080 \
+  -v /mnt/user/appdata/anime-dub-calendar:/data \
+  anime-dub-calendar:unraid
+```
+
+If English Dubbed returns HTTP 403 from the Unraid host too, the container logs a warning and continues with MAL and any cached data. To use an authorized local copy of the calendar instead, save it in the mapped directory and set `DUB_CALENDAR_HTML_PATH=/data/english-dubbed.html` in the container. Update the snapshot manually, or remove the variable to resume live fetches.
+
+---
+
 ## 💻 Local Development
 
 ```bash
