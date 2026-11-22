@@ -2,12 +2,19 @@ import { createHash } from 'node:crypto';
 import { titleKey } from './dub-calendar.js';
 
 function malId(url) {
-  return Number(url?.match(/^https:\/\/myanimelist\.net\/anime\/(\d+)(?:\/|$)/)?.[1]) || null;
+  return Number(url?.match(/^https?:\/\/(?:www\.)?myanimelist\.net\/anime\/(\d+)(?=[/?#]|$)/)?.[1]) || null;
 }
 
 export function buildCatalog(events, active, releases, previous = [], excluded = new Set(), now = new Date()) {
   const shows = new Map();
   const byTitle = new Map();
+  const previousMal = new Map();
+  for (const show of previous) {
+    const key = titleKey(show.title);
+    if (!show.malId || excluded.has(key)) continue;
+    if (!previousMal.has(key)) previousMal.set(key, show.malId);
+    else if (previousMal.get(key) !== show.malId) previousMal.set(key, null);
+  }
   const platforms = new Map();
   for (const release of releases) {
     const key = titleKey(release.title);
@@ -17,8 +24,9 @@ export function buildCatalog(events, active, releases, previous = [], excluded =
 
   function showFor({ title, malUrl }) {
     const key = titleKey(title);
-    const mal = malId(malUrl);
-    const id = mal ? `mal-${mal}` : byTitle.get(key)
+    const matchingId = byTitle.get(key);
+    const mal = malId(malUrl) ?? (matchingId ? null : previousMal.get(key) ?? null);
+    const id = mal ? `mal-${mal}` : matchingId
       ?? `title-${createHash('sha256').update(key).digest('hex').slice(0, 24)}`;
     if (!shows.has(id)) shows.set(id, {
       id, malId: mal, title, platforms: [], airing: false, episodes: [],

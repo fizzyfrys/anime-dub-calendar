@@ -48,6 +48,17 @@ test('profile validates inputs and copies only the allowed fields', () => {
   expect(() => normalizeProfile({ hidden: ['other'] })).toThrow();
 });
 
+test('an English Dubbed release keeps its MAL identity after the show leaves the forum list', () => {
+  const earlier = { ...event, episodeNumber: 1, releaseAt: undefined, date: new Date('2026-11-15T12:00:00Z') };
+  const previous = buildCatalog([earlier, event], active, dub);
+  const catalog = buildCatalog([{ ...event, malUrl: '' }], [], dub, previous, new Set(), new Date(generatedAt));
+  expect(catalog).toMatchObject([{ id: 'mal-123', airing: false,
+    episodes: [{ episodeNumber: 1 }, { episodeNumber: 2 }] }]);
+  expect(catalog).toHaveLength(1);
+  const schedule = { catalog, generatedAt };
+  expect(personalFeed(schedule, normalizeProfile({ hidden: ['mal-123'] }))).not.toContain('BEGIN:VEVENT');
+});
+
 test('live metadata matches by MAL ID and AniList import brings in progress without undoing hides', async () => {
   const catalog = buildCatalog([event], active, dub);
   const metadata = selectMetadata(catalog, [{
