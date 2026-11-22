@@ -61,6 +61,9 @@ EOF
 chmod a+r "$fixtures/mock-token" "$fixtures/mock-github.mjs"
 
 docker volume create "$volume" >/dev/null
+# Keep the fixture row count independent of the live scrape baseline bundled in the image.
+docker run --rm -v "$volume:/data" --entrypoint node "$image" \
+  -e 'require("node:fs").writeFileSync("/data/state.json", "{}")'
 start() {
   docker run -d --rm --name "$name" -p 127.0.0.1::8080 \
     -v "$volume:/data" -v "$fixtures:/fixtures:ro" \
