@@ -4,7 +4,7 @@ import { buildCatalog } from '../src/catalog.js';
 import { selectMetadata } from '../src/metadata.js';
 import { normalizeProfile, personalFeed } from '../src/personal.js';
 import { includesEpisode, isReleased, mergeImport, parseImport, readImport } from '../docs/library-data.js';
-import { groupWeek, weekDays } from '../docs/calendar-week.js';
+import { groupWeek, scheduleEpisodes, weekDays } from '../docs/calendar-week.js';
 
 const generatedAt = '2026-11-22T15:00:00Z';
 const date = new Date('2026-11-22T12:00:00Z');
@@ -105,4 +105,16 @@ test('the calendar always includes seven dates and does not move untimed episode
   ]);
   expect(groups.get('2026-12-31')).toEqual([row]);
   expect(groups.get('2027-01-03')).toEqual([]);
+});
+
+test('an older bundled schedule shows usual airing days without claiming a dated release', () => {
+  const days = weekDays(new Date(2026, 11, 28, 10));
+  const shows = [
+    { title: 'A', day: 'Thursday' }, { title: 'B', day: 'Monday', suspended: true },
+    { title: 'C', day: 'Thursday', resumeDate: '2027-02-04' },
+  ];
+  expect(scheduleEpisodes({ shows, releases: [] }, days)).toEqual([
+    { title: 'A', date: '2026-12-31', usualDay: true },
+  ]);
+  expect(scheduleEpisodes({ shows, episodes: [] }, days)).toEqual([]);
 });

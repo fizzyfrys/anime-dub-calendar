@@ -12,6 +12,18 @@ export function weekDays(now, offset = 0) {
     civilDay(new Date(now.getFullYear(), now.getMonth(), now.getDate() + offset * 7 + i, 12)));
 }
 
+export function scheduleEpisodes(data, days) {
+  if (Array.isArray(data.episodes)) return data.episodes;
+  const releases = data.releases ?? [];
+  const listed = new Set(releases.filter(release => days.includes(localDay(release))).map(release => release.title));
+  const weekday = new Intl.DateTimeFormat('en', { weekday: 'long' });
+  const dates = new Map(days.map(day => [weekday.format(new Date(day + 'T12:00:00')), day]));
+  return [...releases, ...(data.shows ?? []).flatMap(show =>
+    dates.has(show.day) && !show.suspended && !show.resumeDate && !listed.has(show.title)
+      ? [{ title: show.title, date: dates.get(show.day), usualDay: true }]
+      : [])];
+}
+
 export function groupWeek(days, entries) {
   const groups = new Map(days.map(day => [day, []]));
   for (const entry of entries) groups.get(localDay(entry.episode))?.push(entry);

@@ -1,4 +1,4 @@
-import { civilDay, element, groupWeek, renderWeek, timeFormat, weekDays } from './calendar-week.js';
+import { civilDay, element, groupWeek, renderWeek, scheduleEpisodes, timeFormat, weekDays } from './calendar-week.js';
 import { feedBaseUrl } from './feed-url.js';
 
 const $ = id => document.getElementById(id);
@@ -31,13 +31,15 @@ async function loadSchedule() {
   if (!response.ok) throw new Error('Schedule unavailable');
   const data = await response.json();
   const now = new Date();
-  const episodes = data.episodes ?? data.releases ?? [];
-  const groups = groupWeek(weekDays(now), episodes.map(episode => ({ title: episode.title, episode })));
+  const days = weekDays(now);
+  const groups = groupWeek(days, scheduleEpisodes(data, days).map(episode => ({ title: episode.title, episode })));
   const calendar = renderWeek(groups, civilDay(now), ({ title, episode }) => {
     const timing = episode.startsAt ? timeFormat.format(new Date(episode.startsAt)) : 'Time not listed';
     const info = element('div');
-    const labels = [`Episode ${episode.episodeNumber}`, timing,
-      episode.resumes ? 'Resumes' : episode.projected ? 'Estimated' : '', ...(episode.platforms ?? [])];
+    const labels = episode.usualDay ? ['Usual release day · episode not confirmed'] : [
+      episode.resumes ? 'Resumes' : `Episode ${episode.episodeNumber}`, timing,
+      episode.projected ? 'Estimated' : '', ...(episode.platforms ?? []),
+    ];
     info.append(element('strong', title), element('small', labels.filter(Boolean).join(' · '), { class: 'calendar-muted' }));
     return [info];
   });
