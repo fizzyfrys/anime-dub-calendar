@@ -1,3 +1,6 @@
+import { civilDay } from './calendar-week.js';
+export { civilDay, localDay, weekDays } from './calendar-week.js';
+
 const malStatus = {
   Watching: 'watching', Completed: 'completed', 'On-Hold': 'paused',
   Dropped: 'dropped', 'Plan to Watch': 'planned',
@@ -6,20 +9,6 @@ const aniListStatus = {
   CURRENT: 'watching', COMPLETED: 'completed', PAUSED: 'paused',
   DROPPED: 'dropped', PLANNING: 'planned', REPEATING: 'rewatching',
 };
-
-export function civilDay(date) {
-  const fields = [date.getFullYear(), date.getMonth() + 1, date.getDate()];
-  return fields.map(value => String(value).padStart(2, '0')).join('-');
-}
-
-export function localDay(episode) {
-  return episode.startsAt ? civilDay(new Date(episode.startsAt)) : episode.date;
-}
-
-export function weekDays(now, offset) {
-  return Array.from({ length: 7 }, (_, i) =>
-    civilDay(new Date(now.getFullYear(), now.getMonth(), now.getDate() + offset * 7 + i, 12)));
-}
 
 export function isReleased(episode, now) {
   return !episode.isProjected && !episode.isResumeEvent &&

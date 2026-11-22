@@ -201,6 +201,7 @@ async function main() {
 
   // 6. Write output files
   const recentReleases = allEvents.filter(e => e.releaseAt && Math.abs(e.releaseAt - referenceDate) <= 7 * 86_400_000);
+  const weekEvents = allEvents.filter(e => Math.abs((e.releaseAt ?? e.date) - referenceDate) <= 9 * 86_400_000);
   await mkdir(DOCS_DIR, { recursive: true });
   await writeFile(ICS_PATH, icsDefault, 'utf8');
   await writeFile(ICS_EP_FIRST_PATH, icsEpFirst, 'utf8');
@@ -220,6 +221,12 @@ async function main() {
     })),
     releases: recentReleases.map(e => ({
       title: e.title, episodeNumber: e.episodeNumber, startsAt: e.releaseAt.toISOString(),
+    })),
+    episodes: weekEvents.map(e => ({
+      title: e.title, episodeNumber: e.episodeNumber, date: e.date.toISOString().slice(0, 10),
+      startsAt: e.releaseAt?.toISOString(), platforms: e.platforms,
+      projected: Boolean(e.isProjected || (e.isPremierePlaceholder && !e.dateConfirmed)),
+      resumes: e.isResumeEvent || undefined,
     })),
   }, null, 2), 'utf8');
   if (args.includes('--self-hosted')) {

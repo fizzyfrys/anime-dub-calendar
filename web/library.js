@@ -1,24 +1,17 @@
 import {
-  civilDay, hasShow, includesEpisode, isReleased, localDay, mergeImport,
-  parseImport, profileIds, readImport, watchProgress, weekDays,
+  hasShow, includesEpisode, isReleased, mergeImport, parseImport, profileIds, readImport, watchProgress,
 } from './library-data.js';
+import {
+  civilDay, element as el, groupWeek, labelDay, localDay, renderWeek, timeFormat, weekDays,
+} from './calendar-week.js';
 
 const $ = id => document.getElementById(id);
-const dayFormat = new Intl.DateTimeFormat([], { weekday: 'long', month: 'short', day: 'numeric' });
-const timeFormat = new Intl.DateTimeFormat([], { hour: 'numeric', minute: '2-digit' });
 const statusNames = {
   '': 'Not tracked', watching: 'Watching', planned: 'Plan to watch', completed: 'Completed',
   paused: 'On hold', dropped: 'Dropped', rewatching: 'Rewatching',
 };
-const state = { catalog: null, metadata: {}, profile: null, key: '', offset: 0 };
+const state = { catalog: null, metadata: {}, profile: null, offset: 0 };
 const notice = text => { $('notice').textContent = text; };
-
-function el(tag, text, attrs = {}) {
-  const node = document.createElement(tag);
-  if (text != null) node.textContent = text;
-  for (const [name, value] of Object.entries(attrs)) node.setAttribute(name, value);
-  return node;
-}
 
 const link = (text, url) => el('a', text, { href: url });
 function button(label, run) {
@@ -29,13 +22,8 @@ function button(label, run) {
 
 const titleLink = show => link(show.title, `#show/${show.id}`);
 const metadata = show => state.metadata[show.id] ?? {};
-const labelDay = date => dayFormat.format(new Date(date + 'T12:00:00'));
 const selected = show => hasShow(state.profile?.selected ?? [], show);
 const hidden = show => hasShow(state.profile?.hidden ?? [], show);
-const ordered = episodes => episodes.sort((a, b) =>
-  (a.episode.startsAt ? Date.parse(a.episode.startsAt) : Infinity) -
-  (b.episode.startsAt ? Date.parse(b.episode.startsAt) : Infinity) ||
-  a.show.title.localeCompare(b.show.title) || a.episode.episodeNumber - b.episode.episodeNumber);
 
 function matches(show) {
   const query = $('search').value.trim().toLocaleLowerCase();
@@ -68,46 +56,34 @@ function rows() { return el('ul', null, { class: 'rows' }); }
 function week(root, shows, now) {
   const days = weekDays(now, state.offset);
   const today = civilDay(now);
-  const heading = el('div', null, { class: 'week-heading' });
-  heading.append(el('h2', state.offset === 0 ? 'Upcoming week' : `${labelDay(days[0])} – ${labelDay(days[6])}`));
+  const heading = el('div', null, { class: 'week-heading calendar-heading' });
+  const title = el('div');
+  title.append(el('h2', state.offset === 0 ? 'Next 7 days' : `${labelDay(days[0])} – ${labelDay(days[6])}`),
+    el('p', `Times shown in ${timeFormat.resolvedOptions().timeZone}`, { class: 'calendar-muted' }));
+  heading.append(title);
   const actions = el('div', null, { class: 'actions' });
   const shift = (label, offset) => button(label, () => { state.offset = offset; render(); });
   actions.append(shift('Previous', state.offset - 1), shift('Today', 0), shift('Next', state.offset + 1));
   heading.append(actions);
-  root.append(heading, el('p', `Times shown in ${timeFormat.resolvedOptions().timeZone}.`, { class: 'hint' }));
-  const groups = new Map(days.map(day => [day, []]));
+  const entries = [];
   for (const show of shows) for (const episode of show.episodes) {
     const platforms = episode.platforms.length ? episode.platforms : show.platforms;
     if ((!$('platform').value || platforms.includes($('platform').value)) &&
-        includesEpisode(state.profile, show, episode)) groups.get(localDay(episode))?.push({ show, episode });
+        includesEpisode(state.profile, show, episode)) entries.push({ title: show.title, show, episode });
   }
-  for (const [day, episodes] of groups) {
-    if (day !== today && !episodes.length) continue;
-    const section = el('section', null, { class: day === today ? 'day today' : 'day' });
-    section.append(el('h3', (day === today ? 'Today · ' : '') + labelDay(day)));
-    if (episodes.length) {
-      const list = rows();
-      for (const { show, episode } of ordered(episodes)) {
-        const row = el('li', null, { class: 'row' });
-        const info = el('div');
-        info.append(titleLink(show), el('small', episodeText(episode), { class: 'meta' }));
-        row.append(info);
-        if (state.profile) row.append(markHidden(show));
-        list.append(row);
-      }
-      section.append(list);
-    } else section.append(el('p', 'No matching releases today.', { class: 'hint' }));
-    root.append(section);
-  }
-  if (![...groups.values()].some(group => group.length)) {
-    root.append(el('p', 'No releases match this week.', { class: 'hint' }));
-  }
+  root.append(heading, renderWeek(groupWeek(days, entries), today, ({ show, episode }) => {
+    const info = el('div');
+    const watched = state.profile && isReleased(episode, now) &&
+      watchProgress(state.profile, show).progress >= episode.episodeNumber;
+    info.append(titleLink(show), el('small', episodeText(episode) + (watched ? ' · ✓ Watched' : ''), { class: 'meta' }));
+    return state.profile ? [info, markHidden(show)] : [info];
+  }));
 }
 
 function showsView(root, shows, view, now) {
   root.append(el('h2', { shows: 'Shows', behind: 'Behind', hidden: 'Hidden shows' }[view]));
   if (!state.profile && view !== 'shows') {
-    root.append(el('p', 'Unlock the personal feed to use this view.', { class: 'hint' }));
+    root.append(el('p', 'Sign in to use this view.', { class: 'hint' }));
     return;
   }
   const list = rows();
@@ -223,16 +199,20 @@ function renderSettings(feedPath) {
   }
 }
 
-async function api(key, profile) {
+async function api(profile) {
   const response = await fetch('./api/profile', {
     method: profile ? 'PUT' : 'GET', cache: 'no-store',
-    headers: { Authorization: `Bearer ${key}`,
-      ...(profile ? { 'Content-Type': 'application/json', 'If-Match': state.version } : {}) },
+    ...(profile ? { headers: { 'Content-Type': 'application/json', 'If-Match': state.version } } : {}),
     ...(profile ? { body: JSON.stringify(profile) } : {}),
   });
-  if (response.status === 401) throw new Error('Calendar access key not accepted.');
+  if (response.status === 401) {
+    clearProfile();
+    if (profile) throw new Error('Sign in again to save changes.');
+    return null;
+  }
   if (response.status === 412) {
-    applyProfile(await api(key));
+    const updated = await api();
+    if (updated) applyProfile(updated);
     throw new Error('Your profile changed on another device. Try the change again.');
   }
   if (!response.ok) throw new Error('The personal calendar is unavailable or could not save these changes.');
@@ -247,11 +227,11 @@ function applyProfile(result) {
   render();
 }
 
-async function unlock(key) {
-  const result = await api(key);
-  state.key = key;
-  try { sessionStorage.setItem('calendar-key', key); } catch {}
-  applyProfile(result);
+function clearProfile() {
+  state.profile = null;
+  state.feedPath = $('feed').value = '';
+  renderSettings();
+  render();
 }
 
 async function save(change, success = 'Personal calendar saved.') {
@@ -260,8 +240,7 @@ async function save(change, success = 'Personal calendar saved.') {
   const profile = structuredClone(state.profile);
   try {
     change(profile);
-    const result = await api(state.key, profile);
-    if (!state.key) return;
+    const result = await api(profile);
     applyProfile(result);
     notice(success);
   } catch (error) {
@@ -274,17 +253,32 @@ async function save(change, success = 'Personal calendar saved.') {
 
 $('unlock').addEventListener('submit', async event => {
   event.preventDefault();
-  try { await unlock($('key').value.trim()); $('key').value = ''; notice('Personal calendar unlocked.'); }
-  catch (error) { notice(error.message); }
+  const button = $('sign-in');
+  button.disabled = true;
+  try {
+    const response = await fetch('./api/session', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password: $('password').value }),
+    });
+    if (response.status === 401) throw new Error('Incorrect password.');
+    if (response.status === 429) throw new Error('Too many attempts. Try again in 30 seconds.');
+    if (!response.ok) throw new Error('Sign-in is unavailable.');
+    $('password').value = '';
+    const result = await api();
+    if (!result) throw new Error('Sign-in requires cookies.');
+    applyProfile(result);
+    notice('Signed in.');
+  } catch (error) { notice(error.message); }
+  finally { button.disabled = false; }
 });
-$('lock').addEventListener('click', () => {
+$('lock').addEventListener('click', async () => {
   if (state.saving) return;
-  try { sessionStorage.removeItem('calendar-key'); } catch {}
-  state.profile = null;
-  state.key = state.feedPath = $('feed').value = '';
-  renderSettings();
-  render();
-  notice('Personal calendar locked.');
+  try {
+    const response = await fetch('./api/session', { method: 'DELETE' });
+    if (!response.ok) throw new Error('Sign-out failed.');
+    clearProfile();
+    notice('Signed out.');
+  } catch (error) { notice(error.message); }
 });
 $('copy').addEventListener('click', async () => {
   try { await navigator.clipboard.writeText($('feed').value); notice('Subscription URL copied.'); }
@@ -330,10 +324,8 @@ async function loadCatalog() {
 loadCatalog().catch(() => {
   if (!state.catalog) $('content').replaceChildren(el('p', 'Schedule unavailable. Try reloading after the first successful refresh.'));
 });
-try {
-  const key = sessionStorage.getItem('calendar-key');
-  if (key) unlock(key).catch(error => notice(error.message));
-} catch {}
+try { sessionStorage.removeItem('calendar-key'); } catch {}
+api().then(result => { if (result) applyProfile(result); }).catch(() => {});
 
 if ('serviceWorker' in navigator && isSecureContext) {
   navigator.serviceWorker.register('./calendar-sw.js').catch(() => {});

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#111322">
   <title>Anime Dubs · Personal calendar</title>
+  <link rel="stylesheet" href="./calendar-week.css">
   <link rel="stylesheet" href="./library.css">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="icon" href="./calendar-icon.svg" type="image/svg+xml">
@@ -13,19 +14,19 @@
 </head>
 <body>
   <header class="banner">
-    <div><p class="eyebrow">Self-hosted calendar</p><h1>Anime Dubs</h1></div>
+    <div><p class="calendar-eyebrow">English dub schedule</p><h1>Anime Dub Calendar</h1></div>
     <div class="actions"><a href="./index.html">Public feeds</a><button id="install" hidden>Install app</button></div>
   </header>
   <main>
     <details id="settings">
       <summary>Personal feed &amp; watchlist</summary>
       <form id="unlock">
-        <label for="key">Calendar access key</label>
-        <div class="actions"><input id="key" type="password" autocomplete="off" required>
-          <button type="submit">Unlock</button></div>
+        <label for="password">Calendar password</label>
+        <div class="actions"><input id="password" type="password" autocomplete="current-password" required>
+          <button id="sign-in" type="submit">Sign in</button></div>
       </form>
       <div id="profile" hidden>
-        <div class="actions profile-heading"><strong>Personal subscription</strong><button id="lock">Lock</button></div>
+        <div class="actions profile-heading"><strong>Personal subscription</strong><button id="lock">Sign out</button></div>
         <label for="feed">Private ICS URL</label>
         <div class="actions"><input id="feed" type="url" readonly><button id="copy">Copy</button></div>
         <p class="hint">Keep this URL private. Subscribe once; your calendar app picks up changes when it refreshes.</p>

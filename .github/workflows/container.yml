@@ -6,11 +6,15 @@ on:
       - '.github/workflows/container.yml'
       - 'Dockerfile'
       - '.dockerignore'
+      - 'compose.yml'
       - 'package*.json'
       - 'src/**'
       - 'web/**'
       - 'docs/index.html'
       - 'docs/feed-url.js'
+      - 'docs/calendar-week.*'
+      - 'docs/dashboard.*'
+      - 'docs/library-data.js'
       - 'test/container-smoke.sh'
   push:
     branches: [main]

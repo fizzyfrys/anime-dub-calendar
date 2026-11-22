@@ -1,0 +1,14 @@
+services:
+  calendar:
+    image: ghcr.io/fizzyfrys/anime-dub-calendar:${CALENDAR_IMAGE_TAG:-latest}
+    restart: unless-stopped
+    ports:
+      - "${CALENDAR_BIND:-127.0.0.1}:${CALENDAR_PORT:-8080}:8080"
+    environment:
+      CALENDAR_PASSWORD: "${CALENDAR_PASSWORD:-}"
+      CALENDAR_METADATA: "${CALENDAR_METADATA:-}"
+    volumes:
+      - calendar-data:/data
+
+volumes:
+  calendar-data:

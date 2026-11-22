@@ -3,7 +3,8 @@ import { gzipSync } from 'node:zlib';
 import { buildCatalog } from '../src/catalog.js';
 import { selectMetadata } from '../src/metadata.js';
 import { normalizeProfile, personalFeed } from '../src/personal.js';
-import { includesEpisode, isReleased, mergeImport, parseImport, readImport } from '../web/library-data.js';
+import { includesEpisode, isReleased, mergeImport, parseImport, readImport } from '../docs/library-data.js';
+import { groupWeek, weekDays } from '../docs/calendar-week.js';
 
 const generatedAt = '2026-11-22T15:00:00Z';
 const date = new Date('2026-11-22T12:00:00Z');
@@ -83,7 +84,7 @@ test('live metadata matches by MAL ID and AniList import brings in progress with
 
 test('local dates cross midnight and DST; estimates or early releases do not count as watched backlog', () => {
   const value = execFileSync(process.execPath, ['--input-type=module', '-e', [
-    "import { localDay, weekDays } from './web/library-data.js';",
+    "import { localDay, weekDays } from './docs/calendar-week.js';",
     "console.log(localDay({ date:'2026-11-01', startsAt:'2026-11-01T03:00:00Z' }));",
     "console.log(localDay({ date:'2026-11-01' }));",
     "console.log(weekDays(new Date('2026-10-31T20:00:00Z'), 0).slice(0, 4).join(','));",
@@ -92,4 +93,16 @@ test('local dates cross midnight and DST; estimates or early releases do not cou
   expect(isReleased({ startsAt }, new Date('2026-11-22T09:59:00Z'))).toBe(false);
   expect(isReleased({ startsAt, isProjected: true }, new Date(generatedAt))).toBe(false);
   expect(isReleased({ startsAt }, new Date(generatedAt))).toBe(true);
+});
+
+test('the calendar always includes seven dates and does not move untimed episodes', () => {
+  const days = weekDays(new Date(2026, 11, 28, 10));
+  const title = 'Example';
+  const row = { title, episode: { episodeNumber: 1, date: '2026-12-31' } };
+  const groups = groupWeek(days, [row, { title, episode: { episodeNumber: 2, date: '2027-01-04' } }]);
+  expect([...groups.keys()]).toEqual([
+    '2026-12-28', '2026-12-29', '2026-12-30', '2026-12-31', '2027-01-01', '2027-01-02', '2027-01-03',
+  ]);
+  expect(groups.get('2026-12-31')).toEqual([row]);
+  expect(groups.get('2027-01-03')).toEqual([]);
 });

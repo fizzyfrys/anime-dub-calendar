@@ -1,0 +1,18 @@
+.site-header {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  gap: 1rem; padding: clamp(1.5rem, 5vw, 3.5rem) 0; margin-bottom: .5rem;
+}
+.site-header h1 { margin: .3rem 0 .45rem; }
+.subscribe-link {
+  display: inline-block; color: #142820; background: var(--calendar-accent); border-radius: .55rem;
+  padding: .55rem .9rem; font-weight: 700; text-decoration: none;
+}
+.subscribe-link:hover { background: #c7f8e5; }
+.subscription {
+  padding: 1rem; margin-top: 1.5rem; border-radius: .85rem;
+  border: 1px solid var(--calendar-line); background: var(--calendar-surface);
+}
+.subscription label { display: inline-block; margin: .75rem .35rem .65rem 0; }
+.feed-links { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; }
+#copy-toast:not(:empty) { margin-top: .5rem; }
+footer p + p { margin-top: .3rem; }

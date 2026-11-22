@@ -4,7 +4,7 @@ import { createServer } from 'node:http';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { prepareCalendarPublish } from './publish.js';
-import { createPersonalRoutes } from './personal.js';
+import { createPersonalRoutes, loadFeedToken } from './personal.js';
 import { refreshMetadata } from './metadata.js';
 
 const docs = fileURLToPath(new URL('../docs/', import.meta.url));
@@ -19,17 +19,23 @@ const outputs = [...feeds, schedule, state];
 const catalog = 'catalog.json';
 const getCatalog = async () => JSON.parse(await readFile(join(data, catalog), 'utf8'));
 const keyFile = process.env.CALENDAR_ACCESS_KEY_FILE;
-const key = keyFile ? (await readFile(keyFile, 'utf8')).trim() : '';
-if (keyFile && (key.length < 32 || !/^[\x21-\x7e]+$/.test(key))) {
+const legacyKey = keyFile ? (await readFile(keyFile, 'utf8')).trim() : '';
+const password = process.env.CALENDAR_PASSWORD || '';
+if (keyFile && (legacyKey.length < 32 || !/^[\x21-\x7e]+$/.test(legacyKey))) {
   throw new Error('CALENDAR_ACCESS_KEY_FILE must contain at least 32 characters without spaces');
 }
-const personal = createPersonalRoutes({ secret: key, data, getCatalog });
+if (password && (password.trim().length < 12 || Buffer.byteLength(password) > 256)) {
+  throw new Error('CALENDAR_PASSWORD must be at least 12 characters and at most 256 bytes');
+}
+const personal = password || legacyKey
+  ? createPersonalRoutes({ password, legacyKey, data, getCatalog, token: await loadFeedToken(data, legacyKey) })
+  : null;
 const libraryFiles = new Map([
   ['/', ['library.html', 'text/html']],
   ['/library.html', ['library.html', 'text/html']],
   ['/library.css', ['library.css', 'text/css']],
   ['/library.js', ['library.js', 'text/javascript']],
-  ['/library-data.js', ['library-data.js', 'text/javascript']],
+  ['/library-data.js', ['library-data.js', 'text/javascript', docs]],
   ['/manifest.webmanifest', ['manifest.webmanifest', 'application/manifest+json']],
   ['/calendar-icon.svg', ['calendar-icon.svg', 'image/svg+xml']],
   ['/calendar-icon-192.png', ['calendar-icon-192.png', 'image/png']],
@@ -40,6 +46,10 @@ const routes = new Map([
   ['/', ['index.html', 'text/html', false]],
   ['/index.html', ['index.html', 'text/html', false]],
   ['/feed-url.js', ['feed-url.js', 'text/javascript', false]],
+  ['/calendar-week.css', ['calendar-week.css', 'text/css', false]],
+  ['/calendar-week.js', ['calendar-week.js', 'text/javascript', false]],
+  ['/dashboard.js', ['dashboard.js', 'text/javascript', false]],
+  ['/dashboard.css', ['dashboard.css', 'text/css', false]],
   ['/' + schedule, [schedule, 'application/json', true]],
   ...feeds.map(file => ['/' + file, [file, 'text/calendar', true]]),
 ]);
@@ -124,7 +134,7 @@ async function refreshDaily() {
 
 const server = createServer(async (request, response) => {
   const path = request.url.split('?')[0];
-  if (personal && (path === '/api/profile' || path === '/personal.ics')) {
+  if (personal && ['/api/profile', '/api/session', '/personal.ics'].includes(path)) {
     try {
       await personal(request, response, new URL(request.url, 'http://localhost'));
     } catch (error) {
@@ -147,10 +157,11 @@ const server = createServer(async (request, response) => {
     response.writeHead(404).end();
     return;
   }
-  const [file, type, generated] = route;
+  const [file, type, option] = route;
   try {
     const body = localData ? await readFile(join(data, file)) :
-      generated ? await withBundledFallback(file, readFile) : await readFile(join(asset ? web : docs, file));
+      asset ? await readFile(join(option || web, file)) :
+      option ? await withBundledFallback(file, readFile) : await readFile(join(docs, file));
     response.writeHead(200, {
       'Content-Type': `${type}; charset=utf-8`,
       'Content-Length': body.length,

@@ -130,6 +130,10 @@ Anime broadcast schedules frequently list unknown totals (`??`). This pipeline u
 
 The container serves the site and both feeds on port `8080`. It refreshes on startup and daily at **10:00 UTC**, using MAL and English Dubbed. It keeps the previous files if the main build fails and uses cached release times and exclusions if English Dubbed is unavailable. By default it does not publish to GitHub.
 
+**Docker Compose:** Save [compose.yml](compose.yml) in a directory and run `docker compose up -d`. It pulls the published image; it does not build from source. Open `http://localhost:8080/` on the Docker host. To allow LAN access, set `CALENDAR_BIND` to the host's LAN IP in a local `.env`. Set `CALENDAR_PORT` there if port 8080 is already in use. To update, run `docker compose pull && docker compose up -d`.
+
+**Docker CLI:**
+
 ```sh
 docker run -d --pull always --name anime-dub-calendar --restart unless-stopped \
   -p 8080:8080 -v anime-dub-calendar-data:/data \
@@ -144,18 +148,21 @@ If English Dubbed returns HTTP 403, the container logs a warning and continues w
 
 ### Enable the personal calendar
 
-The personal dashboard is optional and supports one profile per container. Generate an access key with `umask 077; openssl rand -hex 32 > calendar-key`. Make the file readable by the container user (UID `1000` by default), mount it read-only, and add these flags before the image name in the Docker command above:
+The personal dashboard is optional and supports one profile per container. Pick a unique password of at least 12 characters. For Compose, create a local `.env` file readable only by your user:
 
-```sh
---mount "type=bind,src=$PWD/calendar-key,dst=/run/secrets/calendar-key,readonly" \
--e CALENDAR_ACCESS_KEY_FILE=/run/secrets/calendar-key
+```dotenv
+CALENDAR_PASSWORD='your unique calendar password'
 ```
 
-Open the container's home page and unlock **Personal feed & watchlist** with that key. The dashboard shows this week's drops in your device's time zone. **Hide show** removes every episode of that title from your personal ICS URL; use **Hidden → Restore show** to bring it back. You can also select specific shows and platforms, open a show's episode history, or track progress in **Behind**. Calendar apps see changes on their next poll. The original feeds remain at their existing URLs, and personal data stays in the `/data` volume, never in GitHub Pages.
+Run `docker compose up -d` again to apply it. For the Docker CLI, pass `--env-file .env` before the image name. Keep the file private and out of Git. Docker administrators can inspect container environment variables.
+
+Open the container's home page and sign in under **Personal feed & watchlist**. No key generation or separate signing setup is needed. **Hide show** removes every episode of that title from your private subscription; use **Hidden → Restore show** to bring it back. Calendar apps see changes on their next poll. The public feeds stay at their existing URLs. The private feed URL and your profile persist in the `/data` volume and are never published to GitHub Pages. Changing your password does not change your subscription URL.
+
+**Upgrading from a key file:** Your existing key still works as the password. To switch to a new password without breaking an existing subscription, leave the key file mounted and configured for the first startup of the new image with the same `/data` volume. After that startup writes the existing feed token to the volume, you can remove the old key configuration.
 
 - **Import:** Choose a [MyAnimeList export](https://myanimelist.net/panel.php?go=export) (`.xml` or `.xml.gz`) or an AniList `.json` export with list entries containing `status`, `progress`, and `media.idMal` or `mediaId`. Matching titles get the imported progress and status. Watching, planned, paused and rewatching titles are added to your selection, and the personal feed switches to selected-only mode. There is no account login or ongoing sync.
 - **Metadata:** Cover art, genres/tags and AniList ID matching come from [Anime Offline Database](https://github.com/manami-project/anime-offline-database) ([ODbL](https://opendatacommons.org/licenses/odbl/1-0/)). The container downloads the public database in the background on first use, then checks again weekly or when the catalog changes. It serves only the matching records. Set `CALENDAR_METADATA=off` to skip this download; the schedule, MAL-ID imports and platform filters still work.
-- **Mobile:** Use HTTPS for the dashboard and private feed outside a trusted LAN. Install from your browser, or on iOS use Safari → Share → Add to Home Screen. With HTTPS, the last cached schedule is available offline; editing your profile still requires a connection. Keep the access key and personal subscription URL private. Changing the key invalidates the old subscription URL.
+- **Mobile:** Use HTTPS for the dashboard and private feed outside a trusted LAN. Set `X-Forwarded-Proto: https` on your HTTPS reverse proxy. Install from your browser, or on iOS use Safari → Share → Add to Home Screen. With HTTPS, the last cached schedule is available offline; editing your profile still requires a connection. Keep the personal subscription URL private.
 
 ---
 
