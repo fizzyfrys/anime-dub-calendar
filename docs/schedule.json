@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-21T17:07:00.157Z",
-  "lastUpdated": "November 20, 2026",
-  "showCount": 45,
-  "eventCount": 578,
+  "generatedAt": "2026-11-22T17:37:45.671Z",
+  "lastUpdated": "November 21, 2026",
+  "showCount": 42,
+  "eventCount": 534,
   "shows": [
     {
       "title": "PSYREN",
@@ -40,22 +40,6 @@
       "title": "A Returner's Magic Should Be Special Season 2",
       "day": "Wednesday",
       "currentEp": 7,
-      "totalEp": 12,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "Ingoku Danchi: Deviant's Apartment Complex",
-      "day": "Wednesday",
-      "currentEp": 2,
-      "totalEp": 12,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "KAMUI: He's Behind You!",
-      "day": "Wednesday",
-      "currentEp": 8,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -165,14 +149,6 @@
       "resumeDate": null
     },
     {
-      "title": "Welsh & Shedar",
-      "day": "Thursday",
-      "currentEp": 4,
-      "totalEp": null,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
       "title": "Devils' Crest",
       "day": "Friday",
       "currentEp": 4,
@@ -223,7 +199,7 @@
     {
       "title": "#I'm Looking For a Zombie",
       "day": "Saturday",
-      "currentEp": 6,
+      "currentEp": 7,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -239,7 +215,7 @@
     {
       "title": "Black Clover Season 2",
       "day": "Saturday",
-      "currentEp": 5,
+      "currentEp": 6,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -253,17 +229,9 @@
       "resumeDate": "November 23, 2026"
     },
     {
-      "title": "Even the Student Council Has Its Holes!",
-      "day": "Saturday",
-      "currentEp": 3,
-      "totalEp": 12,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
       "title": "HORROR COLLECTOR",
       "day": "Saturday",
-      "currentEp": 6,
+      "currentEp": 5,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -271,7 +239,7 @@
     {
       "title": "Magical Explorer",
       "day": "Saturday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
@@ -279,7 +247,7 @@
     {
       "title": "Ranma 1/2 Season 3",
       "day": "Saturday",
-      "currentEp": 7,
+      "currentEp": 8,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -287,7 +255,7 @@
     {
       "title": "Rilakkuma",
       "day": "Saturday",
-      "currentEp": 32,
+      "currentEp": 33,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -295,7 +263,7 @@
     {
       "title": "The Seven Knights of the Marronnier Kingdom",
       "day": "Saturday",
-      "currentEp": 7,
+      "currentEp": 8,
       "totalEp": 20,
       "suspended": false,
       "resumeDate": null
@@ -365,5 +333,196 @@
       "resumeDate": null
     }
   ],
-  "releases": []
+  "releases": [
+    {
+      "title": "PSYREN",
+      "episodeNumber": 5,
+      "startsAt": "2026-11-16T15:30:00.000Z"
+    },
+    {
+      "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
+      "episodeNumber": 7,
+      "startsAt": "2026-11-17T15:30:00.000Z"
+    },
+    {
+      "title": "The Classroom of a Black Cat and a Witch",
+      "episodeNumber": 1,
+      "startsAt": "2026-11-17T16:00:00.000Z"
+    },
+    {
+      "title": "One Piece",
+      "episodeNumber": 1160,
+      "startsAt": "2026-11-17T17:00:00.000Z"
+    },
+    {
+      "title": "Sasaki and Peeps Season 2",
+      "episodeNumber": 5,
+      "startsAt": "2026-11-18T14:00:00.000Z"
+    },
+    {
+      "title": "The World's Strongest Witch",
+      "episodeNumber": 5,
+      "startsAt": "2026-11-18T14:00:00.000Z"
+    },
+    {
+      "title": "The Detective Is Already Dead Season 2",
+      "episodeNumber": 5,
+      "startsAt": "2026-11-18T14:30:00.000Z"
+    },
+    {
+      "title": "Saga of Tanya the Evil Season 2",
+      "episodeNumber": 11,
+      "startsAt": "2026-11-18T14:30:00.000Z"
+    },
+    {
+      "title": "Magic Knight Rayearth",
+      "episodeNumber": 5,
+      "startsAt": "2026-11-18T16:30:00.000Z"
+    },
+    {
+      "title": "Nia Liston: The Merciless Maiden",
+      "episodeNumber": 1,
+      "startsAt": "2026-11-18T17:00:00.000Z"
+    },
+    {
+      "title": "Reincarnated as a Sword Season 2",
+      "episodeNumber": 5,
+      "startsAt": "2026-11-18T17:00:00.000Z"
+    },
+    {
+      "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
+      "episodeNumber": 6,
+      "startsAt": "2026-11-18T17:00:00.000Z"
+    },
+    {
+      "title": "World Is Dancing",
+      "episodeNumber": 13,
+      "startsAt": "2026-11-18T17:00:00.000Z"
+    },
+    {
+      "title": "A Returner's Magic Should Be Special Season 2",
+      "episodeNumber": 7,
+      "startsAt": "2026-11-18T17:15:00.000Z"
+    },
+    {
+      "title": "FX Fighter Kurumi-chan",
+      "episodeNumber": 8,
+      "startsAt": "2026-11-19T12:31:00.000Z"
+    },
+    {
+      "title": "The Ramparts of Ice Season 2",
+      "episodeNumber": 8,
+      "startsAt": "2026-11-19T15:30:00.000Z"
+    },
+    {
+      "title": "Dragon Ball Super: Beerus",
+      "episodeNumber": 2,
+      "startsAt": "2026-11-19T16:00:00.000Z"
+    },
+    {
+      "title": "The Exiled Heavy Knight Knows How to Game the System",
+      "episodeNumber": 19,
+      "startsAt": "2026-11-19T17:00:00.000Z"
+    },
+    {
+      "title": "The Iceblade Sorcerer Shall Rule the World II",
+      "episodeNumber": 5,
+      "startsAt": "2026-11-19T18:00:00.000Z"
+    },
+    {
+      "title": "Jojo's Bizarre Adventure Part 7: STEEL BALL RUN",
+      "episodeNumber": 9,
+      "startsAt": "2026-11-20T08:01:00.000Z"
+    },
+    {
+      "title": "Devils' Crest",
+      "episodeNumber": 4,
+      "startsAt": "2026-11-20T12:01:00.000Z"
+    },
+    {
+      "title": "The Apothecary Diaries Season 3",
+      "episodeNumber": 6,
+      "startsAt": "2026-11-20T16:00:00.000Z"
+    },
+    {
+      "title": "Firefly Wedding",
+      "episodeNumber": 5,
+      "startsAt": "2026-11-20T17:00:00.000Z"
+    },
+    {
+      "title": "Tokyo Revengers: War of the Three Titan Arc",
+      "episodeNumber": 8,
+      "startsAt": "2026-11-20T17:00:00.000Z"
+    },
+    {
+      "title": "Rilakkuma",
+      "episodeNumber": 33,
+      "startsAt": "2026-11-21T02:00:00.000Z"
+    },
+    {
+      "title": "#I'm Looking For a Zombie",
+      "episodeNumber": 7,
+      "startsAt": "2026-11-21T15:00:00.000Z"
+    },
+    {
+      "title": "The Seven Knights of the Marronnier Kingdom",
+      "episodeNumber": 8,
+      "startsAt": "2026-11-21T15:00:00.000Z"
+    },
+    {
+      "title": "Black Clover Season 2",
+      "episodeNumber": 6,
+      "startsAt": "2026-11-21T16:00:00.000Z"
+    },
+    {
+      "title": "Magical Explorer",
+      "episodeNumber": 9,
+      "startsAt": "2026-11-21T16:30:00.000Z"
+    },
+    {
+      "title": "Ranma 1/2 Season 3",
+      "episodeNumber": 8,
+      "startsAt": "2026-11-21T17:00:00.000Z"
+    },
+    {
+      "title": "HORROR COLLECTOR",
+      "episodeNumber": 5,
+      "startsAt": "2026-11-21T18:15:00.000Z"
+    },
+    {
+      "title": "Blue Box Season 2",
+      "episodeNumber": 7,
+      "startsAt": "2026-11-22T08:00:00.000Z"
+    },
+    {
+      "title": "Ao Ashi Season 2",
+      "episodeNumber": 6,
+      "startsAt": "2026-11-22T10:00:00.000Z"
+    },
+    {
+      "title": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
+      "episodeNumber": 8,
+      "startsAt": "2026-11-22T14:00:00.000Z"
+    },
+    {
+      "title": "TANK CHAIR",
+      "episodeNumber": 8,
+      "startsAt": "2026-11-22T14:30:00.000Z"
+    },
+    {
+      "title": "Full Clearing Another World under a Goddess with Zero Believers",
+      "episodeNumber": 5,
+      "startsAt": "2026-11-22T14:31:00.000Z"
+    },
+    {
+      "title": "Overgeared",
+      "episodeNumber": 9,
+      "startsAt": "2026-11-22T14:31:00.000Z"
+    },
+    {
+      "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
+      "episodeNumber": 7,
+      "startsAt": "2026-11-22T15:01:00.000Z"
+    }
+  ]
 }
