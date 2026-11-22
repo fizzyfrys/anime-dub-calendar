@@ -35,12 +35,12 @@ The container reads the token from a file, so it never appears in the Docker con
 
 ```sh
 mkdir -p /mnt/user/appdata/anime-dub-calendar
-printf '%s' 'PASTE_TOKEN_HERE' > /mnt/user/appdata/anime-dub-calendar/github-token
+read -rsp 'Paste token: ' token && printf '%s' "$token" > /mnt/user/appdata/anime-dub-calendar/github-token; unset token; echo
 chown 1000:1000 /mnt/user/appdata/anime-dub-calendar/github-token
 chmod 600 /mnt/user/appdata/anime-dub-calendar/github-token
 ```
 
-Use any path you like; the example uses the usual Unraid appdata location. The `chown` matters: the container runs as UID `1000`, and with mode `600` only that user can read the file.
+`read -s` takes the token without echoing it, so it never lands in your shell history. Use any path you like; the example uses the usual Unraid appdata location. The `chown` matters: the container runs as UID `1000`, and with mode `600` only that user can read the file.
 
 ## 3. Stop the GitHub Actions build
 
