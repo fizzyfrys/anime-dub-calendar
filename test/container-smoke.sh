@@ -69,7 +69,7 @@ start() {
     -e "NODE_OPTIONS=${5:-}" \
     "$image" >/dev/null
   for _ in $(seq 1 30); do
-    if docker logs "$name" 2>&1 | grep -F 'T10:00:00.000Z' >/dev/null; then
+    if docker logs "$name" 2>&1 | grep -F '[calendar-server] Next refresh:' >/dev/null; then
       base="http://$(docker port "$name" 8080/tcp)"
       return
     fi
@@ -77,6 +77,13 @@ start() {
   done
   docker logs "$name"
   return 1
+}
+
+assert_refreshed() {
+  if docker logs "$name" 2>&1 | grep -F '[calendar-server] Refresh failed:' >/dev/null; then
+    docker logs "$name" >&2
+    return 1
+  fi
 }
 
 assert_feeds() {
@@ -90,7 +97,27 @@ assert_feeds() {
   done
 }
 
+start mal.html operator-has-no-snapshot.html
+assert_refreshed
+docker exec "$name" node --input-type=module -e '
+  import assert from "node:assert/strict";
+  import { readFileSync } from "node:fs";
+  const bundled = JSON.parse(readFileSync("/app/docs/state.json", "utf8"));
+  const generated = JSON.parse(readFileSync("/data/state.json", "utf8"));
+  assert.ok(Object.keys(bundled.history).length);
+  for (const [show, dates] of Object.entries(bundled.history)) {
+    assert.deepEqual(generated.history[show], dates);
+  }
+  assert.ok(generated.shows["container-test"]);
+'
+docker stop "$name" >/dev/null
+
+# Keep the fixture row count independent of the live scrape baseline bundled in the image.
+docker run --rm -v "$volume:/data" --entrypoint node "$image" \
+  -e 'require("node:fs").writeFileSync("/data/state.json", "{}")'
+
 start mal.html dub.html
+assert_refreshed
 curl -fsS "$base/" | grep 'anime-dubs.ics' >/dev/null
 curl -fsSI "$base/feed-url.js" | grep -i 'Content-Type: text/javascript' >/dev/null
 curl -fsS "$base/schedule.json" | grep -F "${date}T10:00:00.000Z" >/dev/null
@@ -99,6 +126,7 @@ assert_feeds
 docker stop "$name" >/dev/null
 
 start mal.html operator-has-no-snapshot.html
+assert_refreshed
 docker logs "$name" 2>&1 | grep -F 'Publishing MAL and cached release times' >/dev/null
 assert_feeds
 docker stop "$name" >/dev/null
@@ -109,6 +137,7 @@ assert_feeds
 docker stop "$name" >/dev/null
 
 start mal.html dub.html example/calendar /fixtures/empty-token
+assert_refreshed
 docker logs "$name" 2>&1 | grep -F 'Could not read published history; skipping GitHub publish:' >/dev/null
 assert_feeds
 docker stop "$name" >/dev/null
@@ -116,6 +145,7 @@ docker volume rm "$volume" >/dev/null
 docker volume create "$volume" >/dev/null
 
 start mal.html dub.html example/calendar /fixtures/mock-token --import=/fixtures/mock-github.mjs
+assert_refreshed
 docker logs "$name" 2>&1 | grep -F 'Published feeds to example/calendar@new-commit' >/dev/null
 assert_feeds
 curl -fsS "$base/anime-dubs.ics" | grep -F 'DTSTART;VALUE=DATE:20250106' >/dev/null

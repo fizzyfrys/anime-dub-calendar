@@ -48,7 +48,7 @@ export async function prepareCalendarPublish({ repository, tokenFile, request = 
     const { sha: nextTree } = await github('POST', 'git/trees', { base_tree: baseTree, tree });
     if (nextTree === baseTree) return null;
     const { sha } = await github('POST', 'git/commits', {
-      message: 'chore: update anime dub calendar from Unraid',
+      message: 'chore: update anime dub calendar from Docker',
       tree: nextTree,
       parents: [parent],
     });

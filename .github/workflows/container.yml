@@ -21,27 +21,17 @@ permissions:
 
 jobs:
   smoke:
+    if: github.ref != 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - run: docker build -t anime-dub-calendar:unraid .
-      - run: bash test/container-smoke.sh anime-dub-calendar:unraid
-      - name: Save tested image
-        if: github.event_name == 'pull_request'
-        run: docker save anime-dub-calendar:unraid | gzip -1 > anime-dub-calendar-amd64.tar.gz
-      - uses: actions/upload-artifact@v4
-        if: github.event_name == 'pull_request'
-        with:
-          name: anime-dub-calendar-amd64
-          path: anime-dub-calendar-amd64.tar.gz
-          compression-level: 0
-          retention-days: 7
+      - run: docker build -t anime-dub-calendar:ci .
+      - run: bash test/container-smoke.sh anime-dub-calendar:ci
 
   publish:
     if: github.ref == 'refs/heads/main'
-    needs: smoke
     permissions:
       contents: read
       packages: write
@@ -50,12 +40,16 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Publish to GitHub Container Registry
+      - name: Build and test release image
+        run: |
+          image="ghcr.io/${GITHUB_REPOSITORY,,}"
+          docker build --tag "$image:latest" --tag "$image:sha-${GITHUB_SHA::12}" .
+          bash test/container-smoke.sh "$image:latest"
+      - name: Push the tested image to GHCR
         env:
           GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           image="ghcr.io/${GITHUB_REPOSITORY,,}"
           printf '%s\n' "$GHCR_TOKEN" | docker login ghcr.io --username "$GITHUB_ACTOR" --password-stdin
-          docker build --tag "$image:latest" --tag "$image:sha-${GITHUB_SHA::12}" .
           docker push "$image:sha-${GITHUB_SHA::12}"
           docker push "$image:latest"
