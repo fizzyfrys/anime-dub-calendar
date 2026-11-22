@@ -935,7 +935,405 @@
     }
   },
   "dubCalendar": {
-    "excluded": [],
-    "releases": []
+    "excluded": [
+      "chiikawa",
+      "even the student council has its holes",
+      "ingoku danchi deviant s apartment complex",
+      "kamui he s behind you",
+      "now that i can control reality with a mouse cursor i m gonna click away on the girls",
+      "the lonely snow widow and the cursed ring",
+      "welsh shedar"
+    ],
+    "releases": [
+      {
+        "title": "PSYREN",
+        "episodeNumber": 5,
+        "platforms": [
+          "apple tv",
+          "crunchyroll"
+        ],
+        "startsAt": "2026-11-16T15:30:00.000Z"
+      },
+      {
+        "title": "BLEACH: Thousand-Year Blood War - The Calamity",
+        "episodeNumber": 9,
+        "platforms": [
+          "apple tv",
+          "hulu",
+          "youtube",
+          "disney+"
+        ],
+        "startsAt": "2026-11-16T16:30:00.000Z"
+      },
+      {
+        "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
+        "episodeNumber": 7,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "youtube",
+          "bilibili tv"
+        ],
+        "startsAt": "2026-11-17T15:30:00.000Z"
+      },
+      {
+        "title": "The Classroom of a Black Cat and a Witch",
+        "episodeNumber": 1,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "prime video",
+          "youtube"
+        ],
+        "startsAt": "2026-11-17T16:00:00.000Z"
+      },
+      {
+        "title": "One Piece",
+        "episodeNumber": 1160,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "prime video",
+          "hulu",
+          "netflix",
+          "bilibili tv"
+        ],
+        "startsAt": "2026-11-17T17:00:00.000Z"
+      },
+      {
+        "title": "Sasaki and Peeps 2nd Season",
+        "episodeNumber": 5,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "youtube",
+          "bilibili tv"
+        ],
+        "startsAt": "2026-11-18T14:00:00.000Z"
+      },
+      {
+        "title": "The World's Strongest Witch",
+        "episodeNumber": 5,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "youtube",
+          "bilibili tv"
+        ],
+        "startsAt": "2026-11-18T14:00:00.000Z"
+      },
+      {
+        "title": "The Detective Is Already Dead 2nd Season",
+        "episodeNumber": 5,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "youtube"
+        ],
+        "startsAt": "2026-11-18T14:30:00.000Z"
+      },
+      {
+        "title": "Saga of Tanya the Evil II",
+        "episodeNumber": 11,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "prime video",
+          "youtube"
+        ],
+        "startsAt": "2026-11-18T14:30:00.000Z"
+      },
+      {
+        "title": "Magic Knight Rayearth (2026)",
+        "episodeNumber": 5,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "youtube"
+        ],
+        "startsAt": "2026-11-18T16:30:00.000Z"
+      },
+      {
+        "title": "Nia Liston: The Merciless Maiden",
+        "episodeNumber": 1,
+        "platforms": [
+          "apple tv",
+          "hidive",
+          "bilibili tv"
+        ],
+        "startsAt": "2026-11-18T17:00:00.000Z"
+      },
+      {
+        "title": "The Prince of Tennis II U-17 WORLD CUP: The Final Tryouts",
+        "episodeNumber": 6,
+        "platforms": [
+          "apple tv",
+          "crunchyroll"
+        ],
+        "startsAt": "2026-11-18T17:00:00.000Z"
+      },
+      {
+        "title": "Reincarnated as a Sword 2",
+        "episodeNumber": 5,
+        "platforms": [
+          "apple tv",
+          "prime video",
+          "hidive",
+          "youtube",
+          "bilibili tv"
+        ],
+        "startsAt": "2026-11-18T17:00:00.000Z"
+      },
+      {
+        "title": "World Is Dancing",
+        "episodeNumber": 13,
+        "platforms": [
+          "apple tv",
+          "hidive",
+          "youtube"
+        ],
+        "startsAt": "2026-11-18T17:00:00.000Z"
+      },
+      {
+        "title": "A Returner's Magic Should Be Special 2nd Season",
+        "episodeNumber": 7,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "bilibili tv"
+        ],
+        "startsAt": "2026-11-18T17:15:00.000Z"
+      },
+      {
+        "title": "FX Fighter Kurumi-chan",
+        "episodeNumber": 8,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "youtube"
+        ],
+        "startsAt": "2026-11-19T12:31:00.000Z"
+      },
+      {
+        "title": "The Ramparts of Ice 2nd Season",
+        "episodeNumber": 8,
+        "platforms": [
+          "netflix"
+        ],
+        "startsAt": "2026-11-19T15:30:00.000Z"
+      },
+      {
+        "title": "Dragon Ball Super: Beerus",
+        "episodeNumber": 2,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "hulu",
+          "netflix"
+        ],
+        "startsAt": "2026-11-19T16:00:00.000Z"
+      },
+      {
+        "title": "The Exiled Heavy Knight Knows How to Game the System",
+        "episodeNumber": 19,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "prime video",
+          "youtube",
+          "bilibili tv"
+        ],
+        "startsAt": "2026-11-19T17:00:00.000Z"
+      },
+      {
+        "title": "The Iceblade Sorcerer Shall Rule the World II",
+        "episodeNumber": 5,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "youtube",
+          "bilibili tv"
+        ],
+        "startsAt": "2026-11-19T18:00:00.000Z"
+      },
+      {
+        "title": "JoJo's Bizarre Adventure: Steel Ball Run 2nd - 3rd STAGE",
+        "episodeNumber": 9,
+        "platforms": [
+          "netflix"
+        ],
+        "startsAt": "2026-11-20T08:01:00.000Z"
+      },
+      {
+        "title": "Devils' Crest",
+        "episodeNumber": 4,
+        "platforms": [
+          "apple tv",
+          "prime video"
+        ],
+        "startsAt": "2026-11-20T12:01:00.000Z"
+      },
+      {
+        "title": "The Apothecary Diaries 3rd Season",
+        "episodeNumber": 6,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "netflix"
+        ],
+        "startsAt": "2026-11-20T16:00:00.000Z"
+      },
+      {
+        "title": "Firefly Wedding",
+        "episodeNumber": 5,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "youtube",
+          "bilibili tv"
+        ],
+        "startsAt": "2026-11-20T17:00:00.000Z"
+      },
+      {
+        "title": "Tokyo Revengers: War of the Three Titans Arc",
+        "episodeNumber": 8,
+        "platforms": [
+          "apple tv",
+          "hulu",
+          "disney+"
+        ],
+        "startsAt": "2026-11-20T17:00:00.000Z"
+      },
+      {
+        "title": "Rilakkuma: Goyururi Yume no Tabi",
+        "episodeNumber": 33,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "youtube"
+        ],
+        "startsAt": "2026-11-21T02:00:00.000Z"
+      },
+      {
+        "title": "The Seven Knights of the Marronnier Kingdom",
+        "episodeNumber": 8,
+        "platforms": [
+          "apple tv",
+          "prime video"
+        ],
+        "startsAt": "2026-11-21T15:00:00.000Z"
+      },
+      {
+        "title": "#‌‌​I'm Looking For a Zombie",
+        "episodeNumber": 7,
+        "platforms": [
+          "apple tv",
+          "crunchyroll"
+        ],
+        "startsAt": "2026-11-21T15:00:00.000Z"
+      },
+      {
+        "title": "Black Clover 2nd Season",
+        "episodeNumber": 6,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "bilibili tv"
+        ],
+        "startsAt": "2026-11-21T16:00:00.000Z"
+      },
+      {
+        "title": "Magical Explorer: Reborn as a Side Character in a Fantasy Dating Sim",
+        "episodeNumber": 9,
+        "platforms": [
+          "apple tv",
+          "crunchyroll"
+        ],
+        "startsAt": "2026-11-21T16:30:00.000Z"
+      },
+      {
+        "title": "Ranma ½ (2024) 3rd Season",
+        "episodeNumber": 8,
+        "platforms": [
+          "netflix"
+        ],
+        "startsAt": "2026-11-21T17:00:00.000Z"
+      },
+      {
+        "title": "Horror Collector",
+        "episodeNumber": 5,
+        "platforms": [
+          "apple tv",
+          "crunchyroll"
+        ],
+        "startsAt": "2026-11-21T18:15:00.000Z"
+      },
+      {
+        "title": "Blue Box 2nd Season",
+        "episodeNumber": 7,
+        "platforms": [
+          "netflix"
+        ],
+        "startsAt": "2026-11-22T08:00:00.000Z"
+      },
+      {
+        "title": "Ao Ashi 2nd Season",
+        "episodeNumber": 6,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "youtube"
+        ],
+        "startsAt": "2026-11-22T10:00:00.000Z"
+      },
+      {
+        "title": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
+        "episodeNumber": 8,
+        "platforms": [
+          "apple tv",
+          "crunchyroll"
+        ],
+        "startsAt": "2026-11-22T14:00:00.000Z"
+      },
+      {
+        "title": "Tank Chair",
+        "episodeNumber": 8,
+        "platforms": [
+          "apple tv",
+          "prime video"
+        ],
+        "startsAt": "2026-11-22T14:30:00.000Z"
+      },
+      {
+        "title": "OVERGEARED",
+        "episodeNumber": 9,
+        "platforms": [
+          "apple tv",
+          "crunchyroll"
+        ],
+        "startsAt": "2026-11-22T14:31:00.000Z"
+      },
+      {
+        "title": "Full Clearing Another World under a Goddess with Zero Believers",
+        "episodeNumber": 5,
+        "platforms": [
+          "apple tv",
+          "crunchyroll"
+        ],
+        "startsAt": "2026-11-22T14:31:00.000Z"
+      },
+      {
+        "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World 3rd Season",
+        "episodeNumber": 7,
+        "platforms": [
+          "apple tv",
+          "crunchyroll",
+          "youtube",
+          "bilibili tv"
+        ],
+        "startsAt": "2026-11-22T15:01:00.000Z"
+      }
+    ],
+    "lastHealthyRowCount": 48
   }
 }
