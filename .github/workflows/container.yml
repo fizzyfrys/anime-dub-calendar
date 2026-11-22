@@ -8,6 +8,7 @@ on:
       - '.dockerignore'
       - 'package*.json'
       - 'src/**'
+      - 'web/**'
       - 'docs/index.html'
       - 'docs/feed-url.js'
       - 'test/container-smoke.sh'

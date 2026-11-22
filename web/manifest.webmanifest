@@ -1,0 +1,14 @@
+{
+  "id": "./library.html",
+  "name": "Anime Dubs Calendar",
+  "short_name": "Anime Dubs",
+  "start_url": "./library.html",
+  "scope": "./",
+  "display": "standalone",
+  "theme_color": "#111322",
+  "background_color": "#111322",
+  "icons": [
+    { "src": "./calendar-icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "./calendar-icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
