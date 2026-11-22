@@ -133,8 +133,8 @@ function showView(root, show, now) {
     : 'No platform listed by the release source.'));
   const { progress, status } = progressFor(show);
   if (state.profile) {
-    if (synced(show)) actions.append(el('span', 'On synced watchlist', { class: 'hint' }));
     const actions = el('div', null, { class: 'actions tracking' });
+    if (synced(show)) actions.append(el('span', 'On synced watchlist', { class: 'hint' }));
     actions.append(markHidden(show), button(selected(show) ? 'Deselect show' : 'Select show', () => save(profile => {
       profile.selected = selected(show) ? profile.selected.filter(id => !profileIds(show).includes(id)) :
         [...profile.selected, show.id];
