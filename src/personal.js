@@ -2,6 +2,7 @@ import { createHash, createHmac, randomBytes, randomUUID, timingSafeEqual } from
 import { readFile, rename, rm, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { generateIcs } from './generate-ics.js';
+import { applyWatchlist, watchlistSettings } from './watchlist.js';
 
 const MAX_PROFILE_BYTES = 128 * 1024;
 const showId = /^(?:mal-[1-9]\d{0,8}|title-[a-f0-9]{24})$/;
@@ -84,7 +85,7 @@ export async function loadFeedToken(data, legacyKey) {
   return token;
 }
 
-export function createPersonalRoutes({ password, legacyKey, token, data, getCatalog }) {
+export function createPersonalRoutes({ password, legacyKey, token, data, getCatalog, watchlist }) {
   if (!password && !legacyKey) return null;
   const key = hash(password || legacyKey);
   const feedPath = `./personal.ics?token=${token}`;
@@ -115,7 +116,7 @@ export function createPersonalRoutes({ password, legacyKey, token, data, getCata
   }
 
   function sendProfile(response, profile) {
-    return json(response, 200, { profile, feedPath }, { ETag: version(profile) });
+    return json(response, 200, { profile, feedPath, watchlist: watchlist.get() }, { ETag: version(profile) });
   }
 
   async function readJson(request, limit) {
@@ -173,7 +174,8 @@ export function createPersonalRoutes({ password, legacyKey, token, data, getCata
       }
       const schedule = await getCatalog();
       if (!Array.isArray(schedule.catalog)) return response.writeHead(503, { 'Retry-After': '60' }).end();
-      const body = personalFeed(schedule, await load(), url.searchParams.get('format') === 'compact');
+      const profile = applyWatchlist(await load(), watchlist.get().remote);
+      const body = personalFeed(schedule, profile, url.searchParams.get('format') === 'compact');
       return response.writeHead(200, {
         'Content-Type': 'text/calendar; charset=utf-8',
         'Cache-Control': 'private, no-cache',
@@ -188,6 +190,17 @@ export function createPersonalRoutes({ password, legacyKey, token, data, getCata
     const legacy = !password && valid(request.headers.authorization?.match(/^Bearer (.+)$/)?.[1], key);
     if (!signedIn && !legacy) {
       return json(response, 401, { error: 'Sign in to access your profile' });
+    }
+    if (url.pathname === '/api/watchlist') {
+      if (!['POST', 'PUT'].includes(request.method)) return response.writeHead(405, { Allow: 'POST, PUT' }).end();
+      let account;
+      try {
+        const settings = await readJson(request, 4096);
+        if (request.method === 'PUT') account = watchlistSettings(settings, watchlist.get().malAvailable);
+      } catch (error) {
+        return json(response, error.status ?? 400, { error: 'Invalid watchlist settings' }, { Connection: 'close' });
+      }
+      return json(response, 200, request.method === 'PUT' ? await watchlist.configure(account) : await watchlist.refresh());
     }
     if (request.method === 'GET') return sendProfile(response, await load());
     if (request.method !== 'PUT') return response.writeHead(405, { Allow: 'GET, PUT' }).end();

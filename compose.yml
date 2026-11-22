@@ -7,6 +7,7 @@ services:
     environment:
       CALENDAR_PASSWORD: "${CALENDAR_PASSWORD:-}"
       CALENDAR_METADATA: "${CALENDAR_METADATA:-}"
+      CALENDAR_MAL_CLIENT_ID: "${CALENDAR_MAL_CLIENT_ID:-}"
     volumes:
       - calendar-data:/data
 

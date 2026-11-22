@@ -1,4 +1,4 @@
-const cacheName = 'anime-dubs-library-v2';
+const cacheName = 'anime-dubs-library-v3';
 const shell = [
   'library.html', 'library.css', 'library.js', 'library-data.js',
   'calendar-week.css', 'calendar-week.js',

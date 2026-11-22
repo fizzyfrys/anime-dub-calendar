@@ -228,12 +228,25 @@ curl -fsS "$base/$personal_feed" | grep -F "DTSTART:${date//-/}T100000Z" >/dev/n
 docker stop "$name" >/dev/null
 
 docker tag "$image" "$compose_image"
+cat >"$fixtures/mock-watchlist.mjs" <<'EOF'
+globalThis.fetch = async (url, options) => {
+  if (url.origin !== 'https://api.myanimelist.net' || url.pathname !== '/v2/users/fixture-user/animelist' ||
+      options.redirect !== 'error' || options.headers['X-MAL-CLIENT-ID'] !== process.env.CALENDAR_MAL_CLIENT_ID) {
+    throw new Error('Invalid watchlist request');
+  }
+  return Response.json({ data: [
+    { node: { id: 1 }, list_status: { status: 'watching', num_episodes_watched: 1 } },
+  ] });
+};
+EOF
+chmod a+r "$fixtures/mock-watchlist.mjs"
 cat >"$fixtures/compose-test.yml" <<EOF
 services:
   calendar:
     environment:
       MAL_HTML_PATH: /fixtures/mal.html
       DUB_CALENDAR_HTML_PATH: /fixtures/dub.html
+      NODE_OPTIONS: --import=/fixtures/mock-watchlist.mjs
     volumes:
       - "$fixtures:/fixtures:ro"
 volumes:
@@ -243,6 +256,7 @@ volumes:
 EOF
 export CALENDAR_IMAGE_TAG="$name" CALENDAR_BIND=127.0.0.1 CALENDAR_PORT=0
 export CALENDAR_PASSWORD='fixture password for compose' CALENDAR_METADATA=off
+export CALENDAR_MAL_CLIENT_ID='fixture-private-client-id'
 "${compose[@]}" up --pull never -d
 name=$("${compose[@]}" ps -q calendar)
 base="http://$("${compose[@]}" port calendar 8080)"
@@ -262,5 +276,23 @@ curl -fsS -c "$cookies" -D "$fixtures/headers" -H 'Content-Type: application/jso
 grep -Ei '^Set-Cookie: .*HttpOnly; SameSite=Strict' "$fixtures/headers" >/dev/null
 curl -fsS -b "$cookies" "$base/api/profile" | grep -F "$personal_feed" >/dev/null
 curl -fsS "$base/$personal_feed" | grep -F "DTSTART:${date//-/}T100000Z" >/dev/null
+watchlist_json='{"provider":"mal","username":"fixture-user"}'
+test "$(curl -s -o /dev/null -w '%{http_code}' -X PUT -H 'Content-Type: application/json' \
+  -d "$watchlist_json" "$base/api/watchlist")" = 401
+test "$(curl -s -o /dev/null -w '%{http_code}' "$base/watchlist-sync.json")" = 404
+test "$(curl -s -o /dev/null -w '%{http_code}' "$base/personal-feed-token")" = 404
+version=$(curl -fsS -D - -o /dev/null -b "$cookies" "$base/api/profile" | awk 'tolower($1) == "etag:" { sub(/\r$/, "", $2); print $2 }')
+curl -fsS -b "$cookies" -X PUT -H "If-Match: $version" -H 'Content-Type: application/json' \
+  -d '{"onlySelected":true}' "$base/api/profile" >/dev/null
+assert_personal_feed_empty
+snapshot=$(curl -fsS -b "$cookies" -X PUT -H 'Content-Type: application/json' -d "$watchlist_json" "$base/api/watchlist")
+grep -F '"selected":["mal-1"]' <<<"$snapshot" >/dev/null
+curl -fsS "$base/$personal_feed" | grep -F "DTSTART:${date//-/}T100000Z" >/dev/null
+if grep -Fq "$CALENDAR_MAL_CLIENT_ID" <<<"$snapshot" ||
+   docker logs "$name" 2>&1 | grep -F "$CALENDAR_MAL_CLIENT_ID" >/dev/null; then
+  echo 'Watchlist fixture credential was exposed' >&2
+  exit 1
+fi
+assert_feeds
 curl -fsS -b "$cookies" -c "$cookies" -X DELETE "$base/api/session" >/dev/null
 test "$(curl -s -b "$cookies" -o /dev/null -w '%{http_code}' "$base/api/profile")" = 401

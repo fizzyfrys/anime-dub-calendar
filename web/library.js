@@ -23,6 +23,13 @@ function button(label, run) {
 const titleLink = show => link(show.title, `#show/${show.id}`);
 const metadata = show => state.metadata[show.id] ?? {};
 const selected = show => hasShow(state.profile?.selected ?? [], show);
+const synced = show => hasShow(state.watchlist?.remote.selected ?? [], show);
+const effectiveProfile = () => state.profile && {
+  ...state.profile,
+  selected: [...state.profile.selected, ...(state.watchlist?.remote.selected ?? [])],
+};
+const progressFor = show => watchProgress(profileIds(show).some(id => Object.hasOwn(state.profile?.watching ?? {}, id))
+  ? state.profile : state.watchlist?.remote, show);
 const hidden = show => hasShow(state.profile?.hidden ?? [], show);
 
 function matches(show) {
@@ -66,15 +73,16 @@ function week(root, shows, now) {
   actions.append(shift('Previous', state.offset - 1), shift('Today', 0), shift('Next', state.offset + 1));
   heading.append(actions);
   const entries = [];
+  const profile = effectiveProfile();
   for (const show of shows) for (const episode of show.episodes) {
     const platforms = episode.platforms.length ? episode.platforms : show.platforms;
     if ((!$('platform').value || platforms.includes($('platform').value)) &&
-        includesEpisode(state.profile, show, episode)) entries.push({ title: show.title, show, episode });
+        includesEpisode(profile, show, episode)) entries.push({ title: show.title, show, episode });
   }
   root.append(heading, renderWeek(groupWeek(days, entries), today, ({ show, episode }) => {
     const info = el('div');
     const watched = state.profile && isReleased(episode, now) &&
-      watchProgress(state.profile, show).progress >= episode.episodeNumber;
+      progressFor(show).progress >= episode.episodeNumber;
     info.append(titleLink(show), el('small', episodeText(episode) + (watched ? ' · ✓ Watched' : ''), { class: 'meta' }));
     return state.profile ? [info, markHidden(show)] : [info];
   }));
@@ -88,11 +96,11 @@ function showsView(root, shows, view, now) {
   }
   const list = rows();
   for (const show of shows) {
-    const { progress, status } = watchProgress(state.profile, show);
+    const { progress, status } = progressFor(show);
     const available = show.episodes.filter(ep => ep.episodeNumber > progress && isReleased(ep, now));
     if (view === 'hidden' ? !hidden(show) : hidden(show)) continue;
     if (view === 'behind' && (!available.length ||
-        (!selected(show) && !['watching', 'rewatching'].includes(status)) ||
+        (!selected(show) && !synced(show) && !['watching', 'rewatching'].includes(status)) ||
         ['paused', 'completed', 'dropped'].includes(status))) continue;
     const row = el('li', null, { class: 'row' });
     const info = el('div');
@@ -123,8 +131,9 @@ function showView(root, show, now) {
   details.append(title, el('h3', 'Where to watch'), el('p', show.platforms.length
     ? show.platforms.join(', ') + ' (availability may vary by region)'
     : 'No platform listed by the release source.'));
-  const { progress, status } = watchProgress(state.profile, show);
+  const { progress, status } = progressFor(show);
   if (state.profile) {
+    if (synced(show)) actions.append(el('span', 'On synced watchlist', { class: 'hint' }));
     const actions = el('div', null, { class: 'actions tracking' });
     actions.append(markHidden(show), button(selected(show) ? 'Deselect show' : 'Select show', () => save(profile => {
       profile.selected = selected(show) ? profile.selected.filter(id => !profileIds(show).includes(id)) :
@@ -199,6 +208,38 @@ function renderSettings(feedPath) {
   }
 }
 
+function renderWatchlist() {
+  const watchlist = state.watchlist;
+  if (!watchlist) return;
+  $('sync-mal').disabled = !watchlist.malAvailable && watchlist.account?.provider !== 'mal';
+  $('sync-provider').value = watchlist.account?.provider ?? 'off';
+  $('sync-username').value = watchlist.account?.username ?? '';
+  $('sync-username').disabled = !watchlist.account;
+  $('sync-now').hidden = !watchlist.account;
+  $('sync-status').textContent = watchlist.error || (watchlist.lastSync
+    ? `Last synced ${new Date(watchlist.lastSync).toLocaleString()}`
+    : !watchlist.malAvailable ? 'MAL needs a client ID configured on the server.' : '');
+}
+
+async function syncWatchlist(method, settings) {
+  if (state.syncing || !state.profile) return;
+  state.syncing = true;
+  $('sync-save').disabled = $('sync-now').disabled = true;
+  $('sync-status').textContent = 'Syncing…';
+  try {
+    const response = await fetch('./api/watchlist', {
+      method, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(settings),
+    });
+    if (!response.ok) throw new Error(response.status === 401 ? 'Sign in to sync your watchlist.' : 'Could not save watchlist settings.');
+    const result = await response.json();
+    if (!state.profile) return;
+    state.watchlist = result;
+    renderWatchlist();
+    render();
+  } catch (error) { $('sync-status').textContent = error.message; }
+  finally { state.syncing = false; $('sync-save').disabled = $('sync-now').disabled = false; }
+}
+
 async function api(profile) {
   const response = await fetch('./api/profile', {
     method: profile ? 'PUT' : 'GET', cache: 'no-store',
@@ -223,12 +264,15 @@ function applyProfile(result) {
   state.profile = result.profile;
   state.feedPath = result.feedPath;
   state.version = result.version;
+  state.watchlist = result.watchlist;
+  renderWatchlist();
   renderSettings(state.feedPath);
   render();
 }
 
 function clearProfile() {
   state.profile = null;
+  state.watchlist = null;
   state.feedPath = $('feed').value = '';
   renderSettings();
   render();
@@ -285,6 +329,14 @@ $('copy').addEventListener('click', async () => {
   catch { $('feed').select(); notice('Copy the selected URL.'); }
 });
 $('only-selected').addEventListener('change', event => save(profile => { profile.onlySelected = event.target.checked; }));
+$('sync-provider').addEventListener('change', () => {
+  $('sync-username').disabled = $('sync-provider').value === 'off';
+});
+$('watchlist-sync').addEventListener('submit', event => {
+  event.preventDefault();
+  void syncWatchlist('PUT', { provider: $('sync-provider').value, username: $('sync-username').value.trim() });
+});
+$('sync-now').addEventListener('click', () => syncWatchlist('POST', {}));
 $('import').addEventListener('change', async event => {
   const file = event.target.files[0];
   if (!file || !state.catalog || !state.profile) return;

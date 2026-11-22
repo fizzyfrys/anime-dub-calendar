@@ -32,6 +32,25 @@
         <p class="hint">Keep this URL private. Subscribe once; your calendar app picks up changes when it refreshes.</p>
         <label><input type="checkbox" id="only-selected"> Only selected shows</label>
         <fieldset><legend>Feed platforms (none selected means all)</legend><div id="feed-platforms" class="actions"></div></fieldset>
+        <form id="watchlist-sync">
+          <fieldset>
+            <legend>Automatic watchlist sync</legend>
+            <div class="actions">
+              <label>Provider
+                <select id="sync-provider">
+                  <option value="off">Off</option>
+                  <option value="anilist">AniList</option>
+                  <option id="sync-mal" value="mal">MyAnimeList</option>
+                </select>
+              </label>
+              <label>Public username <input id="sync-username" maxlength="40" autocomplete="off" disabled></label>
+              <button id="sync-save" type="submit">Save sync settings</button>
+              <button id="sync-now" type="button" hidden>Sync now</button>
+            </div>
+            <p class="hint">Read-only. No account password or token is needed. Turn on “Only selected shows” to filter your feed to shows you selected or are following.</p>
+            <p id="sync-status" class="hint" role="status"></p>
+          </fieldset>
+        </form>
         <label for="import">Import watchlist (MAL XML/XML.GZ or AniList JSON)</label>
         <input id="import" type="file" accept=".xml,.gz,.json,application/xml,application/json,application/gzip">
         <p class="hint">Imports matching shows’ status and episode progress. Watching, planned, paused, and rewatching shows are added to your selection. Hidden shows stay hidden.</p>
