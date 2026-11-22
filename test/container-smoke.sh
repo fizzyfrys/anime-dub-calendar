@@ -61,9 +61,6 @@ EOF
 chmod a+r "$fixtures/mock-token" "$fixtures/mock-github.mjs"
 
 docker volume create "$volume" >/dev/null
-# Keep the fixture row count independent of the live scrape baseline bundled in the image.
-docker run --rm -v "$volume:/data" --entrypoint node "$image" \
-  -e 'require("node:fs").writeFileSync("/data/state.json", "{}")'
 start() {
   docker run -d --rm --name "$name" -p 127.0.0.1::8080 \
     -v "$volume:/data" -v "$fixtures:/fixtures:ro" \
@@ -92,6 +89,24 @@ assert_feeds() {
     fi
   done
 }
+
+start mal.html operator-has-no-snapshot.html
+docker exec "$name" node --input-type=module -e '
+  import assert from "node:assert/strict";
+  import { readFileSync } from "node:fs";
+  const bundled = JSON.parse(readFileSync("/app/docs/state.json", "utf8"));
+  const generated = JSON.parse(readFileSync("/data/state.json", "utf8"));
+  assert.ok(Object.keys(bundled.history).length);
+  for (const [show, dates] of Object.entries(bundled.history)) {
+    assert.deepEqual(generated.history[show], dates);
+  }
+  assert.ok(generated.shows["container-test"]);
+'
+docker stop "$name" >/dev/null
+
+# Keep the fixture row count independent of the live scrape baseline bundled in the image.
+docker run --rm -v "$volume:/data" --entrypoint node "$image" \
+  -e 'require("node:fs").writeFileSync("/data/state.json", "{}")'
 
 start mal.html dub.html
 curl -fsS "$base/" | grep 'anime-dubs.ics' >/dev/null
