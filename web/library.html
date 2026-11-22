@@ -47,7 +47,8 @@
     <div id="filters" class="filters">
       <label>Search <input id="search" type="search" placeholder="Show title"></label>
       <label>Platform <select id="platform"><option value="">All platforms</option></select></label>
-      <label>Genre or tag <select id="genre"><option value="">All genres and tags</option></select></label>
+      <label>Genre or tag <input id="genre" type="search" list="genres" placeholder="All genres and tags"></label>
+      <datalist id="genres"></datalist>
     </div>
     <div id="content" aria-live="polite"><p>Loading schedule…</p></div>
   </main>

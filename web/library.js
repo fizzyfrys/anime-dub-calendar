@@ -39,9 +39,10 @@ const ordered = episodes => episodes.sort((a, b) =>
 
 function matches(show) {
   const query = $('search').value.trim().toLocaleLowerCase();
+  const genre = $('genre').value.trim().toLocaleLowerCase();
   return show.title.toLocaleLowerCase().includes(query) &&
     (!$('platform').value || show.platforms.includes($('platform').value)) &&
-    (!$('genre').value || metadata(show).tags?.includes($('genre').value));
+    (!genre || metadata(show).tags?.some(tag => tag.toLocaleLowerCase().includes(genre)));
 }
 
 function markHidden(show) {
@@ -225,17 +226,23 @@ function renderSettings(feedPath) {
 async function api(key, profile) {
   const response = await fetch('./api/profile', {
     method: profile ? 'PUT' : 'GET', cache: 'no-store',
-    headers: { Authorization: `Bearer ${key}`, ...(profile ? { 'Content-Type': 'application/json' } : {}) },
+    headers: { Authorization: `Bearer ${key}`,
+      ...(profile ? { 'Content-Type': 'application/json', 'If-Match': state.version } : {}) },
     ...(profile ? { body: JSON.stringify(profile) } : {}),
   });
   if (response.status === 401) throw new Error('Calendar access key not accepted.');
+  if (response.status === 412) {
+    applyProfile(await api(key));
+    throw new Error('Your profile changed on another device. Try the change again.');
+  }
   if (!response.ok) throw new Error('The personal calendar is unavailable or could not save these changes.');
-  return response.json();
+  return { ...await response.json(), version: response.headers.get('ETag') };
 }
 
 function applyProfile(result) {
   state.profile = result.profile;
   state.feedPath = result.feedPath;
+  state.version = result.version;
   renderSettings(state.feedPath);
   render();
 }
@@ -317,7 +324,7 @@ async function loadCatalog() {
   if (!extra.ok) return;
   state.metadata = (await extra.json()).shows;
   const genres = new Set(state.catalog.flatMap(show => metadata(show).tags ?? []));
-  for (const tag of [...genres].sort()) $('genre').append(el('option', tag, { value: tag }));
+  for (const tag of [...genres].sort()) $('genres').append(el('option', null, { value: tag }));
   render();
 }
 loadCatalog().catch(() => {

@@ -76,6 +76,8 @@ export function createPersonalRoutes({ secret, data, getCatalog }) {
   const profilePath = join(data, 'personal-profile.json');
   const valid = (value, digest) => typeof value === 'string' && timingSafeEqual(hash(value), digest);
   const feedDigest = hash(token);
+  let lastWrite = Promise.resolve();
+  const version = profile => `"${hash(JSON.stringify(profile)).toString('hex')}"`;
   const json = (response, status, body, headers) => response.writeHead(status, {
     'Content-Type': 'application/json; charset=utf-8',
     'Cache-Control': 'no-store',
@@ -90,6 +92,10 @@ export function createPersonalRoutes({ secret, data, getCatalog }) {
       if (error.code === 'ENOENT') return normalizeProfile({});
       throw error;
     }
+  }
+
+  function sendProfile(response, profile) {
+    return json(response, 200, { profile, feedPath }, { ETag: version(profile) });
   }
 
   return async (request, response, url) => {
@@ -112,8 +118,10 @@ export function createPersonalRoutes({ secret, data, getCatalog }) {
     if (!valid(request.headers.authorization?.match(/^Bearer (.+)$/)?.[1], key)) {
       return json(response, 401, { error: 'Invalid calendar access key' });
     }
-    if (request.method === 'GET') return json(response, 200, { profile: await load(), feedPath });
+    if (request.method === 'GET') return sendProfile(response, await load());
     if (request.method !== 'PUT') return response.writeHead(405, { Allow: 'GET, PUT' }).end();
+    const expected = request.headers['if-match'];
+    if (!expected) return json(response, 428, { error: 'Profile version required' });
     if (request.headers['content-type']?.split(';')[0] !== 'application/json') {
       return json(response, 415, { error: 'Expected JSON' });
     }
@@ -133,13 +141,18 @@ export function createPersonalRoutes({ secret, data, getCatalog }) {
     } catch {
       return json(response, 400, { error: 'Invalid profile' });
     }
-    const temp = `${profilePath}.${randomUUID()}`;
-    try {
-      await writeFile(temp, JSON.stringify(profile), { mode: 0o600 });
-      await rename(temp, profilePath);
-    } finally {
-      await rm(temp, { force: true });
-    }
-    return json(response, 200, { profile, feedPath });
+    const write = lastWrite.then(async () => {
+      if (version(await load()) !== expected) return json(response, 412, { error: 'Profile changed' });
+      const temp = `${profilePath}.${randomUUID()}`;
+      try {
+        await writeFile(temp, JSON.stringify(profile), { mode: 0o600 });
+        await rename(temp, profilePath);
+      } finally {
+        await rm(temp, { force: true });
+      }
+      return sendProfile(response, profile);
+    });
+    lastWrite = write.catch(() => {});
+    return write;
   };
 }

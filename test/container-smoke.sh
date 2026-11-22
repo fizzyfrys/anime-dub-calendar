@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -Eeuo pipefail
 
 image=${1:?Pass the Docker image tag to test}
 fixtures=$(mktemp -d)
@@ -11,6 +11,7 @@ cleanup() {
   rm -r "$fixtures"
 }
 trap cleanup EXIT
+trap 'echo "Container smoke test failed at line $LINENO" >&2; docker logs "$name" >&2 || true' ERR
 
 date=$(date -u +%F)
 updated=$(LC_ALL=C date -u '+%B %-d, %Y')
@@ -98,6 +99,7 @@ assert_refreshed() {
 }
 
 assert_feeds() {
+  local feed body
   for feed in anime-dubs.ics anime-dubs-ep-first.ics; do
     body=$(curl -fsS "$base/$feed")
     grep -F "DTSTART:${date//-/}T100000Z" <<<"$body" >/dev/null
@@ -106,6 +108,16 @@ assert_feeds() {
       return 1
     fi
   done
+}
+
+assert_personal_feed_empty() {
+  local body
+  body=$(curl -fsS "$base/$personal_feed")
+  grep -F 'BEGIN:VCALENDAR' <<<"$body" >/dev/null
+  if grep -Fq 'BEGIN:VEVENT' <<<"$body"; then
+    echo "Personal feed still contains events after hiding the only show" >&2
+    return 1
+  fi
 }
 
 start mal.html operator-has-no-snapshot.html
@@ -174,18 +186,26 @@ test "$(curl -s -o /dev/null -w '%{http_code}' "$base/personal.ics")" = 404
 
 auth="Authorization: Bearer $personal_key"
 saved=$(curl -fsS -H "$auth" "$base/api/profile")
-feed=$(sed -n 's/.*"feedPath":"\.\/\([^"]*\)".*/\1/p' <<<"$saved")
-test -n "$feed"
-curl -fsS "$base/$feed" | grep -F "DTSTART:${date//-/}T100000Z" >/dev/null
-curl -fsS -X PUT -H "$auth" -H 'Content-Type: application/json' \
+personal_feed=$(sed -n 's/.*"feedPath":"\.\/\([^"]*\)".*/\1/p' <<<"$saved")
+test -n "$personal_feed"
+profile_version() {
+  curl -fsS -D - -o /dev/null -H "$auth" "$base/api/profile" | awk 'tolower($1) == "etag:" { sub(/\r$/, "", $2); print $2 }'
+}
+version=$(profile_version)
+test -n "$version"
+curl -fsS "$base/$personal_feed" | grep -F "DTSTART:${date//-/}T100000Z" >/dev/null
+curl -fsS -X PUT -H "$auth" -H "If-Match: $version" -H 'Content-Type: application/json' \
   -d '{"hidden":["mal-1"],"watching":{"mal-1":{"progress":1,"status":"watching"}}}' "$base/api/profile" >/dev/null
-test "$(curl -fsS "$base/$feed" | grep -c 'BEGIN:VEVENT' || true)" = 0
+test "$(curl -s -o /dev/null -w '%{http_code}' -X PUT -H "$auth" -H "If-Match: $version" \
+  -H 'Content-Type: application/json' -d '{}' "$base/api/profile")" = 412
+assert_personal_feed_empty
 assert_feeds
 docker stop "$name" >/dev/null
 
 start mal.html dub.html '' '' '' /fixtures/calendar-key
 assert_refreshed
-test "$(curl -fsS "$base/$feed" | grep -c 'BEGIN:VEVENT' || true)" = 0
+assert_personal_feed_empty
 curl -fsS -H "$auth" "$base/api/profile" | grep -F '"progress":1' >/dev/null
-curl -fsS -X PUT -H "$auth" -H 'Content-Type: application/json' -d '{"hidden":[]}' "$base/api/profile" >/dev/null
-curl -fsS "$base/$feed" | grep -F "DTSTART:${date//-/}T100000Z" >/dev/null
+curl -fsS -X PUT -H "$auth" -H "If-Match: $(profile_version)" -H 'Content-Type: application/json' \
+  -d '{"hidden":[]}' "$base/api/profile" >/dev/null
+curl -fsS "$base/$personal_feed" | grep -F "DTSTART:${date//-/}T100000Z" >/dev/null
