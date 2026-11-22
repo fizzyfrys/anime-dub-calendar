@@ -72,7 +72,7 @@ describe('English Dubbed releases', () => {
     expect(merged).toHaveLength(2);
     expect(merged[0]).toMatchObject({
       title: mal.title, malUrl: mal.malUrl, releaseAt: new Date(instant),
-      date: day('2026-11-01'), isProjected: false,
+      date: day('2026-11-01'), isProjected: false, platforms: ['netflix'],
     });
     expect(merged[1].title).toBe('Sample 3rd Season');
   });
