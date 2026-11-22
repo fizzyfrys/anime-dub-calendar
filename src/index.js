@@ -10,6 +10,7 @@ import { fetchAndParse, parseCivilDate } from './parse.js';
 import { computeEpisodeEvents, computeUpcomingEvents, makeSlug } from './cour-logic.js';
 import { applyReleaseTimes, broadcastDate, countDubReleases, fetchDubCalendar, parseDubCalendar, titleKey, updateDubCalendar } from './dub-calendar.js';
 import { generateIcs } from './generate-ics.js';
+import { buildCatalog } from './catalog.js';
 import { appendFile, readFile, writeFile, mkdir } from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -221,6 +222,18 @@ async function main() {
       title: e.title, episodeNumber: e.episodeNumber, startsAt: e.releaseAt.toISOString(),
     })),
   }, null, 2), 'utf8');
+  if (args.includes('--self-hosted')) {
+    const catalogPath = path.join(DOCS_DIR, 'catalog.json');
+    const previous = await readFile(catalogPath, 'utf8').then(
+      contents => JSON.parse(contents).catalog,
+      error => { if (error.code !== 'ENOENT') throw error; },
+    );
+    await writeFile(catalogPath, JSON.stringify({
+      generatedAt: referenceDate.toISOString(),
+      lastUpdated: schedule.lastUpdated,
+      catalog: buildCatalog(allEvents, streaming, releases, previous, excluded, referenceDate),
+    }), 'utf8');
+  }
 
   console.log(`[anime-dub-cal] ✓ Written: ${ICS_PATH} (Default: Title - Ep ##)`);
   console.log(`[anime-dub-cal] ✓ Written: ${ICS_EP_FIRST_PATH} (Compact: Ep ## · Title)`);

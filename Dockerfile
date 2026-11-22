@@ -8,6 +8,7 @@ COPY package.json package-lock.json ./
 RUN npm ci --omit=dev
 COPY src/ ./src/
 COPY docs/ ./docs/
+COPY web/ ./web/
 
 ENV NODE_ENV=production
 USER node

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111322">
+  <title>Anime Dubs · Personal calendar</title>
+  <link rel="stylesheet" href="./library.css">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./calendar-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./calendar-icon-192.png">
+  <script src="./library.js" type="module"></script>
+</head>
+<body>
+  <header class="banner">
+    <div><p class="eyebrow">Self-hosted calendar</p><h1>Anime Dubs</h1></div>
+    <div class="actions"><a href="./index.html">Public feeds</a><button id="install" hidden>Install app</button></div>
+  </header>
+  <main>
+    <details id="settings">
+      <summary>Personal feed &amp; watchlist</summary>
+      <form id="unlock">
+        <label for="key">Calendar access key</label>
+        <div class="actions"><input id="key" type="password" autocomplete="off" required>
+          <button type="submit">Unlock</button></div>
+      </form>
+      <div id="profile" hidden>
+        <div class="actions profile-heading"><strong>Personal subscription</strong><button id="lock">Lock</button></div>
+        <label for="feed">Private ICS URL</label>
+        <div class="actions"><input id="feed" type="url" readonly><button id="copy">Copy</button></div>
+        <p class="hint">Keep this URL private. Subscribe once; your calendar app picks up changes when it refreshes.</p>
+        <label><input type="checkbox" id="only-selected"> Only selected shows</label>
+        <fieldset><legend>Feed platforms (none selected means all)</legend><div id="feed-platforms" class="actions"></div></fieldset>
+        <label for="import">Import watchlist (MAL XML/XML.GZ or AniList JSON)</label>
+        <input id="import" type="file" accept=".xml,.gz,.json,application/xml,application/json,application/gzip">
+        <p class="hint">Imports matching shows’ status and episode progress. Watching, planned, paused, and rewatching shows are added to your selection. Hidden shows stay hidden.</p>
+      </div>
+      <p class="hint">On iOS, use Safari’s Share → Add to Home Screen. App installation and offline access need HTTPS (or localhost).</p>
+    </details>
+    <p id="notice" role="status"></p>
+    <nav class="actions" aria-label="Views">
+      <a href="#week" data-view="week">Week</a>
+      <a href="#shows" data-view="shows">Shows</a>
+      <a href="#behind" data-view="behind">Behind</a>
+      <a href="#hidden" data-view="hidden">Hidden</a>
+    </nav>
+    <div id="filters" class="filters">
+      <label>Search <input id="search" type="search" placeholder="Show title"></label>
+      <label>Platform <select id="platform"><option value="">All platforms</option></select></label>
+      <label>Genre or tag <select id="genre"><option value="">All genres and tags</option></select></label>
+    </div>
+    <div id="content" aria-live="polite"><p>Loading schedule…</p></div>
+  </main>
+  <footer>Schedule: <a href="https://myanimelist.net/forum/?topicid=1692966">MyAnimeList</a> and
+    <a href="https://english-dubbed.com/anime-industry/english-dub-anime-calendar/">English Dubbed</a>.
+    Art, tags and ID mapping: <a href="https://github.com/manami-project/anime-offline-database">Anime Offline Database</a>
+    (<a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL</a>).
+  </footer>
+</body>
+</html>

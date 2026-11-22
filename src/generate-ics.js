@@ -24,7 +24,7 @@ const UID_DOMAIN = 'anime-dub-cal';
  */
 export function generateIcs(events, lastUpdated, options = {}) {
   const { titleFormat = 'title-first', calendarName = CALENDAR_NAME } = options;
-  const now = formatIcsDatetime(new Date());
+  const now = formatIcsDatetime(options.dtstamp ?? new Date());
 
   const lines = [
     'BEGIN:VCALENDAR',
