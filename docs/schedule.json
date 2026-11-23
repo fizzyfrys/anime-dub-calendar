@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-22T17:37:45.671Z",
-  "lastUpdated": "November 21, 2026",
+  "generatedAt": "2026-11-23T21:53:52.166Z",
+  "lastUpdated": "November 22, 2026",
   "showCount": 42,
   "eventCount": 534,
   "shows": [
@@ -279,7 +279,7 @@
     {
       "title": "Ao Ashi Season 2",
       "day": "Sunday",
-      "currentEp": 5,
+      "currentEp": 6,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -287,7 +287,7 @@
     {
       "title": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
       "day": "Sunday",
-      "currentEp": 6,
+      "currentEp": 7,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -295,7 +295,7 @@
     {
       "title": "Blue Box Season 2",
       "day": "Sunday",
-      "currentEp": 6,
+      "currentEp": 7,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -303,7 +303,7 @@
     {
       "title": "Full Clearing Another World under a Goddess with Zero Believers",
       "day": "Sunday",
-      "currentEp": 4,
+      "currentEp": 5,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -311,7 +311,7 @@
     {
       "title": "Overgeared",
       "day": "Sunday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -319,7 +319,7 @@
     {
       "title": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
       "day": "Sunday",
-      "currentEp": 7,
+      "currentEp": 8,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
@@ -327,18 +327,13 @@
     {
       "title": "TANK CHAIR",
       "day": "Sunday",
-      "currentEp": 7,
+      "currentEp": 8,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
     }
   ],
   "releases": [
-    {
-      "title": "PSYREN",
-      "episodeNumber": 5,
-      "startsAt": "2026-11-16T15:30:00.000Z"
-    },
     {
       "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
       "episodeNumber": 7,
