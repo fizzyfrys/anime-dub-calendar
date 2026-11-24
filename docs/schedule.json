@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-23T21:53:52.166Z",
-  "lastUpdated": "November 22, 2026",
+  "generatedAt": "2026-11-24T20:29:53.237Z",
+  "lastUpdated": "November 24, 2026",
   "showCount": 42,
-  "eventCount": 534,
+  "eventCount": 538,
   "shows": [
     {
       "title": "PSYREN",
       "day": "Monday",
-      "currentEp": 4,
+      "currentEp": 5,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -15,7 +15,7 @@
     {
       "title": "One Piece",
       "day": "Tuesday",
-      "currentEp": 1160,
+      "currentEp": 1161,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -23,7 +23,7 @@
     {
       "title": "The Classroom of a Black Cat and a Witch",
       "day": "Tuesday",
-      "currentEp": 1,
+      "currentEp": 2,
       "totalEp": 24,
       "suspended": false,
       "resumeDate": null
@@ -31,7 +31,7 @@
     {
       "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
       "day": "Tuesday",
-      "currentEp": 7,
+      "currentEp": 8,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -223,10 +223,10 @@
     {
       "title": "Bleach: Thousand-Year Blood War - The Calamity",
       "day": "Saturday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 10,
       "suspended": false,
-      "resumeDate": "November 23, 2026"
+      "resumeDate": null
     },
     {
       "title": "HORROR COLLECTOR",
@@ -334,21 +334,6 @@
     }
   ],
   "releases": [
-    {
-      "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
-      "episodeNumber": 7,
-      "startsAt": "2026-11-17T15:30:00.000Z"
-    },
-    {
-      "title": "The Classroom of a Black Cat and a Witch",
-      "episodeNumber": 1,
-      "startsAt": "2026-11-17T16:00:00.000Z"
-    },
-    {
-      "title": "One Piece",
-      "episodeNumber": 1160,
-      "startsAt": "2026-11-17T17:00:00.000Z"
-    },
     {
       "title": "Sasaki and Peeps Season 2",
       "episodeNumber": 5,
