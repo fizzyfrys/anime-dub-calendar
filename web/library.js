@@ -1,24 +1,17 @@
 import {
-  civilDay, hasShow, includesEpisode, isReleased, localDay, mergeImport,
-  parseImport, profileIds, readImport, watchProgress, weekDays,
+  hasShow, includesEpisode, isReleased, mergeImport, parseImport, profileIds, readImport, watchProgress,
 } from './library-data.js';
+import {
+  civilDay, element as el, groupWeek, labelDay, localDay, renderWeek, timeFormat, weekDays,
+} from './calendar-week.js';
 
 const $ = id => document.getElementById(id);
-const dayFormat = new Intl.DateTimeFormat([], { weekday: 'long', month: 'short', day: 'numeric' });
-const timeFormat = new Intl.DateTimeFormat([], { hour: 'numeric', minute: '2-digit' });
 const statusNames = {
   '': 'Not tracked', watching: 'Watching', planned: 'Plan to watch', completed: 'Completed',
   paused: 'On hold', dropped: 'Dropped', rewatching: 'Rewatching',
 };
-const state = { catalog: null, metadata: {}, profile: null, key: '', offset: 0 };
+const state = { catalog: null, metadata: {}, profile: null, offset: 0 };
 const notice = text => { $('notice').textContent = text; };
-
-function el(tag, text, attrs = {}) {
-  const node = document.createElement(tag);
-  if (text != null) node.textContent = text;
-  for (const [name, value] of Object.entries(attrs)) node.setAttribute(name, value);
-  return node;
-}
 
 const link = (text, url) => el('a', text, { href: url });
 function button(label, run) {
@@ -29,13 +22,15 @@ function button(label, run) {
 
 const titleLink = show => link(show.title, `#show/${show.id}`);
 const metadata = show => state.metadata[show.id] ?? {};
-const labelDay = date => dayFormat.format(new Date(date + 'T12:00:00'));
 const selected = show => hasShow(state.profile?.selected ?? [], show);
+const synced = show => hasShow(state.watchlist?.remote.selected ?? [], show);
+const effectiveProfile = () => state.profile && {
+  ...state.profile,
+  selected: [...state.profile.selected, ...(state.watchlist?.remote.selected ?? [])],
+};
+const progressFor = show => watchProgress(profileIds(show).some(id => Object.hasOwn(state.profile?.watching ?? {}, id))
+  ? state.profile : state.watchlist?.remote, show);
 const hidden = show => hasShow(state.profile?.hidden ?? [], show);
-const ordered = episodes => episodes.sort((a, b) =>
-  (a.episode.startsAt ? Date.parse(a.episode.startsAt) : Infinity) -
-  (b.episode.startsAt ? Date.parse(b.episode.startsAt) : Infinity) ||
-  a.show.title.localeCompare(b.show.title) || a.episode.episodeNumber - b.episode.episodeNumber);
 
 function matches(show) {
   const query = $('search').value.trim().toLocaleLowerCase();
@@ -68,55 +63,44 @@ function rows() { return el('ul', null, { class: 'rows' }); }
 function week(root, shows, now) {
   const days = weekDays(now, state.offset);
   const today = civilDay(now);
-  const heading = el('div', null, { class: 'week-heading' });
-  heading.append(el('h2', state.offset === 0 ? 'Upcoming week' : `${labelDay(days[0])} – ${labelDay(days[6])}`));
+  const heading = el('div', null, { class: 'week-heading calendar-heading' });
+  const title = el('div');
+  title.append(el('h2', state.offset === 0 ? 'Next 7 days' : `${labelDay(days[0])} – ${labelDay(days[6])}`),
+    el('p', `Times shown in ${timeFormat.resolvedOptions().timeZone}`, { class: 'calendar-muted' }));
+  heading.append(title);
   const actions = el('div', null, { class: 'actions' });
   const shift = (label, offset) => button(label, () => { state.offset = offset; render(); });
   actions.append(shift('Previous', state.offset - 1), shift('Today', 0), shift('Next', state.offset + 1));
   heading.append(actions);
-  root.append(heading, el('p', `Times shown in ${timeFormat.resolvedOptions().timeZone}.`, { class: 'hint' }));
-  const groups = new Map(days.map(day => [day, []]));
+  const entries = [];
+  const profile = effectiveProfile();
   for (const show of shows) for (const episode of show.episodes) {
     const platforms = episode.platforms.length ? episode.platforms : show.platforms;
     if ((!$('platform').value || platforms.includes($('platform').value)) &&
-        includesEpisode(state.profile, show, episode)) groups.get(localDay(episode))?.push({ show, episode });
+        includesEpisode(profile, show, episode)) entries.push({ title: show.title, show, episode });
   }
-  for (const [day, episodes] of groups) {
-    if (day !== today && !episodes.length) continue;
-    const section = el('section', null, { class: day === today ? 'day today' : 'day' });
-    section.append(el('h3', (day === today ? 'Today · ' : '') + labelDay(day)));
-    if (episodes.length) {
-      const list = rows();
-      for (const { show, episode } of ordered(episodes)) {
-        const row = el('li', null, { class: 'row' });
-        const info = el('div');
-        info.append(titleLink(show), el('small', episodeText(episode), { class: 'meta' }));
-        row.append(info);
-        if (state.profile) row.append(markHidden(show));
-        list.append(row);
-      }
-      section.append(list);
-    } else section.append(el('p', 'No matching releases today.', { class: 'hint' }));
-    root.append(section);
-  }
-  if (![...groups.values()].some(group => group.length)) {
-    root.append(el('p', 'No releases match this week.', { class: 'hint' }));
-  }
+  root.append(heading, renderWeek(groupWeek(days, entries), today, ({ show, episode }) => {
+    const info = el('div');
+    const watched = state.profile && isReleased(episode, now) &&
+      progressFor(show).progress >= episode.episodeNumber;
+    info.append(titleLink(show), el('small', episodeText(episode) + (watched ? ' · ✓ Watched' : ''), { class: 'meta' }));
+    return state.profile ? [info, markHidden(show)] : [info];
+  }));
 }
 
 function showsView(root, shows, view, now) {
   root.append(el('h2', { shows: 'Shows', behind: 'Behind', hidden: 'Hidden shows' }[view]));
   if (!state.profile && view !== 'shows') {
-    root.append(el('p', 'Unlock the personal feed to use this view.', { class: 'hint' }));
+    root.append(el('p', 'Sign in to use this view.', { class: 'hint' }));
     return;
   }
   const list = rows();
   for (const show of shows) {
-    const { progress, status } = watchProgress(state.profile, show);
+    const { progress, status } = progressFor(show);
     const available = show.episodes.filter(ep => ep.episodeNumber > progress && isReleased(ep, now));
     if (view === 'hidden' ? !hidden(show) : hidden(show)) continue;
     if (view === 'behind' && (!available.length ||
-        (!selected(show) && !['watching', 'rewatching'].includes(status)) ||
+        (!selected(show) && !synced(show) && !['watching', 'rewatching'].includes(status)) ||
         ['paused', 'completed', 'dropped'].includes(status))) continue;
     const row = el('li', null, { class: 'row' });
     const info = el('div');
@@ -147,9 +131,10 @@ function showView(root, show, now) {
   details.append(title, el('h3', 'Where to watch'), el('p', show.platforms.length
     ? show.platforms.join(', ') + ' (availability may vary by region)'
     : 'No platform listed by the release source.'));
-  const { progress, status } = watchProgress(state.profile, show);
+  const { progress, status } = progressFor(show);
   if (state.profile) {
     const actions = el('div', null, { class: 'actions tracking' });
+    if (synced(show)) actions.append(el('span', 'On synced watchlist', { class: 'hint' }));
     actions.append(markHidden(show), button(selected(show) ? 'Deselect show' : 'Select show', () => save(profile => {
       profile.selected = selected(show) ? profile.selected.filter(id => !profileIds(show).includes(id)) :
         [...profile.selected, show.id];
@@ -223,16 +208,52 @@ function renderSettings(feedPath) {
   }
 }
 
-async function api(key, profile) {
+function renderWatchlist() {
+  const watchlist = state.watchlist;
+  if (!watchlist) return;
+  $('sync-mal').disabled = !watchlist.malAvailable && watchlist.account?.provider !== 'mal';
+  $('sync-provider').value = watchlist.account?.provider ?? 'off';
+  $('sync-username').value = watchlist.account?.username ?? '';
+  $('sync-username').disabled = !watchlist.account;
+  $('sync-now').hidden = !watchlist.account;
+  $('sync-status').textContent = watchlist.error || (watchlist.lastSync
+    ? `Last synced ${new Date(watchlist.lastSync).toLocaleString()}`
+    : !watchlist.malAvailable ? 'MAL needs a client ID configured on the server.' : '');
+}
+
+async function syncWatchlist(method, settings) {
+  if (state.syncing || !state.profile) return;
+  state.syncing = true;
+  $('sync-save').disabled = $('sync-now').disabled = true;
+  $('sync-status').textContent = 'Syncing…';
+  try {
+    const response = await fetch('./api/watchlist', {
+      method, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(settings),
+    });
+    if (!response.ok) throw new Error(response.status === 401 ? 'Sign in to sync your watchlist.' : 'Could not save watchlist settings.');
+    const result = await response.json();
+    if (!state.profile) return;
+    state.watchlist = result;
+    renderWatchlist();
+    render();
+  } catch (error) { $('sync-status').textContent = error.message; }
+  finally { state.syncing = false; $('sync-save').disabled = $('sync-now').disabled = false; }
+}
+
+async function api(profile) {
   const response = await fetch('./api/profile', {
     method: profile ? 'PUT' : 'GET', cache: 'no-store',
-    headers: { Authorization: `Bearer ${key}`,
-      ...(profile ? { 'Content-Type': 'application/json', 'If-Match': state.version } : {}) },
+    ...(profile ? { headers: { 'Content-Type': 'application/json', 'If-Match': state.version } } : {}),
     ...(profile ? { body: JSON.stringify(profile) } : {}),
   });
-  if (response.status === 401) throw new Error('Calendar access key not accepted.');
+  if (response.status === 401) {
+    clearProfile();
+    if (profile) throw new Error('Sign in again to save changes.');
+    return null;
+  }
   if (response.status === 412) {
-    applyProfile(await api(key));
+    const updated = await api();
+    if (updated) applyProfile(updated);
     throw new Error('Your profile changed on another device. Try the change again.');
   }
   if (!response.ok) throw new Error('The personal calendar is unavailable or could not save these changes.');
@@ -243,15 +264,18 @@ function applyProfile(result) {
   state.profile = result.profile;
   state.feedPath = result.feedPath;
   state.version = result.version;
+  state.watchlist = result.watchlist;
+  renderWatchlist();
   renderSettings(state.feedPath);
   render();
 }
 
-async function unlock(key) {
-  const result = await api(key);
-  state.key = key;
-  try { sessionStorage.setItem('calendar-key', key); } catch {}
-  applyProfile(result);
+function clearProfile() {
+  state.profile = null;
+  state.watchlist = null;
+  state.feedPath = $('feed').value = '';
+  renderSettings();
+  render();
 }
 
 async function save(change, success = 'Personal calendar saved.') {
@@ -260,8 +284,7 @@ async function save(change, success = 'Personal calendar saved.') {
   const profile = structuredClone(state.profile);
   try {
     change(profile);
-    const result = await api(state.key, profile);
-    if (!state.key) return;
+    const result = await api(profile);
     applyProfile(result);
     notice(success);
   } catch (error) {
@@ -274,23 +297,46 @@ async function save(change, success = 'Personal calendar saved.') {
 
 $('unlock').addEventListener('submit', async event => {
   event.preventDefault();
-  try { await unlock($('key').value.trim()); $('key').value = ''; notice('Personal calendar unlocked.'); }
-  catch (error) { notice(error.message); }
+  const button = $('sign-in');
+  button.disabled = true;
+  try {
+    const response = await fetch('./api/session', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password: $('password').value }),
+    });
+    if (response.status === 401) throw new Error('Incorrect password.');
+    if (response.status === 429) throw new Error('Too many attempts. Try again in 30 seconds.');
+    if (!response.ok) throw new Error('Sign-in is unavailable.');
+    $('password').value = '';
+    const result = await api();
+    if (!result) throw new Error('Sign-in requires cookies.');
+    applyProfile(result);
+    notice('Signed in.');
+  } catch (error) { notice(error.message); }
+  finally { button.disabled = false; }
 });
-$('lock').addEventListener('click', () => {
+$('lock').addEventListener('click', async () => {
   if (state.saving) return;
-  try { sessionStorage.removeItem('calendar-key'); } catch {}
-  state.profile = null;
-  state.key = state.feedPath = $('feed').value = '';
-  renderSettings();
-  render();
-  notice('Personal calendar locked.');
+  try {
+    const response = await fetch('./api/session', { method: 'DELETE' });
+    if (!response.ok) throw new Error('Sign-out failed.');
+    clearProfile();
+    notice('Signed out.');
+  } catch (error) { notice(error.message); }
 });
 $('copy').addEventListener('click', async () => {
   try { await navigator.clipboard.writeText($('feed').value); notice('Subscription URL copied.'); }
   catch { $('feed').select(); notice('Copy the selected URL.'); }
 });
 $('only-selected').addEventListener('change', event => save(profile => { profile.onlySelected = event.target.checked; }));
+$('sync-provider').addEventListener('change', () => {
+  $('sync-username').disabled = $('sync-provider').value === 'off';
+});
+$('watchlist-sync').addEventListener('submit', event => {
+  event.preventDefault();
+  void syncWatchlist('PUT', { provider: $('sync-provider').value, username: $('sync-username').value.trim() });
+});
+$('sync-now').addEventListener('click', () => syncWatchlist('POST', {}));
 $('import').addEventListener('change', async event => {
   const file = event.target.files[0];
   if (!file || !state.catalog || !state.profile) return;
@@ -330,10 +376,8 @@ async function loadCatalog() {
 loadCatalog().catch(() => {
   if (!state.catalog) $('content').replaceChildren(el('p', 'Schedule unavailable. Try reloading after the first successful refresh.'));
 });
-try {
-  const key = sessionStorage.getItem('calendar-key');
-  if (key) unlock(key).catch(error => notice(error.message));
-} catch {}
+try { sessionStorage.removeItem('calendar-key'); } catch {}
+api().then(result => { if (result) applyProfile(result); }).catch(() => {});
 
 if ('serviceWorker' in navigator && isSecureContext) {
   navigator.serviceWorker.register('./calendar-sw.js').catch(() => {});

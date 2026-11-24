@@ -105,7 +105,7 @@ export function applyReleaseTimes(events, shows, releases) {
   const showsByTitle = new Map(shows.map(show => [titleKey(show.title), show]));
   const byEpisode = new Map(events.map(event => [episodeKey(event.title, event.episodeNumber), event]));
 
-  for (const { title, episodeNumber, startsAt } of releases) {
+  for (const { title, episodeNumber, startsAt, platforms } of releases) {
     const key = episodeKey(title, episodeNumber);
     const existing = byEpisode.get(key);
     const show = existing ?? showsByTitle.get(titleKey(title));
@@ -116,6 +116,7 @@ export function applyReleaseTimes(events, shows, releases) {
       episodeNumber,
       date: broadcastDate(startsAt),
       releaseAt: new Date(startsAt),
+      platforms,
       isProjected: false,
       dateConfirmed: true,
     });

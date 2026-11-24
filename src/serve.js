@@ -4,8 +4,9 @@ import { createServer } from 'node:http';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { prepareCalendarPublish } from './publish.js';
-import { createPersonalRoutes } from './personal.js';
+import { createPersonalRoutes, loadFeedToken } from './personal.js';
 import { refreshMetadata } from './metadata.js';
+import { createWatchlist } from './watchlist.js';
 
 const docs = fileURLToPath(new URL('../docs/', import.meta.url));
 const web = fileURLToPath(new URL('../web/', import.meta.url));
@@ -19,17 +20,34 @@ const outputs = [...feeds, schedule, state];
 const catalog = 'catalog.json';
 const getCatalog = async () => JSON.parse(await readFile(join(data, catalog), 'utf8'));
 const keyFile = process.env.CALENDAR_ACCESS_KEY_FILE;
-const key = keyFile ? (await readFile(keyFile, 'utf8')).trim() : '';
-if (keyFile && (key.length < 32 || !/^[\x21-\x7e]+$/.test(key))) {
+const legacyKey = keyFile ? (await readFile(keyFile, 'utf8')).trim() : '';
+const password = process.env.CALENDAR_PASSWORD || '';
+if (keyFile && (legacyKey.length < 32 || !/^[\x21-\x7e]+$/.test(legacyKey))) {
   throw new Error('CALENDAR_ACCESS_KEY_FILE must contain at least 32 characters without spaces');
 }
-const personal = createPersonalRoutes({ secret: key, data, getCatalog });
+if (password && (password.trim().length < 12 || Buffer.byteLength(password) > 256)) {
+  throw new Error('CALENDAR_PASSWORD must be at least 12 characters and at most 256 bytes');
+}
+const malClientIdFile = process.env.CALENDAR_MAL_CLIENT_ID_FILE;
+const watchlist = password || legacyKey ? await createWatchlist({
+  data, getCatalog,
+  malClientId: malClientIdFile ? (await readFile(malClientIdFile, 'utf8')).trim() : process.env.CALENDAR_MAL_CLIENT_ID,
+  getMetadata: async () => {
+    try { return JSON.parse(await readFile(join(data, 'catalog-metadata.json'), 'utf8')).shows ?? {}; }
+    catch (error) { if (error.code !== 'ENOENT') throw error; return {}; }
+  },
+}) : null;
+const personal = watchlist
+  ? createPersonalRoutes({ password, legacyKey, data, getCatalog, watchlist, token: await loadFeedToken(data, legacyKey) })
+  : null;
+const refreshWatchlist = () => watchlist?.refresh().catch(() =>
+  console.warn('[calendar-server] Could not save watchlist sync status'));
 const libraryFiles = new Map([
   ['/', ['library.html', 'text/html']],
   ['/library.html', ['library.html', 'text/html']],
   ['/library.css', ['library.css', 'text/css']],
   ['/library.js', ['library.js', 'text/javascript']],
-  ['/library-data.js', ['library-data.js', 'text/javascript']],
+  ['/library-data.js', ['library-data.js', 'text/javascript', docs]],
   ['/manifest.webmanifest', ['manifest.webmanifest', 'application/manifest+json']],
   ['/calendar-icon.svg', ['calendar-icon.svg', 'image/svg+xml']],
   ['/calendar-icon-192.png', ['calendar-icon-192.png', 'image/png']],
@@ -40,6 +58,10 @@ const routes = new Map([
   ['/', ['index.html', 'text/html', false]],
   ['/index.html', ['index.html', 'text/html', false]],
   ['/feed-url.js', ['feed-url.js', 'text/javascript', false]],
+  ['/calendar-week.css', ['calendar-week.css', 'text/css', false]],
+  ['/calendar-week.js', ['calendar-week.js', 'text/javascript', false]],
+  ['/dashboard.js', ['dashboard.js', 'text/javascript', false]],
+  ['/dashboard.css', ['dashboard.css', 'text/css', false]],
   ['/' + schedule, [schedule, 'application/json', true]],
   ...feeds.map(file => ['/' + file, [file, 'text/calendar', true]]),
 ]);
@@ -96,10 +118,11 @@ async function refreshDaily() {
       }
     }
     await refresh(sync?.state);
-    if (personal && process.env.CALENDAR_METADATA !== 'off') {
-      void getCatalog().then(schedule => refreshMetadata({
+    if (personal) {
+      const enriching = process.env.CALENDAR_METADATA !== 'off' ? getCatalog().then(schedule => refreshMetadata({
         data, catalog: schedule.catalog, input: process.env.CALENDAR_METADATA_PATH,
-      })).catch(error => console.warn('[calendar-server] Show metadata unavailable:', error.message));
+      })).catch(error => console.warn('[calendar-server] Show metadata unavailable:', error.message)) : Promise.resolve();
+      void enriching.then(refreshWatchlist);
     }
     if (sync) {
       try {
@@ -124,7 +147,7 @@ async function refreshDaily() {
 
 const server = createServer(async (request, response) => {
   const path = request.url.split('?')[0];
-  if (personal && (path === '/api/profile' || path === '/personal.ics')) {
+  if (personal && ['/api/profile', '/api/session', '/api/watchlist', '/personal.ics'].includes(path)) {
     try {
       await personal(request, response, new URL(request.url, 'http://localhost'));
     } catch (error) {
@@ -147,10 +170,11 @@ const server = createServer(async (request, response) => {
     response.writeHead(404).end();
     return;
   }
-  const [file, type, generated] = route;
+  const [file, type, option] = route;
   try {
     const body = localData ? await readFile(join(data, file)) :
-      generated ? await withBundledFallback(file, readFile) : await readFile(join(asset ? web : docs, file));
+      asset ? await readFile(join(option || web, file)) :
+      option ? await withBundledFallback(file, readFile) : await readFile(join(docs, file));
     response.writeHead(200, {
       'Content-Type': `${type}; charset=utf-8`,
       'Content-Length': body.length,
@@ -172,4 +196,5 @@ const server = createServer(async (request, response) => {
 server.listen(8080, '0.0.0.0', () => {
   console.log('[calendar-server] Listening on port 8080');
   void refreshDaily();
+  if (watchlist) setInterval(refreshWatchlist, 60 * 60 * 1000).unref();
 });
