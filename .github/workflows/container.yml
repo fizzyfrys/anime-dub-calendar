@@ -44,13 +44,26 @@ jobs:
       - name: Build and test release image
         run: |
           image="ghcr.io/${GITHUB_REPOSITORY,,}"
-          docker build --tag "$image:latest" --tag "$image:sha-${GITHUB_SHA::12}" .
-          bash test/container-smoke.sh "$image:latest"
+          version="$(date -u +%Y.%m.%d)-${GITHUB_RUN_NUMBER}"
+          docker build \
+            --label "org.opencontainers.image.version=$version" \
+            --label "org.opencontainers.image.revision=$GITHUB_SHA" \
+            --tag "$image:$version" .
+          bash test/container-smoke.sh "$image:$version"
+          docker tag "$image:$version" "$image:sha-${GITHUB_SHA::12}"
+          docker tag "$image:$version" "$image:latest"
+          echo "IMAGE_VERSION=$version" >>"$GITHUB_ENV"
       - name: Push the tested image to GHCR
         env:
           GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           image="ghcr.io/${GITHUB_REPOSITORY,,}"
           printf '%s\n' "$GHCR_TOKEN" | docker login ghcr.io --username "$GITHUB_ACTOR" --password-stdin
-          docker push "$image:sha-${GITHUB_SHA::12}"
-          docker push "$image:latest"
+          tags=("$IMAGE_VERSION" "sha-${GITHUB_SHA::12}" latest)
+          for tag in "${tags[@]}"; do
+            docker push "$image:$tag"
+          done
+          {
+            echo "Pushed \`$image\` with tags:"
+            printf -- '- `%s`\n' "${tags[@]}"
+          } >>"$GITHUB_STEP_SUMMARY"

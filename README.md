@@ -140,6 +140,19 @@ Open `http://<docker-host>:8080/` for the site and feeds. The named volume prese
 
 [GitHub Actions](https://github.com/fizzyfrys/anime-dub-calendar/actions/workflows/container.yml) builds and publishes the Linux amd64 image to GHCR after smoke tests on `main`. If the package is private, [sign in to GHCR](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry#authenticating-to-the-container-registry) with a token that has `read:packages` before running the command.
 
+Each published image gets three tags: `latest` moves to the newest build, a version tag such as `2026.11.22-42` (UTC build date and workflow run number) names that build, and `sha-<commit>` names the commit it was built from. Version and commit tags are not moved to newer builds, so you can pin one or roll back to it. The [package page](https://github.com/fizzyfrys/anime-dub-calendar/pkgs/container/anime-dub-calendar/versions) lists every published version; images published before version tags were added have only `latest` and `sha-<commit>` tags.
+
+To pin or roll back, replace the container with the same command and a specific tag. The named volume keeps the calendar state:
+
+```sh
+docker rm -f anime-dub-calendar
+docker run -d --name anime-dub-calendar --restart unless-stopped \
+  -p 8080:8080 -v anime-dub-calendar-data:/data \
+  ghcr.io/fizzyfrys/anime-dub-calendar:2026.11.22-42
+```
+
+To check which version a container runs, use `docker inspect --format '{{ index .Config.Labels "org.opencontainers.image.version" }}' anime-dub-calendar`. To return to automatic updates, run the original command with `latest` again. On Unraid, put the tag in the container's **Repository** field (for example `ghcr.io/fizzyfrys/anime-dub-calendar:2026.11.22-42`).
+
 If English Dubbed returns HTTP 403, the container logs a warning and continues with MAL and cached data. To use an authorized local copy instead, mount it in the container and set `DUB_CALENDAR_HTML_PATH` to its container path. Update the snapshot manually, or remove the variable to resume live fetches.
 
 ### Enable the personal calendar
