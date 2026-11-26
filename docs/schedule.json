@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-25T19:46:24.974Z",
-  "lastUpdated": "November 24, 2026",
-  "showCount": 41,
-  "eventCount": 538,
+  "generatedAt": "2026-11-26T19:25:05.822Z",
+  "lastUpdated": "November 25, 2026",
+  "showCount": 40,
+  "eventCount": 527,
   "shows": [
     {
       "title": "PSYREN",
@@ -39,7 +39,7 @@
     {
       "title": "A Returner's Magic Should Be Special Season 2",
       "day": "Wednesday",
-      "currentEp": 7,
+      "currentEp": 8,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -47,7 +47,7 @@
     {
       "title": "Magic Knight Rayearth",
       "day": "Wednesday",
-      "currentEp": 5,
+      "currentEp": 6,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -55,7 +55,7 @@
     {
       "title": "Nia Liston: The Merciless Maiden",
       "day": "Wednesday",
-      "currentEp": 1,
+      "currentEp": 2,
       "totalEp": 25,
       "suspended": false,
       "resumeDate": null
@@ -63,15 +63,7 @@
     {
       "title": "Reincarnated as a Sword Season 2",
       "day": "Wednesday",
-      "currentEp": 5,
-      "totalEp": 12,
-      "suspended": false,
-      "resumeDate": null
-    },
-    {
-      "title": "Saga of Tanya the Evil Season 2",
-      "day": "Wednesday",
-      "currentEp": 11,
+      "currentEp": 6,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -79,7 +71,7 @@
     {
       "title": "Sasaki and Peeps Season 2",
       "day": "Wednesday",
-      "currentEp": 5,
+      "currentEp": 6,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -87,7 +79,7 @@
     {
       "title": "The Detective Is Already Dead Season 2",
       "day": "Wednesday",
-      "currentEp": 5,
+      "currentEp": 6,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
@@ -95,7 +87,7 @@
     {
       "title": "The Prince of Tennis II U-17 WORLD CUP: Final Member Selection Match",
       "day": "Wednesday",
-      "currentEp": 6,
+      "currentEp": 7,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
@@ -103,7 +95,7 @@
     {
       "title": "The World's Strongest Witch",
       "day": "Wednesday",
-      "currentEp": 5,
+      "currentEp": 6,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -334,31 +326,6 @@
     }
   ],
   "releases": [
-    {
-      "title": "FX Fighter Kurumi-chan",
-      "episodeNumber": 8,
-      "startsAt": "2026-11-19T12:31:00.000Z"
-    },
-    {
-      "title": "The Ramparts of Ice Season 2",
-      "episodeNumber": 8,
-      "startsAt": "2026-11-19T15:30:00.000Z"
-    },
-    {
-      "title": "Dragon Ball Super: Beerus",
-      "episodeNumber": 2,
-      "startsAt": "2026-11-19T16:00:00.000Z"
-    },
-    {
-      "title": "The Exiled Heavy Knight Knows How to Game the System",
-      "episodeNumber": 19,
-      "startsAt": "2026-11-19T17:00:00.000Z"
-    },
-    {
-      "title": "The Iceblade Sorcerer Shall Rule the World II",
-      "episodeNumber": 5,
-      "startsAt": "2026-11-19T18:00:00.000Z"
-    },
     {
       "title": "Jojo's Bizarre Adventure Part 7: STEEL BALL RUN",
       "episodeNumber": 9,
