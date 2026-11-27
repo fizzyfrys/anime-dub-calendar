@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-26T19:25:05.822Z",
-  "lastUpdated": "November 25, 2026",
+  "generatedAt": "2026-11-27T19:20:44.027Z",
+  "lastUpdated": "November 26, 2026",
   "showCount": 40,
   "eventCount": 527,
   "shows": [
@@ -103,7 +103,7 @@
     {
       "title": "Dragon Ball Super: Beerus",
       "day": "Thursday",
-      "currentEp": 2,
+      "currentEp": 3,
       "totalEp": null,
       "suspended": false,
       "resumeDate": null
@@ -111,7 +111,7 @@
     {
       "title": "FX Fighter Kurumi-chan",
       "day": "Thursday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -119,7 +119,7 @@
     {
       "title": "The Exiled Heavy Knight Knows How to Game the System",
       "day": "Thursday",
-      "currentEp": 19,
+      "currentEp": 20,
       "totalEp": 26,
       "suspended": false,
       "resumeDate": null
@@ -127,7 +127,7 @@
     {
       "title": "The Iceblade Sorcerer Shall Rule the World II",
       "day": "Thursday",
-      "currentEp": 5,
+      "currentEp": 6,
       "totalEp": 12,
       "suspended": false,
       "resumeDate": null
@@ -135,7 +135,7 @@
     {
       "title": "The Ramparts of Ice Season 2",
       "day": "Thursday",
-      "currentEp": 8,
+      "currentEp": 9,
       "totalEp": 13,
       "suspended": false,
       "resumeDate": null
@@ -326,31 +326,6 @@
     }
   ],
   "releases": [
-    {
-      "title": "Jojo's Bizarre Adventure Part 7: STEEL BALL RUN",
-      "episodeNumber": 9,
-      "startsAt": "2026-11-20T08:01:00.000Z"
-    },
-    {
-      "title": "Devils' Crest",
-      "episodeNumber": 4,
-      "startsAt": "2026-11-20T12:01:00.000Z"
-    },
-    {
-      "title": "The Apothecary Diaries Season 3",
-      "episodeNumber": 6,
-      "startsAt": "2026-11-20T16:00:00.000Z"
-    },
-    {
-      "title": "Firefly Wedding",
-      "episodeNumber": 5,
-      "startsAt": "2026-11-20T17:00:00.000Z"
-    },
-    {
-      "title": "Tokyo Revengers: War of the Three Titan Arc",
-      "episodeNumber": 8,
-      "startsAt": "2026-11-20T17:00:00.000Z"
-    },
     {
       "title": "Rilakkuma",
       "episodeNumber": 33,
